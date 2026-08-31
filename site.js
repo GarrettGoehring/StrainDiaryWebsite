@@ -35,10 +35,10 @@ form?.addEventListener('submit',async event=>{
     const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
     if(!response.ok)throw new Error('Request failed');
     form.reset();
-    status.textContent='Your note was sent successfully.';
+    status.textContent='Your feedback was sent successfully.';
     button.textContent='Send another note';
     button.disabled=false;
-    showFormNotice('Thanks! Your note was sent. I’ll look at it soon.');
+    showFormNotice('Your feedback was sent. I’ll look at it soon.');
   }catch{
     status.innerHTML='That did not send. Email me at <a href="mailto:support@straindiary.com">support@straindiary.com</a> instead.';
     button.textContent='Try again';
