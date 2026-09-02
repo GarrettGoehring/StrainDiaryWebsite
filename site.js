@@ -1,6 +1,14 @@
 const menuButton=document.querySelector('.menu-button');
 const nav=document.querySelector('#site-nav');
-menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));nav?.classList.toggle('open',!open)});
+const setMenuOpen=open=>{
+  menuButton?.setAttribute('aria-expanded',String(open));
+  nav?.classList.toggle('open',open);
+  if(menuButton)menuButton.textContent=open?'Close':'Menu';
+};
+menuButton?.addEventListener('click',()=>setMenuOpen(menuButton.getAttribute('aria-expanded')!=='true'));
+document.addEventListener('keydown',event=>{if(event.key==='Escape')setMenuOpen(false)});
+document.addEventListener('click',event=>{if(menuButton?.getAttribute('aria-expanded')==='true'&&!event.target.closest('.site-header'))setMenuOpen(false)});
+nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenuOpen(false)));
 
 const gate=document.querySelector('.age-gate');
 let verified=false;
