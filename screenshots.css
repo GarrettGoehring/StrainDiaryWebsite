@@ -1,0 +1,26 @@
+.feature-shot,
+html:not([data-theme="dark"]) .feature-shot {
+  height: auto;
+  min-height: 540px;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.feature-shot img {
+  height: 520px;
+  border-radius: 34px;
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, .28));
+}
+
+@media (max-width: 600px) {
+  .feature-shot,
+  html:not([data-theme="dark"]) .feature-shot {
+    min-height: 430px;
+  }
+
+  .feature-shot img {
+    height: 420px;
+  }
+}
+
