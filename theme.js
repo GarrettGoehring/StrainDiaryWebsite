@@ -85,6 +85,66 @@ if (menuButton && siteNav) {
       vy:-(fire ? 45 + Math.random() * 65 : 18 + Math.random() * 20),
       size:fire ? 3 + Math.random() * 4 : 7 + Math.random() * 6});
   }
+
+  function drawBurnOutline(button, now) {
+    const r = button.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    const radius = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
+    ctx.save();
+    ctx.translate(r.left, r.top);
+    ctx.beginPath();
+    ctx.moveTo(radius, 0);
+    ctx.lineTo(r.width - radius, 0);
+    ctx.quadraticCurveTo(r.width, 0, r.width, radius);
+    ctx.lineTo(r.width, r.height - radius);
+    ctx.quadraticCurveTo(r.width, r.height, r.width - radius, r.height);
+    ctx.lineTo(radius, r.height);
+    ctx.quadraticCurveTo(0, r.height, 0, r.height - radius);
+    ctx.lineTo(0, radius);
+    ctx.quadraticCurveTo(0, 0, radius, 0);
+    ctx.closePath();
+    ctx.shadowColor = '#ff772b';
+    ctx.shadowBlur = 12;
+    ctx.strokeStyle = '#ef752a';
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.strokeStyle = '#ffe29b';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    // Evenly cover all four edges rather than relying on random sparks.
+    function flame(x, y, nx, ny, phase) {
+      const length = 8 + 5 * (1 + Math.sin(now / 85 + phase));
+      const tx = -ny, ty = nx;
+      ctx.beginPath();
+      ctx.moveTo(x - tx * 4, y - ty * 4);
+      ctx.quadraticCurveTo(x + nx * length * .5 - tx * 5,
+        y + ny * length * .5 - ty * 5,
+        x + nx * length + tx * 2, y + ny * length + ty * 2);
+      ctx.quadraticCurveTo(x + nx * length * .3 + tx * 5,
+        y + ny * length * .3 + ty * 5, x + tx * 4, y + ty * 4);
+      ctx.closePath();
+      ctx.fillStyle = '#f89536';
+      ctx.fill();
+    }
+    const horizontal = Math.max(1, Math.ceil(r.width / 10));
+    for (let n = 0; n <= horizontal; n++) {
+      const x = n * r.width / horizontal;
+      const dx = Math.max(radius - x, x - (r.width - radius), 0);
+      const inset = radius - Math.sqrt(Math.max(0, radius * radius - dx * dx));
+      flame(x, inset, 0, -1, n * 1.7);
+      flame(x, r.height - inset, 0, 1, n * 1.7 + 2);
+    }
+    const vertical = Math.max(1, Math.ceil(r.height / 10));
+    for (let n = 0; n <= vertical; n++) {
+      const y = n * r.height / vertical;
+      const dy = Math.max(radius - y, y - (r.height - radius), 0);
+      const inset = radius - Math.sqrt(Math.max(0, radius * radius - dy * dy));
+      flame(inset, y, -1, 0, n * 1.9);
+      flame(r.width - inset, y, 1, 0, n * 1.9 + 2);
+    }
+    ctx.restore();
+  }
+
   function draw(now) {
     frame = 0;
     if (!allowed()) { clear(); return; }
@@ -109,7 +169,8 @@ if (menuButton && siteNav) {
       ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
       ctx.fill();
     }
-    if (particles.length) frame = requestAnimationFrame(draw);
+    for (const button of burning.keys()) drawBurnOutline(button, now);
+    if (particles.length || burning.size) frame = requestAnimationFrame(draw);
   }
   function start() {
     if (!frame) { previous = performance.now(); frame = requestAnimationFrame(draw); }
