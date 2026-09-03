@@ -111,22 +111,51 @@ if (menuButton && siteNav) {
     ctx.strokeStyle = '#ffe29b';
     ctx.lineWidth = 1.5;
     ctx.stroke();
-    // Evenly cover all four edges rather than relying on random sparks.
+    // Layered translucent tongues with upward convection and independent curls.
+    const age = Math.max(0, (now - (burning.get(button)?.started ?? now)) / duration);
+    const envelope = Math.min(1, age / .12) * Math.min(1, Math.max(0, (1 - age) / .22));
+    ctx.globalAlpha = envelope;
+    ctx.shadowBlur = 5;
     function flame(x, y, nx, ny, phase) {
-      const length = 8 + 5 * (1 + Math.sin(now / 85 + phase));
+      const t = now / 1000;
+      const flicker = Math.sin(t * 13 + phase) * .5 + Math.sin(t * 23 + phase * 2.3) * .25;
+      const length = (16 + 10 * (flicker + .75)) * (ny > 0 ? .6 : 1);
       const tx = -ny, ty = nx;
+      const curl = Math.sin(t * 9 + phase * 1.4) * 7;
+      const tipX = x + nx * length + tx * curl;
+      const tipY = y + ny * length + ty * curl - (ny === 0 ? length * .65 : 0);
+      const width = 4.5 + 1.5 * Math.sin(phase * 2.1);
+      const heat = ctx.createLinearGradient(x, y, tipX, tipY);
+      heat.addColorStop(0, 'rgba(255,236,153,.95)');
+      heat.addColorStop(.25, 'rgba(255,179,51,.85)');
+      heat.addColorStop(.65, 'rgba(246,85,20,.55)');
+      heat.addColorStop(1, 'rgba(172,36,12,0)');
       ctx.beginPath();
-      ctx.moveTo(x - tx * 4, y - ty * 4);
-      ctx.quadraticCurveTo(x + nx * length * .5 - tx * 5,
-        y + ny * length * .5 - ty * 5,
-        x + nx * length + tx * 2, y + ny * length + ty * 2);
-      ctx.quadraticCurveTo(x + nx * length * .3 + tx * 5,
-        y + ny * length * .3 + ty * 5, x + tx * 4, y + ty * 4);
+      ctx.moveTo(x - tx * width, y - ty * width);
+      ctx.bezierCurveTo(x + nx * length * .35 - tx * width,
+        y + ny * length * .35 - ty * width,
+        tipX - tx * (width + curl * .3), tipY + 7, tipX, tipY);
+      ctx.bezierCurveTo(tipX + tx * width * .5, tipY + 10,
+        x + nx * length * .25 + tx * width,
+        y + ny * length * .25 + ty * width,
+        x + tx * width, y + ty * width);
       ctx.closePath();
-      ctx.fillStyle = '#f89536';
+      ctx.fillStyle = heat;
+      ctx.fill();
+      // Smaller pale core makes the flame read as heat, not a flat orange shape.
+      ctx.beginPath();
+      ctx.moveTo(x - tx * width * .4, y - ty * width * .4);
+      ctx.quadraticCurveTo(x + nx * length * .4 - tx * 2,
+        y + ny * length * .4 - ty * 2,
+        x + (tipX - x) * .55, y + (tipY - y) * .55);
+      ctx.quadraticCurveTo(x + nx * length * .15 + tx * 3,
+        y + ny * length * .15 + ty * 3,
+        x + tx * width * .4, y + ty * width * .4);
+      ctx.closePath();
+      ctx.fillStyle = 'rgba(255,244,189,.7)';
       ctx.fill();
     }
-    const horizontal = Math.max(1, Math.ceil(r.width / 10));
+    const horizontal = Math.max(1, Math.min(48, Math.ceil(r.width / 11)));
     for (let n = 0; n <= horizontal; n++) {
       const x = n * r.width / horizontal;
       const dx = Math.max(radius - x, x - (r.width - radius), 0);
@@ -134,7 +163,7 @@ if (menuButton && siteNav) {
       flame(x, inset, 0, -1, n * 1.7);
       flame(x, r.height - inset, 0, 1, n * 1.7 + 2);
     }
-    const vertical = Math.max(1, Math.ceil(r.height / 10));
+    const vertical = Math.max(1, Math.min(16, Math.ceil(r.height / 11)));
     for (let n = 0; n <= vertical; n++) {
       const y = n * r.height / vertical;
       const dy = Math.max(radius - y, y - (r.height - radius), 0);
