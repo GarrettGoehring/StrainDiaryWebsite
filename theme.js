@@ -78,12 +78,12 @@ if (menuButton && siteNav) {
     particles = [];
     ctx.clearRect(0, 0, innerWidth, innerHeight);
   }
-  function add(x, y, fire) {
+  function add(x, y, fire, tap = false) {
     if (particles.length >= 90) particles.shift();
-    particles.push({x, y, fire, age:0, life:fire ? .55 + Math.random() * .25 : .8 + Math.random() * .4,
+    particles.push({x, y, fire, tap, age:0, life:fire ? .55 + Math.random() * .25 : (tap ? 1.4 : .8) + Math.random() * .4,
       vx:(Math.random() - .5) * (fire ? 65 : 18),
       vy:-(fire ? 45 + Math.random() * 65 : 18 + Math.random() * 20),
-      size:fire ? 3 + Math.random() * 4 : 7 + Math.random() * 6});
+      size:fire ? 3 + Math.random() * 4 : (tap ? 15 : 7) + Math.random() * 6});
   }
 
   function drawBurnOutline(button, now) {
@@ -163,7 +163,7 @@ if (menuButton && siteNav) {
       p.y += p.vy * dt;
       const t = Math.min(p.age / p.life, 1);
       const radius = p.size * (p.fire ? 1 - t * .6 : 1 + t * 1.8);
-      const alpha = (1 - t) * (p.fire ? .65 : .16);
+      const alpha = (1 - t) * (p.fire ? .65 : p.tap ? .36 : .16);
       const rgb = p.fire ? (t < .3 ? '255,211,112' : '239,118,43') : (dark ? '185,211,191' : '80,113,91');
       const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
       gradient.addColorStop(0, 'rgba(' + rgb + ',' + alpha + ')');
@@ -187,15 +187,45 @@ if (menuButton && siteNav) {
     add(e.clientX, e.clientY + 8, false);
     start();
   }, {passive:true});
-  // Touch has no hovering cursor: emit a vapor puff at the contact point.
-  document.addEventListener('pointerdown', e => {
-    if (!allowed() || e.pointerType !== 'touch' || !e.isPrimary) return;
-    for (let n = 0; n < 8; n++) {
-      add(e.clientX + (Math.random() - .5) * 18,
-          e.clientY + (Math.random() - .5) * 12, false);
+  // Show vapor on release so it is not hidden underneath the finger.
+  function tapPuff(x, y) {
+    if (!allowed()) return;
+    for (let n = 0; n < 12; n++) {
+      add(x + (Math.random() - .5) * 28,
+          y - 6 + (Math.random() - .5) * 18, false, true);
     }
     start();
-  }, {passive:true});
+  }
+  let contact = null;
+  if ('PointerEvent' in window) {
+    document.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'touch' && e.isPrimary !== false)
+        contact = {id:e.pointerId, x:e.clientX, y:e.clientY};
+    }, {passive:true});
+    document.addEventListener('pointermove', e => {
+      if (contact && e.pointerId === contact.id &&
+          Math.hypot(e.clientX - contact.x, e.clientY - contact.y) > 14) contact = null;
+    }, {passive:true});
+    document.addEventListener('pointerup', e => {
+      if (contact && e.pointerId === contact.id) {
+        contact = null;
+        tapPuff(e.clientX, e.clientY);
+      }
+    }, {passive:true});
+    document.addEventListener('pointercancel', () => { contact = null; }, {passive:true});
+  } else {
+    document.addEventListener('touchstart', e => {
+      const t = e.touches[0];
+      contact = e.touches.length === 1 ? {id:t.identifier, x:t.clientX, y:t.clientY} : null;
+    }, {passive:true});
+    document.addEventListener('touchmove', () => { contact = null; }, {passive:true});
+    document.addEventListener('touchend', e => {
+      const t = [...e.changedTouches].find(t => contact && t.identifier === contact.id);
+      contact = null;
+      if (t) tapPuff(t.clientX, t.clientY);
+    }, {passive:true});
+    document.addEventListener('touchcancel', () => { contact = null; }, {passive:true});
+  }
   const burning = new Map();
   const duration = 850;
   function ignite(button, navigate) {
