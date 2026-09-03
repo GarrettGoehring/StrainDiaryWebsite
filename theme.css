@@ -31,3 +31,13 @@ html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.
 
 .cursor-vapor{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000}
 @media(prefers-reduced-motion:reduce){.cursor-vapor{display:none}}
+
+/* Brief ignition around the border, then a charred fade before navigation. */
+.is-burning{animation:button-ignite .65s ease-out both!important}
+@keyframes button-ignite{
+  0%{box-shadow:0 0 0 1px #ffc76a,0 0 8px #f28b35;filter:brightness(1)}
+  35%{box-shadow:0 0 0 2px #ffcf79,0 0 18px #f47829,0 -5px 26px #e9572466;filter:brightness(1.12)}
+  75%{box-shadow:0 0 0 1px #bf602a,0 0 10px #df612c88;filter:brightness(.65) saturate(.65)}
+  100%{box-shadow:0 0 0 1px #75432b,0 -5px 12px #c9672833;filter:brightness(.4) saturate(.35)}
+}
+@media(prefers-reduced-motion:reduce){.is-burning{animation:none!important}}
