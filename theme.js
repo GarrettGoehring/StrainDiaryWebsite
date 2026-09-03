@@ -187,45 +187,41 @@ if (menuButton && siteNav) {
     add(e.clientX, e.clientY + 8, false);
     start();
   }, {passive:true});
-  // Show vapor on release so it is not hidden underneath the finger.
+  // Passive touch events keep the vapor trail active during native scrolling.
   function tapPuff(x, y) {
     if (!allowed()) return;
-    for (let n = 0; n < 12; n++) {
-      add(x + (Math.random() - .5) * 28,
-          y - 6 + (Math.random() - .5) * 18, false, true);
-    }
+    for (let n = 0; n < 12; n++)
+      add(x + (Math.random() - .5) * 28, y - 6 + (Math.random() - .5) * 18, false, true);
     start();
   }
   let contact = null;
-  if ('PointerEvent' in window) {
-    document.addEventListener('pointerdown', e => {
-      if (e.pointerType === 'touch' && e.isPrimary !== false)
-        contact = {id:e.pointerId, x:e.clientX, y:e.clientY};
-    }, {passive:true});
-    document.addEventListener('pointermove', e => {
-      if (contact && e.pointerId === contact.id &&
-          Math.hypot(e.clientX - contact.x, e.clientY - contact.y) > 14) contact = null;
-    }, {passive:true});
-    document.addEventListener('pointerup', e => {
-      if (contact && e.pointerId === contact.id) {
-        contact = null;
-        tapPuff(e.clientX, e.clientY);
-      }
-    }, {passive:true});
-    document.addEventListener('pointercancel', () => { contact = null; }, {passive:true});
-  } else {
-    document.addEventListener('touchstart', e => {
-      const t = e.touches[0];
-      contact = e.touches.length === 1 ? {id:t.identifier, x:t.clientX, y:t.clientY} : null;
-    }, {passive:true});
-    document.addEventListener('touchmove', () => { contact = null; }, {passive:true});
-    document.addEventListener('touchend', e => {
-      const t = [...e.changedTouches].find(t => contact && t.identifier === contact.id);
-      contact = null;
-      if (t) tapPuff(t.clientX, t.clientY);
-    }, {passive:true});
-    document.addEventListener('touchcancel', () => { contact = null; }, {passive:true});
-  }
+  let lastTouchVapor = 0;
+  document.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) { contact = null; return; }
+    const t = e.touches[0];
+    contact = t.identifier;
+    lastTouchVapor = 0;
+    tapPuff(t.clientX, t.clientY);
+  }, {passive:true});
+  document.addEventListener('touchmove', e => {
+    if (!allowed() || contact === null || e.touches.length !== 1) return;
+    const t = [...e.touches].find(t => t.identifier === contact);
+    if (!t) return;
+    const now = performance.now();
+    if (now - lastTouchVapor < 24) return;
+    lastTouchVapor = now;
+    for (let n = 0; n < 3; n++)
+      add(t.clientX + (Math.random() - .5) * 12,
+          t.clientY + 8 + (Math.random() - .5) * 8, false, true);
+    start();
+  }, {passive:true});
+  document.addEventListener('touchend', e => {
+    const t = [...e.changedTouches].find(t => t.identifier === contact);
+    if (!t) return;
+    contact = null;
+    tapPuff(t.clientX, t.clientY);
+  }, {passive:true});
+  document.addEventListener('touchcancel', () => { contact = null; }, {passive:true});
   const burning = new Map();
   const duration = 850;
   function ignite(button, navigate) {
