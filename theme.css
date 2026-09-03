@@ -22,7 +22,7 @@ html header>nav>a[aria-current="page"]{color:#557b30!important;font-weight:700;t
 html[data-theme="dark"] header>nav>a[aria-current="page"]{color:var(--lime)!important}
 html:not([data-theme="dark"]) header>nav>a[aria-current="page"]{color:#557b30!important}
 /* Use the supplied transparent nug photo as an alpha mask. */
-.hero .nug-shadow{border-radius:0;background:#71916c!important;pointer-events:none;filter:blur(2px);opacity:.2;-webkit-mask:url("assets/nug-shadow.svg") center/contain no-repeat;mask:url("assets/nug-shadow.svg") center/contain no-repeat}
+.hero .nug-shadow{border-radius:0;background:#71916c!important;pointer-events:none;filter:blur(2px);opacity:.2;-webkit-mask:url("assets/nug-shadow.svg?v=2") center/contain no-repeat;mask:url("assets/nug-shadow.svg?v=2") center/contain no-repeat}
 .hero .nug-shadow.one{width:340px;height:340px;transform:rotate(24deg)}
 .hero .nug-shadow.two{width:240px;height:240px;transform:rotate(-28deg)}
 html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.3}
