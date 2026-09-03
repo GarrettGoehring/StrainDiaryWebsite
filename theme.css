@@ -21,11 +21,10 @@ html:not([data-theme="dark"]) .site-footer{background:#11291d}.header-socials+.t
 html header>nav>a[aria-current="page"]{color:#557b30!important;font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
 html[data-theme="dark"] header>nav>a[aria-current="page"]{color:var(--lime)!important}
 html:not([data-theme="dark"]) header>nav>a[aria-current="page"]{color:#557b30!important}
-/* Soft botanical nug silhouettes replace the homepage circles. */
-.hero .nug-shadow{border-radius:0;background:none!important;pointer-events:none;color:#71916c;fill:currentColor;filter:blur(3px);opacity:.18;overflow:visible}
-.hero .nug-shadow g{color:var(--paper)}
-.hero .nug-shadow.one{width:280px;height:360px;transform:rotate(24deg)}
-.hero .nug-shadow.two{width:190px;height:245px;transform:rotate(-28deg)}
-html[data-theme="dark"] .hero .nug-shadow{color:#426f4b;opacity:.28}
+/* Use the supplied transparent nug photo as an alpha mask. */
+.hero .nug-shadow{border-radius:0;background:#71916c!important;pointer-events:none;filter:blur(2px);opacity:.2;-webkit-mask:url("assets/nug-shadow.svg") center/contain no-repeat;mask:url("assets/nug-shadow.svg") center/contain no-repeat}
+.hero .nug-shadow.one{width:340px;height:340px;transform:rotate(24deg)}
+.hero .nug-shadow.two{width:240px;height:240px;transform:rotate(-28deg)}
+html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.3}
 @media(max-width:900px){.hero .nug-shadow.one{top:auto;bottom:180px;right:4%}.hero .nug-shadow.two{right:58%;bottom:35px}}
-@media(max-width:560px){.hero .nug-shadow.one{width:210px;height:272px;bottom:170px}.hero .nug-shadow.two{width:145px;height:188px;bottom:45px}}
+@media(max-width:560px){.hero .nug-shadow.one{width:270px;height:270px;bottom:170px}.hero .nug-shadow.two{width:190px;height:190px;bottom:45px}}
