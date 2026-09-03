@@ -36,7 +36,16 @@ if (menuButton && siteNav) {
     const isOpen = siteNav.classList.toggle('is-open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
   });
-  siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', (event) => {
+    // Leave the mobile menu visible while its link burns before navigation.
+    const animatedNavigation = !matchMedia('(prefers-reduced-motion: reduce)').matches &&
+      !event.defaultPrevented && event.button === 0 &&
+      !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey &&
+      (!link.target || link.target === '_self') && !link.hasAttribute('download') &&
+      ['http:', 'https:'].includes(new URL(link.href, location.href).protocol);
+    if (!animatedNavigation) closeMenu();
+  }));
+  window.addEventListener('pageshow', closeMenu);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenu();
   });
@@ -163,7 +172,7 @@ if (menuButton && siteNav) {
     if (e.defaultPrevented || !allowed() || e.button !== 0 ||
         e.metaKey || e.ctrlKey || e.shiftKey || e.altKey ||
         !(e.target instanceof Element)) return;
-    const button = e.target.closest('button, .button, .nav-cta, .social-button');
+    const button = e.target.closest('button, .button, .nav-cta, .social-button, header > nav > a');
     if (!button || button.matches(':disabled, [aria-disabled="true"]')) return;
     let navigate;
     if (button instanceof HTMLAnchorElement) {
