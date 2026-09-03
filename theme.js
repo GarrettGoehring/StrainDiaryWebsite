@@ -87,11 +87,7 @@ if (menuButton && siteNav) {
   }
 
   function drawBurnOutline(button, now) {
-    const bounds = button.getBoundingClientRect();
-    const elapsed = (now - (burning.get(button)?.started || now)) / duration;
-    const consumed = Math.max(0, Math.min(1, (elapsed - .2) / .7));
-    const r = {left:bounds.left + bounds.width * consumed, top:bounds.top,
-      width:bounds.width * (1 - consumed), height:bounds.height};
+    const r = button.getBoundingClientRect();
     if (r.width < 1 || !r.height) return;
     const radius = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
     ctx.save();
@@ -231,10 +227,7 @@ if (menuButton && siteNav) {
     button.classList.add('is-burning');
     const emit = () => {
       if (!allowed()) return;
-      const bounds = button.getBoundingClientRect();
-      const consumed = Math.max(0, Math.min(1, ((performance.now() - started) / duration - .2) / .7));
-      const r = {left:bounds.left + bounds.width * consumed, top:bounds.top,
-        width:bounds.width * (1 - consumed), height:bounds.height};
+      const r = button.getBoundingClientRect();
       if (r.width < 1) return;
       const corner = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
       for (let n = 0; n < 12; n++) {
