@@ -17,3 +17,7 @@ html:not([data-theme="dark"]) .site-footer{background:#11291d}.header-socials+.t
 .footer-appearance{display:flex;align-items:center;gap:10px;color:#91a097}.footer-appearance>span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.footer-theme-toggle{border-color:rgba(226,241,228,.2);background:rgba(255,255,255,.06);color:#eaf0ea}
 @media(max-width:700px){.footer-appearance{margin-top:4px}.footer-theme-toggle{width:48px}}
 
+/* Current page indicator, including the expanded mobile menu. */
+html header>nav>a[aria-current="page"]{color:#557b30!important;font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+html[data-theme="dark"] header>nav>a[aria-current="page"]{color:var(--lime)!important}
+html:not([data-theme="dark"]) header>nav>a[aria-current="page"]{color:#557b30!important}
