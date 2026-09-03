@@ -113,14 +113,70 @@ if (menuButton && siteNav) {
     add(e.clientX, e.clientY + 8, false);
     start();
   }, {passive:true});
-  // Pointer-down lets sparks start immediately without delaying navigation.
-  document.addEventListener('pointerdown', e => {
-    if (!allowed() || e.button !== 0 || !(e.target instanceof Element)) return;
+  const burning = new Map();
+  const duration = 650;
+  function ignite(button, navigate) {
+    if (burning.has(button)) return;
+    button.classList.add('is-burning');
+    const emit = () => {
+      if (!allowed()) return;
+      const r = button.getBoundingClientRect();
+      const corner = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
+      for (let n = 0; n < 12; n++) {
+        // Sample the rounded border so embers surround the whole button.
+        let x, y;
+        if (Math.random() < r.width / (r.width + r.height)) {
+          x = Math.random() * r.width;
+          const dx = Math.max(corner - x, x - (r.width - corner), 0);
+          const inset = corner - Math.sqrt(Math.max(0, corner * corner - dx * dx));
+          y = Math.random() < .5 ? inset : r.height - inset;
+        } else {
+          y = Math.random() * r.height;
+          const dy = Math.max(corner - y, y - (r.height - corner), 0);
+          const inset = corner - Math.sqrt(Math.max(0, corner * corner - dy * dy));
+          x = Math.random() < .5 ? inset : r.width - inset;
+        }
+        add(r.left + x, r.top + y, true);
+      }
+      start();
+    };
+    const interval = setInterval(emit, 40);
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+      burning.delete(button);
+      button.classList.remove('is-burning');
+      if (navigate) navigate();
+    }, duration);
+    burning.set(button, {interval, timeout});
+    emit();
+  }
+  document.addEventListener('click', e => {
+    if (e.defaultPrevented || !allowed() || e.button !== 0 ||
+        e.metaKey || e.ctrlKey || e.shiftKey || e.altKey ||
+        !(e.target instanceof Element)) return;
     const button = e.target.closest('button, .button, .nav-cta, .social-button');
     if (!button || button.matches(':disabled, [aria-disabled="true"]')) return;
-    for (let n = 0; n < 16; n++) add(e.clientX + (Math.random() - .5) * 22, e.clientY, true);
-    start();
-  }, {passive:true});
+    let navigate;
+    if (button instanceof HTMLAnchorElement) {
+      const url = new URL(button.href, location.href);
+      // Preserve downloads, external app links, and native new-tab behavior.
+      if (button.hasAttribute('download') ||
+          (button.target && button.target !== '_self') ||
+          !['http:', 'https:'].includes(url.protocol)) return;
+      e.preventDefault();
+      navigate = () => location.assign(url.href);
+    }
+    // Form submission, menu controls, and theme changes retain native timing.
+    ignite(button, navigate);
+  });
+  window.addEventListener('pagehide', () => {
+    for (const [button, timers] of burning) {
+      clearInterval(timers.interval);
+      clearTimeout(timers.timeout);
+      button.classList.remove('is-burning');
+    }
+    burning.clear();
+  });
   window.addEventListener('resize', resize, {passive:true});
   document.addEventListener('visibilitychange', () => { if (document.hidden) clear(); });
   reduced.addEventListener('change', () => { if (reduced.matches) clear(); });
