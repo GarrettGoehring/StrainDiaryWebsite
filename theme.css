@@ -32,13 +32,13 @@ html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.
 .cursor-vapor{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000}
 @media(prefers-reduced-motion:reduce){.cursor-vapor{display:none}}
 
-/* Ignite, consume left-to-right, then navigate without shifting layout. */
+/* Flames char the button without hiding its shape or label. */
 .is-burning{animation:button-ignite .85s linear both!important}
 @keyframes button-ignite{
-  0%{clip-path:inset(0 0 0 0);filter:brightness(1);opacity:1}
-  20%{clip-path:inset(0 0 0 0);filter:brightness(1.15) sepia(.2);opacity:1}
-  65%{clip-path:inset(0 0 0 64.286%);filter:brightness(.7) sepia(.55);opacity:1}
-  90%,100%{clip-path:inset(0 0 0 100%);filter:brightness(.35) sepia(.7);opacity:0}
+  0%{filter:brightness(1);opacity:1}
+  20%{filter:brightness(1.15) sepia(.2);opacity:1}
+  65%{background-color:#49402f;color:#e5dbc8;filter:brightness(.9) saturate(.45);box-shadow:inset 0 0 12px #17120fcc}
+  90%,100%{background-color:#282522;color:#d4cec4;border-color:#51483e;filter:brightness(.85) saturate(.2);opacity:1;box-shadow:inset 0 0 16px #090807,0 0 0 1px #433b32}
 }
 @media(prefers-reduced-motion:reduce){.is-burning{animation:none!important}}
 /* Extra desktop decoration; keep phones and tablets at two nugs. */
