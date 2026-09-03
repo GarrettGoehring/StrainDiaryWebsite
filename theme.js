@@ -113,6 +113,15 @@ if (menuButton && siteNav) {
     add(e.clientX, e.clientY + 8, false);
     start();
   }, {passive:true});
+  // Touch has no hovering cursor: emit a vapor puff at the contact point.
+  document.addEventListener('pointerdown', e => {
+    if (!allowed() || e.pointerType !== 'touch' || !e.isPrimary) return;
+    for (let n = 0; n < 8; n++) {
+      add(e.clientX + (Math.random() - .5) * 18,
+          e.clientY + (Math.random() - .5) * 12, false);
+    }
+    start();
+  }, {passive:true});
   const burning = new Map();
   const duration = 650;
   function ignite(button, navigate) {
