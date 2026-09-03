@@ -87,8 +87,12 @@ if (menuButton && siteNav) {
   }
 
   function drawBurnOutline(button, now) {
-    const r = button.getBoundingClientRect();
-    if (!r.width || !r.height) return;
+    const bounds = button.getBoundingClientRect();
+    const elapsed = (now - (burning.get(button)?.started || now)) / duration;
+    const consumed = Math.max(0, Math.min(1, (elapsed - .2) / .7));
+    const r = {left:bounds.left + bounds.width * consumed, top:bounds.top,
+      width:bounds.width * (1 - consumed), height:bounds.height};
+    if (r.width < 1 || !r.height) return;
     const radius = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
     ctx.save();
     ctx.translate(r.left, r.top);
@@ -193,13 +197,18 @@ if (menuButton && siteNav) {
     start();
   }, {passive:true});
   const burning = new Map();
-  const duration = 650;
+  const duration = 850;
   function ignite(button, navigate) {
     if (burning.has(button)) return;
+    const started = performance.now();
     button.classList.add('is-burning');
     const emit = () => {
       if (!allowed()) return;
-      const r = button.getBoundingClientRect();
+      const bounds = button.getBoundingClientRect();
+      const consumed = Math.max(0, Math.min(1, ((performance.now() - started) / duration - .2) / .7));
+      const r = {left:bounds.left + bounds.width * consumed, top:bounds.top,
+        width:bounds.width * (1 - consumed), height:bounds.height};
+      if (r.width < 1) return;
       const corner = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
       for (let n = 0; n < 12; n++) {
         // Sample the rounded border so embers surround the whole button.
@@ -222,11 +231,18 @@ if (menuButton && siteNav) {
     const interval = setInterval(emit, 40);
     const timeout = setTimeout(() => {
       clearInterval(interval);
-      burning.delete(button);
-      button.classList.remove('is-burning');
-      if (navigate) navigate();
+      const restore = () => {
+        burning.delete(button);
+        button.classList.remove('is-burning');
+      };
+      if (navigate) {
+        // Keep the consumed button hidden while the next document loads.
+        const timers = burning.get(button);
+        timers.timeout = setTimeout(restore, 1500);
+        navigate();
+      } else restore();
     }, duration);
-    burning.set(button, {interval, timeout});
+    burning.set(button, {interval, timeout, started});
     emit();
   }
   document.addEventListener('click', e => {
