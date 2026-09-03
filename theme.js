@@ -3,6 +3,7 @@ const themeToggles = [...document.querySelectorAll('.theme-toggle')];
 const menuButton = document.querySelector('.mobile-menu-button');
 const siteNav = document.querySelector('header > nav');
 const savedTheme = localStorage.getItem('strain-diary-theme');
+const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 function applyTheme(theme) {
   const isDark = theme === 'dark';
@@ -13,7 +14,12 @@ function applyTheme(theme) {
   });
 }
 
-applyTheme(savedTheme || 'dark');
+applyTheme(savedTheme || (deviceTheme.matches ? 'dark' : 'light'));
+deviceTheme.addEventListener('change', (event) => {
+  if (!localStorage.getItem('strain-diary-theme')) {
+    applyTheme(event.matches ? 'dark' : 'light');
+  }
+});
 themeToggles.forEach((toggle) => toggle.addEventListener('click', () => {
   const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   applyTheme(nextTheme);
