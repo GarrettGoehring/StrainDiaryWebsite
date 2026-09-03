@@ -223,9 +223,10 @@ if (menuButton && siteNav) {
   }, {passive:true});
   document.addEventListener('touchcancel', () => { contact = null; }, {passive:true});
   const burning = new Map();
+  const burntLinks = new Set();
   const duration = 850;
   function ignite(button, navigate) {
-    if (burning.has(button)) return;
+    if (burning.has(button) || burntLinks.has(button)) return;
     const started = performance.now();
     button.classList.add('is-burning');
     const emit = () => {
@@ -262,9 +263,9 @@ if (menuButton && siteNav) {
         button.classList.remove('is-burning');
       };
       if (navigate) {
-        // Keep the consumed button hidden while the next document loads.
-        const timers = burning.get(button);
-        timers.timeout = setTimeout(restore, 1500);
+        // Preserve the final burnt state until this document is left or restored.
+        burning.delete(button);
+        burntLinks.add(button);
         navigate();
       } else restore();
     }, duration);
@@ -290,14 +291,21 @@ if (menuButton && siteNav) {
     // Form submission, menu controls, and theme changes retain native timing.
     ignite(button, navigate);
   });
-  window.addEventListener('pagehide', () => {
+  function resetBurns() {
     for (const [button, timers] of burning) {
       clearInterval(timers.interval);
       clearTimeout(timers.timeout);
       button.classList.remove('is-burning');
     }
     burning.clear();
-  });
+    for (const button of burntLinks) button.classList.remove('is-burning');
+    burntLinks.clear();
+    clear();
+  }
+  window.addEventListener('pagehide', resetBurns);
+  window.addEventListener('pageshow', resetBurns);
+  // Back navigation within the same document (for section links).
+  window.addEventListener('popstate', resetBurns);
   window.addEventListener('resize', resize, {passive:true});
   document.addEventListener('visibilitychange', () => { if (document.hidden) clear(); });
   reduced.addEventListener('change', () => { if (reduced.matches) clear(); });
