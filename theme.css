@@ -41,3 +41,8 @@ html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.
   90%,100%{clip-path:inset(0 0 0 100%);filter:brightness(.35) sepia(.7);opacity:0}
 }
 @media(prefers-reduced-motion:reduce){.is-burning{animation:none!important}}
+/* Extra desktop decoration; keep phones and tablets at two nugs. */
+.hero .nug-shadow.three{display:none}
+@media(min-width:901px){
+  .hero .nug-shadow.three{display:block;width:190px;height:190px;left:38%;right:auto;top:auto;bottom:-20px;transform:rotate(12deg)}
+}
