@@ -151,9 +151,23 @@ if (menuButton && siteNav) {
     ctx.lineWidth = 3;
     ctx.stroke();
     const count = Math.max(1, Math.min(48, Math.ceil((r.width - 2 * sideInset) / 10)));
-    for (let n = 0; n <= count; n++) {
-      const x = sideInset + n * (r.width - 2 * sideInset) / count;
-      flame(x, frontY, 0, -1, n * 1.7);
+    if (button.matches('header > nav > a')) {
+      // Mirror each plume about the link's center so edge overhang is equal.
+      const pairs = Math.max(1, Math.ceil(count / 2));
+      for (let n = 0; n < pairs; n++) {
+        const x = sideInset + n * (r.width / 2 - sideInset) / pairs;
+        flame(x, frontY, 0, -1, n * 1.7);
+        ctx.save();
+        ctx.translate(r.width, 0);
+        ctx.scale(-1, 1);
+        flame(x, frontY, 0, -1, n * 1.7);
+        ctx.restore();
+      }
+    } else {
+      for (let n = 0; n <= count; n++) {
+        const x = sideInset + n * (r.width - 2 * sideInset) / count;
+        flame(x, frontY, 0, -1, n * 1.7);
+      }
     }
     ctx.restore();
   }
