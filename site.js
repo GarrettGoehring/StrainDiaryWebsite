@@ -1,3 +1,4 @@
+(() => {
 const menuButton=document.querySelector('.menu-button');
 const nav=document.querySelector('#site-nav');
 const setMenuOpen=open=>{
@@ -26,7 +27,7 @@ const showFormNotice=(message,type='success')=>{
   const toast=document.createElement('div');
   toast.className=`form-toast ${type}`;
   toast.setAttribute('role',type==='error'?'alert':'status');
-  toast.innerHTML=`<div><strong>${type==='error'?'Message not sent':'Message sent'}</strong><p>${message}</p></div><button type="button" aria-label="Close message">×</button>`;
+  toast.innerHTML=`<div><strong>${type==='error'?'Message not sent':'Submitted'}</strong><p>${message}</p></div><button type="button" aria-label="Close message">×</button>`;
   document.body.appendChild(toast);
   requestAnimationFrame(()=>toast.classList.add('show'));
   const dismiss=()=>{toast.classList.remove('show');setTimeout(()=>toast.remove(),250)};
@@ -37,11 +38,13 @@ form?.addEventListener('submit',async event=>{
   event.preventDefault();
   const button=form.querySelector('button');
   const status=form.querySelector('.form-status');
+  if(button.disabled)return;
   button.disabled=true;
   button.textContent='Sending…';
   try{
     const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
-    if(!response.ok)throw new Error('Request failed');
+    const result=await response.json();
+    if(!response.ok || !(result.success===true || result.success==='true'))throw new Error('Request failed');
     form.reset();
     status.textContent='Your feedback was sent successfully.';
     button.textContent='Send another note';
@@ -54,3 +57,5 @@ form?.addEventListener('submit',async event=>{
     showFormNotice('Something went wrong. Please try again or email support@straindiary.com.','error');
   }
 });
+
+})();
