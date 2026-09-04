@@ -269,8 +269,11 @@ if (menuButton && siteNav) {
     'main article', 'main .card', 'main img'
   ].join(',');
   document.querySelectorAll(burnableSelector).forEach((element) => {
+    // Screenshot files include large transparent margins; burn their cropped wrapper instead.
+    if (element.matches('.device-shot img')) return;
     if (!element.closest('.cursor-vapor')) element.classList.add('burn-surface');
   });
+  document.querySelectorAll('.device-shot').forEach((shot) => shot.classList.add('burn-surface'));
   const duration = 850;
   function ignite(button, navigate) {
     if (burning.has(button)) return;
