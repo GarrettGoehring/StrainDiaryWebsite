@@ -34,3 +34,27 @@ img{height:auto}.cta>.button{white-space:nowrap;min-width:max-content}.faq{margi
 @media(prefers-reduced-motion:reduce){
   .site-header nav,.site-header nav a,.menu-button{transition:none}
 }
+
+/* Shared footer layout used by the redesigned pages. */
+.site-footer{background:#08120d;color:#eaf0ea;border-top:1px solid rgba(226,241,228,.12)}
+.site-footer .footer-main{width:min(1240px,100%);margin:auto;padding:72px max(28px,5vw) 60px;display:grid;grid-template-columns:2fr repeat(3,1fr);gap:70px}
+.site-footer .footer-brand>p{max-width:340px;color:#91a097;font-size:13px;line-height:1.75;margin:20px 0}
+.site-footer .brand{display:flex;gap:11px;align-items:center;color:#eaf0ea;font-weight:800;text-decoration:none}
+.site-footer .brand img{width:34px;height:34px;border-radius:9px}
+.site-footer .footer-socials .social-button{width:34px;height:34px;border:1px solid rgba(226,241,228,.18);border-radius:50%;display:grid;place-items:center;color:#eaf0ea}
+.site-footer .social-button svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8}
+.site-footer .social-button .instagram-dot{fill:currentColor;stroke:none}
+.site-footer .footer-column{display:flex;flex-direction:column;gap:12px;font-size:13px}
+.site-footer .footer-column strong{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c8f06a;margin-bottom:8px}
+.site-footer .footer-column a,.site-footer .footer-column span{color:#91a097;text-decoration:none}
+.site-footer .footer-column a:hover{color:#fff}
+.site-footer .footer-bottom{width:min(1240px,100%);margin:auto;padding:22px max(28px,5vw);border-top:1px solid rgba(226,241,228,.1);display:flex;justify-content:space-between;align-items:center;gap:16px;color:#6f7d74;font-size:11px}
+.site-footer .footer-appearance{display:flex;align-items:center;gap:10px;color:#91a097}
+.site-footer .footer-appearance>span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.site-footer .theme-toggle{width:48px;height:34px;border:1px solid rgba(226,241,228,.2);border-radius:999px;background:rgba(255,255,255,.06);color:#eaf0ea;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:3px;cursor:pointer}
+.site-footer .theme-toggle span{display:grid;place-items:center;height:26px;border-radius:50%;font-size:13px}
+html[data-theme="dark"] .site-footer .theme-toggle .moon,
+html:not([data-theme="dark"]) .site-footer .theme-toggle .sun{background:#c8f06a;color:#0c1711}
+@media(max-width:900px){.site-footer .footer-main{grid-template-columns:1.5fr repeat(3,1fr);gap:35px}}
+@media(max-width:700px){.site-footer .footer-main{grid-template-columns:1fr 1fr}.site-footer .footer-brand{grid-column:1/-1}.site-footer .footer-bottom{flex-direction:column;align-items:flex-start}}
+@media(max-width:440px){.site-footer .footer-main{grid-template-columns:1fr}.site-footer .footer-brand{grid-column:auto}}
