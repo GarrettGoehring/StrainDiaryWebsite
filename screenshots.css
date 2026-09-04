@@ -20,3 +20,22 @@
 html body .screens .device-shot>img{image-rendering:auto;backface-visibility:hidden;transform:translateZ(0);clip-path:inset(18.888889% 38.333333% 18.888889% 38.333333%)}
 .screens>.device-shot:first-child{transform:rotate(-3deg)}
 .screens>.device-shot:last-child{transform:rotate(3deg)}
+
+
+/* Keep the supplied Beta screenshot on its own transparent background. */
+.beta-page .beta-panel,
+html:not([data-theme="dark"]) .beta-page .beta-panel{
+  background:transparent;
+  padding-left:0;
+  padding-right:0;
+}
+.beta-page .beta-panel>.device-shot{background:transparent!important}
+.beta-page .beta-panel>div{
+  width:100%;
+  padding:24px 28px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(23,62,45,.28);
+}
+html:not([data-theme="dark"]) .beta-page .beta-panel>div{background:#edf1e8;color:var(--ink)}
+html:not([data-theme="dark"]) .beta-page .beta-panel>div p{color:var(--muted)}
