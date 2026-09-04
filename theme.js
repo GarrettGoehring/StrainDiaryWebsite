@@ -255,6 +255,21 @@ if (menuButton && siteNav) {
   document.addEventListener('touchcancel', () => { contact = null; }, {passive:true});
   const burning = new Map();
   const burntLinks = new Set();
+  // Make visible content surfaces individually burnable without changing their normal behavior.
+  const burnableSelector = [
+    'header', '.brand', 'header > nav > a', '.nav-cta', '.social-button', '.theme-toggle',
+    '.hero-copy > *', '.actions > *', '.reassurance > *', '.visual > *',
+    '.proof > *', '.section-intro > *', '.steps > article',
+    '.feature-showcase .device-shot', '.feature-copy > *', '.feature-copy li',
+    '.privacy > *', '.join > *', '.page-hero > *', '.feature-row > *',
+    '.feature-page-copy > *', '.check-list > li', '.feature-shot > *',
+    '.page-cta > *', '.beta-panel > *', '.contact-card > *', 'form > *',
+    '.site-footer .footer-brand > *', '.footer-column > *', '.footer-bottom > *',
+    'main article', 'main .card', 'main img'
+  ].join(',');
+  document.querySelectorAll(burnableSelector).forEach((element) => {
+    if (!element.closest('.cursor-vapor')) element.classList.add('burn-surface');
+  });
   const duration = 850;
   function ignite(button, navigate) {
     if (burning.has(button)) return;
@@ -291,7 +306,7 @@ if (menuButton && siteNav) {
     if (e.defaultPrevented || !allowed() || e.button !== 0 ||
         e.metaKey || e.ctrlKey || e.shiftKey || e.altKey ||
         !(e.target instanceof Element)) return;
-    const button = e.target.closest('button, .button, .nav-cta, .social-button, header > nav > a');
+    const button = e.target.closest('.burn-surface, button, .button, .nav-cta, .social-button, header > nav > a');
     if (!button || button.matches(':disabled, [aria-disabled="true"]')) return;
     let navigate;
     if (button instanceof HTMLAnchorElement) {

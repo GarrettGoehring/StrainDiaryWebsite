@@ -52,3 +52,37 @@ html body .is-charred{animation:none!important;background:#51341f!important;colo
 html[data-theme] header>nav>a.is-burning,html[data-theme] header>nav>a.is-charred{color:#efdfc7!important}
 @media(min-width:901px){header>nav>a{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border-radius:9px}header>nav{gap:10px}}
 @media(prefers-reduced-motion:reduce){.is-burning{background-image:none!important}}
+
+
+/* Any visible site surface can be scorched independently. Refreshing restores it. */
+.burn-surface{--burn-radius:10px}
+.burn-surface.is-burning,.burn-surface.is-charred{border-radius:var(--burn-radius)}
+html body .burn-surface.is-charred,
+html body .burn-surface.is-charred:hover{
+  background-color:#51341f!important;
+  background-image:linear-gradient(145deg,#654128,#432919 58%,#2a190f)!important;
+  color:#f4e5cf!important;
+  border-color:#8b5b38!important;
+  text-shadow:0 1px 1px rgba(20,8,2,.55);
+}
+html body .burn-surface.is-charred :is(h1,h2,h3,h4,p,span,strong,small,li,label,a){
+  color:#f4e5cf!important;
+  opacity:1!important;
+}
+html body .burn-surface.is-charred img{
+  filter:sepia(1) saturate(.65) brightness(.58) contrast(1.18)!important;
+  opacity:.8!important;
+}
+html body img.burn-surface.is-charred{
+  filter:sepia(1) saturate(.65) brightness(.58) contrast(1.18)!important;
+  opacity:.8!important;
+  background:#51341f!important;
+}
+html body .burn-surface.is-charred svg{color:#f4e5cf!important;stroke:currentColor}
+html body :is(input,textarea,select).burn-surface.is-charred{
+  -webkit-text-fill-color:#f4e5cf!important;
+  caret-color:#f4e5cf;
+}
+@media(prefers-reduced-motion:reduce){
+  .burn-surface.is-charred{background:#51341f!important;color:#f4e5cf!important}
+}
