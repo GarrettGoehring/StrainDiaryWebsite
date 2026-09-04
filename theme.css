@@ -32,15 +32,15 @@ html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.
 .cursor-vapor{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000}
 @media(prefers-reduced-motion:reduce){.cursor-vapor{display:none}}
 
-/* Flames char the button without hiding its shape or label. */
-.is-burning{animation:button-ignite .85s linear both!important}
+/* A descending burn front leaves a visible brown, charred surface. */
+.is-burning{animation:button-ignite .85s linear both!important;box-shadow:inset 0 var(--burn-depth,0px) 0 #51341f,inset 0 0 8px #1c100b!important}
 @keyframes button-ignite{
   0%{filter:brightness(1);opacity:1}
-  20%{filter:brightness(1.15) sepia(.2);opacity:1}
-  65%{background-color:#49402f;color:#e5dbc8;filter:brightness(.9) saturate(.45);box-shadow:inset 0 0 12px #17120fcc}
-  90%,100%{background-color:#282522;color:#d4cec4;border-color:#51483e;filter:brightness(.85) saturate(.2);opacity:1;box-shadow:inset 0 0 16px #090807,0 0 0 1px #433b32}
+  12%{filter:brightness(1.1);opacity:1}
+  65%{color:#efdfc7;filter:brightness(.95)}
+  88%,100%{background-color:#51341f;color:#efdfc7;border-color:#785033;filter:brightness(.9);opacity:1}
 }
-@media(prefers-reduced-motion:reduce){.is-burning{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.is-burning{animation:none!important;box-shadow:none!important}}
 /* Extra desktop decoration; keep phones and tablets at two nugs. */
 .hero .nug-shadow.three{display:none}
 @media(min-width:901px){
