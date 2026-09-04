@@ -14,3 +14,9 @@
  .screens>.device-shot{width:min(210px,60%)}
 }
 @media(max-width:560px){.visual>.device-shot{width:260px;max-width:100%}}
+
+/* Smooth only the two angled homepage screenshots at their final display size. */
+.screens>.device-shot{overflow:visible}
+html body .screens .device-shot>img{image-rendering:auto;backface-visibility:hidden;transform:translateZ(0);clip-path:inset(18.888889% 38.333333% 18.888889% 38.333333%)}
+.screens>.device-shot:first-child{transform:rotate(-3deg)}
+.screens>.device-shot:last-child{transform:rotate(3deg)}
