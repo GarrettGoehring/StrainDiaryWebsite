@@ -320,7 +320,12 @@ if (menuButton && siteNav) {
         return;
       }
       e.preventDefault();
-      navigate = () => location.assign(url.href);
+      // A link to the page already open should char and stay charred, not reload itself.
+      const current = new URL(location.href);
+      const samePage = url.origin === current.origin &&
+        url.pathname.replace(/\/index\.html$/, '/') === current.pathname.replace(/\/index\.html$/, '/') &&
+        url.search === current.search && url.hash === current.hash;
+      if (!samePage) navigate = () => location.assign(url.href);
     }
     // Form submission, menu controls, and theme changes retain native timing.
     ignite(button, navigate);
