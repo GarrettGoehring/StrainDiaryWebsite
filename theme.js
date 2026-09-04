@@ -274,6 +274,23 @@ if (menuButton && siteNav) {
     if (!element.closest('.cursor-vapor')) element.classList.add('burn-surface');
   });
   document.querySelectorAll('.device-shot').forEach((shot) => shot.classList.add('burn-surface'));
+
+  // Carry a clicked menu's charred state onto the destination page once.
+  const pendingMenuBurn = sessionStorage.getItem('strain-diary-pending-menu-burn');
+  sessionStorage.removeItem('strain-diary-pending-menu-burn');
+  if (pendingMenuBurn) {
+    const currentKey = location.pathname.replace(/\/index\.html$/, '/') + location.search + location.hash;
+    if (pendingMenuBurn === currentKey) {
+      document.querySelectorAll('header > nav > a, .nav-cta, .site-header nav a').forEach((link) => {
+        const target = new URL(link.href, location.href);
+        const targetKey = target.pathname.replace(/\/index\.html$/, '/') + target.search + target.hash;
+        if (target.origin === location.origin && targetKey === currentKey) {
+          link.classList.add('burn-surface', 'is-charred');
+          burntLinks.add(link);
+        }
+      });
+    }
+  }
   const duration = 850;
   function ignite(button, navigate) {
     if (burning.has(button)) return;
@@ -328,7 +345,13 @@ if (menuButton && siteNav) {
       const samePage = url.origin === current.origin &&
         url.pathname.replace(/\/index\.html$/, '/') === current.pathname.replace(/\/index\.html$/, '/') &&
         url.search === current.search && url.hash === current.hash;
-      if (!samePage) navigate = () => location.assign(url.href);
+      if (!samePage) navigate = () => {
+        const destinationKey = url.pathname.replace(/\/index\.html$/, '/') + url.search + url.hash;
+        if (button.matches('header > nav > a, .nav-cta, .site-header nav a')) {
+          sessionStorage.setItem('strain-diary-pending-menu-burn', destinationKey);
+        }
+        location.assign(url.href);
+      };
     }
     // Form submission, menu controls, and theme changes retain native timing.
     ignite(button, navigate);
