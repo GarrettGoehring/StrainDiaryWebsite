@@ -1,26 +1,16 @@
-.feature-shot,
-html:not([data-theme="dark"]) .feature-shot {
-  height: auto;
-  min-height: 540px;
-  background: transparent;
-  border-radius: 0;
-  overflow: visible;
+/* Supplied PNGs already contain the iPhone frame. Only empty margins are cropped. */
+.device-shot{position:relative;display:block;width:300px;aspect-ratio:1/2;flex:none;overflow:hidden;background:transparent;border:0;border-radius:0;box-shadow:none}
+.device-shot>img,html body .screens .device-shot>img{position:absolute;width:428.571429%;max-width:none;height:auto;left:-164.285714%;top:-30.357143%;border:0;border-radius:0;box-shadow:none;filter:none;transform:none}
+.visual>.device-shot{width:min(315px,60vw);z-index:2;transform:rotate(2deg)}
+.feature-shot,html:not([data-theme="dark"]) .feature-shot{height:auto;min-height:540px;background:transparent;border-radius:0;overflow:visible}
+.feature-shot>.device-shot{width:260px}
+.screens>.device-shot{position:absolute;width:275px}
+.screens>.device-shot:first-child{left:0;top:50px;transform:rotate(-6deg)}
+.screens>.device-shot:last-child{right:5%;top:0;transform:rotate(5deg)}
+.beta-panel>.device-shot{width:min(230px,100%)}
+@media(max-width:600px){
+ .feature-shot,html:not([data-theme="dark"]) .feature-shot{min-height:430px}
+ .feature-shot>.device-shot{width:min(210px,100%)}
+ .screens>.device-shot{width:min(210px,60%)}
 }
-
-.feature-shot img {
-  height: 520px;
-  border-radius: 34px;
-  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, .28));
-}
-
-@media (max-width: 600px) {
-  .feature-shot,
-  html:not([data-theme="dark"]) .feature-shot {
-    min-height: 430px;
-  }
-
-  .feature-shot img {
-    height: 420px;
-  }
-}
-
+@media(max-width:560px){.visual>.device-shot{width:260px;max-width:100%}}
