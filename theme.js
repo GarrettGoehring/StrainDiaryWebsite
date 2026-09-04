@@ -92,25 +92,13 @@ if (menuButton && siteNav) {
     const radius = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
     ctx.save();
     ctx.translate(r.left, r.top);
-    ctx.beginPath();
-    ctx.moveTo(radius, 0);
-    ctx.lineTo(r.width - radius, 0);
-    ctx.quadraticCurveTo(r.width, 0, r.width, radius);
-    ctx.lineTo(r.width, r.height - radius);
-    ctx.quadraticCurveTo(r.width, r.height, r.width - radius, r.height);
-    ctx.lineTo(radius, r.height);
-    ctx.quadraticCurveTo(0, r.height, 0, r.height - radius);
-    ctx.lineTo(0, radius);
-    ctx.quadraticCurveTo(0, 0, radius, 0);
-    ctx.closePath();
+    const progress = Math.max(0, Math.min(1, ((now - (burning.get(button)?.started ?? now)) / duration - .12) / .76));
+    const frontY = r.height * progress;
+    button.style.setProperty('--burn-depth', frontY + 'px');
+    const dy = Math.max(radius - frontY, frontY - (r.height - radius), 0);
+    const sideInset = radius - Math.sqrt(Math.max(0, radius * radius - dy * dy));
     ctx.shadowColor = '#ff772b';
-    ctx.shadowBlur = 12;
-    ctx.strokeStyle = '#ef752a';
-    ctx.lineWidth = 5;
-    ctx.stroke();
-    ctx.strokeStyle = '#ffe29b';
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
+    ctx.shadowBlur = 9;
     // Layered translucent tongues with upward convection and independent curls.
     const age = Math.max(0, (now - (burning.get(button)?.started ?? now)) / duration);
     const envelope = Math.min(1, age / .12) * Math.min(1, Math.max(0, (1 - age) / .22));
@@ -155,21 +143,17 @@ if (menuButton && siteNav) {
       ctx.fillStyle = 'rgba(255,244,189,.7)';
       ctx.fill();
     }
-    const horizontal = Math.max(1, Math.min(48, Math.ceil(r.width / 11)));
-    for (let n = 0; n <= horizontal; n++) {
-      const x = n * r.width / horizontal;
-      const dx = Math.max(radius - x, x - (r.width - radius), 0);
-      const inset = radius - Math.sqrt(Math.max(0, radius * radius - dx * dx));
-      flame(x, inset, 0, -1, n * 1.7);
-      flame(x, r.height - inset, 0, 1, n * 1.7 + 2);
-    }
-    const vertical = Math.max(1, Math.min(16, Math.ceil(r.height / 11)));
-    for (let n = 0; n <= vertical; n++) {
-      const y = n * r.height / vertical;
-      const dy = Math.max(radius - y, y - (r.height - radius), 0);
-      const inset = radius - Math.sqrt(Math.max(0, radius * radius - dy * dy));
-      flame(inset, y, -1, 0, n * 1.9);
-      flame(r.width - inset, y, 1, 0, n * 1.9 + 2);
+    // The horizontal ignition front descends; flame tongues still curl upward.
+    ctx.beginPath();
+    ctx.moveTo(sideInset, frontY);
+    ctx.lineTo(r.width - sideInset, frontY);
+    ctx.strokeStyle = '#ffb64f';
+    ctx.lineWidth = 3;
+    ctx.stroke();
+    const count = Math.max(1, Math.min(48, Math.ceil((r.width - 2 * sideInset) / 10)));
+    for (let n = 0; n <= count; n++) {
+      const x = sideInset + n * (r.width - 2 * sideInset) / count;
+      flame(x, frontY, 0, -1, n * 1.7);
     }
     ctx.restore();
   }
@@ -258,23 +242,9 @@ if (menuButton && siteNav) {
       if (!allowed()) return;
       const r = button.getBoundingClientRect();
       if (r.width < 1) return;
-      const corner = Math.min(parseFloat(getComputedStyle(button).borderTopLeftRadius) || 0, r.width / 2, r.height / 2);
-      for (let n = 0; n < 12; n++) {
-        // Sample the rounded border so embers surround the whole button.
-        let x, y;
-        if (Math.random() < r.width / (r.width + r.height)) {
-          x = Math.random() * r.width;
-          const dx = Math.max(corner - x, x - (r.width - corner), 0);
-          const inset = corner - Math.sqrt(Math.max(0, corner * corner - dx * dx));
-          y = Math.random() < .5 ? inset : r.height - inset;
-        } else {
-          y = Math.random() * r.height;
-          const dy = Math.max(corner - y, y - (r.height - corner), 0);
-          const inset = corner - Math.sqrt(Math.max(0, corner * corner - dy * dy));
-          x = Math.random() < .5 ? inset : r.width - inset;
-        }
-        add(r.left + x, r.top + y, true);
-      }
+      const progress = Math.max(0, Math.min(1, ((performance.now() - started) / duration - .12) / .76));
+      for (let n = 0; n < 8; n++)
+        add(r.left + Math.random() * r.width, r.top + r.height * progress, true);
       start();
     };
     const interval = setInterval(emit, 40);
@@ -283,6 +253,7 @@ if (menuButton && siteNav) {
       const restore = () => {
         burning.delete(button);
         button.classList.remove('is-burning');
+        button.style.removeProperty('--burn-depth');
       };
       if (navigate) {
         // Preserve the final burnt state until this document is left or restored.
@@ -318,9 +289,13 @@ if (menuButton && siteNav) {
       clearInterval(timers.interval);
       clearTimeout(timers.timeout);
       button.classList.remove('is-burning');
+        button.style.removeProperty('--burn-depth');
     }
     burning.clear();
-    for (const button of burntLinks) button.classList.remove('is-burning');
+    for (const button of burntLinks) {
+      button.classList.remove('is-burning');
+      button.style.removeProperty('--burn-depth');
+    }
     burntLinks.clear();
     clear();
   }
