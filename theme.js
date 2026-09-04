@@ -296,10 +296,13 @@ if (menuButton && siteNav) {
     let navigate;
     if (button instanceof HTMLAnchorElement) {
       const url = new URL(button.href, location.href);
-      // Preserve downloads, external app links, and native new-tab behavior.
       if (button.hasAttribute('download') ||
-          (button.target && button.target !== '_self') ||
           !['http:', 'https:'].includes(url.protocol)) return;
+      // Animate new-tab social links too, without blocking the native popup.
+      if (button.target && button.target !== '_self') {
+        ignite(button);
+        return;
+      }
       e.preventDefault();
       navigate = () => location.assign(url.href);
     }
