@@ -164,6 +164,12 @@ if (menuButton && siteNav) {
     const dt = Math.min((now - previous) / 1000, .04);
     previous = now;
     ctx.clearRect(0, 0, innerWidth, innerHeight);
+    // Convert viewport coordinates to the canvas's actual displayed bounds.
+    const canvasBounds = canvas.getBoundingClientRect();
+    if (canvasBounds.width && canvasBounds.height) {
+      const sx = canvas.width / canvasBounds.width, sy = canvas.height / canvasBounds.height;
+      ctx.setTransform(sx, 0, 0, sy, -canvasBounds.left * sx, -canvasBounds.top * sy);
+    }
     const dark = document.documentElement.dataset.theme === 'dark';
     particles = particles.filter(p => p.age < p.life);
     for (const p of particles) {
@@ -182,7 +188,9 @@ if (menuButton && siteNav) {
       ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
       ctx.fill();
     }
-    for (const button of burning.keys()) drawBurnOutline(button, now);
+    for (const button of burning.keys()) {
+      if (!button.classList.contains('is-charred')) drawBurnOutline(button, now);
+    }
     if (particles.length || burning.size) frame = requestAnimationFrame(draw);
   }
   function start() {
@@ -250,17 +258,21 @@ if (menuButton && siteNav) {
     const interval = setInterval(emit, 40);
     const timeout = setTimeout(() => {
       clearInterval(interval);
-      const restore = () => {
+      button.classList.remove('is-burning');
+      button.classList.add('is-charred');
+      button.style.setProperty('--burn-depth', button.getBoundingClientRect().height + 'px');
+      const timers = burning.get(button);
+      // Pause on the completed brown state so it can be seen before leaving.
+      timers.timeout = setTimeout(() => {
         burning.delete(button);
-        button.classList.remove('is-burning');
-        button.style.removeProperty('--burn-depth');
-      };
-      if (navigate) {
-        // Preserve the final burnt state until this document is left or restored.
-        burning.delete(button);
-        burntLinks.add(button);
-        navigate();
-      } else restore();
+        if (navigate) {
+          burntLinks.add(button);
+          navigate();
+        } else {
+          button.classList.remove('is-charred');
+          button.style.removeProperty('--burn-depth');
+        }
+      }, 180);
     }, duration);
     burning.set(button, {interval, timeout, started});
     emit();
@@ -288,12 +300,12 @@ if (menuButton && siteNav) {
     for (const [button, timers] of burning) {
       clearInterval(timers.interval);
       clearTimeout(timers.timeout);
-      button.classList.remove('is-burning');
+      button.classList.remove('is-burning', 'is-charred');
         button.style.removeProperty('--burn-depth');
     }
     burning.clear();
     for (const button of burntLinks) {
-      button.classList.remove('is-burning');
+      button.classList.remove('is-burning', 'is-charred');
       button.style.removeProperty('--burn-depth');
     }
     burntLinks.clear();
