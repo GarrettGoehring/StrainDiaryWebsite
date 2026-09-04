@@ -243,7 +243,8 @@ if (menuButton && siteNav) {
   const burntLinks = new Set();
   const duration = 850;
   function ignite(button, navigate) {
-    if (burning.has(button) || burntLinks.has(button)) return;
+    if (burning.has(button)) return;
+    if (burntLinks.has(button)) { if (navigate) navigate(); return; }
     const started = performance.now();
     button.classList.add('is-burning');
     const emit = () => {
@@ -265,13 +266,8 @@ if (menuButton && siteNav) {
       // Pause on the completed brown state so it can be seen before leaving.
       timers.timeout = setTimeout(() => {
         burning.delete(button);
-        if (navigate) {
-          burntLinks.add(button);
-          navigate();
-        } else {
-          button.classList.remove('is-charred');
-          button.style.removeProperty('--burn-depth');
-        }
+        burntLinks.add(button);
+        if (navigate) navigate();
       }, 180);
     }, duration);
     burning.set(button, {interval, timeout, started});
@@ -311,7 +307,14 @@ if (menuButton && siteNav) {
     burntLinks.clear();
     clear();
   }
-  window.addEventListener('pagehide', resetBurns);
+  window.addEventListener('pagehide', () => {
+    // Stop work without flashing the original color as the page leaves.
+    for (const timers of burning.values()) {
+      clearInterval(timers.interval);
+      clearTimeout(timers.timeout);
+    }
+    clear();
+  });
   window.addEventListener('pageshow', resetBurns);
   // Back navigation within the same document (for section links).
   window.addEventListener('popstate', resetBurns);
