@@ -46,3 +46,9 @@ html[data-theme="dark"] .hero .nug-shadow{background:#426f4b!important;opacity:.
 @media(min-width:901px){
   .hero .nug-shadow.three{display:block;width:190px;height:190px;left:38%;right:auto;top:auto;bottom:-20px;transform:rotate(12deg)}
 }
+/* Make the scorched surface win over green CTA and active-menu styling. */
+.is-burning{background-image:linear-gradient(to bottom,#51341f 0 var(--burn-depth,0px),transparent var(--burn-depth,0px) 100%)!important}
+html body .is-charred{animation:none!important;background:#51341f!important;color:#efdfc7!important;border-color:#785033!important;filter:none!important;opacity:1!important;box-shadow:inset 0 0 9px #231309,0 0 0 1px #785033!important}
+html[data-theme] header>nav>a.is-burning,html[data-theme] header>nav>a.is-charred{color:#efdfc7!important}
+@media(min-width:901px){header>nav>a{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border-radius:9px}header>nav{gap:10px}}
+@media(prefers-reduced-motion:reduce){.is-burning{background-image:none!important}}
