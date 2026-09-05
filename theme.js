@@ -279,6 +279,7 @@ if (menuButton && siteNav) {
     '.feature-showcase .device-shot', '.feature-copy > *', '.feature-copy li',
     '.privacy > *', '.join > *', '.page-hero > *', '.feature-row > *',
     '.feature-page-copy > *', '.check-list > li', '.feature-shot > *',
+    '.story-lead > *', '.timeline > article', '.faq > *',
     '.page-cta > *', '.beta-panel > *', '.contact-card > *', 'form > *',
     '.site-footer .footer-brand > *', '.footer-column > *', '.footer-bottom > *',
     'main article', 'main .card', 'main img'
