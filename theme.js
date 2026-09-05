@@ -65,6 +65,7 @@ if (menuButton && siteNav) {
   if (!ctx) return;
   document.body.appendChild(canvas);
   let particles = [], frame = 0, previous = 0, lastMove = 0;
+  let pointerX = 0, pointerY = 0, pointerInside = false;
   const allowed = () => !reduced.matches && !document.hidden;
   function resize() {
     const scale = Math.min(devicePixelRatio || 1, 2);
@@ -83,7 +84,7 @@ if (menuButton && siteNav) {
     particles.push({x, y, fire, tap, age:0, life:fire ? .55 + Math.random() * .25 : (tap ? 1.4 : .8) + Math.random() * .4,
       vx:(Math.random() - .5) * (fire ? 65 : 18),
       vy:-(fire ? 45 + Math.random() * 65 : 18 + Math.random() * 20),
-      size:fire ? 3 + Math.random() * 4 : (tap ? 15 : 7) + Math.random() * 6});
+      size:fire ? 3 + Math.random() * 4 : (tap ? 19 : 10) + Math.random() * 8});
   }
 
   function drawBurnOutline(button, now) {
@@ -192,7 +193,7 @@ if (menuButton && siteNav) {
       p.y += p.vy * dt;
       const t = Math.min(p.age / p.life, 1);
       const radius = p.size * (p.fire ? 1 - t * .6 : 1 + t * 1.8);
-      const alpha = (1 - t) * (p.fire ? .65 : p.tap ? .4 : .22);
+      const alpha = (1 - t) * (p.fire ? .65 : p.tap ? .46 : .28);
       const rgb = p.fire ? (t < .3 ? '255,211,112' : '239,118,43') : (dark ? '185,211,191' : '80,113,91');
       const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
       gradient.addColorStop(0, 'rgba(' + rgb + ',' + alpha + ')');
@@ -212,6 +213,9 @@ if (menuButton && siteNav) {
   }
   document.addEventListener('pointermove', e => {
     if (!allowed() || !fine.matches || e.pointerType !== 'mouse') return;
+    pointerX = e.clientX;
+    pointerY = e.clientY;
+    pointerInside = true;
     const now = performance.now();
     if (now - lastMove < 24) return;
     lastMove = now;
@@ -219,6 +223,17 @@ if (menuButton && siteNav) {
     if (Math.random() > .45) add(e.clientX + 4, e.clientY + 10, false);
     start();
   }, {passive:true});
+  // Keep a soft plume rising even while the desktop pointer is stationary.
+  setInterval(() => {
+    if (!allowed() || !fine.matches || !pointerInside) return;
+    add(pointerX - 4 + Math.random() * 8, pointerY + 10, false);
+    add(pointerX - 7 + Math.random() * 14, pointerY + 13, false);
+    start();
+  }, 105);
+  window.addEventListener('mouseout', event => {
+    if (!event.relatedTarget) pointerInside = false;
+  }, {passive:true});
+  window.addEventListener('blur', () => { pointerInside = false; });
   // Passive touch events keep the vapor trail active during native scrolling.
   function tapPuff(x, y) {
     if (!allowed()) return;
