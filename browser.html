@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Strain Diary browser home: web search and cannabis health information from public-health sources.">
+<meta name="referrer" content="no-referrer">
+<title>Browser Home · Strain Diary</title>
+<style>
+:root{color-scheme:dark light;--bg:#111017;--panel:#1d1b26;--text:#f6f3ff;--muted:#b5b0c4;--line:#383342;--accent:#c9b5ff;--accent-bg:#302442;--button:#d2baff;--button-text:#241337}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:1rem;line-height:1.5;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:auto;padding: max(28px,env(safe-area-inset-top)) max(22px,env(safe-area-inset-right)) max(32px,env(safe-area-inset-bottom)) max(22px,env(safe-area-inset-left))}
+.brand{display:flex;align-items:center;gap:12px;font-weight:650;letter-spacing:-.025em}
+.monogram{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:var(--accent-bg);color:var(--accent);font-size:.875rem;letter-spacing:-.05em}
+.intro{margin:38px 0 25px}
+.eyebrow{margin:0 0 8px;color:var(--accent);font-size:.75rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(2rem,7vw,2.75rem);line-height:1.12;letter-spacing:-.05em;margin:0 0 12px;font-weight:700}
+.intro>p:last-child{color:var(--muted);margin:0}
+label{display:block;font-weight:600;font-size:.875rem;margin-bottom:9px}
+.search{display:flex;align-items:center;gap:8px;padding:7px 7px 7px 16px;background:var(--panel);border:1px solid var(--line);border-radius:18px}
+.search:focus-within{border-color:var(--accent)}
+.search svg{width:21px;height:21px;flex-shrink:0;color:var(--muted)}
+input{width:100%;min-width:0;border:0;background:transparent;color:var(--text);font:inherit;padding:12px 0;border-radius:4px}
+input::placeholder{color:var(--muted);opacity:1}
+button{border:0;border-radius:12px;min-width:48px;min-height:48px;padding:10px 15px;background:var(--button);color:var(--button-text);font:inherit;font-weight:650;cursor:pointer}
+button svg{color:currentColor!important}
+:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.search-note{font-size:.8125rem;color:var(--muted);margin:10px 2px 0}
+section{margin-top:32px}
+.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+h2{font-size:1rem;letter-spacing:-.02em;margin:0}
+.section-title span{color:var(--muted);font-size:.8125rem}
+.resources{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}
+.resources li+li{border-top:1px solid var(--line)}
+.resource{display:flex;gap:14px;align-items:center;padding:19px 16px;color:var(--text);text-decoration:none;min-height:90px}
+.resource:hover{background:var(--accent-bg)}
+.resource:focus-visible{outline-offset:-4px}
+.icon{display:grid;place-items:center;flex:0 0 42px;height:42px;background:var(--accent-bg);color:var(--accent);border-radius:13px}
+svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.copy{flex:1;min-width:0}
+.copy strong{display:block;font-size:1rem;font-weight:600}
+.copy small{display:block;color:var(--muted);font-size:.875rem;margin-top:3px}
+.arrow{color:var(--muted);flex-shrink:0;width:18px}
+.note{margin-top:24px;padding:0 2px;color:var(--muted);font-size:.875rem}
+.note strong{color:var(--text);font-weight:600}
+.note p{margin:0 0 8px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);margin-top:28px;padding-top:18px;color:var(--muted);font-size:.8125rem}
+@media(prefers-color-scheme:light){:root{--bg:#f7f6fb;--panel:#fff;--text:#252033;--muted:#625c70;--line:#dfdae9;--accent:#633b94;--accent-bg:#eee6f9;--button:#7040a4;--button-text:#fff}}
+@media(min-width:700px){main{padding-top:48px}.intro{margin-top:48px}.resource{padding:22px}}
+@media(max-width:360px){main{padding-left:16px;padding-right:16px}.icon{flex-basis:36px;height:36px}.resource{gap:10px;padding:16px 12px}.section-title{flex-wrap:wrap}}
+@media(prefers-contrast:more){:root{--muted:var(--text);--line:var(--text)}}
+</style>
+</head>
+<body>
+<main>
+<header class="brand"><span class="monogram" aria-hidden="true">SD</span><span>Strain Diary</span></header>
+<div class="intro">
+<p class="eyebrow">Browser home</p>
+<h1>A place to look things up.</h1>
+<p>Search the web or explore health information below.</p>
+</div>
+<form action="https://www.google.com/search" method="get" role="search">
+<label for="query">Search the web</label>
+<div class="search">
+<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+<input id="query" name="q" type="search" placeholder="What would you like to find?" required maxlength="2048" autocomplete="off" enterkeyhint="search" aria-describedby="search-note">
+<button type="submit" aria-label="Search with Google"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+</div>
+<p class="search-note" id="search-note">Searches are sent to Google. Its privacy policy applies.</p>
+</form>
+<section aria-labelledby="resources-title">
+<div class="section-title"><h2 id="resources-title">Health &amp; research</h2><span>Public-health sources</span></div>
+<ul class="resources">
+<li><a class="resource" href="https://www.cdc.gov/cannabis/health-effects/index.html" rel="noreferrer">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 8 3v5c0 5-8 10-8 10S4 16 4 11V6l8-3Z"/><path d="M12 8v6m-3-3h6"/></svg></span>
+<span class="copy"><strong>Cannabis &amp; your health</strong><small>CDC · Health effects and risks</small></span>
+<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg>
+</a></li>
+<li><a class="resource" href="https://nida.nih.gov/research-topics/cannabis-marijuana" rel="noreferrer">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h6a2 2 0 0 1 2 2v13a3 3 0 0 0-3-2H4V5Zm16 0h-6a2 2 0 0 0-2 2v13a3 3 0 0 1 3-2h5V5Z"/></svg></span>
+<span class="copy"><strong>Explore the research</strong><small>NIDA · Cannabis research and FAQs</small></span>
+<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg>
+</a></li>
+<li><a class="resource" href="https://www.nccih.nih.gov/health/cannabis-marijuana-and-cannabinoids-what-you-need-to-know" rel="noreferrer">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></svg></span>
+<span class="copy"><strong>Cannabinoids, explained</strong><small>NCCIH · Evidence and safety</small></span>
+<svg class="arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg>
+</a></li>
+</ul>
+</section>
+<aside class="note" aria-label="About these resources">
+<p><strong>Information for your own understanding.</strong></p>
+<p>These resources are educational, not medical advice. Talk with a qualified healthcare professional before making medical decisions.</p>
+</aside>
+<footer><span>For adults 21+</span><span>Strain Diary · Browser</span></footer>
+</main>
+</body>
+</html>
