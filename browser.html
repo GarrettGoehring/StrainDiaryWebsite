@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
-<meta name="description" content="Strain Diary browser home with web search and locally saved recent searches.">
+<meta name="theme-color" content="#111017" id="theme-color">
+<meta name="description" content="Strain Diary Bluetooth-enabled browser home with web search and locally saved recent searches.">
 <meta name="referrer" content="no-referrer">
 <title>Browser Home · Strain Diary</title>
 <style>
-:root{color-scheme:dark light;--bg:#111017;--panel:#1d1b26;--text:#f6f3ff;--muted:#b5b0c4;--line:#383342;--accent:#c9b5ff;--accent-bg:#302442;--button:#d2baff;--button-text:#241337;--danger:#ffb7c6}
+:root{color-scheme:dark light;--bg:#111017;--panel:#1d1b26;--text:#f6f3ff;--muted:#b5b0c4;--line:#383342;--accent:#c9b5ff;--accent-bg:#302442;--button:#d2baff;--button-text:#241337}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:1rem;line-height:1.5;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:1rem;line-height:1.5;-webkit-text-size-adjust:100%;transition:background-color .18s ease,color .18s ease}
 main{max-width:720px;margin:auto;padding:max(28px,env(safe-area-inset-top)) max(22px,env(safe-area-inset-right)) max(32px,env(safe-area-inset-bottom)) max(22px,env(safe-area-inset-left))}
 .brand{display:flex;align-items:center;gap:12px;font-weight:650;letter-spacing:-.025em}
 .monogram{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:var(--accent-bg);color:var(--accent);font-size:.875rem;letter-spacing:-.05em}
@@ -18,6 +19,8 @@ main{max-width:720px;margin:auto;padding:max(28px,env(safe-area-inset-top)) max(
 .eyebrow{margin:0 0 8px;color:var(--accent);font-size:.75rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase}
 h1{font-size:clamp(2rem,7vw,2.75rem);line-height:1.12;letter-spacing:-.05em;margin:0 0 12px;font-weight:700}
 .intro>p:last-child{color:var(--muted);margin:0}
+.browser-note{display:flex;align-items:center;gap:8px;margin:15px 0 0;color:var(--muted);font-size:.8125rem}
+.browser-note svg{width:16px;height:16px;color:var(--accent);flex-shrink:0}
 label{display:block;font-weight:600;font-size:.875rem;margin-bottom:9px}
 .search{display:flex;align-items:center;gap:8px;padding:7px 7px 7px 16px;background:var(--panel);border:1px solid var(--line);border-radius:18px}
 .search:focus-within{border-color:var(--accent)}
@@ -52,15 +55,70 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 @media(max-width:360px){main{padding-left:16px;padding-right:16px}.recent-item{gap:10px;padding:15px 12px}.history-icon{flex-basis:34px;height:34px}}
 @media(prefers-contrast:more){:root{--muted:var(--text);--line:var(--text)}}
 </style>
+<script>
+(() => {
+  const params = new URLSearchParams(location.search);
+  const cleanHex = value => {
+    const cleaned = (value || '').replace(/[^0-9a-f]/gi, '').toUpperCase();
+    return cleaned.length === 6 ? cleaned : null;
+  };
+  const theme = {
+    accent: cleanHex(params.get('sdAccent')),
+    bgLight: cleanHex(params.get('sdBgLight')),
+    bgDark: cleanHex(params.get('sdBgDark')),
+    text: cleanHex(params.get('sdText'))
+  };
+  if (!theme.accent || !theme.bgLight || !theme.bgDark) return;
+
+  const toRgb = hex => [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+  const toHex = rgb => rgb.map(v => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0')).join('').toUpperCase();
+  const mix = (a, b, amount) => {
+    const ca = toRgb(a), cb = toRgb(b);
+    return toHex(ca.map((v, i) => v + (cb[i] - v) * amount));
+  };
+  const readableOn = hex => {
+    const [r, g, b] = toRgb(hex).map(v => v / 255).map(v => v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4));
+    return .2126 * r + .7152 * g + .0722 * b > .45 ? '17151D' : 'FFFFFF';
+  };
+  const media = matchMedia('(prefers-color-scheme: dark)');
+
+  const apply = () => {
+    const dark = media.matches;
+    const bg = dark ? theme.bgDark : theme.bgLight;
+    const text = theme.text || (dark ? 'E9E9ED' : '23242E');
+    const panel = mix(bg, dark ? 'FFFFFF' : 'FFFFFF', dark ? .065 : .72);
+    const line = mix(bg, text, dark ? .20 : .14);
+    const muted = mix(bg, text, dark ? .68 : .65);
+    const accentBg = mix(bg, theme.accent, dark ? .22 : .12);
+    const root = document.documentElement.style;
+    root.setProperty('--bg', `#${bg}`);
+    root.setProperty('--panel', `#${panel}`);
+    root.setProperty('--text', `#${text}`);
+    root.setProperty('--muted', `#${muted}`);
+    root.setProperty('--line', `#${line}`);
+    root.setProperty('--accent', `#${theme.accent}`);
+    root.setProperty('--accent-bg', `#${accentBg}`);
+    root.setProperty('--button', `#${theme.accent}`);
+    root.setProperty('--button-text', `#${readableOn(theme.accent)}`);
+    const meta = document.getElementById('theme-color');
+    if (meta) meta.setAttribute('content', `#${bg}`);
+  };
+
+  apply();
+  if (media.addEventListener) media.addEventListener('change', apply);
+  else if (media.addListener) media.addListener(apply);
+})();
+</script>
 </head>
 <body>
 <main>
 <header class="brand"><span class="monogram" aria-hidden="true">SD</span><span>Strain Diary</span></header>
 
 <div class="intro">
-<p class="eyebrow">Browser home</p>
+<p class="eyebrow">Bluetooth-enabled browser</p>
 <h1>A place to look things up.</h1>
 <p>Search the web without leaving Strain Diary.</p>
+<p class="browser-note"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m7 7 10 10-5 4V3l5 4L7 17"/></svg><span>Built-in Bluetooth support lets compatible web apps connect to supported devices.</span></p>
 </div>
 
 <form id="search-form" action="https://www.google.com/search" method="get" role="search">
@@ -83,7 +141,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 <p class="privacy-note">Recent searches are stored locally in this browser and are not sent to Strain Diary.</p>
 </section>
 
-<footer><span>Browser</span><span>Strain Diary</span></footer>
+<footer><span>Bluetooth-enabled browser</span><span>Strain Diary</span></footer>
 </main>
 
 <script>
