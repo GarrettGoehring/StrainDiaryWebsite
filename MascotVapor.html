@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Strain Diary's mascot with an adjustable, interactive vapor trail.">
+<title>Mascot Vapor · Strain Diary</title>
+<link rel="icon" href="favicon.ico">
+<style>
+@font-face{font-family:Figtree;src:url('assets/figtree.woff2') format('woff2');font-display:swap}
+*{box-sizing:border-box}body{margin:0;background:#28183e;color:#f5efff;font-family:Figtree,system-ui,sans-serif;min-height:100svh;display:flex;flex-direction:column}header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px clamp(20px,5vw,72px);position:relative;z-index:2}a{color:inherit;text-decoration:none;font-weight:600}a:hover{text-decoration:underline}.eyebrow{color:#c6afd9;font-size:14px;letter-spacing:.16em;text-transform:uppercase}main{flex:1;display:grid;place-items:center;min-height:320px;position:relative;isolation:isolate}.mascot{display:block;width:min(76vw,540px);max-height:65svh;object-fit:contain;mix-blend-mode:lighten;user-select:none;-webkit-user-drag:none}.caption{position:absolute;bottom:0;text-align:center;color:#c6afd9;font-size:14px;margin:0 20px}canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}footer{position:relative;z-index:2;width:min(620px,calc(100% - 40px));margin:26px auto max(24px,env(safe-area-inset-bottom));padding:22px 26px;background:#37234e;border:1px solid #62447b;border-radius:22px;box-shadow:0 16px 50px #170d292e}.row{display:flex;align-items:center;justify-content:space-between;gap:16px}label{font-size:18px;font-weight:600}output{color:#c5ef65;font-variant-numeric:tabular-nums;font-size:18px}.ends{display:flex;justify-content:space-between;font-size:14px;color:#cbb7dd}input{display:block;width:100%;height:36px;margin:12px 0 5px;accent-color:#b9e65c;cursor:pointer}input:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #dcf3a3;outline-offset:5px}button{border:1px solid #806297;border-radius:30px;background:transparent;color:inherit;font:inherit;font-size:14px;padding:8px 14px;cursor:pointer}.controls{display:flex;align-items:center;gap:16px}.motion-note{display:none;font-size:14px;color:#cbb7dd;margin:12px 0 0}@media(prefers-reduced-motion:reduce){.motion-note{display:block}}@media(max-width:480px){header{padding:20px}.eyebrow{font-size:12px;letter-spacing:.1em}.mascot{width:90vw;max-height:58svh}footer{padding:18px 20px}.controls{gap:10px}}@media(max-height:600px){.mascot{max-height:48svh}main{min-height:220px}.caption{display:none}}
+</style>
+</head>
+<body>
+<header><a href="index.html">Strain Diary</a><span class="eyebrow">Mascot Vapor</span></header>
+<main><img class="mascot" src="assets/mascot-vapor.png" width="1292" height="1332" alt="A smiling bright green Strain Diary mascot with leafy arms and orange accents"><p class="caption">Move your pointer or swipe to leave a little vapor.</p></main>
+<canvas aria-hidden="true"></canvas>
+<footer><div class="row"><label for="vapor">Vapor intensity</label><div class="controls"><output for="vapor" id="amount">55%</output><button id="pause" type="button" aria-pressed="false">Pause</button></div></div><input id="vapor" type="range" min="0" max="100" value="55" aria-describedby="range-help"><div class="ends" id="range-help"><span>Off</span><span>Thick clouds</span></div><p class="motion-note">Motion is paused for your reduced-motion preference. Press Play to enable vapor.</p></footer>
+<script>
+(() => {
+  'use strict';
+  const canvas = document.querySelector('canvas'), ctx = canvas.getContext('2d');
+  const slider = document.querySelector('#vapor'), output = document.querySelector('#amount');
+  const button = document.querySelector('#pause'), mascot = document.querySelector('.mascot');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let intensity = .55, paused = reduced.matches, particles = [], frame = 0, previous = 0;
+  let carry = 0, pointer = null, lastPointer = 0, bounds;
+  function resize() {
+    const scale = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = Math.round(innerWidth * scale); canvas.height = Math.round(innerHeight * scale);
+    ctx.setTransform(scale, 0, 0, scale, 0, 0); bounds = mascot.getBoundingClientRect();
+  }
+  function syncButton() { button.textContent = paused ? 'Play' : 'Pause'; button.setAttribute('aria-pressed', String(paused)); }
+  function clear() { cancelAnimationFrame(frame); frame = 0; particles = []; carry = 0; ctx.clearRect(0, 0, innerWidth, innerHeight); }
+  function start() { if (ctx && !frame && !paused && intensity > 0 && !document.hidden) { previous = performance.now(); frame = requestAnimationFrame(draw); } }
+  function add(x, y) {
+    if (particles.length >= 240) particles.shift();
+    particles.push({x,y,age:0,life:1.5 + Math.random()*1.5,vx:(Math.random()-.5)*25,vy:-(20+Math.random()*25),size:9+Math.random()*12,phase:Math.random()*Math.PI*2});
+  }
+  function draw(now) {
+    frame = 0;
+    if (paused || !intensity || document.hidden) { clear(); return; }
+    const dt = Math.min((now-previous)/1000,.04); previous = now;
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    carry += dt*(8+intensity*48);
+    while (carry >= 1) {
+      carry--;
+      if (pointer && now-lastPointer < 2200) add(pointer.x+(Math.random()-.5)*12,pointer.y+8);
+      else { const t=now/1600; add(bounds.left+bounds.width*(.5+Math.sin(t)*.34),bounds.top+bounds.height*(.72+Math.cos(t)*.12)); }
+    }
+    particles = particles.filter(p=>p.age < p.life);
+    for (const p of particles) {
+      p.age+=dt; p.x+=(p.vx+Math.sin(p.age*3+p.phase)*12)*dt; p.y+=p.vy*dt;
+      const t=Math.min(p.age/p.life,1), radius=p.size*(.5+intensity*1.8)*(1+t*1.8);
+      const alpha=Math.sin(t*Math.PI)*(.025+intensity*.17);
+      const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,radius);
+      g.addColorStop(0,`rgba(226,216,244,${alpha})`);g.addColorStop(.45,`rgba(203,184,226,${alpha*.6})`);g.addColorStop(1,'rgba(203,184,226,0)');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,radius,0,Math.PI*2);ctx.fill();
+    }
+    frame=requestAnimationFrame(draw);
+  }
+  slider.addEventListener('input',()=>{intensity=Number(slider.value)/100;output.value=slider.value+'%';slider.setAttribute('aria-valuetext',intensity ? slider.value+' percent vapor intensity' : 'Vapor off');if(!intensity)clear();else start();});
+  button.addEventListener('click',()=>{paused=!paused;syncButton();if(paused)clear();else start();});
+  document.addEventListener('pointermove',e=>{if(e.target.closest('footer'))return;pointer={x:e.clientX,y:e.clientY};lastPointer=performance.now();},{passive:true});
+  document.addEventListener('pointerdown',e=>{if(e.target.closest('footer,header'))return;pointer={x:e.clientX,y:e.clientY};lastPointer=performance.now();},{passive:true});
+  document.addEventListener('pointerleave',()=>{pointer=null;});
+  window.addEventListener('blur',()=>{pointer=null;});
+  window.addEventListener('resize',resize,{passive:true});
+  window.addEventListener('scroll',()=>{bounds=mascot.getBoundingClientRect();},{passive:true});
+  mascot.addEventListener('load',resize);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)clear();else start();});
+  window.addEventListener('pagehide',clear);window.addEventListener('pageshow',start);
+  reduced.addEventListener('change',()=>{paused=reduced.matches;syncButton();if(paused)clear();else start();});
+  if(ctx){resize();syncButton();start();}else{slider.disabled=true;button.disabled=true;output.value='Unavailable';}
+})();
+</script>
+</body>
+</html>
