@@ -1,0 +1,17 @@
+/* Shared, accessible guide content using the site's existing theme. */
+.guide-section{padding:90px max(28px,7vw);background:var(--paper);color:var(--ink)}
+.guide-section>h2,.guide-faq>h2,.guide-block>h2{font-size:clamp(28px,3.5vw,44px);line-height:1.15;max-width:900px}
+.guide-section>p,.guide-block p,.guide-steps,.guide-intro{max-width:850px;color:var(--muted);line-height:1.8}
+.guide-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0 60px}
+.guide-cards article{padding:28px;border:1px solid var(--line);border-radius:22px}
+.guide-cards h3{font-size:23px;margin:0 0 16px}.guide-cards p{color:var(--muted);line-height:1.7}
+.guide-section a,.guide-content a,.guide-intro a,.faq p a{text-decoration:underline;text-underline-offset:4px}
+.guide-faq{margin-top:60px}.guide-faq h2{margin-bottom:24px}.guide-faq details{padding:22px 0;border-top:1px solid var(--line)}
+.guide-faq summary{cursor:pointer;font-weight:700;line-height:1.5}.guide-faq p{max-width:850px;line-height:1.8;color:var(--muted)}
+.guide-content{max-width:1000px}.breadcrumbs{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px;margin:0 0 50px;color:var(--muted);font-size:14px}
+.guide-block{margin:0 0 65px}.guide-block h2{margin-bottom:24px}.guide-steps{padding-left:24px}.guide-steps li{padding:8px 0 8px 8px}
+.guide-table-wrap{overflow-x:auto;margin:26px 0}.guide-table-wrap table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.65;text-align:left}
+.guide-table-wrap caption{text-align:left;color:var(--muted);margin-bottom:16px}.guide-table-wrap th,.guide-table-wrap td{padding:16px;border-bottom:1px solid var(--line);vertical-align:top}
+.guide-table-wrap th{font-weight:700}.journal-template{white-space:pre-wrap;padding:28px;border:1px solid var(--line);border-radius:20px;font:inherit;line-height:2;overflow-wrap:anywhere}
+.guide-content .page-cta a{text-decoration:none}.guide-intro{margin:0 0 50px}
+@media(max-width:600px){.guide-cards{grid-template-columns:1fr}.guide-section{padding:65px 22px}.guide-table-wrap th,.guide-table-wrap td{padding:12px 8px}.journal-template{padding:18px;font-size:14px}}
