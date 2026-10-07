@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Strain Review · Strain Diary</title>
+<meta name="description" content="A strain review shared from Strain Diary, the private cannabis journal for iPhone.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A strain review on Strain Diary">
+<meta property="og:description" content="Open it in Strain Diary, or get the app free on TestFlight.">
+<meta property="og:image" content="https://straindiary.com/assets/app-icon.png">
+<link rel="icon" href="favicon.ico">
+<style>
+@font-face{font-family:Figtree;src:url(assets/figtree.woff2) format("woff2");font-weight:300 900;font-display:swap}
+:root{--bg:#0a1710;--panel:rgba(255,255,255,.06);--line:rgba(226,241,228,.13);--ink:#f3f4ed;--muted:#a8b8ad;--lime:#c8f06a;--accent:#7fd36b}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{min-height:100vh;background:var(--bg);color:var(--ink);font-family:Figtree,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;padding:24px 16px calc(32px + env(safe-area-inset-bottom))}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 20% 0%,color-mix(in srgb,var(--accent) 34%,transparent) 0,transparent 55%),radial-gradient(circle at 100% 80%,color-mix(in srgb,var(--accent) 18%,transparent) 0,transparent 50%),var(--bg)}
+a{color:inherit;text-decoration:none}
+.top{width:100%;max-width:440px;display:flex;align-items:center;gap:10px;margin-bottom:18px;font-weight:800;font-size:17px}
+.top img{width:34px;height:34px;border-radius:9px}
+.card{width:100%;max-width:440px;border-radius:28px;overflow:hidden;background:linear-gradient(170deg,color-mix(in srgb,var(--accent) 30%,transparent),rgba(255,255,255,.04) 55%);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.35);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.hero{position:relative;padding:26px 22px 20px}
+.brand{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+h1{margin:6px 0 12px;font-size:34px;line-height:1.05;font-weight:900;letter-spacing:-.02em;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:800;background:rgba(255,255,255,.1);border:1px solid var(--line)}
+.pill.type{background:var(--accent);color:#0c1711;border:0;text-transform:uppercase;letter-spacing:.06em}
+.pill.rating{color:#ffd66b}
+.body{padding:6px 22px 22px;display:flex;flex-direction:column;gap:16px}
+.quote{margin:0;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:16px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere}
+.by{margin-top:8px;font-size:13px;color:var(--muted);font-weight:700}
+.label{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,255,255,.08);border:1px solid var(--line)}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--accent))}
+.actions{width:100%;max-width:440px;display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;height:54px;border-radius:999px;font-size:16px;font-weight:800;border:1px solid var(--line);background:rgba(255,255,255,.07)}
+.btn.primary{background:var(--lime);color:#0c1711;border:0}
+.note{max-width:440px;text-align:center;font-size:13px;line-height:1.5;color:var(--muted);margin:14px 0 0}
+.note a{text-decoration:underline}
+.empty{max-width:440px;text-align:center;padding:40px 10px}
+.empty h1{font-size:28px}
+footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<a class="top" href="/"><img src="assets/app-icon.png" alt=""><span>Strain Diary</span></a>
+<main id="app"></main>
+<div class="actions">
+  <a class="btn primary" id="open" href="straindiary://diary">Open in Strain Diary</a>
+  <a class="btn" href="https://testflight.apple.com/join/4TjvnXjD">Get Strain Diary free on TestFlight ↗</a>
+</div>
+<p class="note">Don’t have the app yet? Strain Diary is coming soon to the App Store. Until then, install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> and join the free beta.</p>
+<footer>Strain Diary · 21+ only · <a href="privacy-policy.html">Privacy</a></footer>
+<script>
+(function(){
+  // The review lives in the URL fragment (never sent to the server):
+  // straindiary.com/r#<base64url JSON>. Keys are kept short so links stay
+  // small enough for a Linktree or bio.
+  var raw = location.hash.slice(1);
+  var app = document.getElementById("app");
+  var data = null;
+  function decode(s){
+    s = s.replace(/-/g,"+").replace(/_/g,"/");
+    while (s.length % 4) s += "=";
+    var bin = atob(s), bytes = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+    return JSON.parse(new TextDecoder().decode(bytes));
+  }
+  try { if (raw) data = decode(raw); } catch(e) { data = null; }
+
+  function el(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
+  var terpColors = {myrcene:"#7e57c2",limonene:"#f9c74f",caryophyllene:"#e76f51","beta-caryophyllene":"#e76f51",linalool:"#b388eb",pinene:"#2a9d8f","alpha-pinene":"#2a9d8f","beta-pinene":"#3fb68b",humulene:"#a47148",terpinolene:"#4cc9f0",ocimene:"#90be6d",bisabolol:"#f4a3c1",nerolidol:"#8d99ae",farnesene:"#c8f06a"};
+  function colorFor(name){ return terpColors[(name||"").toLowerCase().trim()] || null; }
+  function list(v){ return Array.isArray(v) ? v.filter(function(x){return x && String(x).trim();}).slice(0,10) : []; }
+
+  if (!data || !data.n) {
+    var empty = el("div","empty");
+    empty.appendChild(el("h1",null,"Your next favorite strain is waiting."));
+    empty.appendChild(el("p","note","Log, rate and compare every jar in Strain Diary, the private cannabis journal for iPhone."));
+    app.appendChild(empty);
+    return;
+  }
+
+  var terps = list(data.tp), accent = colorFor(terps[0]);
+  if (accent) document.documentElement.style.setProperty("--accent", accent);
+  document.title = data.n + (data.b ? " by " + data.b : "") + " · Strain Diary";
+
+  var card = el("article","card"), hero = el("div","hero");
+  if (data.b) hero.appendChild(el("div","brand",data.b));
+  hero.appendChild(el("h1",null,data.n));
+  var meta = el("div","meta");
+  if (data.t) meta.appendChild(el("span","pill type",data.t));
+  if (data.r > 0) meta.appendChild(el("span","pill rating","★ " + Number(data.r).toFixed(1) + " / 10"));
+  if (data.x) meta.appendChild(el("span","pill",data.x));
+  hero.appendChild(meta);
+  card.appendChild(hero);
+
+  var body = el("div","body");
+  if (data.q) {
+    var wrap = el("div");
+    wrap.appendChild(el("p","quote",data.q));
+    if (data.by) wrap.appendChild(el("div","by","— @" + String(data.by).replace(/^@/,"")));
+    body.appendChild(wrap);
+  } else if (data.by) {
+    body.appendChild(el("div","by","Reviewed by @" + String(data.by).replace(/^@/,"")));
+  }
+  function section(label, items, dotColor){
+    if (!items.length) return;
+    var s = el("div"); s.appendChild(el("div","label",label));
+    var chips = el("div","chips");
+    items.forEach(function(it){
+      var c = el("span","chip"), dot = el("i");
+      var col = dotColor ? dotColor(it) : null; if (col) dot.style.setProperty("--c", col);
+      c.appendChild(dot); c.appendChild(document.createTextNode(it)); chips.appendChild(c);
+    });
+    s.appendChild(chips); body.appendChild(s);
+  }
+  section("Terpenes", terps, colorFor);
+  section("Flavors", list(data.f));
+  section("Smell", list(data.s));
+  section("Effects", list(data.e), function(){ return "#6ee7b7"; });
+  card.appendChild(body);
+  app.appendChild(card);
+
+  // Same payload, handed to the app so it can show this strain with an
+  // "Add to Diary" option.
+  document.getElementById("open").href = "straindiary://review?d=" + raw;
+})();
+</script>
+</body>
+</html>
