@@ -23,7 +23,6 @@
     card.querySelector('.strain-feature-name').textContent=item.name;
     card.querySelector('.strain-feature-type').textContent=item.type ? cap(item.type)+' profile' : 'Strain profile';
     card.querySelector('.strain-feature-crosses').textContent=item.crosses ? 'Lineage: '+item.crosses : 'Explore this strain profile';
-    card.querySelector('.strain-feature-count').textContent='• '+(spotlightIndex+1)+' / '+strains.length;
     card.setAttribute('aria-label','Explore '+item.name+' and search the strain library');
   };
   const tags=(label,items)=>{
