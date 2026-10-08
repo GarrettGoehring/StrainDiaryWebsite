@@ -48,6 +48,22 @@ h2{font-size:1rem;letter-spacing:-.02em;margin:0}
 .arrow{color:var(--muted);flex-shrink:0;width:17px;height:17px}
 .empty-state{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:24px 18px;color:var(--muted);font-size:.875rem}
 .privacy-note{margin-top:18px;color:var(--muted);font-size:.8125rem;padding:0 2px}
+/* Try Bluetooth: a small built-in demo of the browser's Web Bluetooth support */
+.bt-try{margin:12px 0 0;padding:8px 14px;border-radius:999px;background:var(--accent-bg);color:var(--accent);font-size:.8125rem;font-weight:650}
+.bt-dialog{width:min(440px,calc(100vw - 32px));border:1px solid var(--line);border-radius:22px;background:var(--panel);color:var(--text);padding:20px}
+.bt-dialog::backdrop{background:rgba(0,0,0,.45)}
+.bt-dialog p{margin:0 0 14px;color:var(--muted);font-size:.875rem}
+.bt-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.bt-close{background:transparent;color:var(--accent);font-weight:650;padding:6px 2px}
+.bt-actions{display:flex;flex-wrap:wrap;gap:10px}
+.bt-button{display:inline-flex;align-items:center;gap:8px;border-radius:12px;min-height:48px;padding:10px 16px;background:var(--button);color:var(--button-text);font-weight:650}
+.bt-button svg{width:18px;height:18px}
+.bt-button.secondary{background:var(--accent-bg);color:var(--accent)}
+.bt-status{margin-top:14px;font-size:.875rem;font-weight:600}
+.bt-details{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid var(--line)}
+.bt-details li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.875rem}
+.bt-details li span:first-child{color:var(--muted)}
+.bt-details li span:last-child{font-weight:600;text-align:right;overflow-wrap:anywhere}
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);margin-top:34px;padding-top:18px;color:var(--muted);font-size:.8125rem}
 svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 @media(prefers-color-scheme:light){:root{--bg:#f7f6fb;--panel:#fff;--text:#252033;--muted:#625c70;--line:#dfdae9;--accent:#633b94;--accent-bg:#eee6f9;--button:#7040a4;--button-text:#fff}}
@@ -119,7 +135,20 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 <h1>A place to look things up.</h1>
 <p>Search the web without leaving Strain Diary.</p>
 <p class="browser-note"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m7 7 10 10-5 4V3l5 4L7 17"/></svg><span>Built-in Bluetooth support lets compatible web apps connect to supported devices.</span></p>
+<button id="bt-open" class="bt-try" type="button" aria-haspopup="dialog">Try Bluetooth</button>
 </div>
+
+<!-- Try Bluetooth popup: opened by the button above, closed with Done. -->
+<dialog id="bt-dialog" class="bt-dialog" aria-labelledby="bt-title">
+<div class="bt-head"><h2 id="bt-title">Try Bluetooth</h2><button id="bt-close" class="bt-close" type="button">Done</button></div>
+<p>See the browser's Bluetooth support in action: pick any nearby Bluetooth device and this page shows its details. Nothing is saved or sent anywhere.</p>
+<div class="bt-actions">
+<button id="bt-find" class="bt-button" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m7 7 10 10-5 4V3l5 4L7 17"/></svg>Find a Bluetooth Device</button>
+<button id="bt-disconnect" class="bt-button secondary" type="button" hidden>Disconnect</button>
+</div>
+<div id="bt-status" class="bt-status" role="status" aria-live="polite"></div>
+<ul id="bt-details" class="bt-details" hidden></ul>
+</dialog>
 
 <form id="search-form" action="https://www.google.com/search" method="get" role="search">
 <label for="query">Search the web</label>
@@ -227,6 +256,123 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
   });
 
   render();
+})();
+</script>
+
+<script>
+// Try Bluetooth: a self-contained demo of Web Bluetooth (navigator.bluetooth),
+// which Strain Diary's browser provides to every page. It lets anyone,
+// including App Review, see Bluetooth working without visiting another site.
+// It only reads what a device openly offers (name, and battery level or
+// maker if available) and keeps nothing.
+(() => {
+  const findButton = document.getElementById('bt-find');
+  const disconnectButton = document.getElementById('bt-disconnect');
+  const statusLine = document.getElementById('bt-status');
+  const details = document.getElementById('bt-details');
+  let device = null;   // the device the user picked, while connected
+  const dialog = document.getElementById('bt-dialog');
+
+  // "Try Bluetooth" opens the popup; Done (or Escape) closes it.
+  document.getElementById('bt-open').addEventListener('click', () => dialog.showModal());
+  document.getElementById('bt-close').addEventListener('click', () => dialog.close());
+  // Closing the popup also ends any connection, so nothing stays connected
+  // in the background.
+  dialog.addEventListener('close', () => {
+    if (device && device.gatt && device.gatt.connected) device.gatt.disconnect();
+  });
+
+  // Shows one status message under the buttons.
+  const setStatus = text => { statusLine.textContent = text; };
+
+  // Replaces the details list with these label/value pairs (skipping empty values).
+  const showDetails = rows => {
+    details.textContent = '';
+    rows.filter(([, value]) => value !== null && value !== undefined && value !== '')
+      .forEach(([label, value]) => {
+        const li = document.createElement('li');
+        const name = document.createElement('span');
+        const val = document.createElement('span');
+        name.textContent = label;
+        val.textContent = String(value);   // textContent: device names can't inject HTML
+        li.append(name, val);
+        details.appendChild(li);
+      });
+    details.hidden = details.children.length === 0;
+  };
+
+  // Reads the battery level (0–100%) if the device has the standard Battery service.
+  const readBattery = async server => {
+    try {
+      const service = await server.getPrimaryService('battery_service');
+      const level = await service.getCharacteristic('battery_level');
+      const value = await level.readValue();
+      return value.getUint8(0) + '%';
+    } catch { return null; }   // most devices don't offer it; that's fine
+  };
+
+  // Reads the maker's name if the device has the standard Device Information service.
+  const readManufacturer = async server => {
+    try {
+      const service = await server.getPrimaryService('device_information');
+      const name = await service.getCharacteristic('manufacturer_name_string');
+      return new TextDecoder().decode(await name.readValue()).trim() || null;
+    } catch { return null; }
+  };
+
+  // Resets the demo when the device disconnects (by the button or on its own).
+  const onDisconnected = () => {
+    disconnectButton.hidden = true;
+    setStatus('Disconnected.');
+    device = null;
+  };
+
+  // Main flow: open the device picker, connect, then show what the device offers.
+  findButton.addEventListener('click', async () => {
+    // Opened outside Strain Diary (for example in Safari), Bluetooth isn't available.
+    if (!navigator.bluetooth) {
+      setStatus('Bluetooth isn\'t available in this browser. Open this page in Strain Diary\'s Browser tab.');
+      return;
+    }
+    showDetails([]);
+    try {
+      setStatus('Choose a device from the list…');
+      // acceptAllDevices lists every nearby device. optionalServices names the
+      // two standard services this demo may read; nothing else is accessed.
+      // They're passed as full IDs (BluetoothUUID turns "battery_service" into
+      // 0000180f-…), since some Bluetooth bridges only understand IDs here.
+      const serviceID = name => (window.BluetoothUUID ? BluetoothUUID.getService(name) : name);
+      const picked = await navigator.bluetooth.requestDevice({
+        acceptAllDevices: true,
+        optionalServices: [serviceID('battery_service'), serviceID('device_information')]
+      });
+      device = picked;
+      device.addEventListener('gattserverdisconnected', onDisconnected);
+      showDetails([['Name', picked.name || 'Unnamed device']]);
+      setStatus('Connecting…');
+      const server = await picked.gatt.connect();
+      const [battery, maker] = await Promise.all([readBattery(server), readManufacturer(server)]);
+      showDetails([
+        ['Name', picked.name || 'Unnamed device'],
+        ['Status', 'Connected'],
+        ['Battery', battery],
+        ['Made by', maker]
+      ]);
+      setStatus('Connected over Bluetooth.');
+      disconnectButton.hidden = false;
+    } catch (error) {
+      // NotFoundError means the user closed the picker without choosing.
+      if (error && error.name === 'NotFoundError') setStatus('No device chosen.');
+      else setStatus('Couldn\'t connect: ' + ((error && error.message) || 'unknown error'));
+      if (device && device.gatt && device.gatt.connected) device.gatt.disconnect();
+    }
+  });
+
+  // Ends the connection; onDisconnected updates the page.
+  disconnectButton.addEventListener('click', () => {
+    if (device && device.gatt && device.gatt.connected) device.gatt.disconnect();
+    else onDisconnected();
+  });
 })();
 </script>
 </body>
