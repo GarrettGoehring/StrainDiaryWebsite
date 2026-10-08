@@ -36,6 +36,11 @@ h1{margin:6px 0 12px;font-size:34px;line-height:1.05;font-weight:900;letter-spac
 .chips{display:flex;flex-wrap:wrap;gap:7px}
 .chip{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,255,255,.08);border:1px solid var(--line)}
 .chip i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--accent))}
+.bars{display:flex;flex-direction:column;gap:12px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.bar-top{display:flex;align-items:baseline;gap:7px;font-size:14px;font-weight:700;min-width:0}
+.bar-top small{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.track{height:8px;margin-top:6px;border-radius:999px;background:rgba(255,255,255,.09);overflow:hidden}
+.fill{height:100%;border-radius:999px}
 .actions{width:100%;max-width:440px;display:flex;flex-direction:column;gap:10px;margin-top:20px}
 .btn{display:flex;align-items:center;justify-content:center;gap:8px;height:54px;border-radius:999px;font-size:16px;font-weight:800;border:1px solid var(--line);background:rgba(255,255,255,.07)}
 .btn.primary{background:var(--lime);color:#0c1711;border:0}
@@ -88,8 +93,62 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
   try { if (raw) data = decode(raw); } catch(e) { data = null; }
 
   function el(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
-  var terpColors = {myrcene:"#7e57c2",limonene:"#f9c74f",caryophyllene:"#e76f51","beta-caryophyllene":"#e76f51",linalool:"#b388eb",pinene:"#2a9d8f","alpha-pinene":"#2a9d8f","beta-pinene":"#3fb68b",humulene:"#a47148",terpinolene:"#4cc9f0",ocimene:"#90be6d",bisabolol:"#f4a3c1",nerolidol:"#8d99ae",farnesene:"#c8f06a"};
-  function colorFor(name){ return terpColors[(name||"").toLowerCase().trim()] || null; }
+  // Same palette and wording as the app (Theming.swift), so a strain looks
+  // the same here as on its page in Strain Diary.
+  var terpTable = [
+    ["myrcene","#8E5BC8","relaxing, mellow"],["limonene","#F2B705","uplifting, bright"],
+    ["caryophyllene","#C0563B","warming, grounding"],["pinene","#2E8B57","alert, focused"],
+    ["linalool","#7C73E6","calming, soft"],["terpinolene","#17A2A2","energizing, creative"],
+    ["humulene","#9C6B3F","earthy, grounding"],["ocimene","#5BC88E","uplifting, fresh"],
+    ["bisabolol","#E08AB0","soothing, gentle"],["nerolidol","#B79268","calming, woody"],
+    ["fenchol","#8A93A0","fresh, calming"],["camphene","#6FAE5E","cooling, earthy"],
+    ["eucalyptol","#3FB6C9","cooling, clear-headed"],["geraniol","#E85C8A","calming, floral"],
+    ["valencene","#F2953D","uplifting, citrusy"],["guaiol","#6B7A4F","earthy, grounding"],
+    ["terpineol","#C9A8D8","relaxing, soothing"],["borneol","#4FA3B0","calming, cooling"],
+    ["sabinene","#7A8F5C","fresh, peppery"],["carene","#5A9B6E","crisp, focused"]
+  ];
+  function terpRow(name){
+    var n = (name||"").toLowerCase();
+    for (var i=0;i<terpTable.length;i++) if (n.indexOf(terpTable[i][0]) >= 0) return terpTable[i];
+    return null;
+  }
+  function colorFor(name){ var r = terpRow(name); return r ? r[1] : null; }
+  function terpColor(name){ return colorFor(name) || "#78A05A"; }
+  function terpEffect(name){ var r = terpRow(name); return r ? r[2] : ""; }
+  function has(n, words){ for (var i=0;i<words.length;i++) if (n.indexOf(words[i]) >= 0) return true; return false; }
+  function flavorColor(name){
+    var n = (name||"").toLowerCase();
+    if (has(n,["cream","vanilla","milk","cheerio"])) return "#F2E9D8";
+    if (has(n,["smoothie"])) return "#B47EE5";
+    if (has(n,["melon"])) return "#8BC34A";
+    if (has(n,["grape","wine","berry"])) return "#7B4FA0";
+    if (has(n,["citrus","lemon","orange","mango","tropical","papaya","guava","peach"])) return "#F2B705";
+    if (has(n,["cherry","strawberry","candy","punch","cocktail"])) return "#E0507A";
+    if (has(n,["mint","menthol"])) return "#5BC9B8";
+    if (has(n,["chocolate","coffee","maple","honey","biscotti","bread"])) return "#8A5A32";
+    if (has(n,["floral"])) return "#D98ABF";
+    if (has(n,["pepper","spicy"])) return "#C0392B";
+    if (has(n,["diesel","gas","fuel","chemical","glue"])) return "#8A93A0";
+    if (has(n,["skunk","funk","rotten","stale"])) return "#8A8F3F";
+    if (has(n,["sour"])) return "#C7E05A";
+    if (has(n,["pine","earthy","kush","herbal"])) return "#5A8F5A";
+    if (has(n,["garlic"])) return "#C9C2A8";
+    if (has(n,["sweet","fruit","banana"])) return "#F2A65A";
+    return "#78A05A";
+  }
+  function effectColor(name){
+    var n = (name||"").toLowerCase();
+    if (has(n,["sleep","sedat","couch","drows"])) return "#8B7FD1";
+    if (has(n,["relax","calm","sooth","unwind"])) return "#6FA8DC";
+    if (has(n,["energ","uplift","focus","alert","creative","talkative"])) return "#F2C94C";
+    if (has(n,["happy","euphor","giggl"])) return "#F2994A";
+    if (has(n,["hungry","appetite","munchie"])) return "#E0507A";
+    if (has(n,["social","motivat"])) return "#4EDEA3";
+    if (has(n,["pain","numb"])) return "#5A8F5A";
+    if (has(n,["anxi","stress","paranoi"])) return "#C0392B";
+    if (has(n,["dry"])) return "#C9C2A8";
+    return "#D7B86A";
+  }
   function list(v){ return Array.isArray(v) ? v.filter(function(x){return x && String(x).trim();}).slice(0,10) : []; }
 
   function showEmpty(title){
@@ -139,10 +198,36 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
     });
     s.appendChild(chips); body.appendChild(s);
   }
-  section("Terpenes", terps, colorFor);
-  section("Flavors", list(data.f));
-  section("Smell", list(data.s));
-  section("Effects", list(data.e), function(){ return "#6ee7b7"; });
+  // Bar lists like the app's Terpene Profile and Flavor Profile cards.
+  function bars(label, rows){
+    if (!rows.length) return;
+    var s = el("div"); s.appendChild(el("div","label",label));
+    var box = el("div","bars");
+    rows.forEach(function(r){
+      var row = el("div"), top = el("div","bar-top");
+      top.appendChild(el("span",null,r.name));
+      if (r.detail) top.appendChild(el("small",null,r.detail));
+      var track = el("div","track"), fill = el("div","fill");
+      fill.style.width = Math.round(Math.max(0.05, Math.min(1, r.frac)) * 100) + "%";
+      fill.style.background = r.color;
+      track.appendChild(fill); row.appendChild(top); row.appendChild(track); box.appendChild(row);
+    });
+    s.appendChild(box); body.appendChild(s);
+  }
+  // Terpenes: top six, ranked — first full, then stepping down (as the app).
+  bars("Terpene Profile", terps.slice(0,6).map(function(t, i){
+    return {name: t, detail: terpEffect(t), frac: i === 0 ? 1 : Math.max(0.3, 1 - i * 0.17), color: terpColor(t)};
+  }));
+  // Flavors: sized by the strain's dominance sliders, or an even split.
+  var flavors = list(data.f);
+  var fw = Array.isArray(data.fw) && data.fw.length === (data.f||[]).length ? data.fw : null;
+  var even = flavors.length ? 100 / flavors.length : 0;
+  bars("Flavor Profile", flavors.map(function(f){
+    var i = (data.f||[]).indexOf(f), w = fw && i >= 0 && fw[i] > 0 ? fw[i] : even;
+    return {name: f, frac: w / 100, color: flavorColor(f), w: w};
+  }).sort(function(a,b){ return b.w - a.w; }));
+  section("Smell", list(data.s), flavorColor);
+  section("Effects", list(data.e), effectColor);
   card.appendChild(body);
   app.appendChild(card);
 
