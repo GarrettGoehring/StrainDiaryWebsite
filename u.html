@@ -21,6 +21,8 @@ a{color:inherit;text-decoration:none}
 .wrap{width:100%;max-width:480px}
 .head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;margin-bottom:20px}
 .avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:36px;font-weight:900;background:linear-gradient(135deg,#7fd36b,#2a9d8f);color:#0c1711;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--lime)}
+/* Profile photo, when the app sent one: fills the circle. */
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
 .head h1{margin:8px 0 0;font-size:24px;font-weight:900}
 .head p{margin:0;color:var(--muted);font-size:14px;font-weight:600}
 .tabs[hidden]{display:none}
@@ -247,7 +249,16 @@ footer a{text-decoration:underline}
       var handle = (page.h||"").replace(/^@/,"");
       document.getElementById("name").textContent = page.n || handle || "Strain Diary";
       document.getElementById("handle").textContent = handle ? "@" + handle + " on Strain Diary" : "";
-      document.getElementById("avatar").textContent = (page.n || handle || "S").charAt(0).toUpperCase();
+      var av = document.getElementById("avatar");
+      av.textContent = (page.n || handle || "S").charAt(0).toUpperCase();
+      // Profile photo (base64 JPEG). Checked to be plain base64 before use;
+      // if it fails to load, the first-initial letter stays.
+      if (typeof page.p === "string" && /^[A-Za-z0-9+/=]+$/.test(page.p)) {
+        var img = new Image();
+        img.alt = "";
+        img.onload = function(){ av.textContent = ""; av.appendChild(img); };
+        img.src = "data:image/jpeg;base64," + page.p;
+      }
       document.title = (page.n || "@" + handle) + " · Strain Reviews";
       var tabs = (page.tabs || []).filter(function(t){ return tabNames[t]; });
       if (!tabs.length) { msg("Nothing here yet."); return; }
