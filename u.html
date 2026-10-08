@@ -61,11 +61,10 @@ footer a{text-decoration:underline}
 <footer>Strain Diary · 21+ only · <a href="privacy-policy.html">Privacy</a></footer>
 <script>
 (function(){
-  // CloudKit Web Services, read-only. Create the token in CloudKit Console →
-  // API Access → API Tokens (Production, no sign-in, allowed origin
-  // https://straindiary.com) and paste it here.
-  var CK_API_TOKEN = "d5896d2abbcae6cd55d709c24172d245eaedcd31bb5d07149a3cff5959e217c0";
-  var CK_URL = "https://api.apple-cloudkit.com/database/1/iCloud.Gary.Strain-Diary-optimized/production/public/records/lookup?ckAPIToken=" + encodeURIComponent(CK_API_TOKEN);
+  // Review pages come through a small Cloudflare Worker that keeps the
+  // CloudKit token private and can only return review pages. Paste the
+  // Worker's URL here (e.g. https://straindiary-reviews.NAME.workers.dev).
+  var API_URL = "PASTE_WORKER_URL_HERE";
 
   var id = location.hash.slice(1).trim();
   var list = document.getElementById("list");
@@ -110,13 +109,12 @@ footer a{text-decoration:underline}
     });
   }
 
-  fetch(CK_URL, {method:"POST", body: JSON.stringify({records:[{recordName:"reviewPage-" + id}]})})
+  fetch(API_URL + "?id=" + encodeURIComponent(id))
     .then(function(r){ return r.json(); })
     .then(function(json){
-      var rec = json.records && json.records[0];
-      var raw = rec && rec.fields && rec.fields.homeURL && rec.fields.homeURL.value;
-      if (!raw) { msg("This review page isn't published right now."); return; }
-      page = JSON.parse(raw);
+      if (json.unverified) { msg("This review page couldn't be verified."); return; }
+      page = json.page;
+      if (!page) { msg("This review page isn't published right now."); return; }
       var handle = (page.h||"").replace(/^@/,"");
       document.getElementById("name").textContent = page.n || handle || "Strain Diary";
       document.getElementById("handle").textContent = handle ? "@" + handle + " on Strain Diary" : "";
