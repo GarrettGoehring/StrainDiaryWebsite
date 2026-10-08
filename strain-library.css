@@ -5,3 +5,11 @@
 .strain-spotlight{content-visibility:auto;contain-intrinsic-size:auto 360px}
 .strain-feature-card{box-shadow:0 12px 32px rgba(0,0,0,.12)}
 .strain-feature-art:before,.strain-feature-art:after,.strain-feature-art span,.strain-feature-art i{filter:none}
+
+/* A single contained leaf illustration replaces the overlapping CSS petals. */
+.strain-feature-art{flex:0 0 104px;width:104px;height:104px;transform:none;margin:0}
+.strain-feature-art:before,.strain-feature-art:after,.strain-feature-art span,.strain-feature-art i{display:none;content:none}
+.strain-feature-art svg{display:block;width:76px;height:76px;overflow:visible}
+.strain-feature-art .leaf-vein{fill:none;stroke:rgba(38,77,44,.7);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.strain-feature-count{display:none}
+@media(max-width:760px){.strain-feature-art{flex-basis:76px;width:76px;height:76px;transform:none;margin:0}.strain-feature-art svg{width:58px;height:58px}}
