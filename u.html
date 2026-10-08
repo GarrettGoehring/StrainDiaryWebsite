@@ -27,6 +27,20 @@ a{color:inherit;text-decoration:none}
 .tabs{display:flex;gap:6px;padding:5px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);margin-bottom:16px}
 .tabs button{flex:1;border:0;background:none;color:var(--muted);font:700 14px Figtree,-apple-system,sans-serif;padding:10px 6px;border-radius:999px;cursor:pointer}
 .tabs button.on{background:var(--lime);color:#0c1711}
+.tools[hidden],.filters[hidden]{display:none}
+.tools{display:flex;gap:8px;margin-bottom:10px}
+.tools select,.tools button{flex:1;height:40px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:700 14px Figtree,-apple-system,sans-serif;padding:0 14px;cursor:pointer;-webkit-appearance:none;appearance:none;text-align:center;text-align-last:center}
+.tools select option{color:#000}
+.tools button.on{background:var(--lime);color:#0c1711;border-color:transparent}
+.filters{padding:14px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line);margin-bottom:12px}
+.fgroup+.fgroup{margin-top:12px}
+.fgroup h3{margin:0 0 7px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:700 13px Figtree,-apple-system,sans-serif;padding:7px 12px;border-radius:999px;cursor:pointer}
+.chip.on{background:var(--lime);color:#0c1711;border-color:transparent}
+.fclear{margin-top:12px;background:none;border:0;color:var(--lime);font:800 13px Figtree,-apple-system,sans-serif;cursor:pointer;padding:4px 0}
+.count{font-size:12.5px;color:var(--muted);margin:0 4px 8px;font-weight:600}
+.count[hidden]{display:none}
 .list{display:flex;flex-direction:column;gap:10px}
 .item{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid var(--line);transition:transform .12s}
 .item:active{transform:scale(.98)}
@@ -52,6 +66,17 @@ footer a{text-decoration:underline}
     <p id="handle"></p>
   </div>
   <div class="tabs" id="tabs" hidden></div>
+  <div class="tools" id="tools" hidden>
+    <select id="sort" aria-label="Sort">
+      <option value="new">Newest first</option>
+      <option value="old">Oldest first</option>
+      <option value="rate">Top rated</option>
+      <option value="az">Name A–Z</option>
+    </select>
+    <button id="filterBtn" type="button">Filters</button>
+  </div>
+  <div class="filters" id="filters" hidden></div>
+  <div class="count" id="count" hidden></div>
   <div class="list" id="list"><div class="msg">Loading reviews…</div></div>
   <div class="actions">
     <a class="btn primary" href="https://testflight.apple.com/join/4TjvnXjD">Get Strain Diary free on TestFlight ↗</a>
@@ -85,29 +110,132 @@ footer a{text-decoration:underline}
   }
   function el(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
 
-  var page = null, current = null;
+  var page = null, current = null, entries = [];
   var tabNames = {s:"Shared", g:"Global", d:"Diary"};
+  var sortBy = "new";
+  // Filter groups: within a group any chip matches; across groups all must.
+  var groups = [
+    {k:"type", title:"Type",     get:function(p){ return p.t ? [p.t] : []; }},
+    {k:"brand",title:"Brand",    get:function(p){ return p.b ? [p.b] : []; }},
+    {k:"eff",  title:"Effects",  get:function(p){ return p.e || []; }},
+    {k:"flav", title:"Flavors",  get:function(p){ return p.f || []; }},
+    {k:"terp", title:"Terpenes", get:function(p){ return p.tp || []; }}
+  ];
+  var picked = {};
+  function resetPicked(){ groups.forEach(function(g){ picked[g.k] = {}; }); }
+  resetPicked();
+  // "710Labs" and "710 labs" are the same chip.
+  var key = function(v){ return String(v).toLowerCase().replace(/[^a-z0-9]+/g, ""); };
+  var fmt = new Intl.DateTimeFormat("en-US", {month:"short", day:"numeric", year:"2-digit"});
 
-  function render(tab){
-    current = tab;
-    document.querySelectorAll("#tabs button").forEach(function(b){ b.classList.toggle("on", b.dataset.t === tab); });
+  function pickedCount(){
+    var n = 0; groups.forEach(function(g){ n += Object.keys(picked[g.k]).length; }); return n;
+  }
+
+  function matches(p){
+    return groups.every(function(g){
+      var want = Object.keys(picked[g.k]);
+      if (!want.length) return true;
+      var have = g.get(p).map(key);
+      return want.some(function(w){ return have.indexOf(w) >= 0; });
+    });
+  }
+
+  function sorted(list){
+    var by = {
+      "new": function(a,b){ return (b.it.t||0) - (a.it.t||0); },
+      "old": function(a,b){ return (a.it.t > 0 ? a.it.t : Infinity) - (b.it.t > 0 ? b.it.t : Infinity); },
+      "rate":function(a,b){ return (b.p.r||0) - (a.p.r||0) || (b.it.t||0) - (a.it.t||0); },
+      "az":  function(a,b){ return (a.p.n||"").localeCompare(b.p.n||"", undefined, {sensitivity:"base"}); }
+    }[sortBy];
+    return list.slice().sort(by);
+  }
+
+  // Chips for the current tab, most common first (top 12 per group).
+  function buildFilters(){
+    var box = document.getElementById("filters");
+    box.innerHTML = "";
+    var any = false;
+    groups.forEach(function(g){
+      var counts = {}, label = {};
+      entries.forEach(function(en){
+        var seen = {};
+        g.get(en.p).forEach(function(v){
+          var k = key(v); if (!k || seen[k]) return; seen[k] = 1;
+          counts[k] = (counts[k]||0) + 1; if (!label[k]) label[k] = String(v).trim();
+        });
+      });
+      var ks = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a] || a.localeCompare(b); }).slice(0, 12);
+      if (ks.length < 2) return;
+      any = true;
+      var wrap = el("div","fgroup"); wrap.appendChild(el("h3", null, g.title));
+      var chips = el("div","chips");
+      ks.forEach(function(k){
+        var c = el("button","chip" + (picked[g.k][k] ? " on" : ""), label[k]);
+        c.type = "button";
+        c.onclick = function(){
+          if (picked[g.k][k]) delete picked[g.k][k]; else picked[g.k][k] = 1;
+          c.classList.toggle("on", !!picked[g.k][k]);
+          draw();
+        };
+        chips.appendChild(c);
+      });
+      wrap.appendChild(chips); box.appendChild(wrap);
+    });
+    if (any) {
+      var clear = el("button","fclear","Clear filters"); clear.type = "button";
+      clear.onclick = function(){ resetPicked(); buildFilters(); draw(); };
+      box.appendChild(clear);
+    }
+    document.getElementById("filterBtn").hidden = !any;
+    if (!any) box.hidden = true;
+  }
+
+  function draw(){
+    var n = pickedCount();
+    var fb = document.getElementById("filterBtn");
+    fb.textContent = n ? "Filters · " + n : "Filters";
+    fb.classList.toggle("on", n > 0);
     list.innerHTML = "";
-    var items = page[tab] || [];
-    if (!items.length) { msg("Nothing here yet."); return; }
-    items.forEach(function(it){
-      var p; try { p = decode(it.c); } catch(e) { return; }
+    var shown = sorted(entries.filter(function(en){ return matches(en.p); }));
+    var count = document.getElementById("count");
+    count.hidden = !n;
+    count.textContent = shown.length + " of " + entries.length + " strains";
+    if (!entries.length) { msg("Nothing here yet."); return; }
+    if (!shown.length) { msg("No strains match these filters."); return; }
+    shown.forEach(function(en){
+      var p = en.p, it = en.it;
       var a = el("a","item"); a.href = "/r#" + it.c;
       var tp = (p.tp && p.tp[0]) || (p.f && p.f[0]) || "";
       var dot = el("div","dot", (p.n||"?").trim().charAt(0).toUpperCase()); dot.style.background = colorFor(tp);
       var meta = el("div","meta"); meta.appendChild(el("b",null,p.n||"Strain"));
       var sub = [p.b, p.t, p.x].filter(Boolean).join(" · ");
       if (sub) meta.appendChild(el("span",null,sub));
+      if (it.t > 0) meta.appendChild(el("span",null,fmt.format(new Date(it.t * 1000))));
       a.appendChild(dot); a.appendChild(meta);
       if (p.r > 0) a.appendChild(el("div","rate","★ " + Number(p.r).toFixed(1)));
       a.appendChild(el("div","chev","›"));
       list.appendChild(a);
     });
   }
+
+  function render(tab){
+    current = tab;
+    document.querySelectorAll("#tabs button").forEach(function(b){ b.classList.toggle("on", b.dataset.t === tab); });
+    entries = [];
+    (page[tab] || []).forEach(function(it){
+      try { entries.push({it: it, p: decode(it.c)}); } catch(e) {}
+    });
+    resetPicked();
+    document.getElementById("tools").hidden = entries.length < 2;
+    buildFilters();
+    draw();
+  }
+
+  document.getElementById("sort").onchange = function(){ sortBy = this.value; draw(); };
+  document.getElementById("filterBtn").onclick = function(){
+    var box = document.getElementById("filters"); box.hidden = !box.hidden;
+  };
 
   fetch(API_URL + "?id=" + encodeURIComponent(id))
     .then(function(r){ return r.json(); })
