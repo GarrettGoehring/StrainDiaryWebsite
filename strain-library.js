@@ -10,8 +10,13 @@
   let shown=pageSize;
   let spotlightIndex=0;
   let timer=null;
+  let spotlightVisible=false;
+  let loading=false;
+  let loaded=false;
+  const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cap=value=>value ? value.replace(/\b\w/g,letter=>letter.toUpperCase()) : '';
   const clean=value=>String(value||'').trim();
+  const escapeHTML=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const renderSpotlight=()=>{
     if(!card||!strains.length)return;
     const item=strains[spotlightIndex%strains.length];
@@ -26,7 +31,6 @@
     const values=items.slice(0,4).map(value=>'<span>'+escapeHTML(value)+'</span>').join('');
     return '<div class="strain-result-label">'+label+'</div><div class="strain-tags">'+values+'</div>';
   };
-  const escapeHTML=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const renderResults=()=>{
     if(!list)return;
     const results=filtered.slice(0,shown);
@@ -40,19 +44,48 @@
     shown=pageSize;
     renderResults();
   };
-  fetch('strain-library.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error('catalog');return response.json();}).then(data=>{
-    strains=Array.isArray(data)?data:[];
-    filtered=strains;
-    if(!strains.length)throw new Error('empty catalog');
-    if(count&&!list)count.textContent=strains.length.toLocaleString()+' strain profiles';
-    if(list)renderResults();
-    renderSpotlight();
-    if(card&&strains.length>1&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-      timer=window.setInterval(()=>{spotlightIndex=(spotlightIndex+1)%strains.length;renderSpotlight();},6500);
-      document.addEventListener('visibilitychange',()=>{if(document.hidden){clearInterval(timer);timer=null;}else if(!timer){timer=window.setInterval(()=>{spotlightIndex=(spotlightIndex+1)%strains.length;renderSpotlight();},6500);}});
+  const stopTimer=()=>{if(timer){clearInterval(timer);timer=null;}};
+  const startTimer=()=>{
+    if(!card||prefersReducedMotion||!spotlightVisible||document.hidden||timer||strains.length<2)return;
+    timer=window.setInterval(()=>{spotlightIndex=(spotlightIndex+1)%strains.length;renderSpotlight();},6500);
+  };
+  const loadCatalog=()=>{
+    if(loading||loaded)return;
+    loading=true;
+    fetch('strain-library.json',{cache:'no-cache'})
+      .then(response=>{if(!response.ok)throw new Error('catalog');return response.json();})
+      .then(data=>{
+        strains=Array.isArray(data)?data:[];
+        filtered=strains;
+        if(!strains.length)throw new Error('empty catalog');
+        loaded=true;
+        if(count&&!list)count.textContent=strains.length.toLocaleString()+' strain profiles';
+        if(list)renderResults();
+        renderSpotlight();
+        startTimer();
+      })
+      .catch(()=>{
+        if(count)count.textContent='Strain profiles are temporarily unavailable';
+        if(list)list.innerHTML='<div class="strain-empty">The strain library could not load right now. Please refresh the page and try again.</div>';
+      })
+      .finally(()=>{loading=false;});
+  };
+  if(list)loadCatalog();
+  if(card){
+    if('IntersectionObserver'in window){
+      const observer=new IntersectionObserver(entries=>{
+        const entry=entries[0];
+        spotlightVisible=Boolean(entry?.isIntersecting);
+        if(spotlightVisible)loadCatalog();
+        if(spotlightVisible)startTimer();else stopTimer();
+      },{rootMargin:'160px 0px',threshold:0});
+      observer.observe(card);
+    }else{
+      spotlightVisible=true;
+      loadCatalog();
     }
-  }).catch(()=>{if(count)count.textContent='Strain profiles are temporarily unavailable';if(list)list.innerHTML='<div class="strain-empty">The strain library could not load right now. Please refresh the page and try again.</div>';});
+  }
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopTimer();else startTimer();});
   input?.addEventListener('input',search);
   more?.addEventListener('click',()=>{shown+=pageSize;renderResults();});
-  document.addEventListener('keydown',event=>{if(event.key==='/'&&input&&!['INPUT','TEXTAREA'].includes(document.activeElement?.tagName)){event.preventDefault();input.focus();}});
 })();
