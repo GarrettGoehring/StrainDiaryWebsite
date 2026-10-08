@@ -23,7 +23,7 @@
     card.querySelector('.strain-feature-name').textContent=item.name;
     card.querySelector('.strain-feature-type').textContent=item.type ? cap(item.type)+' profile' : 'Strain profile';
     card.querySelector('.strain-feature-crosses').textContent=item.crosses ? 'Lineage: '+item.crosses : 'Explore this strain profile';
-    card.querySelector('.strain-feature-count').textContent='• '+(spotlightIndex+1)+' / '+strains.length+' bundled';
+    card.querySelector('.strain-feature-count').textContent='• '+(spotlightIndex+1)+' / '+strains.length;
     card.setAttribute('aria-label','Explore '+item.name+' and search the strain library');
   };
   const tags=(label,items)=>{
@@ -35,7 +35,7 @@
     if(!list)return;
     const results=filtered.slice(0,shown);
     list.innerHTML=results.length?results.map(item=>'<article class="strain-result"><div class="strain-result-top"><h3>'+escapeHTML(item.name)+'</h3>'+(item.type?'<span class="strain-result-type">'+escapeHTML(cap(item.type))+'</span>':'')+'</div>'+(item.crosses?'<p class="strain-result-crosses">Lineage: '+escapeHTML(item.crosses)+'</p>':'')+tags('FLAVORS',item.flavors)+tags('TERPENES',item.terpenes)+tags('COMMON EFFECTS',item.effects)+'</article>').join(''):'<div class="strain-empty">No strains found. Try another name, flavor or terpene.</div>';
-    if(count)count.textContent=filtered.length===strains.length?strains.length.toLocaleString()+' bundled profiles':filtered.length.toLocaleString()+' matching bundled profiles';
+    if(count)count.textContent=filtered.length===strains.length?strains.length.toLocaleString()+' profiles currently searchable here':filtered.length.toLocaleString()+' matching profiles here';
     if(more){more.hidden=shown>=filtered.length;more.textContent='Show more strains ('+Math.min(pageSize,filtered.length-shown)+' more)';}
   };
   const search=()=>{
