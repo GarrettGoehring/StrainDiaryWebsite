@@ -60,8 +60,18 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
   // The review lives in the URL fragment (never sent to the server):
   // straindiary.com/r#<base64url JSON>. Keys are kept short so links stay
   // small enough for a Linktree or bio.
-  var raw = location.hash.slice(1);
+  //
+  // Newer links are "#<strain id>.<base64url JSON>": the snapshot shows
+  // right away, then the strain's live copy (through the Worker) replaces
+  // it, so edits made after sharing show up — or it says the review was
+  // removed.
+  var API_URL = "https://straindiaryreviews.gdgoehring.workers.dev";
+  var hash = location.hash.slice(1);
+  var parts = hash.match(/^([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12})\.(.+)$/);
+  var liveID = parts ? parts[1] : null;
+  var raw = parts ? parts[2] : hash;
   var app = document.getElementById("app");
+  var openBtn = document.getElementById("open");
   var data = null;
   function decode(s){
     s = s.replace(/-/g,"+").replace(/_/g,"/");
@@ -70,6 +80,11 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
     for (var i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
     return JSON.parse(new TextDecoder().decode(bytes));
   }
+  function encode(obj){
+    var bytes = new TextEncoder().encode(JSON.stringify(obj)), bin = "";
+    for (var i=0;i<bytes.length;i++) bin += String.fromCharCode(bytes[i]);
+    return btoa(bin).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  }
   try { if (raw) data = decode(raw); } catch(e) { data = null; }
 
   function el(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
@@ -77,16 +92,21 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
   function colorFor(name){ return terpColors[(name||"").toLowerCase().trim()] || null; }
   function list(v){ return Array.isArray(v) ? v.filter(function(x){return x && String(x).trim();}).slice(0,10) : []; }
 
-  if (!data || !data.n) {
+  function showEmpty(title){
+    app.innerHTML = "";
     var empty = el("div","empty");
-    empty.appendChild(el("h1",null,"Your next favorite strain is waiting."));
+    empty.appendChild(el("h1",null,title));
     empty.appendChild(el("p","note","Log, rate and compare every jar in Strain Diary, the private cannabis journal for iPhone."));
     app.appendChild(empty);
-    return;
+    openBtn.href = "straindiary://diary";
   }
+
+  function show(data, code){
+  app.innerHTML = "";
 
   var terps = list(data.tp), accent = colorFor(terps[0]);
   if (accent) document.documentElement.style.setProperty("--accent", accent);
+  else document.documentElement.style.removeProperty("--accent");
   document.title = data.n + (data.b ? " by " + data.b : "") + " · Strain Diary";
 
   var card = el("article","card"), hero = el("div","hero");
@@ -128,7 +148,26 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
 
   // Same payload, handed to the app so it can show this strain with an
   // "Add to Diary" option.
-  document.getElementById("open").href = "straindiary://review?d=" + raw;
+  openBtn.href = "straindiary://review?d=" + code;
+  }
+
+  if (data && data.n) show(data, raw);
+  else if (!liveID) { showEmpty("Your next favorite strain is waiting."); return; }
+
+  if (!liveID) return;
+  fetch(API_URL + "?review=" + encodeURIComponent(liveID))
+    .then(function(r){ return r.json(); })
+    .then(function(json){
+      if (json.gone) { showEmpty("This review is no longer available."); return; }
+      if (!json.code) { if (!data || !data.n) showEmpty("Your next favorite strain is waiting."); return; }
+      var live = decode(json.code);
+      if (!live || !live.n) return;
+      // Text written just for this share stays; everything else is current.
+      if (data && data.k) { live.q = data.q; live.k = 1; }
+      var code = (data && data.k) ? encode(live) : json.code;
+      show(live, code);
+    })
+    .catch(function(){ /* offline or Worker down: keep the snapshot */ });
 })();
 </script>
 </body>

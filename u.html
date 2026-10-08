@@ -205,7 +205,8 @@ footer a{text-decoration:underline}
     if (!shown.length) { msg("No strains match these filters."); return; }
     shown.forEach(function(en){
       var p = en.p, it = en.it;
-      var a = el("a","item"); a.href = "/r#" + it.c;
+      // "<strain id>.<snapshot>" so the review shows the live copy.
+      var a = el("a","item"); a.href = "/r#" + (it.i ? it.i + "." : "") + it.c;
       var tp = (p.tp && p.tp[0]) || (p.f && p.f[0]) || "";
       var dot = el("div","dot", (p.n||"?").trim().charAt(0).toUpperCase()); dot.style.background = colorFor(tp);
       var meta = el("div","meta"); meta.appendChild(el("b",null,p.n||"Strain"));
