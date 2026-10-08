@@ -13,3 +13,5 @@
 .strain-feature-art .leaf-vein{fill:none;stroke:rgba(38,77,44,.7);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .strain-feature-count{display:none}
 @media(max-width:760px){.strain-feature-art{flex-basis:92px;width:92px;height:92px;transform:none;margin:0}.strain-feature-art svg{width:86px;height:86px}}
+
+.strain-feature-content{flex:1 1 100%}
