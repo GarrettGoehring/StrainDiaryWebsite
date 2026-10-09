@@ -4,7 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 const container = process.env.CLOUDKIT_CONTAINER || 'iCloud.Gary.Strain-Diary-optimized';
 const environment = process.env.CLOUDKIT_ENVIRONMENT || 'production';
 const keyID = process.env.CLOUDKIT_KEY_ID;
-const privateKeyText = process.env.CLOUDKIT_PRIVATE_KEY?.replace(/\\n/g, '\n');
+const privateKeyText = process.env.CLOUDKIT_PRIVATE_KEY?.replace(/\\n/g, '\n').trim();
 
 if (!keyID || !privateKeyText) {
   throw new Error('CLOUDKIT_KEY_ID and CLOUDKIT_PRIVATE_KEY are required');
