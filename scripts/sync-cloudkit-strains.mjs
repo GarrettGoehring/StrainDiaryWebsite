@@ -19,7 +19,7 @@ const keyFormat = privateKeyText.includes('BEGIN EC PRIVATE KEY') ? 'EC private 
   : privateKeyText.includes('BEGIN PUBLIC KEY') ? 'public PEM (wrong key)'
   : 'unrecognized';
 if (!keyFormat.includes('private')) {
-  throw new Error(`CLOUDKIT_PRIVATE_KEY format is ${keyFormat}; characters=${privateKeyText.length}, lines=${privateKeyText.split('\\n').length}`);
+  throw new Error(`CLOUDKIT_PRIVATE_KEY must contain an EC private key; received ${keyFormat}`);
 }
 
 const privateKey = createPrivateKey(privateKeyText);
