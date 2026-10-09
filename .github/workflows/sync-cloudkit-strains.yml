@@ -1,5 +1,5 @@
 name: Sync CloudKit strain library
-# Credential refresh check: 2026-10-09
+# Credential refresh check: 2026-10-09 15:31 PDT
 
 on:
   workflow_dispatch:
