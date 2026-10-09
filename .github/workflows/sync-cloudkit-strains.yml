@@ -31,6 +31,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify CloudKit key pair
+        run: |
+          node -e 'const c=require("node:crypto");let s=process.env.CLOUDKIT_PRIVATE_KEY.replace(/\\n/g,"\n").trim();if(!s.includes("BEGIN")){const b=s.replace(/\s/g,"");s="-----BEGIN EC PRIVATE KEY-----\n"+b.match(/.{1,64}/g).join("\n")+"\n-----END EC PRIVATE KEY-----"}const k=c.createPrivateKey(s);const der=c.createPublicKey(k).export({type:"spki",format:"der"});const fp=c.createHash("sha256").update(der).digest("hex");console.log("Derived public-key SHA-256:",fp);if(fp!=="4f10199caa4d3b2ba7133bfc8374c4e5ea506539b7a689525171751d15a80b63")throw new Error("GitHub private key does not match the public key registered in CloudKit")'
       - name: Build public strain catalog
         run: node scripts/sync-cloudkit-strains.mjs
       - name: Commit catalog changes
