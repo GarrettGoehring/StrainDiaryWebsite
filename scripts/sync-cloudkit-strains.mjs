@@ -4,7 +4,12 @@ import { readFile, writeFile } from 'node:fs/promises';
 const container = process.env.CLOUDKIT_CONTAINER || 'iCloud.Gary.Strain-Diary-optimized';
 const environment = process.env.CLOUDKIT_ENVIRONMENT || 'production';
 const keyID = process.env.CLOUDKIT_KEY_ID;
-const privateKeyText = process.env.CLOUDKIT_PRIVATE_KEY?.replace(/\\n/g, '\n').trim();
+const privateKeySecret = process.env.CLOUDKIT_PRIVATE_KEY?.replace(/\\n/g, '\n').trim();
+const compactKey = privateKeySecret?.replace(/\s/g, '') || '';
+const privateKeyText = privateKeySecret && !privateKeySecret.includes('BEGIN') &&
+  /^[A-Za-z0-9+/=]+$/.test(compactKey)
+  ? `-----BEGIN EC PRIVATE KEY-----\n${compactKey.match(/.{1,64}/g).join('\n')}\n-----END EC PRIVATE KEY-----`
+  : privateKeySecret;
 
 if (!keyID || !privateKeyText) {
   throw new Error('CLOUDKIT_KEY_ID and CLOUDKIT_PRIVATE_KEY are required');
