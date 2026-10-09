@@ -24,7 +24,7 @@ jobs:
     env:
       CLOUDKIT_CONTAINER: iCloud.Gary.Strain-Diary-optimized
       CLOUDKIT_ENVIRONMENT: production
-      CLOUDKIT_KEY_ID: 6857a3647d16f8932e55bbfb13a8b1a72e3d0f84336287a1c8a525c18f9dbcae
+      CLOUDKIT_KEY_ID: 69ad0d8df32f03c03ca4dd7de0690b727f7157c5fb2b86bc341f7904ef1add4c
       CLOUDKIT_PRIVATE_KEY: ${{ secrets.CLOUDKIT_PRIVATE_KEY }}
     steps:
       - uses: actions/checkout@v4
