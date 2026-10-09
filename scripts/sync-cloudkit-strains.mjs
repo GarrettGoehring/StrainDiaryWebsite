@@ -9,6 +9,13 @@ const privateKeyText = process.env.CLOUDKIT_PRIVATE_KEY?.replace(/\\n/g, '\n').t
 if (!keyID || !privateKeyText) {
   throw new Error('CLOUDKIT_KEY_ID and CLOUDKIT_PRIVATE_KEY are required');
 }
+const keyFormat = privateKeyText.includes('BEGIN EC PRIVATE KEY') ? 'EC private PEM'
+  : privateKeyText.includes('BEGIN PRIVATE KEY') ? 'PKCS8 private PEM'
+  : privateKeyText.includes('BEGIN PUBLIC KEY') ? 'public PEM (wrong key)'
+  : 'unrecognized';
+if (!keyFormat.includes('private')) {
+  throw new Error(`CLOUDKIT_PRIVATE_KEY format is ${keyFormat}; characters=${privateKeyText.length}, lines=${privateKeyText.split('\\n').length}`);
+}
 
 const privateKey = createPrivateKey(privateKeyText);
 const requestPath = `/database/1/${container}/${environment}/public/records/query`;
