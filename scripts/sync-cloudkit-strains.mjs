@@ -31,7 +31,7 @@ async function queryPage(recordType, desiredKeys, continuationMarker) {
   const response = await fetch(requestURL, {
     method: 'POST',
     headers: {
-      'content-type': 'application/json',
+      'content-type': 'text/plain',
       'X-Apple-CloudKit-Request-KeyID': keyID,
       'X-Apple-CloudKit-Request-ISO8601Date': date,
       'X-Apple-CloudKit-Request-SignatureV1': signature,
