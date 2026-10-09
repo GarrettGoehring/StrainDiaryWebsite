@@ -1,0 +1,46 @@
+name: Sync CloudKit strain library
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-cloudkit-strains.yml'
+      - 'scripts/sync-cloudkit-strains.mjs'
+      - 'strain-library-bundled.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloudkit-strain-library
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDKIT_CONTAINER: iCloud.Gary.Strain-Diary-optimized
+      CLOUDKIT_ENVIRONMENT: production
+      CLOUDKIT_KEY_ID: ${{ secrets.CLOUDKIT_KEY_ID || 'fadfaa03d1f252043e66f133a4559c154ed4211e0e8fa6c8cd5dfdf79a3069e9' }}
+      CLOUDKIT_PRIVATE_KEY: ${{ secrets.CLOUDKIT_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build public strain catalog
+        run: node scripts/sync-cloudkit-strains.mjs
+      - name: Commit catalog changes
+        run: |
+          if git diff --quiet -- strain-library.json strain-library-meta.json; then
+            echo "Strain library is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add strain-library.json strain-library-meta.json
+          git commit -m "Update public strain library from CloudKit"
+          git push
