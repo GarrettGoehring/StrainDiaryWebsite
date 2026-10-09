@@ -17,6 +17,8 @@
   const cap=value=>value ? value.replace(/\b\w/g,letter=>letter.toUpperCase()) : '';
   const clean=value=>String(value||'').trim();
   const escapeHTML=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const updateCountLabels=total=>document.querySelectorAll('[data-strain-count]').forEach(label=>{label.textContent=Number(total).toLocaleString();});
+  const loadMetadata=()=>fetch('strain-library-meta.json',{cache:'no-cache'}).then(response=>response.ok?response.json():null).then(meta=>{if(meta?.total)updateCountLabels(meta.total);}).catch(()=>{});
   const renderSpotlight=()=>{
     if(!card||!strains.length)return;
     const item=strains[spotlightIndex%strains.length];
@@ -56,6 +58,7 @@
       .then(data=>{
         strains=Array.isArray(data)?data:[];
         filtered=strains;
+        updateCountLabels(strains.length);
         if(!strains.length)throw new Error('empty catalog');
         loaded=true;
         if(count&&!list)count.textContent=strains.length.toLocaleString()+' strain profiles';
@@ -69,6 +72,7 @@
       })
       .finally(()=>{loading=false;});
   };
+  loadMetadata();
   if(list)loadCatalog();
   if(card){
     if('IntersectionObserver'in window){
