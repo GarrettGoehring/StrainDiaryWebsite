@@ -15290,8 +15290,18 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Dank",
+      "Fruity",
+      "Grape",
+      "Pine",
+      "Kush"
+    ],
+    "effects": [
+      "Body High",
+      "Happy",
+      "Sleepy"
+    ]
   },
   {
     "name": "Carnival Apple",
@@ -18646,8 +18656,19 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Lemon",
+      "Menthol",
+      "Nutty",
+      "Sweet",
+      "Earthy"
+    ],
+    "effects": [
+      "Body High",
+      "Relaxing",
+      "Sleepy",
+      "Uplifting"
+    ]
   },
   {
     "name": "Cookie Greaze",
@@ -49037,10 +49058,27 @@
   {
     "name": "Lemon Zkittlez BHO",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Las Vegas Lemon Skunk x Zkittlez",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Citrus",
+      "Herbal",
+      "Lemon",
+      "Mint",
+      "Sour"
+    ],
+    "effects": [
+      "Calming",
+      "Creative",
+      "Giggly",
+      "Happy",
+      "Relaxing",
+      "Sleepy"
+    ]
   },
   {
     "name": "lemonade",
@@ -51873,7 +51911,7 @@
   },
   {
     "name": "Mashup Mystery",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Mystery",
     "terpenes": [],
     "flavors": [
@@ -51881,7 +51919,8 @@
       "Fruit",
       "Gassy",
       "Melon",
-      "Sweet"
+      "Sweet",
+      "Lemon"
     ],
     "effects": []
   },
@@ -52531,10 +52570,26 @@
   {
     "name": "Melon",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Melon x Biker Kush",
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Berry",
+      "Fruity",
+      "Spicy",
+      "Sweet",
+      "Earthy"
+    ],
+    "effects": [
+      "Body High",
+      "Happy",
+      "Relaxing",
+      "Sleepy",
+      "Uplifting"
+    ]
   },
   {
     "name": "Melon Ball",
@@ -73716,8 +73771,19 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Berry",
+      "Diesel",
+      "Fruity",
+      "Sour",
+      "Earthy"
+    ],
+    "effects": [
+      "Aroused",
+      "Giggly",
+      "Happy",
+      "Uplifting"
+    ]
   },
   {
     "name": "Sour Blackberry Cookies",
@@ -77097,10 +77163,28 @@
   {
     "name": "Strawberry Lobster",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Strawberry Cough x Blue Lobster",
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Creamy",
+      "Fruity",
+      "Sour"
+    ],
+    "effects": [
+      "Cerebral",
+      "Happy",
+      "Hungry",
+      "Relaxing",
+      "Tingly",
+      "Uplifting"
+    ]
   },
   {
     "name": "Strawberry Lobster #9",
@@ -77877,8 +77961,21 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Berry",
+      "Blueberry",
+      "Flowery",
+      "Fruity",
+      "Spicy"
+    ],
+    "effects": [
+      "Body High",
+      "Calming",
+      "Happy",
+      "Relaxing",
+      "Sleepy",
+      "Uplifting"
+    ]
   },
   {
     "name": "Sugar Glider",
