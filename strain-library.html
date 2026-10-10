@@ -3,10 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strain Database | Strain Diary</title>
-  <meta name="description" content="Search the Strain Diary reference library for strain lineage, type, flavor, effects and terpene profiles.">
-  <meta name="robots" content="index, follow">
+  <title>Cannabis Strain Database: 5,200+ Profiles | Strain Diary</title>
+  <meta name="description" content="Search 5,200+ cannabis strain profiles by name, lineage, type, flavor, effects and terpenes in Strain Diary’s public reference and community database.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://straindiary.com/strain-library.html">
+  <meta property="og:url" content="https://straindiary.com/strain-library.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Strain Diary">
+  <meta property="og:title" content="Cannabis Strain Database: 5,200+ Profiles | Strain Diary">
+  <meta property="og:description" content="Search Strain Diary’s public reference and community database by strain name, lineage, type, flavor, effects and terpenes.">
+  <meta property="og:image" content="https://straindiary.com/assets/screenshots/StrainView.webp">
+  <meta property="og:image:alt" content="Strain Diary strain profile with lineage, effects and terpenes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cannabis Strain Database: 5,200+ Profiles | Strain Diary">
+  <meta name="twitter:description" content="Search strain names, lineage, type, flavor, effects and terpenes in Strain Diary’s public database.">
+  <meta name="twitter:image" content="https://straindiary.com/assets/screenshots/StrainView.webp">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://straindiary.com/strain-library.html#webpage",
+      "url": "https://straindiary.com/strain-library.html",
+      "name": "Cannabis Strain Database: 5,200+ Profiles | Strain Diary",
+      "description": "A searchable public database of more than 5,200 cannabis strain profiles with names, lineage, types, flavors, reported effects and terpenes.",
+      "isPartOf": {
+        "@id": "https://straindiary.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://straindiary.com/strain-library.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://straindiary.com/strain-library.html#dataset",
+      "name": "Strain Diary Cannabis Strain Database",
+      "description": "A searchable collection of bundled reference profiles, community strain contributions and public user entries, deduplicated by strain name.",
+      "url": "https://straindiary.com/strain-library.html",
+      "isAccessibleForFree": true,
+      "creator": {
+        "@id": "https://straindiary.com/#organization"
+      },
+      "keywords": [
+        "cannabis strains",
+        "strain database",
+        "strain lineage",
+        "terpenes",
+        "strain effects",
+        "strain flavors"
+      ],
+      "dateModified": "2026-10-10",
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://straindiary.com/strain-library.json"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://straindiary.com/strain-library.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://straindiary.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cannabis strain database",
+          "item": "https://straindiary.com/strain-library.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -25,8 +99,8 @@
   <main class="strain-library-page">
     <section class="strain-library-intro">
       <p class="kicker">STRAIN DIARY REFERENCE LIBRARY</p>
-      <h1>Explore <span data-strain-count>824</span> strains.<br><em>Find what’s behind them.</em></h1>
-      <p>Strain Diary’s database includes <span data-strain-count>824</span> strain profiles across its reference and community libraries. Search by name, lineage, type, flavor, effect or terpene.</p>
+      <h1>Explore <span data-strain-count>5,200+</span> strains.<br><em>Find what’s behind them.</em></h1>
+      <p>Strain Diary’s database includes <span data-strain-count>5,200+</span> strain profiles across its reference and community libraries. Search by name, lineage, type, flavor, effect or terpene.</p>
       <a class="strain-library-back" href="/">← Back to Strain Diary</a>
     </section>
     <section class="strain-directory" aria-labelledby="directory-title">
@@ -42,7 +116,16 @@
       <p class="strain-search-hint">Try a strain name, lineage, terpene or flavor.</p>
       <div class="strain-results" id="strain-results" aria-live="polite"></div>
       <button class="strain-load-more" id="strain-load-more" type="button" hidden>Show more strains</button>
-      <p class="strain-library-note">The profiles currently available on this page are for general reference and education. The app’s full database also includes community strains and public user entries. They are not medical advice. Strain names and reported characteristics can vary.</p>
+      <p class="strain-library-note">These profiles are provided for general reference and education. They are not medical advice. Strain names, lineage and reported characteristics can vary between growers, brands and batches.</p>
+    </section>
+    <section class="strain-library-about" aria-labelledby="strain-library-about-title">
+      <p class="kicker">ABOUT THE DATABASE</p>
+      <h2 id="strain-library-about-title">One place to explore cannabis strain information.</h2>
+      <div class="strain-library-about-grid">
+        <article><h3>What is included?</h3><p>The library combines Strain Diary’s bundled reference profiles, community strain contributions and public user entries. Matching strain names are combined into one searchable profile.</p></article>
+        <article><h3>What can I search?</h3><p>Search by strain name, lineage, indica, sativa or hybrid type, flavors, commonly reported effects, and terpene names such as limonene or myrcene.</p></article>
+        <article><h3>How should I use it?</h3><p>Use the database as a starting point, then keep your own observations in a consistent <a href="cannabis-journal.html">cannabis journal</a>. Product details can differ even when two products share a strain name.</p></article>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
