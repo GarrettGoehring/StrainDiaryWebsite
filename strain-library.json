@@ -59,6 +59,37 @@
     "effects": []
   },
   {
+    "name": "2 x 4",
+    "type": "",
+    "crosses": "Oishii x Dark Rainbow",
+    "terpenes": [
+      "Caryophyllene",
+      "Terpinolene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Sweet Berry Tones",
+      "Soft Candy Gas",
+      "Mellow Earthy Finish"
+    ],
+    "effects": [
+      "Easy",
+      "Everyday",
+      "Solid Flavor",
+      "Smooth Dabs"
+    ]
+  },
+  {
+    "name": "24.8k #6",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Flavor-Dense"
+    ],
+    "effects": []
+  },
+  {
     "name": "24k gold",
     "type": "Hybrid",
     "crosses": "Kosher Kush x Tangie",
@@ -232,10 +263,18 @@
   {
     "name": "41 Corpses",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Gelato #41 x Triangle Kush",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Rich, Sweet, Candy-Like"
+    ],
+    "effects": [
+      "Heavy Physical Relaxation"
+    ]
   },
   {
     "name": "41 Lemons",
@@ -258,7 +297,7 @@
   {
     "name": "41 Ton",
     "type": "",
-    "crosses": "",
+    "crosses": "Canal St Runtz x Zealousy Mountain Man",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -416,9 +455,13 @@
   {
     "name": "710 Chem x Zimosa",
     "type": "",
-    "crosses": "",
+    "crosses": "710 Chem x Zimosa",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Optimal Vapor Production"
+    ],
     "effects": []
   },
   {
@@ -719,7 +762,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -867,7 +914,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Highest Potency",
+      "Most Flavorful"
+    ],
     "effects": []
   },
   {
@@ -1107,10 +1157,22 @@
   {
     "name": "Afghan Sweetz",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Runtz x Afghani OG",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Tree fruit",
+      "Apricot",
+      "Sweet"
+    ],
+    "effects": [
+      "Talkative",
+      "Giggly",
+      "Relaxed"
+    ]
   },
   {
     "name": "afghani",
@@ -1863,7 +1925,8 @@
       "Apple",
       "Pine",
       "Citrus",
-      "Sweet"
+      "Sweet",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -3227,9 +3290,11 @@
   {
     "name": "Apricot Yuzu",
     "type": "",
-    "crosses": "",
+    "crosses": "Strawbercots #7 x Orange Yuzu",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Yuzu"
+    ],
     "effects": []
   },
   {
@@ -3691,7 +3756,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavorful And Natural"
+    ],
     "effects": []
   },
   {
@@ -3722,8 +3789,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Atomic Pineapples",
@@ -4204,8 +4276,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain"
+    ]
   },
   {
     "name": "Banana Acai",
@@ -4349,7 +4427,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ripe Banana Sweetness",
+      "Bright Citrus",
+      "Creamy Tropical Fruit",
+      "Subtle Candy"
+    ],
     "effects": []
   },
   {
@@ -4363,10 +4446,18 @@
   {
     "name": "Banana Chem",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Motorbreath x Banana Punch x Peyton Manning",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Terpene-Rich"
+    ],
+    "effects": [
+      "Smooth"
+    ]
   },
   {
     "name": "Banana Chew",
@@ -4621,7 +4712,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Freshly Peeled Bananas",
+      "Sweet Bubble Gum"
+    ],
     "effects": []
   },
   {
@@ -4850,7 +4944,11 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ]
   },
   {
     "name": "banana og",
@@ -5420,10 +5518,23 @@
   {
     "name": "Banana Punch #4 2nd Press",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Banana OG x Purple Punch",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
+    "effects": [
+      "Sleepy",
+      "Relaxed",
+      "Tingly",
+      "Hungry"
+    ]
   },
   {
     "name": "Banana Punch x Banana Dream",
@@ -5591,10 +5702,21 @@
   {
     "name": "Banana Spritzer",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Honey Banana x Spritzer",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Creamy Banana Sweetness",
+      "Bright Citrus Sparkle"
+    ],
+    "effects": [
+      "Excellent Balance",
+      "Clean",
+      "Satisfying Melt"
+    ]
   },
   {
     "name": "Banana Squared",
@@ -5804,9 +5926,14 @@
   {
     "name": "Banana Zikigai x Strawberry Marmalade",
     "type": "",
-    "crosses": "",
+    "crosses": "Banana Zikigai x Strawberry Marmalade",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Creamy Banana Candy",
+      "Ripe Strawberry",
+      "Tropical Fruit",
+      "Sweet Jammy"
+    ],
     "effects": []
   },
   {
@@ -5860,8 +5987,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Banana",
+      "Papaya"
+    ],
+    "effects": [
+      "Smooth",
+      "Fruit-Heavy",
+      "Sweetness"
+    ]
   },
   {
     "name": "Bananas N Cream",
@@ -5919,10 +6053,22 @@
   {
     "name": "BananZaaz",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Honey Beltz x Zkittlez",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Cream",
+      "Sweetness",
+      "Fruit-Forward",
+      "Tropical"
+    ],
+    "effects": [
+      "Smooth",
+      "Flavorful"
+    ]
   },
   {
     "name": "Bangin Oasis",
@@ -6138,10 +6284,20 @@
   {
     "name": "Benzini & Sub Zero",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Superboof x Oreoz",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Gassy",
+      "Savory",
+      "Sweeter"
+    ],
+    "effects": [
+      "Balanced Effect"
+    ]
   },
   {
     "name": "Bermuda Papaya",
@@ -6445,10 +6601,21 @@
   {
     "name": "Berry Smash",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Strawguava BX x Strawberry Jam",
+    "terpenes": [
+      "Caryophyllene",
+      "Terpinolene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Strawberry",
+      "Guava"
+    ],
+    "effects": [
+      "Relaxed",
+      "Happy",
+      "Creative"
+    ]
   },
   {
     "name": "Berry Sprtizer",
@@ -6496,8 +6663,19 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Juicy Mixed Berry",
+      "Fresh Citrus",
+      "Earthy Pine",
+      "Subtle Og Gas"
+    ],
+    "effects": [
+      "Smooth",
+      "Flavorful",
+      "Rich",
+      "Fruity Finish",
+      "Lingering Fuel Undertones"
+    ]
   },
   {
     "name": "berry white",
@@ -7061,7 +7239,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Nostalgic Bubblegum Sweetness",
+      "Soft Fruit",
+      "Light Citrus",
+      "Smooth, Sugary Finish"
+    ],
     "effects": []
   },
   {
@@ -8674,10 +8857,15 @@
   {
     "name": "Black Sapote",
     "type": "",
-    "crosses": "",
+    "crosses": "Carmel F x Moltov Cocktail",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Pure, Uncut Flavor"
+    ],
+    "effects": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ]
   },
   {
     "name": "Black Sunday x Str8 Lemonade Rocket",
@@ -8692,8 +8880,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "black triangle",
@@ -9092,7 +9285,8 @@
     "flavors": [
       "Blue Cheese",
       "Orange",
-      "Diesel"
+      "Diesel",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -9338,11 +9532,24 @@
     "name": "Blowin Biscotti x The Chemist",
     "type": "",
     "crosses": "Blowin Biscotti x The Chemist",
-    "terpenes": [],
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene",
+      "Humulene"
+    ],
     "flavors": [
       "Diesel",
       "Lemon",
-      "Chemical"
+      "Chemical",
+      "Earthy",
+      "Coffee",
+      "Sweet",
+      "Orange",
+      "Citrus",
+      "Flowery",
+      "Pepper"
     ],
     "effects": [
       "Uplifted",
@@ -9589,7 +9796,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full-Spectrum Flavor",
+      "Rich Terpene Profiles",
+      "Smooth, True-To-Plant Experience"
+    ],
     "effects": []
   },
   {
@@ -10407,10 +10618,22 @@
   {
     "name": "Blue Shark",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Blue Sherb x Zkittlez",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Grapefruit",
+      "Grape",
+      "Berry"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry"
+    ]
   },
   {
     "name": "Blue Sherbanger BHO",
@@ -10516,7 +10739,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Blue Candy",
+      "Chewy Taffy",
+      "Soft Berry Fruit"
+    ],
     "effects": []
   },
   {
@@ -10540,8 +10767,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth",
+      "Flavorful"
+    ],
+    "effects": [
+      "Relaxation",
+      "Creative Flow"
+    ]
   },
   {
     "name": "Blue Zina",
@@ -11209,11 +11442,17 @@
   {
     "name": "Blueberry Muffin BHO",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "Blueberry x Purple Panty Dropper",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Vanilla",
-      "Earthy"
+      "Earthy",
+      "Butter",
+      "Blueberry"
     ],
     "effects": [
       "Relaxed",
@@ -11359,10 +11598,15 @@
   {
     "name": "Blueberry Thin Mint",
     "type": "",
-    "crosses": "",
+    "crosses": "Hash Engineers x Simply Mary",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Creamy Cookie",
+      "Smooth Dessert-Like"
+    ],
+    "effects": [
+      "Indica-Leaning"
+    ]
   },
   {
     "name": "Blueberry Trop",
@@ -11754,8 +11998,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor",
+      "Smooth Vapor",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Bombay",
@@ -11824,7 +12074,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet And Sour Citrus Overtone"
+    ],
     "effects": []
   },
   {
@@ -12468,8 +12720,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "Experience"
+    ]
   },
   {
     "name": "Breakfast Burger",
@@ -12732,8 +12990,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Garlic-Pepper",
+      "Sweet"
+    ],
+    "effects": [
+      "Stress To Crumble"
+    ]
   },
   {
     "name": "Bubba",
@@ -12860,10 +13123,22 @@
   {
     "name": "Bubba Gelato",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Bubba's Girl x Gelato",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Sweet",
+      "Flowery",
+      "Pepper"
+    ],
+    "effects": [
+      "Relaxed",
+      "Aroused",
+      "Euphoric"
+    ]
   },
   {
     "name": "Bubba Ghost",
@@ -12963,7 +13238,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Cake"
+    ],
     "effects": []
   },
   {
@@ -13414,7 +13691,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sugar-Like",
+      "Sparkling",
+      "Terpy"
+    ],
     "effects": []
   },
   {
@@ -13433,7 +13714,13 @@
     "flavors": [
       "Citrus",
       "Earthy",
-      "Honey"
+      "Honey",
+      "Diesel",
+      "Skunk",
+      "Pungent",
+      "Tobacco",
+      "Pepper",
+      "Ammonia"
     ],
     "effects": [
       "Hungry",
@@ -13449,7 +13736,13 @@
     "flavors": [
       "Citrus",
       "Earthy",
-      "Honey"
+      "Honey",
+      "Diesel",
+      "Skunk",
+      "Pungent",
+      "Tobacco",
+      "Pepper",
+      "Ammonia"
     ],
     "effects": [
       "Hungry",
@@ -13567,8 +13860,17 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bright Candy-Sweet",
+      "Light Gas",
+      "Smooth Fruity"
+    ],
+    "effects": [
+      "Clean",
+      "Flavorful",
+      "Loud",
+      "Satisfying"
+    ]
   },
   {
     "name": "C. Chrome",
@@ -13645,7 +13947,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -13719,10 +14024,14 @@
   {
     "name": "Cadillac Grapes x Garlic Popz",
     "type": "",
-    "crosses": "",
+    "crosses": "Cadillac Grapes x Garlic Popz",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Light"
+    ],
+    "effects": [
+      "Powerful"
+    ]
   },
   {
     "name": "cadillac rainbow",
@@ -14078,7 +14387,142 @@
     ]
   },
   {
+    "name": "Cake Popz #22 1st Press",
+    "type": "",
+    "crosses": "Birthday Cake x Fire OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Berry",
+      "Earthy",
+      "Pepper",
+      "Sweet",
+      "Lemon",
+      "Pine"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Aroused",
+      "Uplifted",
+      "Creative",
+      "Sleepy"
+    ]
+  },
+  {
+    "name": "Cake Popz #22 2nd Press",
+    "type": "",
+    "crosses": "Birthday Cake x Fire OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Berry",
+      "Earthy",
+      "Pepper",
+      "Sweet",
+      "Lemon",
+      "Pine"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Aroused",
+      "Uplifted",
+      "Creative",
+      "Sleepy"
+    ]
+  },
+  {
     "name": "Cake Popz #22 Living Soil",
+    "type": "",
+    "crosses": "Birthday Cake x Fire OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Berry",
+      "Earthy",
+      "Pepper",
+      "Sweet",
+      "Lemon",
+      "Pine"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Aroused",
+      "Uplifted",
+      "Creative",
+      "Sleepy"
+    ]
+  },
+  {
+    "name": "Cake Popz #28",
+    "type": "",
+    "crosses": "Birthday Cake x Fire OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Berry",
+      "Earthy",
+      "Pepper",
+      "Sweet",
+      "Lemon",
+      "Pine"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Aroused",
+      "Uplifted",
+      "Creative",
+      "Sleepy"
+    ]
+  },
+  {
+    "name": "Cake Popz #28 1st Press",
+    "type": "",
+    "crosses": "Birthday Cake x Fire OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Berry",
+      "Earthy",
+      "Pepper",
+      "Sweet",
+      "Lemon",
+      "Pine"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Aroused",
+      "Uplifted",
+      "Creative",
+      "Sleepy"
+    ]
+  },
+  {
+    "name": "Cake Popz 1st Press",
     "type": "",
     "crosses": "Birthday Cake x Fire OG",
     "terpenes": [
@@ -14213,17 +14657,32 @@
   {
     "name": "Cali Nectar",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "grape dosi x papaya",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Lush",
+      "Syrupy Sweetness",
+      "Bright Citrus",
+      "Floral"
+    ],
+    "effects": [
+      "Smooth",
+      "Uplifting"
+    ]
   },
   {
     "name": "Cali Supply Tee",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -14231,8 +14690,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant True-To-Strain Experience"
+    ]
   },
   {
     "name": "California Black Roze",
@@ -14252,10 +14716,17 @@
   {
     "name": "California Nectarines",
     "type": "",
-    "crosses": "",
+    "crosses": "Cali Nectar x Peach Sours",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Ripe Nectarine",
+      "Juicy Peach",
+      "Bright Citrus"
+    ],
+    "effects": [
+      "Refreshing",
+      "Light Sour"
+    ]
   },
   {
     "name": "california orange",
@@ -14567,10 +15038,27 @@
   {
     "name": "Candied Orange",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Zkittlez x Mimosa",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene",
+      "Myrcene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Bright Orange Citrus",
+      "Sweet Candy",
+      "Smooth, Tangy"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry",
+      "Focused",
+      "Energetic",
+      "Uplifted"
+    ]
   },
   {
     "name": "Candy Apple",
@@ -15308,15 +15796,23 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth"
+    ],
+    "effects": [
+      "Vibrant",
+      "True-To-Strain"
+    ]
   },
   {
     "name": "Cartel Runtz",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Fruit"
+    ],
     "effects": []
   },
   {
@@ -15324,8 +15820,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Peach",
+      "Lemon Twist"
+    ],
+    "effects": [
+      "Happy",
+      "Social",
+      "No-Stress"
+    ]
   },
   {
     "name": "Casablanca Peaches",
@@ -15476,7 +15979,8 @@
     "flavors": [
       "Tropical",
       "Earthy",
-      "Citrus"
+      "Citrus",
+      "Woody"
     ],
     "effects": [
       "Uplifted",
@@ -15563,7 +16067,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavorful"
+    ],
     "effects": []
   },
   {
@@ -15623,7 +16129,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Elegant Dutch Crown Roll",
+      "Even Light",
+      "Even Burn"
+    ],
     "effects": []
   },
   {
@@ -15699,7 +16209,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -16012,11 +16525,17 @@
     "name": "Chem Dawg",
     "type": "",
     "crosses": "",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Earthy",
       "Woody",
-      "Diesel"
+      "Diesel",
+      "Chemical",
+      "Pungent"
     ],
     "effects": [
       "Happy",
@@ -16573,7 +17092,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
     "effects": []
   },
   {
@@ -17017,8 +17539,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full-Bodied"
+    ],
+    "effects": [
+      "Full-Spectrum Experience"
+    ]
   },
   {
     "name": "Cherry Markers",
@@ -17209,10 +17735,22 @@
   {
     "name": "Cherry Pie Gelato",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Cherry Pie x Gelato",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Pinene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Sweet Cherry Filling",
+      "Creamy Gelato Smoothness",
+      "Light Pastry Dough Note"
+    ],
+    "effects": [
+      "Mellow Gas"
+    ]
   },
   {
     "name": "cherry pie kush",
@@ -17245,16 +17783,41 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Cherry",
+      "Creamy Candy",
+      "Subtle Earthiness"
+    ],
+    "effects": [
+      "Euphoric",
+      "Mood-Boosting",
+      "Calming",
+      "Relaxed"
+    ]
   },
   {
     "name": "Cherry Pound Cake",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "London Poundcake x Cherry Tart",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Berry",
+      "Cherry",
+      "Creamy",
+      "Fruity",
+      "Nutty"
+    ],
+    "effects": [
+      "Body High",
+      "Calming",
+      "Happy",
+      "Relaxing",
+      "Sleepy"
+    ]
   },
   {
     "name": "cherry punch",
@@ -17594,18 +18157,28 @@
   {
     "name": "Chiquita Diesel x Cherry AK",
     "type": "",
-    "crosses": "",
+    "crosses": "Chiquita Diesel x Cherry AK",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tasty",
+      "Potent"
+    ],
+    "effects": [
+      "Light"
+    ]
   },
   {
     "name": "Chiquita Diesel x Cherry Ak47",
     "type": "",
-    "crosses": "",
+    "crosses": "Chiquita Diesel x Cherry Ak47",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tasty",
+      "Potent"
+    ],
+    "effects": [
+      "Light"
+    ]
   },
   {
     "name": "Chocolate Banana",
@@ -17764,10 +18337,15 @@
   {
     "name": "Chocolate Oranges 25 x LTP .",
     "type": "",
-    "crosses": "",
+    "crosses": "Chocolate Oranges 25 x LTP .",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Orange"
+    ],
+    "effects": [
+      "Uplifting",
+      "Energetic"
+    ]
   },
   {
     "name": "Chocolate Sherbet",
@@ -18340,8 +18918,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Great",
+      "Unmatched",
+      "Cleanest",
+      "Safe"
+    ],
+    "effects": [
+      "Great",
+      "Vapor Production"
+    ]
   },
   {
     "name": "Cobra Chi",
@@ -18409,7 +18995,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Live Rosin"
+    ],
     "effects": []
   },
   {
@@ -18417,16 +19005,28 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Cold Chain",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Wild, Complex"
+    ],
+    "effects": [
+      "Depth",
+      "Flavor",
+      "Effect"
+    ]
   },
   {
     "name": "Cold Creek Kush",
@@ -18486,6 +19086,18 @@
       "Relaxed",
       "Tingly",
       "Happy"
+    ]
+  },
+  {
+    "name": "Collection",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Vibrant Flavors"
+    ],
+    "effects": [
+      "Potent Effects"
     ]
   },
   {
@@ -19072,10 +19684,23 @@
   {
     "name": "Court's Cookies",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Sundae Driver x Grape Pie",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sundae Driver",
+      "Grape Pie"
+    ],
+    "effects": [
+      "Relaxed",
+      "Giggly",
+      "Happy",
+      "Euphoric"
+    ]
   },
   {
     "name": "Court's Kush",
@@ -19187,8 +19812,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Cranberry",
+      "Rose"
+    ],
+    "effects": [
+      "Cerebral",
+      "Uplifting",
+      "Relaxing",
+      "Euphoria"
+    ]
   },
   {
     "name": "Cranberry Shortbread",
@@ -19381,8 +20014,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Creamy"
+    ],
+    "effects": [
+      "Clean",
+      "Full-Spectrum",
+      "Dabbing"
+    ]
   },
   {
     "name": "Cream dips",
@@ -19449,8 +20088,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "Experience"
+    ]
   },
   {
     "name": "Crimson Clover",
@@ -19600,8 +20245,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant True-To-Strain Experience"
+    ]
   },
   {
     "name": "Crumpets",
@@ -19769,8 +20419,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Cryo",
@@ -19866,7 +20521,9 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [
-      "Tea"
+      "Tea",
+      "Diesel",
+      "Sweet"
     ],
     "effects": [
       "Creative",
@@ -19901,10 +20558,32 @@
   {
     "name": "Dab-O-Lantern",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "GMO x BP x Champaya x Spritzer",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Blue Cheese",
+      "Cheese",
+      "Earthy",
+      "Mango",
+      "Tropical",
+      "Citrus",
+      "Apricot",
+      "Grapefruit",
+      "Ammonia"
+    ],
+    "effects": [
+      "Tingly",
+      "Relaxed",
+      "Creative",
+      "Focused",
+      "Uplifted",
+      "Happy",
+      "Aroused"
+    ]
   },
   {
     "name": "Dad Fartz",
@@ -20029,10 +20708,25 @@
   {
     "name": "Dark Plumz",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "dark rainbow x plumz",
+    "terpenes": [
+      "Terpinolene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Deep Purple Fruit",
+      "Sweet Candy",
+      "Bold",
+      "Dessert-Like"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Giggly",
+      "Uplifted",
+      "Focused"
+    ]
   },
   {
     "name": "Dark Rainbow",
@@ -20142,7 +20836,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Woody",
+      "Earthy",
+      "Sweet"
+    ],
     "effects": []
   },
   {
@@ -20465,18 +21163,27 @@
   {
     "name": "DG Blueberry Punch x MM Whitethorn Rose",
     "type": "",
-    "crosses": "",
+    "crosses": "DG Blueberry Punch x MM Whitethorn Rose",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet",
+      "Berry"
+    ],
     "effects": []
   },
   {
     "name": "DG Orange Kiwi x MM Forbidden Melonz",
     "type": "",
-    "crosses": "",
+    "crosses": "DG Orange Kiwi x MM Forbidden Melonz",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tropical",
+      "Citrus",
+      "Sweet Melon"
+    ],
+    "effects": [
+      "Bright"
+    ]
   },
   {
     "name": "diablo og",
@@ -20621,8 +21328,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "Experience"
+    ]
   },
   {
     "name": "Diesel Mintz BHO",
@@ -20832,8 +21545,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Layered Tropical Fruit",
+      "Candy-Sweet"
+    ],
+    "effects": [
+      "Smooth"
+    ]
   },
   {
     "name": "District",
@@ -21033,8 +21751,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Amazing",
+      "Smooth"
+    ],
+    "effects": [
+      "Amazing",
+      "Smooth"
+    ]
   },
   {
     "name": "Dolato",
@@ -21137,7 +21861,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Vanilla Cream",
+      "Sugared Berry",
+      "Doughy"
+    ],
     "effects": []
   },
   {
@@ -21193,7 +21921,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Cake"
+    ],
     "effects": []
   },
   {
@@ -21217,7 +21947,9 @@
     "flavors": [
       "Cheese",
       "Gas",
-      "Earthy"
+      "Earthy",
+      "Sweet",
+      "Funky"
     ],
     "effects": [
       "Relaxed",
@@ -21463,7 +22195,7 @@
   {
     "name": "Donny Trop x Cheesy Rider",
     "type": "",
-    "crosses": "",
+    "crosses": "Donny Trop x Cheesy Rider",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -21768,10 +22500,16 @@
   {
     "name": "Double Donny x Garlic",
     "type": "",
-    "crosses": "",
+    "crosses": "Double Donny x Garlic",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full-Spectrum",
+      "Live Resin"
+    ],
+    "effects": [
+      "Powerful Entourage Effect",
+      "Even Burn"
+    ]
   },
   {
     "name": "Double Double",
@@ -22062,10 +22800,13 @@
   {
     "name": "Dragon Fruit Soda x Shack",
     "type": "",
-    "crosses": "",
+    "crosses": "Dragon Fruit Soda x Shack",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Flavorful",
+      "Potent"
+    ]
   },
   {
     "name": "Dragon Fruit x Tropicana Cookies",
@@ -22105,7 +22846,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Tart"
+    ],
     "effects": []
   },
   {
@@ -22187,7 +22930,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Bold Flavor",
+      "Smooth Vapor"
+    ],
     "effects": []
   },
   {
@@ -22219,7 +22965,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet And Creamy Sugary Caramel"
+    ],
     "effects": []
   },
   {
@@ -22313,10 +23061,24 @@
   {
     "name": "Dulce De Fresca",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Dulce De Uva x Strawberry Guava",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Ripe Strawberry",
+      "Juicy Berries",
+      "Creamy Candy"
+    ],
+    "effects": [
+      "Relaxed",
+      "Giggly",
+      "Euphoric",
+      "Happy",
+      "Hungry"
+    ]
   },
   {
     "name": "Dulce De Grapes",
@@ -22513,8 +23275,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Lively",
+      "Creative"
+    ],
+    "effects": [
+      "Upbeat",
+      "Talkative",
+      "Clear Head"
+    ]
   },
   {
     "name": "Durb Sherb",
@@ -23553,8 +24322,18 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Orange Peel",
+      "Light Florals",
+      "Herbal Richness"
+    ],
+    "effects": [
+      "Smooth",
+      "Balanced",
+      "Gently Uplifting",
+      "Calm",
+      "Relaxed"
+    ]
   },
   {
     "name": "Egyptian Papaya",
@@ -23653,8 +24432,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "High Terpene Expression"
+    ],
+    "effects": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ]
   },
   {
     "name": "El Jefe",
@@ -23857,10 +24641,23 @@
   {
     "name": "Euro Fuel",
     "type": "",
-    "crosses": "",
+    "crosses": "Euroz x Tractor Fuel",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Candy Sweetness",
+      "Gas-Forward",
+      "Dessert",
+      "Diesel",
+      "Earthy",
+      "Berry",
+      "Flowery",
+      "Ammonia"
+    ],
+    "effects": [
+      "Headstash",
+      "Bold Flavor",
+      "Premium Genetics"
+    ]
   },
   {
     "name": "Euro Step",
@@ -24067,7 +24864,9 @@
     "flavors": [
       "Earthy",
       "Diesel",
-      "Flowery"
+      "Flowery",
+      "Pine",
+      "Citrus"
     ],
     "effects": [
       "Euphoric",
@@ -24298,8 +25097,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full-Bodied"
+    ],
+    "effects": [
+      "Full-Bodied",
+      "Flower High"
+    ]
   },
   {
     "name": "Fat Z",
@@ -24589,7 +25393,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
     "effects": []
   },
   {
@@ -24641,7 +25448,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Green"
+    ],
     "effects": []
   },
   {
@@ -24996,10 +25805,22 @@
   {
     "name": "Flavor Pac",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Hollywood Pure Kush x Moonbow",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Earthy Kush",
+      "Rainbow Candy Brightness",
+      "Subtle Floral Sweetness"
+    ],
+    "effects": [
+      "Depth",
+      "Nuance",
+      "Unmistakable Character"
+    ]
   },
   {
     "name": "florida kush",
@@ -25192,8 +26013,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Honeyed Sweetness",
+      "Floral",
+      "Fruity"
+    ],
+    "effects": [
+      "Smooth",
+      "Satisfying Smoke"
+    ]
   },
   {
     "name": "FORBIDDEN MELONZ",
@@ -25668,10 +26496,23 @@
   {
     "name": "Frosty Gas Man",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "GMO x Long Valley Royal Kush x Double OG Chem",
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Ocimene"
+    ],
+    "flavors": [
+      "Creamy Sweetness",
+      "Bold, Fuel-Forward Exhale"
+    ],
+    "effects": [
+      "Tingly",
+      "Relaxed",
+      "Creative",
+      "Energetic",
+      "Aroused"
+    ]
   },
   {
     "name": "Frozay",
@@ -25712,14 +26553,33 @@
   {
     "name": "Frozen Bananas",
     "type": "Hybrid",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "OG Kush x Banana Kush",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
     "flavors": [
       "Banana",
       "Gas",
-      "Sweet"
+      "Sweet",
+      "Citrus",
+      "Diesel",
+      "Earthy",
+      "Mint",
+      "Pine",
+      "Vanilla",
+      "Woody",
+      "Tree fruit",
+      "Tropical"
     ],
-    "effects": []
+    "effects": [
+      "Creative",
+      "Euphoric",
+      "Focused",
+      "Relaxed",
+      "Uplifted"
+    ]
   },
   {
     "name": "Frozen Cranberries",
@@ -26178,13 +27038,19 @@
     "name": "Fuelato",
     "type": "",
     "crosses": "Gelato #41 x SFV OG",
-    "terpenes": [],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Linalool"
+    ],
     "flavors": [
       "Chemical",
       "Earthy",
       "Flowery",
       "Diesel",
-      "Sweet"
+      "Sweet",
+      "Creamy",
+      "Gas"
     ],
     "effects": [
       "Creative",
@@ -26228,7 +27094,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Bright Fruit",
+      "Crisp Apple",
+      "Delicate Floral"
+    ],
     "effects": []
   },
   {
@@ -26407,17 +27277,29 @@
   {
     "name": "G Bomb",
     "type": "",
-    "crosses": "",
+    "crosses": "Government Oasis x Canal St Runtz",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "Menthol",
+      "Ammonia",
+      "Mint"
+    ],
+    "effects": [
+      "Solventless Perfection"
+    ]
   },
   {
     "name": "G Princess",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -26496,7 +27378,8 @@
     "flavors": [
       "Pungent",
       "Earthy",
-      "Citrus"
+      "Citrus",
+      "Woody"
     ],
     "effects": [
       "Creative",
@@ -26784,8 +27667,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy",
+      "Woody",
+      "Diesel"
+    ],
+    "effects": [
+      "Happy",
+      "Uplifted",
+      "Relaxed"
+    ]
   },
   {
     "name": "galactic gas",
@@ -26818,7 +27709,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavorful And Natural"
+    ],
     "effects": []
   },
   {
@@ -27814,8 +28707,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Garlic Milk x White Cookies",
@@ -28219,7 +29118,8 @@
     "flavors": [
       "Diesel",
       "Berry",
-      "Chemical"
+      "Chemical",
+      "Woody"
     ],
     "effects": [
       "Hungry",
@@ -28449,8 +29349,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth"
+    ],
+    "effects": [
+      "Vibrant",
+      "True-To-Strain"
+    ]
   },
   {
     "name": "Gas Plant",
@@ -28495,8 +29401,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Gas Trucker",
@@ -28532,10 +29443,27 @@
   {
     "name": "Gasanova",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Biscotti x Sherb Cake",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Butter",
+      "Honey",
+      "Vanilla",
+      "Diesel",
+      "Grape",
+      "Berry"
+    ],
+    "effects": [
+      "Tingly",
+      "Relaxed",
+      "Euphoric",
+      "Creative",
+      "Talkative"
+    ]
   },
   {
     "name": "gascotti",
@@ -28592,9 +29520,13 @@
   {
     "name": "GassHole",
     "type": "",
-    "crosses": "",
+    "crosses": "Hash Engineers x Simply Mary",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Pungent Diesel",
+      "Sharp Fuel",
+      "Heavy, Lingering Gas"
+    ],
     "effects": []
   },
   {
@@ -28630,7 +29562,7 @@
   {
     "name": "Gastonia",
     "type": "",
-    "crosses": "",
+    "crosses": "Indica SFV x Undisclosed Genetics",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -28700,10 +29632,26 @@
   {
     "name": "Gator Island",
     "type": "",
-    "crosses": "",
+    "crosses": "Sherb Cake x Government Oasis",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity",
+      "Diesel",
+      "Grape",
+      "Berry",
+      "Menthol",
+      "Ammonia",
+      "Mint"
+    ],
+    "effects": [
+      "Creative",
+      "Talkative",
+      "Euphoric",
+      "Energetic",
+      "Uplifted"
+    ]
   },
   {
     "name": "Gator OG",
@@ -28868,11 +29816,22 @@
     "name": "GDP x GMO",
     "type": "",
     "crosses": "GDP x GMO",
-    "terpenes": [],
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene",
+      "Ocimene"
+    ],
     "flavors": [
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Grape",
+      "Berry",
+      "Spicy/Herbal",
+      "Sweet",
+      "Plum",
+      "Woody"
     ],
     "effects": [
       "Tingly",
@@ -28910,8 +29869,21 @@
     "name": "GDP x Grape Noir",
     "type": "",
     "crosses": "GDP x Grape Noir",
-    "terpenes": [],
-    "flavors": [],
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene",
+      "Ocimene"
+    ],
+    "flavors": [
+      "Grape",
+      "Berry",
+      "Spicy/Herbal",
+      "Earthy",
+      "Sweet",
+      "Plum",
+      "Woody"
+    ],
     "effects": [
       "Energetic",
       "Happy",
@@ -29009,8 +29981,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Delightful"
+    ],
+    "effects": [
+      "Engages"
+    ]
   },
   {
     "name": "Gelati",
@@ -29141,22 +30117,20 @@
       "Caryophyllene",
       "Limonene",
       "Linalool",
-      "Myrcene"
+      "Humulene"
     ],
     "flavors": [
       "Sweet",
       "Citrus",
       "Earthy",
-      "Lavender",
-      "Pepper",
-      "Flowery"
+      "Creamy"
     ],
     "effects": [
       "Relaxed",
       "Happy",
       "Euphoric",
-      "Aroused",
-      "Tingly"
+      "Creative",
+      "Focused"
     ]
   },
   {
@@ -30180,8 +31154,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy",
+      "Spicy",
+      "Citrus"
+    ],
+    "effects": [
+      "Uplifting",
+      "Relaxing"
+    ]
   },
   {
     "name": "Georgia Peachez",
@@ -30683,7 +31664,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "High Terpene Expression",
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -30768,7 +31753,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich Dessert Funk"
+    ],
     "effects": []
   },
   {
@@ -30894,8 +31881,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy-Sweet",
+      "Gas"
+    ],
+    "effects": [
+      "Dependable Quality",
+      "Everyday Enjoyment"
+    ]
   },
   {
     "name": "glazed apricot gelato",
@@ -31036,10 +32029,26 @@
   {
     "name": "Glob Ross",
     "type": "",
-    "crosses": "",
+    "crosses": "Sherb Cake x Super Boof",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "High Terpene Expression",
+      "Smooth Melt",
+      "True-To-Strain Authenticity",
+      "Diesel",
+      "Grape",
+      "Berry",
+      "Grapefruit",
+      "Citrus",
+      "Orange"
+    ],
+    "effects": [
+      "Creative",
+      "Talkative",
+      "Euphoric",
+      "Giggly",
+      "Focused"
+    ]
   },
   {
     "name": "Glow Stix",
@@ -31489,11 +32498,19 @@
     "name": "GMO x GMO",
     "type": "",
     "crosses": "GMO x GMO",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Pungent",
+      "Diesel",
+      "Sweet",
+      "Mint"
     ],
     "effects": [
       "Tingly",
@@ -31571,11 +32588,19 @@
     "name": "GMO x Papaya Burger",
     "type": "",
     "crosses": "GMO x Papaya Burger",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Pungent",
+      "Diesel",
+      "Sweet",
+      "Mint"
     ],
     "effects": [
       "Tingly",
@@ -31653,11 +32678,19 @@
     "name": "GMO x Vanilla",
     "type": "",
     "crosses": "GMO x Vanilla",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Pungent",
+      "Diesel",
+      "Sweet",
+      "Mint"
     ],
     "effects": [
       "Tingly",
@@ -32118,7 +33151,7 @@
   {
     "name": "Golden Passion Fruit",
     "type": "",
-    "crosses": "",
+    "crosses": "LilikoiZ x Golden Papaya",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -32596,7 +33629,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Hints Of Earthiness"
+    ],
     "effects": []
   },
   {
@@ -32668,11 +33703,20 @@
     "name": "Government Oasis x Donny Grove",
     "type": "",
     "crosses": "Government Oasis x Donny Grove",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Menthol",
       "Ammonia",
-      "Mint"
+      "Mint",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Energetic",
@@ -32709,11 +33753,20 @@
     "name": "Government Oasis x Garlic Burger",
     "type": "",
     "crosses": "Government Oasis x Garlic Burger",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Menthol",
       "Ammonia",
-      "Mint"
+      "Mint",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Energetic",
@@ -32725,11 +33778,20 @@
     "name": "Government Oasis x White Mango",
     "type": "",
     "crosses": "Government Oasis x White Mango",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Menthol",
       "Ammonia",
-      "Mint"
+      "Mint",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Energetic",
@@ -32859,11 +33921,20 @@
     "name": "Governmint Oasis x Banana Bomb",
     "type": "",
     "crosses": "Governmint Oasis x Banana Bomb",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Tingly",
@@ -32875,11 +33946,20 @@
     "name": "Governmint Oasis x Cadilac Rainbows",
     "type": "",
     "crosses": "Governmint Oasis x Cadilac Rainbows",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Tingly",
@@ -32891,11 +33971,20 @@
     "name": "Governmint Oasis x Donny Grove",
     "type": "",
     "crosses": "Governmint Oasis x Donny Grove",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Tingly",
@@ -32930,11 +34019,20 @@
     "name": "Governmint Oasis x Garlic Burger",
     "type": "",
     "crosses": "Governmint Oasis x Garlic Burger",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Tingly",
@@ -32998,11 +34096,20 @@
     "name": "Governmint Oasis x White Mango",
     "type": "",
     "crosses": "Governmint Oasis x White Mango",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Chemical",
+      "Pepper",
+      "Pungent",
+      "Nutty"
     ],
     "effects": [
       "Tingly",
@@ -33046,10 +34153,22 @@
   {
     "name": "GPZ",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Kush Mints x Dosidos",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Menthol",
+      "Mint",
+      "Ammonia"
+    ],
+    "effects": [
+      "Aroused",
+      "Relaxed",
+      "Euphoric"
+    ]
   },
   {
     "name": "grace water",
@@ -33594,7 +34713,7 @@
   {
     "name": "Grape Diesel",
     "type": "",
-    "crosses": "",
+    "crosses": "Sour Diesel x NYC Diesel",
     "terpenes": [],
     "flavors": [
       "Earthy",
@@ -33602,7 +34721,9 @@
       "Citrus",
       "Diesel",
       "Sweet",
-      "Berry"
+      "Berry",
+      "Grape",
+      "Butter"
     ],
     "effects": [
       "Sleepy",
@@ -33657,10 +34778,14 @@
   {
     "name": "Grape Fuel x Muel Fuel",
     "type": "",
-    "crosses": "",
+    "crosses": "Grape Fuel x Muel Fuel",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Flavor"
+    ],
+    "effects": [
+      "High"
+    ]
   },
   {
     "name": "grape gas",
@@ -34279,8 +35404,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Deep, Rich Candy Grape"
+    ],
+    "effects": [
+      "Deep",
+      "Relaxing Body High",
+      "Perfect For Drifting Off To Sleep"
+    ]
   },
   {
     "name": "Grape Sherbet x Mule Fuel",
@@ -34355,7 +35486,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Fruity Grape",
+      "Sour Tropical Citrus"
+    ],
     "effects": []
   },
   {
@@ -34412,10 +35546,22 @@
   {
     "name": "Grape Z",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "The Original Z x Grape Ape",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Pineapple",
+      "Grape",
+      "Diesel"
+    ],
+    "effects": [
+      "Euphoric",
+      "Uplifted",
+      "Sleepy"
+    ]
   },
   {
     "name": "Grape Zapaya",
@@ -35197,8 +36343,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Green Apple Gas",
@@ -35463,7 +36614,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet Candy Fruit",
+      "Bright Citrus",
+      "Creamy Funk",
+      "Earthy Gas"
+    ],
     "effects": []
   },
   {
@@ -35566,10 +36722,23 @@
   {
     "name": "Guala Pie",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Guala x Georgia Pie",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Berry Pie",
+      "Vanilla",
+      "Dough",
+      "Fruit"
+    ],
+    "effects": [
+      "Relaxed",
+      "Tingly",
+      "Aroused"
+    ]
   },
   {
     "name": "guard dawg",
@@ -35718,10 +36887,22 @@
   {
     "name": "Guava Bellini",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Strawgauva x Garlic Cocktail",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Chemical",
+      "Cheese",
+      "Skunk"
+    ],
+    "effects": [
+      "Relaxed",
+      "Talkative",
+      "Happy"
+    ]
   },
   {
     "name": "Guava Berry",
@@ -36129,9 +37310,11 @@
   {
     "name": "Guava Swizzle",
     "type": "",
-    "crosses": "",
+    "crosses": "Strawguava Bx #5 x Z. OCal-Certified",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Guava"
+    ],
     "effects": []
   },
   {
@@ -36278,7 +37461,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Guava",
+      "Tropical Fruit",
+      "Citrus"
+    ],
     "effects": []
   },
   {
@@ -36304,18 +37491,33 @@
   {
     "name": "Guilty Pleazure",
     "type": "",
-    "crosses": "",
+    "crosses": "Oishi x Pleazure",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Candy",
+      "Creamy Fruit",
+      "Subtle Gas"
+    ],
+    "effects": [
+      "Loud Flavor",
+      "Depth",
+      "Smooth",
+      "Mouth-Coating Finish"
+    ]
   },
   {
     "name": "Gum Drop",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Fruity"
+    ],
+    "effects": [
+      "Uplifting",
+      "Relaxation"
+    ]
   },
   {
     "name": "Gum Gum Fruit",
@@ -36774,10 +37976,19 @@
   {
     "name": "Halva",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "GSC x Sour Diesel x Wedding Pie",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sweet Cream"
+    ],
+    "effects": [
+      "Incredible Mind And Body High"
+    ]
   },
   {
     "name": "han solo burger",
@@ -37065,7 +38276,9 @@
       "Pungent",
       "Citrus",
       "Earthy",
-      "Honey"
+      "Honey",
+      "Tobacco",
+      "Pepper"
     ],
     "effects": [
       "Relaxed",
@@ -37650,18 +38863,42 @@
   {
     "name": "Heavy Ztorm",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Znowman x Spritzer",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sweet Z-Style Candy",
+      "Bright Grape",
+      "Citrus",
+      "Creamy"
+    ],
+    "effects": [
+      "Smooth Finish",
+      "Fruit",
+      "Gas",
+      "Dessert-Like Complexity"
+    ]
   },
   {
     "name": "Heavyweight",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Candy Fumez GMO x Banana Punch",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Tropical",
+      "Honey",
+      "Tree fruit"
+    ],
+    "effects": [
+      "Smooth Melt"
+    ]
   },
   {
     "name": "Hectane",
@@ -37837,7 +39074,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -37999,7 +39239,13 @@
       "Calming",
       "Ammonia",
       "Mint",
-      "Butter"
+      "Butter",
+      "Earthy",
+      "Creative",
+      "Relaxed",
+      "Tree fruit",
+      "Diesel",
+      "Blue Cheese"
     ],
     "effects": [
       "Relaxed",
@@ -38967,7 +40213,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Badder"
+    ],
     "effects": []
   },
   {
@@ -39039,11 +40287,26 @@
     ]
   },
   {
+    "name": "Holographic Logo Tote Bag",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Silk"
+    ],
+    "effects": []
+  },
+  {
     "name": "Holy Fruit",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ripe Golden Pear",
+      "Crisp Apple",
+      "Tropical",
+      "Fruit"
+    ],
     "effects": []
   },
   {
@@ -39586,10 +40849,19 @@
   {
     "name": "Honey Cube",
     "type": "",
-    "crosses": "",
+    "crosses": "Honey Banana x Z3",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Lush Banana Cream",
+      "Sweet Honeyed Fruit",
+      "Blueberry",
+      "Pineapple",
+      "Menthol"
+    ],
+    "effects": [
+      "Exceptional Smoothness",
+      "Depth"
+    ]
   },
   {
     "name": "Honey Fumez",
@@ -39955,7 +41227,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Zkittlez"
+    ],
     "effects": []
   },
   {
@@ -39963,7 +41237,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Zkittlez"
+    ],
     "effects": []
   },
   {
@@ -39971,7 +41247,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Everything You Want Out Of Zkittlez"
+    ],
     "effects": []
   },
   {
@@ -39999,7 +41277,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Super Sweet And Sugary",
+      "Floral",
+      "Berry"
+    ],
     "effects": []
   },
   {
@@ -40602,7 +41884,7 @@
   {
     "name": "Irish Coffee",
     "type": "",
-    "crosses": "",
+    "crosses": "Triple Sour x Strawberry Kush Cake x GNC",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -40612,8 +41894,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Sour"
+    ],
+    "effects": [
+      "Relax"
+    ]
   },
   {
     "name": "Island Blends #6",
@@ -41103,11 +42390,7 @@
     "effects": [
       "Happy",
       "Energetic",
-      "Uplifted",
-      "Creative",
-      "Focused",
-      "Euphoric",
-      "Uplifting"
+      "Uplifted"
     ]
   },
   {
@@ -41427,7 +42710,8 @@
       "Citrus",
       "Berry",
       "Lavender",
-      "Lemon"
+      "Lemon",
+      "Woody"
     ],
     "effects": [
       "Relaxed",
@@ -41862,7 +43146,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
     "effects": []
   },
   {
@@ -42210,7 +43497,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -42627,14 +43916,19 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Higher-Potency"
+    ]
   },
   {
     "name": "Kaluha Pig",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smoky",
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -42993,8 +44287,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bright Lime Zest",
+      "Creamy Dessert Notes"
+    ],
+    "effects": [
+      "Exceptional Clarity",
+      "Flavor",
+      "Depth"
+    ]
   },
   {
     "name": "Key Lime Sherbet",
@@ -43061,7 +44362,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Kush",
+      "Citrus"
+    ],
     "effects": []
   },
   {
@@ -43407,7 +44711,10 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Full-Bodied",
+      "Flower High"
+    ]
   },
   {
     "name": "Kiwi Melon",
@@ -43478,9 +44785,11 @@
   {
     "name": "Koffee F2 #13 X Dolato #10",
     "type": "",
-    "crosses": "",
+    "crosses": "Koffee F2 #13 x Dolato #10",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavored"
+    ],
     "effects": []
   },
   {
@@ -43687,7 +44996,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -44301,7 +45613,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ripe Banana",
+      "Earthy Kush",
+      "Creamy Tropical Fruit",
+      "Subtle Gassy"
+    ],
     "effects": []
   },
   {
@@ -44344,7 +45661,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Dabbing"
+    ],
     "effects": []
   },
   {
@@ -44769,7 +46088,9 @@
       "Diesel",
       "Earthy",
       "Citrus",
-      "Woody"
+      "Woody",
+      "Apricot",
+      "Grape"
     ],
     "effects": [
       "Euphoric",
@@ -45163,16 +46484,27 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Gas"
+    ],
+    "effects": [
+      "Loud"
+    ]
   },
   {
     "name": "LAX AFGOO",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy",
+      "Savory",
+      "Sweet"
+    ],
+    "effects": [
+      "Smooth",
+      "Heavy"
+    ]
   },
   {
     "name": "LAX Arc Angeles OG",
@@ -45432,10 +46764,25 @@
   {
     "name": "LAX Cereal Bar",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Cereal Milk x Bebecita",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Creamy Sweetness",
+      "Fruity",
+      "Candy-Like"
+    ],
+    "effects": [
+      "Balanced High",
+      "Euphoric",
+      "Mellow",
+      "Creative Sessions",
+      "Chill Vibes",
+      "Winding Down"
+    ]
   },
   {
     "name": "LAX CEREAL MILK",
@@ -45467,8 +46814,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Grape",
+      "Citrus Zest",
+      "Floral Earthiness"
+    ],
+    "effects": [
+      "Mellow Euphoria",
+      "Bubbly Uplift"
+    ]
   },
   {
     "name": "LAX CHERRY BELLINI",
@@ -45583,10 +46937,21 @@
   {
     "name": "LAX GELATO 82",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Bacio Gelato x Sunset Sherbert",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Rich, Creamy Dessert",
+      "Sweet Berry"
+    ],
+    "effects": [
+      "Euphoric",
+      "Uplifting",
+      "Full-Body Relaxation"
+    ]
   },
   {
     "name": "LAX GELATO DRIP",
@@ -45757,10 +47122,20 @@
   {
     "name": "LAX Goji Berry Kush",
     "type": "",
-    "crosses": "",
+    "crosses": "Pink Nectar x Yellow Mermaid",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet, Berry",
+      "Tropical",
+      "Pineapple",
+      "Apple"
+    ],
+    "effects": [
+      "Lifting The Mind",
+      "Gently Grounding The Body",
+      "Smooth",
+      "Relaxing Vibes"
+    ]
   },
   {
     "name": "LAX GOLDEN HAZE",
@@ -45791,8 +47166,17 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Peach",
+      "Candy",
+      "Dough",
+      "Gas"
+    ],
+    "effects": [
+      "Uplifting",
+      "Relaxed",
+      "Balanced"
+    ]
   },
   {
     "name": "LAX GRANDDADDY PURPLE",
@@ -45879,16 +47263,35 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Sticky"
+    ],
+    "effects": [
+      "Smooth-Hitting",
+      "Kicking Back",
+      "Slowdown"
+    ]
   },
   {
     "name": "LAX GUSHCOTTI",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Gushers x Biscotti",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Sweet",
+      "Fruity Berry",
+      "Spicy",
+      "Doughy"
+    ],
+    "effects": [
+      "Fast-Hitting Euphoric Head High"
+    ]
   },
   {
     "name": "LAX GUSHERS",
@@ -45949,8 +47352,17 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy Pine",
+      "Sweet Gas"
+    ],
+    "effects": [
+      "Euphoric Head High",
+      "Smooth",
+      "Balanced Body Calm",
+      "Creativity Up",
+      "Stress Down"
+    ]
   },
   {
     "name": "LAX Island skunk",
@@ -45980,18 +47392,39 @@
   {
     "name": "LAX Jedi",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Baby Yoda x OG",
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Tobacco",
+      "Pepper",
+      "Woody"
+    ],
+    "effects": [
+      "Deep",
+      "Meditative Calm",
+      "Warm Blanket Of Sedation",
+      "Peaceful"
+    ]
   },
   {
     "name": "LAX Jedi Og",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Deep",
+      "Meditative",
+      "Warm"
+    ],
+    "effects": [
+      "Calm",
+      "Sedation",
+      "Peaceful"
+    ]
   },
   {
     "name": "LAX JET FUEL",
@@ -46154,32 +47587,68 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Zesty",
+      "Citrus-Forward"
+    ],
+    "effects": [
+      "Energy",
+      "Focus",
+      "Euphoria",
+      "Daytime Vibes",
+      "Creative Boosts"
+    ]
   },
   {
     "name": "LAX LEMON PEELZ",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Lemon",
+      "Sweetness"
+    ],
+    "effects": [
+      "Energizing",
+      "Focused",
+      "Creatively Charged",
+      "Smooth",
+      "Balanced",
+      "Clarity"
+    ]
   },
   {
     "name": "LAX Lemongello",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Citrus",
+      "Creamy"
+    ],
+    "effects": [
+      "Uplifting Cerebral Buzz",
+      "Mellow Body High"
+    ]
   },
   {
     "name": "LAX Limesickle",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Zkittlez x Strawberry Zkilato",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Sweet Citrus",
+      "Zesty Lime"
+    ],
+    "effects": [
+      "Uplifting Head High",
+      "Smooth",
+      "Balanced Body Feel"
+    ]
   },
   {
     "name": "LAX MAC 1",
@@ -46393,18 +47862,40 @@
   {
     "name": "LAX Piña Colato",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Gelato 41 x Afternoon Pineapple",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Creamy Dessert Sweetness",
+      "Bright, Juicy Pineapple"
+    ],
+    "effects": [
+      "Relaxed",
+      "Aroused",
+      "Tingly"
+    ]
   },
   {
     "name": "LAX Pina Colato",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Gelato 41 x Afternoon Pineapple",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Creamy Dessert Sweetness",
+      "Bright, Juicy Pineapple"
+    ],
+    "effects": [
+      "Relaxed",
+      "Aroused",
+      "Tingly"
+    ]
   },
   {
     "name": "LAX Pink Nectar",
@@ -46804,25 +48295,46 @@
   {
     "name": "LAX Tangie Fever",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Lemon OGKB x Biker Kush",
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Citrusy Sweetness",
+      "Kush"
+    ],
+    "effects": [
+      "Creativity",
+      "Focus",
+      "Relaxed",
+      "Centered"
+    ]
   },
   {
     "name": "LAX THE GODFATHER",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Gas",
+      "Sweet Grape"
+    ],
+    "effects": [
+      "Calm",
+      "Full-Body Relaxation"
+    ]
   },
   {
     "name": "LAX TOMMY SHELBY",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Bold",
+      "Earthy"
+    ],
     "effects": []
   },
   {
@@ -46873,10 +48385,17 @@
   {
     "name": "LAX x STIIIZY Gas",
     "type": "",
-    "crosses": "",
+    "crosses": "LAX x STIIIZY Gas",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Funky Garlic Funk",
+      "High-Octane Diesel"
+    ],
+    "effects": [
+      "Cerebral Rush",
+      "Deep",
+      "Stoney Cruise"
+    ]
   },
   {
     "name": "LAX X STIIIZY TOAD VENOM",
@@ -46944,18 +48463,43 @@
   {
     "name": "LAX Zours",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Zkittlez x Sour Diesel",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Tart Green Apple",
+      "Zesty Citrus",
+      "Pungent Diesel",
+      "Earthy Spice",
+      "Sharp, Herbal"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry",
+      "Energetic",
+      "Uplifted",
+      "Talkative"
+    ]
   },
   {
     "name": "LAX ZOURZ",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Citrus",
+      "Tangy Sweetness"
+    ],
+    "effects": [
+      "Body Relaxation",
+      "Uplifting Kick"
+    ]
   },
   {
     "name": "layer cake",
@@ -46980,10 +48524,22 @@
   {
     "name": "Layla",
     "type": "",
-    "crosses": "",
+    "crosses": "Sheila x Sputnik",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Spicy",
+      "Sweet",
+      "Earthy",
+      "Pungent",
+      "Rose",
+      "Pear",
+      "Tea"
+    ],
+    "effects": [
+      "Body High",
+      "Happy",
+      "Relaxing"
+    ]
   },
   {
     "name": "Layla #5",
@@ -47057,10 +48613,23 @@
   {
     "name": "LCG",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Sunset Sherbet x Girl Scout Cookies",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Sour Citrusy",
+      "Fresh Berries",
+      "Raspberries",
+      "Earthy Pine"
+    ],
+    "effects": [
+      "Relaxed",
+      "Hungry",
+      "Happy"
+    ]
   },
   {
     "name": "LCG 2.0",
@@ -47343,10 +48912,23 @@
   {
     "name": "Lemon C",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Wedding Pie x Larry OG",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Lemon"
+    ],
+    "effects": [
+      "Sleepy",
+      "Relaxed",
+      "Giggly",
+      "Happy",
+      "Hungry"
+    ]
   },
   {
     "name": "lemon cake",
@@ -48061,10 +49643,32 @@
   {
     "name": "Lemon Heads #4",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Kali Mist x G-13",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Pinene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Lemon",
+      "Candy",
+      "Gas",
+      "Tea",
+      "Earthy",
+      "Spicy/Herbal",
+      "Pine",
+      "Woody"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Giggly",
+      "Energetic",
+      "Euphoric",
+      "Focused",
+      "Uplifted"
+    ]
   },
   {
     "name": "Lemon Heads #4 x 710 Chem",
@@ -48446,16 +50050,36 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sharp Lemon Zest",
+      "Sweet Citrus Candy",
+      "Classic Gas"
+    ],
+    "effects": [
+      "Exceptional",
+      "Bright",
+      "Powerful",
+      "Balanced"
+    ]
   },
   {
     "name": "Lemon Oranges",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Jaffa x Lemon Fuel",
+    "terpenes": [
+      "Terpinolene",
+      "Myrcene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Zesty Citrus",
+      "Sweet Orange Peel",
+      "Crisp Lemon-Gas"
+    ],
+    "effects": [
+      "Refreshing",
+      "High-Terp Burst"
+    ]
   },
   {
     "name": "Lemon OZ",
@@ -49150,10 +50774,23 @@
   {
     "name": "Lemonadez",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "(Z x KC36) + (Lemoncane x Zkittlez)",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Layered Citrus",
+      "Sweet Zest",
+      "Tropical Undertones"
+    ],
+    "effects": [
+      "Uplifting",
+      "Terp-Rich",
+      "Clean",
+      "Mouth-Coating"
+    ]
   },
   {
     "name": "lemonatti",
@@ -49459,7 +51096,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -49571,9 +51212,12 @@
   {
     "name": "LilikoiZ #3",
     "type": "",
-    "crosses": "",
+    "crosses": "Yellow Passion Fruit x Grapefruit Z",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Yellow Passion Fruit",
+      "Grapefruit"
+    ],
     "effects": []
   },
   {
@@ -49621,10 +51265,22 @@
   {
     "name": "Lime Dog",
     "type": "",
-    "crosses": "",
+    "crosses": "Underdog OG x Key Lime",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Citrus",
+      "Herbal",
+      "Lime",
+      "Sour",
+      "Spicy"
+    ],
+    "effects": [
+      "Euphoria",
+      "Focus",
+      "Happy",
+      "Hungry",
+      "Uplifting"
+    ]
   },
   {
     "name": "Lime Glaze #12",
@@ -49765,10 +51421,20 @@
   {
     "name": "Lime Street",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Lemonade x Cactus Cooler",
+    "terpenes": [
+      "Terpinolene",
+      "Myrcene",
+      "Ocimene"
+    ],
+    "flavors": [
+      "Lime",
+      "Sweet"
+    ],
+    "effects": [
+      "Bright Citrus",
+      "Zesty Lime"
+    ]
   },
   {
     "name": "Lime Tree BHO",
@@ -49783,7 +51449,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Zesty Citrus",
+      "Lime",
+      "Sour"
+    ],
     "effects": []
   },
   {
@@ -49910,8 +51580,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Island Fruit",
+      "Creamy Pineapple",
+      "Smooth Gas-Kissed"
+    ],
+    "effects": [
+      "Sunny",
+      "Uplifting"
+    ]
   },
   {
     "name": "Local Skunk",
@@ -50217,7 +51894,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -50237,8 +51916,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Complex"
+    ],
+    "effects": [
+      "Deeply Relaxing",
+      "Euphoric"
+    ]
   },
   {
     "name": "Lozee #2",
@@ -50473,7 +52157,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Fruit"
+    ],
     "effects": []
   },
   {
@@ -50532,10 +52218,23 @@
   {
     "name": "Mac Cookies",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "MAC x Cookies n Cream",
+    "terpenes": [
+      "Limonene",
+      "Pinene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sweet Cookie Dough",
+      "Creamy Vanilla",
+      "Subtle Citrus",
+      "Light Earthy"
+    ],
+    "effects": [
+      "Relaxed",
+      "Happy",
+      "Uplifted"
+    ]
   },
   {
     "name": "mac stomper",
@@ -50724,6 +52423,29 @@
     ]
   },
   {
+    "name": "Mad Honey #31",
+    "type": "",
+    "crosses": "Honey Bananas x Sherbanger",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Sweet"
+    ],
+    "effects": [
+      "Creative",
+      "Euphoric",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ]
+  },
+  {
     "name": "Mad Honey #42",
     "type": "",
     "crosses": "Honey Bananas x Sherbanger",
@@ -50779,7 +52501,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -51472,7 +53198,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ripe Mango",
+      "Soft Papaya",
+      "Peppery",
+      "Musky"
+    ],
     "effects": []
   },
   {
@@ -51524,7 +53255,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Tangy And Tropical",
+      "Bubblegum"
+    ],
     "effects": []
   },
   {
@@ -51623,8 +53357,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Maple Maraschino",
@@ -51690,8 +53429,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor",
+      "Smooth Vapor",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Marasca Cherry",
@@ -53598,8 +55343,17 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Great",
+      "Unmatched",
+      "Cleanest",
+      "Safe",
+      "Highest"
+    ],
+    "effects": [
+      "Great",
+      "Vapor"
+    ]
   },
   {
     "name": "Mini trashcan",
@@ -53713,15 +55467,25 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Intense",
+      "Full-Spectrum",
+      "Full-Body High"
+    ]
   },
   {
     "name": "Mint GSC",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Fresh Mint",
+      "Crumbly-Cookie"
+    ],
+    "effects": [
+      "Euphoric",
+      "Full-Body High"
+    ]
   },
   {
     "name": "mint jelly",
@@ -54822,10 +56586,18 @@
   {
     "name": "Modified Peaches",
     "type": "",
-    "crosses": "",
+    "crosses": "GMO x Moroccan Peaches",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Peaches"
+    ],
+    "effects": [
+      "Tingly",
+      "Relaxed",
+      "Creative",
+      "Energetic",
+      "Focused"
+    ]
   },
   {
     "name": "Modified Pie Silver Tier Half & Half",
@@ -54953,10 +56725,21 @@
   {
     "name": "Monkey",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Monkey Berries x Sugarloaf",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Ripe Tropical Fruit",
+      "Creamy Berry Sweetness",
+      "A Touch Of Island Funk"
+    ],
+    "effects": [
+      "Bold Flavor",
+      "Refined Depth"
+    ]
   },
   {
     "name": "Monkey Bars",
@@ -55433,8 +57216,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Ripe Berries",
+      "Earthy"
+    ],
+    "effects": [
+      "Balanced"
+    ]
   },
   {
     "name": "Moroccan GMO",
@@ -55484,7 +57272,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "The Best Flavors"
+    ],
     "effects": []
   },
   {
@@ -55543,7 +57333,8 @@
       "Citrus",
       "Earthy",
       "Pine",
-      "Sweet"
+      "Sweet",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -56475,7 +58266,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "The Loudest Terp Profiles"
+    ],
     "effects": []
   },
   {
@@ -56540,7 +58333,6 @@
     "flavors": [
       "Citrus",
       "Funk",
-      "Sweet",
       "Peach",
       "Diesel",
       "Mango"
@@ -56630,10 +58422,24 @@
   {
     "name": "Neonz",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Tractor Fuel x Pink Runtz",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Candy Gas",
+      "Sweet Citrus",
+      "Fuel-Forward"
+    ],
+    "effects": [
+      "Balanced",
+      "Flavorful",
+      "Bright",
+      "Smooth",
+      "Potent"
+    ]
   },
   {
     "name": "nepalese",
@@ -56757,7 +58563,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavorful And Natural"
+    ],
     "effects": []
   },
   {
@@ -56773,10 +58581,21 @@
   {
     "name": "Niche 33",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Strawberry Meltshake x Sour Mints",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Strawberry",
+      "Mint"
+    ],
+    "effects": [
+      "Energetic",
+      "Talkative",
+      "Creative"
+    ]
   },
   {
     "name": "Nigerian Haze",
@@ -56925,10 +58744,22 @@
   {
     "name": "Noho Candy",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Candy Runtz x Gelato",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Sweet Fruity Caramel",
+      "Sour Citrus",
+      "Juicy, Ripe Berries"
+    ],
+    "effects": [
+      "Relaxed",
+      "Aroused",
+      "Euphoric"
+    ]
   },
   {
     "name": "Noirberry",
@@ -57097,7 +58928,10 @@
     "flavors": [
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Pine",
+      "Spicy/Herbal",
+      "Sweet"
     ],
     "effects": [
       "Tingly",
@@ -57128,10 +58962,15 @@
   {
     "name": "Northern Lights #5 x Triangle GMO",
     "type": "",
-    "crosses": "",
+    "crosses": "Northern Lights #5 x Triangle GMO",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Flavorful",
+      "Potent"
+    ],
+    "effects": [
+      "Potent"
+    ]
   },
   {
     "name": "Northern Lights BHO",
@@ -57557,10 +59396,16 @@
   {
     "name": "NY Burger",
     "type": "",
-    "crosses": "",
+    "crosses": "Double Burger x Han Solo Burger",
     "terpenes": [],
     "flavors": [
-      "Woody"
+      "Woody",
+      "Diesel",
+      "Skunk",
+      "Pungent",
+      "Tobacco",
+      "Pepper",
+      "Ammonia"
     ],
     "effects": [
       "Hungry",
@@ -57600,8 +59445,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Full Body High",
+      "Real Entourage Effect"
+    ]
   },
   {
     "name": "NY Frozen Bananas",
@@ -57770,7 +59620,11 @@
     "flavors": [
       "Ammonia",
       "Chemical",
-      "Blue Cheese"
+      "Blue Cheese",
+      "Pineapple",
+      "Tropical",
+      "Sweet",
+      "Citrus"
     ],
     "effects": [
       "Focused",
@@ -57804,16 +59658,26 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "True-To-Flower"
+    ],
+    "effects": [
+      "Full Body High",
+      "Entourage Effect"
+    ]
   },
   {
     "name": "NY Northern Lights #5",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Flavorful"
+    ],
+    "effects": [
+      "High"
+    ]
   },
   {
     "name": "NY Northern Lights #5 x Biscotti",
@@ -57841,7 +59705,9 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Functional High"
+    ]
   },
   {
     "name": "NY Peanut Butter Sherbet",
@@ -57849,7 +59715,9 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Functional High"
+    ]
   },
   {
     "name": "NY Pineapple Express",
@@ -57899,8 +59767,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Flavorful"
+    ],
+    "effects": [
+      "High"
+    ]
   },
   {
     "name": "NY Purple Punch",
@@ -57934,8 +59806,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "True-To-Flower"
+    ],
+    "effects": [
+      "Full Body High",
+      "Real Entourage Effect"
+    ]
   },
   {
     "name": "NY Sour Diesel",
@@ -58086,7 +59964,10 @@
     "flavors": [
       "Woody"
     ],
-    "effects": []
+    "effects": [
+      "Hungry",
+      "Relaxed"
+    ]
   },
   {
     "name": "Oasis BHO",
@@ -58113,16 +59994,28 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Highest Potency",
+      "Flavorful"
+    ],
+    "effects": [
+      "Highest Potency",
+      "Flavorful"
+    ]
   },
   {
     "name": "Oasis Octane",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Oasis OG",
@@ -58233,18 +60126,37 @@
   {
     "name": "Octane Mints",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Sunset Octane x Wedding Cake",
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Mints"
+    ],
+    "effects": [
+      "Euphoric",
+      "Giggly",
+      "Hungry",
+      "Relaxed",
+      "Aroused"
+    ]
   },
   {
     "name": "Octane Oasis",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Odder Popz",
@@ -58487,8 +60399,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Fruit-Forward"
+    ],
+    "effects": [
+      "Euphoric"
+    ]
   },
   {
     "name": "OG Skittlez BHO",
@@ -58554,7 +60470,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -58760,6 +60679,24 @@
   },
   {
     "name": "Oishi",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Sweet Candy",
+      "Subtle Tropical Fruit",
+      "Light Earthy"
+    ],
+    "effects": [
+      "Enjoyable",
+      "Balanced",
+      "Everyday",
+      "Clean",
+      "Satisfying"
+    ]
+  },
+  {
+    "name": "Oishi Chem",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -59061,10 +60998,18 @@
   {
     "name": "Orange Burst",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Tropicana Cookies x Cali Orange",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sweet Orange Zest"
+    ],
+    "effects": [
+      "Energetic"
+    ]
   },
   {
     "name": "Orange Butter",
@@ -59877,7 +61822,9 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Potent"
+    ]
   },
   {
     "name": "Orange Sherbert",
@@ -60837,18 +62784,30 @@
   {
     "name": "Papaya Ball",
     "type": "",
-    "crosses": "",
+    "crosses": "Papaya Melon x Melon Ball",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth",
+      "Fruit-Heavy"
+    ],
+    "effects": [
+      "Bright",
+      "Tropical"
+    ]
   },
   {
     "name": "Papaya Balls",
     "type": "",
-    "crosses": "",
+    "crosses": "Papaya Melon x Melon Ball",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth",
+      "Fruit-Heavy"
+    ],
+    "effects": [
+      "Bright",
+      "Tropical"
+    ]
   },
   {
     "name": "Papaya Bandit",
@@ -60982,7 +62941,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Tropical Fruit Puree",
+      "Spicy"
+    ],
     "effects": []
   },
   {
@@ -60998,8 +62960,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Papaya Burger Breath",
@@ -61515,8 +63483,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tropical Papaya Sweetness",
+      "Sharp Lemon-Zest Citrus"
+    ],
+    "effects": [
+      "Refreshing Flavor",
+      "Uplifting",
+      "Sunny Finish"
+    ]
   },
   {
     "name": "Papaya Lime Pie",
@@ -61673,10 +63648,20 @@
   {
     "name": "Papaya Peaches",
     "type": "",
-    "crosses": "",
+    "crosses": "PapayaBerry Runtz x Moroccan Peaches",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Papaya",
+      "Peaches",
+      "Peach",
+      "Apricot",
+      "Chemical"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Creative"
+    ]
   },
   {
     "name": "Papaya Pebbles",
@@ -61707,16 +63692,26 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Papaya"
+    ],
+    "effects": [
+      "Enhance Your Day"
+    ]
   },
   {
     "name": "Papaya Pressure",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor",
+      "Smooth Vapor",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "papaya punch",
@@ -61776,7 +63771,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rings"
+    ],
     "effects": []
   },
   {
@@ -62310,7 +64307,10 @@
     "terpenes": [],
     "flavors": [
       "Earthy",
-      "Sweet"
+      "Sweet",
+      "Citrus",
+      "Flowery",
+      "Tree Fruit"
     ],
     "effects": [
       "Energetic",
@@ -62549,7 +64549,10 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Substantial",
+      "Cerebral High"
+    ]
   },
   {
     "name": "Peach Banana Punch",
@@ -62734,7 +64737,10 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Smooth",
+      "Loud"
+    ]
   },
   {
     "name": "Peach Jolly Rancher #5",
@@ -62831,10 +64837,23 @@
   {
     "name": "Peach OGZ",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Sour Peach x OGZ",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Juicy Peach",
+      "Tart Stone Fruit",
+      "Deep Og Gas",
+      "Sweet Z-Style Candy"
+    ],
+    "effects": [
+      "Bold Contrast",
+      "Rich Flavor",
+      "Long-Lasting Terpene Finish"
+    ]
   },
   {
     "name": "Peach OZ",
@@ -63154,10 +65173,16 @@
   {
     "name": "Peaches N' Z",
     "type": "",
-    "crosses": "",
+    "crosses": "Moroccan Peaches x Original Z",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Peaches"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Creative"
+    ]
   },
   {
     "name": "Peak 112",
@@ -63390,7 +65415,8 @@
     "flavors": [
       "Diesel",
       "Apple",
-      "Tropical"
+      "Tropical",
+      "Woody"
     ],
     "effects": [
       "Uplifted",
@@ -63522,8 +65548,8 @@
       "Sweet",
       "Floral",
       "Diesel",
-      "Earthy",
-      "Gas"
+      "Gas",
+      "Funky"
     ],
     "effects": [
       "Relaxed",
@@ -63812,10 +65838,19 @@
   {
     "name": "Pie-Go",
     "type": "",
-    "crosses": "",
+    "crosses": "GMO x Pie Hoe Mountain Man",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity",
+      "Blue Cheese",
+      "Cheese",
+      "Earthy"
+    ],
+    "effects": [
+      "Consistency",
+      "Elite Quality"
+    ]
   },
   {
     "name": "PieH OG",
@@ -63927,8 +65962,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Vibrant Fruit Candy",
+      "Juicy Tropical Notes",
+      "Bright Citrus",
+      "Soft Creamy Sweetness"
+    ],
+    "effects": [
+      "Smooth",
+      "Sugary Finish"
+    ]
   },
   {
     "name": "Pina Acai",
@@ -63950,7 +65993,7 @@
   {
     "name": "Pina Colada",
     "type": "",
-    "crosses": "",
+    "crosses": "Congo x Queen Mother Goji",
     "terpenes": [],
     "flavors": [
       "Citrus",
@@ -64018,8 +66061,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Pine",
+      "Citrus",
+      "Sweetness",
+      "Herbal"
+    ],
+    "effects": [
+      "Clean",
+      "Refreshing"
+    ]
   },
   {
     "name": "Pineapple 91",
@@ -64174,7 +66225,10 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Flavorful",
+      "Potent"
+    ]
   },
   {
     "name": "Pineapple Express Cold Filtered",
@@ -64831,7 +66885,7 @@
   {
     "name": "Pineapple Truck",
     "type": "",
-    "crosses": "",
+    "crosses": "PGB x Dump Truck",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -65042,8 +67096,18 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Berry",
+      "Creamy Cheese",
+      "Bright Citrus",
+      "Subtle Earthy"
+    ],
+    "effects": [
+      "Rich",
+      "Full-Flavored",
+      "Smooth",
+      "Funky-Sweet"
+    ]
   },
   {
     "name": "Pink Cherry Gelato",
@@ -65064,10 +67128,19 @@
   {
     "name": "Pink Cindy",
     "type": "",
-    "crosses": "",
+    "crosses": "pink drank x Sour Cindy",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet-Forward",
+      "Subtle Floral",
+      "Citrus"
+    ],
+    "effects": [
+      "Smooth",
+      "Flavorful",
+      "Balanced",
+      "Clean"
+    ]
   },
   {
     "name": "pink cookies",
@@ -65105,13 +67178,7 @@
     "flavors": [
       "Citrus",
       "Tropical",
-      "Sour",
-      "Banana",
-      "Creative",
-      "Relaxed",
-      "Strawberry",
-      "Blueberry",
-      "Berry"
+      "Sour"
     ],
     "effects": [
       "Energetic",
@@ -65188,8 +67255,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Juicy Pink Grapefruit",
+      "Sweet Citrus Candy",
+      "Bright Tropical"
+    ],
+    "effects": [
+      "Crisp",
+      "Refreshing",
+      "Tangy"
+    ]
   },
   {
     "name": "pink guava",
@@ -65275,10 +67350,24 @@
   {
     "name": "Pink Lemon Haze",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Pink Pineapple x Blueberry Haze",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Pinene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sweet Notes Of Overripe Pineapple",
+      "Hints Of Berry Haze"
+    ],
+    "effects": [
+      "Energetic",
+      "Euphoric",
+      "Uplifted",
+      "Giggly",
+      "Tingly"
+    ]
   },
   {
     "name": "pink lemonade",
@@ -65582,10 +67671,18 @@
   {
     "name": "Pink Sherbert",
     "type": "",
-    "crosses": "",
+    "crosses": "Animal Mintz x Sherb Cake",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Diesel",
+      "Grape",
+      "Berry"
+    ],
+    "effects": [
+      "Creative",
+      "Talkative",
+      "Euphoric"
+    ]
   },
   {
     "name": "Pink Strawberry Punch",
@@ -65639,9 +67736,13 @@
   {
     "name": "Pink Zing",
     "type": "",
-    "crosses": "",
+    "crosses": "Pink Zaza x Cranberry Z",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Bright Pink Candy",
+      "Sweet",
+      "Zippy"
+    ],
     "effects": []
   },
   {
@@ -66336,10 +68437,26 @@
   {
     "name": "Pomegranate Kush",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Durban Poison x Dutch Passion",
+    "terpenes": [
+      "Terpinolene",
+      "Myrcene",
+      "Ocimene"
+    ],
+    "flavors": [
+      "Citrus",
+      "Lemon",
+      "Sour",
+      "Sweet",
+      "Tree Fruit"
+    ],
+    "effects": [
+      "Creative",
+      "Euphoria",
+      "Happy",
+      "Motivation",
+      "Uplifting"
+    ]
   },
   {
     "name": "Pomegranate Squeeze",
@@ -66640,7 +68757,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -66648,7 +68768,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -66713,7 +68836,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant",
+      "True-To-Strain"
+    ],
     "effects": []
   },
   {
@@ -66729,8 +68857,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "Pressure x Gator Breath",
@@ -66823,8 +68956,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Pine"
+    ],
+    "effects": [
+      "Body High"
+    ]
   },
   {
     "name": "private reserve og",
@@ -66851,8 +68989,18 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Juicy Pineapple",
+      "Sweet Berry",
+      "Tropical Citrus",
+      "Subtle Earthy"
+    ],
+    "effects": [
+      "Smooth",
+      "Flavorful",
+      "Bright",
+      "Fruit-Forward"
+    ]
   },
   {
     "name": "project 4516",
@@ -66890,7 +69038,8 @@
     "flavors": [
       "Vanilla",
       "Sweet",
-      "Pine"
+      "Pine",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -66913,6 +69062,29 @@
       "Creamy",
       "Cookie",
       "Earthy"
+    ],
+    "effects": [
+      "Uplifted",
+      "Euphoric",
+      "Aroused",
+      "Talkative",
+      "Giggly",
+      "Relaxed"
+    ]
+  },
+  {
+    "name": "PSYOP Box",
+    "type": "",
+    "crosses": "(Planetary OG x Runtz) x Dark Web #3",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Tree fruit",
+      "Apricot",
+      "Sweet"
     ],
     "effects": [
       "Uplifted",
@@ -66971,8 +69143,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "pure michigan",
@@ -67037,10 +69215,22 @@
   {
     "name": "Purple Anarchy",
     "type": "",
-    "crosses": "",
+    "crosses": "Double OG Sour x 5G's Purple",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Dark Berry",
+      "Grape Candy",
+      "Bright Citrus",
+      "Earthy Gas",
+      "Diesel",
+      "Pungent",
+      "Earthy"
+    ],
+    "effects": [
+      "Energetic",
+      "Creative",
+      "Euphoric"
+    ]
   },
   {
     "name": "Purple Cadillac",
@@ -67071,10 +69261,24 @@
   {
     "name": "Purple Candie",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Runtz x Jealousy",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Tree fruit",
+      "Apricot",
+      "Sweet",
+      "Pepper",
+      "Plum"
+    ],
+    "effects": [
+      "Talkative",
+      "Giggly",
+      "Relaxed"
+    ]
   },
   {
     "name": "purple champagne",
@@ -67307,10 +69511,20 @@
   {
     "name": "Purple Envy",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Jealousy x Gelato 33",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Sweet, Vanilla",
+      "Smokey",
+      "Citrusy"
+    ],
+    "effects": [
+      "Up Beat And Energetic Head High"
+    ]
   },
   {
     "name": "Purple Foam",
@@ -67855,8 +70069,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant"
+    ]
   },
   {
     "name": "purple punch",
@@ -68342,7 +70561,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavor-Dense"
+    ],
     "effects": []
   },
   {
@@ -68409,7 +70630,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -68630,10 +70853,14 @@
   {
     "name": "Rainbow Fuel x Berry",
     "type": "",
-    "crosses": "",
+    "crosses": "Rainbow Fuel x Berry",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Powering Through Your Day With A Smile",
+      "A True Flower High",
+      "Supercharged Potency"
+    ]
   },
   {
     "name": "Rainbow Guava",
@@ -68688,11 +70915,21 @@
     "name": "Rainbow Guava X Moonbow",
     "type": "",
     "crosses": "Rainbow Guava X Moonbow",
-    "terpenes": [],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
     "flavors": [
       "Pear",
       "Flowery",
-      "Chestnut"
+      "Chestnut",
+      "Berry",
+      "Citrus",
+      "Sweet",
+      "Strawberry",
+      "Apricot",
+      "Tree fruit"
     ],
     "effects": [
       "Relaxed",
@@ -68882,10 +71119,18 @@
   {
     "name": "Rainbow Z",
     "type": "",
-    "crosses": "",
+    "crosses": "Runtz x The Original Z",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Orange",
+      "Grape",
+      "Citrus"
+    ],
+    "effects": [
+      "Euphoric",
+      "Relaxed",
+      "Happy"
+    ]
   },
   {
     "name": "Rainbow Zangria",
@@ -68942,13 +71187,7 @@
     "terpenes": [],
     "flavors": [
       "Sweet",
-      "Fruity",
-      "Berry",
-      "Citrus",
-      "Earthy",
-      "Ammonia",
-      "Pineapple",
-      "Mango"
+      "Fruity"
     ],
     "effects": [
       "Energetic",
@@ -69324,10 +71563,15 @@
   {
     "name": "Red Congo x Durban Posion",
     "type": "",
-    "crosses": "",
+    "crosses": "Red Congo x Durban Posion",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tasty",
+      "Potent"
+    ],
+    "effects": [
+      "Light"
+    ]
   },
   {
     "name": "Red Diamond",
@@ -69434,10 +71678,23 @@
   {
     "name": "Red Lemons",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Red Vynez x Lemon Cane",
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sharp Lemon Citrus",
+      "Sweet Red Fruit",
+      "Tangy Candy",
+      "Bright, Zesty Finish"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ]
   },
   {
     "name": "Red Line",
@@ -69596,10 +71853,22 @@
   {
     "name": "Red Vynes",
     "type": "",
-    "crosses": "",
+    "crosses": "MAC1 x Fruity Pebble OG x Cap Junky",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Chewy Red Candy Sweetness",
+      "Ripe Berries",
+      "Juicy Grape",
+      "Subtle Creamy Citrus",
+      "Apricot",
+      "Menthol",
+      "Apple"
+    ],
+    "effects": [
+      "Giggly",
+      "Tingly",
+      "Relaxed"
+    ]
   },
   {
     "name": "Red Z",
@@ -69629,12 +71898,23 @@
     "flavors": [
       "Mint",
       "Citrus",
-      "Sweet"
+      "Sweet",
+      "Berry",
+      "Candy",
+      "Creamy",
+      "Fruity",
+      "Strawberry",
+      "Tar",
+      "Flowery"
     ],
     "effects": [
       "Euphoric",
       "Relaxed",
-      "Happy"
+      "Happy",
+      "Calming",
+      "Giggly",
+      "Hungry",
+      "Uplifting"
     ]
   },
   {
@@ -69756,8 +72036,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Fruit-Forward"
+    ],
+    "effects": [
+      "Euphoric"
+    ]
   },
   {
     "name": "Ridgeline Lantz",
@@ -69992,7 +72276,8 @@
       "Sweet",
       "Blue Cheese",
       "Cheese",
-      "Earthy"
+      "Earthy",
+      "Woody"
     ],
     "effects": [
       "Tingly",
@@ -70003,10 +72288,24 @@
   {
     "name": "Rope Fuel OG",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "OG Kush x Face Off OG",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Woody",
+      "Pine",
+      "Earthy",
+      "Ammonia"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Tingly"
+    ]
   },
   {
     "name": "Rose Z",
@@ -70064,7 +72363,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "The Best Flavors"
+    ],
     "effects": []
   },
   {
@@ -70996,8 +73297,12 @@
   {
     "name": "Santa's Cookies",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "GSC x Cherry Pie",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene"
+    ],
     "flavors": [
       "Earthy",
       "Pine",
@@ -71066,8 +73371,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Sax on the Beach",
@@ -71083,11 +73394,7 @@
     "crosses": "SB OG x '97 KC36",
     "terpenes": [],
     "flavors": [
-      "Funky",
-      "Berry",
-      "Citrus",
-      "Vanilla",
-      "Relaxed"
+      "Funky"
     ],
     "effects": [
       "Relaxed",
@@ -71131,7 +73438,8 @@
     "terpenes": [],
     "flavors": [
       "Citrus",
-      "Sweet"
+      "Sweet",
+      "Delicious"
     ],
     "effects": [
       "Euphoric"
@@ -71148,18 +73456,29 @@
   {
     "name": "Sburst",
     "type": "",
-    "crosses": "",
+    "crosses": "Sburst x KC36",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bright",
+      "Mouthwatering"
+    ],
+    "effects": [
+      "Balanced Hybrid Effects"
+    ]
   },
   {
     "name": "Sburst36",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Citrus Candy",
+      "Tropical Zest"
+    ],
+    "effects": [
+      "Bright",
+      "Mouthwatering"
+    ]
   },
   {
     "name": "Scented Marker",
@@ -71180,15 +73499,23 @@
   {
     "name": "Scooby Snacks",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "Platinum Cookies x Face Off OG",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
     "flavors": [
       "Sweet",
       "Pine",
       "Earthy",
       "Kush"
     ],
-    "effects": []
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry"
+    ]
   },
   {
     "name": "Scottie's Cake",
@@ -71234,10 +73561,25 @@
   {
     "name": "Scottiess Cake",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Wedding Cake x Biscotti",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Vanilla",
+      "Pepper",
+      "Butter",
+      "Honey"
+    ],
+    "effects": [
+      "Relaxed",
+      "Aroused",
+      "Hungry",
+      "Tingly",
+      "Euphoric"
+    ]
   },
   {
     "name": "Scottis Cake",
@@ -71368,8 +73710,19 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Classic Og",
+      "Bright Coastal Citrus",
+      "Subtle Earthy Gas",
+      "Sharp Pine",
+      "Fuel"
+    ],
+    "effects": [
+      "Strong",
+      "Well-Rounded",
+      "Bold Flavor",
+      "Smooth Smoke"
+    ]
   },
   {
     "name": "Secret Cookies",
@@ -71841,7 +74194,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -71869,7 +74225,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -72114,10 +74473,22 @@
   {
     "name": "Sherb Shock",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Electric Lemonade x Sour Banana Sherb",
+    "terpenes": [
+      "Myrcene",
+      "Terpinolene",
+      "Ocimene"
+    ],
+    "flavors": [
+      "Electric Lemonade",
+      "Sour Banana",
+      "Sherb"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Talkative"
+    ]
   },
   {
     "name": "Sherb x Fumez #14",
@@ -72503,10 +74874,22 @@
   {
     "name": "Sherblato Bx1",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "RS11 x Coffin Candy",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Gassy"
+    ],
+    "effects": [
+      "Uplifting",
+      "Euphoric",
+      "Energetic"
+    ]
   },
   {
     "name": "Sherbz",
@@ -72997,7 +75380,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -73248,7 +75634,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Grapes"
+    ],
     "effects": []
   },
   {
@@ -73266,7 +75654,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Final Rip",
+      "Preheat"
+    ],
     "effects": []
   },
   {
@@ -73274,7 +75667,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Final Rip"
+    ],
     "effects": []
   },
   {
@@ -73282,15 +75679,26 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Live Rosin"
+    ],
+    "effects": [
+      "Anywhere",
+      "Optimal Vapor Production"
+    ]
   },
   {
     "name": "Smorgi #59",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Final Rip"
+    ],
     "effects": []
   },
   {
@@ -73298,7 +75706,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Optimal Vapor Production"
+    ],
     "effects": []
   },
   {
@@ -73306,7 +75718,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full Gram",
+      "Consistent Flavor",
+      "Live Rosin",
+      "Optimal Vapor Production"
+    ],
     "effects": []
   },
   {
@@ -73957,8 +76374,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bright Lemon-Lime",
+      "Sweet Tropical"
+    ],
+    "effects": [
+      "Energy",
+      "Clarity"
+    ]
   },
   {
     "name": "sour cookies",
@@ -74054,8 +76477,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sour",
+      "Gassy"
+    ],
+    "effects": [
+      "Sharp",
+      "Bold"
+    ]
   },
   {
     "name": "Sour Diesel Lemon",
@@ -74613,7 +77042,7 @@
   {
     "name": "Sour Kush Burger",
     "type": "",
-    "crosses": "",
+    "crosses": "Sour x Donny Father",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -74744,8 +77173,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor"
+    ],
+    "effects": [
+      "Smooth Vapor",
+      "Vibrant True-To-Strain Experience"
+    ]
   },
   {
     "name": "Sour Nectarine",
@@ -74825,7 +77259,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Tart Citrus",
+      "Ripe Papaya",
+      "Sweet Melon",
+      "Creamy Fruit",
+      "Subtle Funk"
+    ],
     "effects": []
   },
   {
@@ -75009,7 +77449,8 @@
     "flavors": [
       "Pine",
       "Earthy",
-      "Citrus"
+      "Citrus",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -75039,10 +77480,12 @@
   {
     "name": "Sour Sherbet x Cherry Banana Punch",
     "type": "",
-    "crosses": "",
+    "crosses": "Sour Sherbet x Cherry Banana Punch",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Powering Through Your Day With A Smile"
+    ]
   },
   {
     "name": "sour space candy",
@@ -75069,7 +77512,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sour Citrus",
+      "Sweet, Fruity"
+    ],
     "effects": []
   },
   {
@@ -75272,8 +77718,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Fruity"
+    ],
+    "effects": [
+      "Cerebral",
+      "Euphoric",
+      "Energizing",
+      "Uplifting"
+    ]
   },
   {
     "name": "sour tangie",
@@ -75322,10 +77776,16 @@
   {
     "name": "Sour Topanga",
     "type": "",
-    "crosses": "",
+    "crosses": "SimplyMary x OKE Tree Orchards",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sour",
+      "Earthy"
+    ],
+    "effects": [
+      "Sharp",
+      "Bold"
+    ]
   },
   {
     "name": "Sour Trop Cherry",
@@ -75604,20 +78064,43 @@
     "effects": []
   },
   {
-    "name": "Spanish Honey #14",
+    "name": "Spanish Honey #1",
     "type": "",
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy"
+    ]
+  },
+  {
+    "name": "Spanish Honey #14",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Rich, Complex"
+    ],
+    "effects": [
+      "Profoundly Relaxing And Euphoric",
+      "Blissful Escape",
+      "Deep Tranquility"
+    ]
   },
   {
     "name": "Spanish Honey #22",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Blissful"
+    ],
+    "effects": [
+      "Relaxation",
+      "Euphoria"
+    ]
   },
   {
     "name": "special sauce",
@@ -75650,10 +78133,17 @@
   {
     "name": "Sploosh",
     "type": "",
-    "crosses": "",
+    "crosses": "Max Headroom x Papaya Banancane",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Banana",
+      "Papaya",
+      "Funk"
+    ],
+    "effects": [
+      "Loud",
+      "Dessert-Like"
+    ]
   },
   {
     "name": "Splusherz",
@@ -75895,7 +78385,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -75973,10 +78466,24 @@
   {
     "name": "Star-Mosa",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Starburst 36 x Mimosa",
+    "terpenes": [
+      "Myrcene",
+      "Pinene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Juicy Citrus",
+      "Sweet Candy",
+      "Sparkling",
+      "Fruit-Forward"
+    ],
+    "effects": [
+      "Smooth",
+      "Uplifting",
+      "Lively",
+      "Refreshing"
+    ]
   },
   {
     "name": "StarB",
@@ -76004,7 +78511,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Tangie-Like",
+      "Sweeter"
+    ],
     "effects": []
   },
   {
@@ -76270,7 +78780,7 @@
   {
     "name": "Sticky Fumes",
     "type": "",
-    "crosses": "",
+    "crosses": "undisclosed x G13",
     "terpenes": [],
     "flavors": [],
     "effects": []
@@ -77377,7 +79887,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet Fruity Strawberries",
+      "Spicy Earth"
+    ],
     "effects": []
   },
   {
@@ -77521,10 +80034,22 @@
   {
     "name": "Strawberry Wilson",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Strawberry Banana x Wilson",
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sweet Berries",
+      "Creamy Banana",
+      "Tropical Citrus Funk"
+    ],
+    "effects": [
+      "Smooth And Juicy Finish",
+      "Exotic Sweetness",
+      "Complexity"
+    ]
   },
   {
     "name": "Strawberry Zlemonade",
@@ -77540,9 +80065,11 @@
   {
     "name": "Strawberry Zogurt",
     "type": "",
-    "crosses": "",
+    "crosses": "Strawbercots x Zogurt",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Zogurt"
+    ],
     "effects": []
   },
   {
@@ -77577,8 +80104,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bright Lemon Candy",
+      "Ripe Strawberry",
+      "Sweet Red Fruit"
+    ],
+    "effects": [
+      "Vibrant Flavor",
+      "Layered Complexity",
+      "Clean Solventless Finish"
+    ]
   },
   {
     "name": "Strawburger Shortcake",
@@ -78086,9 +80621,9 @@
       "Creamy",
       "Fruity",
       "Cream",
-      "Funk",
+      "Citrus",
       "Gas",
-      "Citrus"
+      "Funk"
     ],
     "effects": [
       "Relaxed",
@@ -78170,7 +80705,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full-Spectrum Flavor",
+      "Rich Terpene Profiles",
+      "Smooth, True-To-Plant Experience"
+    ],
     "effects": []
   },
   {
@@ -78245,9 +80784,8 @@
       "Linalool"
     ],
     "flavors": [
-      "Citrus",
       "Cookie",
-      "Sour"
+      "Sweet"
     ],
     "effects": [
       "Energetic",
@@ -78396,8 +80934,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full-Spectrum",
+      "Rich"
+    ],
+    "effects": [
+      "Smooth",
+      "True-To-Plant"
+    ]
   },
   {
     "name": "sunshine daydream",
@@ -78549,7 +81093,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
     "effects": []
   },
   {
@@ -78912,10 +81459,20 @@
   {
     "name": "Super Sour Mints",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Emerald Sour Diesel x Sour Mints",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Mint"
+    ],
+    "effects": [
+      "Energetic",
+      "Talkative",
+      "Creative"
+    ]
   },
   {
     "name": "Super Spritzer",
@@ -79228,18 +81785,36 @@
   {
     "name": "Tahitian Pineapple",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Pineapple OG x Tally Mon.",
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Pineapple"
+    ],
+    "effects": [
+      "Focused",
+      "Happy",
+      "Creative",
+      "Aroused",
+      "Tingly",
+      "Relaxed"
+    ]
   },
   {
     "name": "Tahitian Treat",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Intense"
+    ],
+    "effects": [
+      "Full-Spectrum",
+      "Full-Body High"
+    ]
   },
   {
     "name": "tahoe alien",
@@ -79330,8 +81905,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Tally Me Banana",
@@ -79449,7 +82030,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet And Earthy",
+      "Banana",
+      "Orange"
+    ],
     "effects": []
   },
   {
@@ -79637,8 +82222,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Full-Spectrum Flavor",
+      "Rich Terpene Profiles"
+    ],
+    "effects": [
+      "Smooth",
+      "True-To-Plant Experience"
+    ]
   },
   {
     "name": "tangie",
@@ -79822,8 +82413,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold Flavor",
+      "Smooth Vapor",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Tear Gas",
@@ -79833,7 +82430,11 @@
     "flavors": [
       "Chemical",
       "Diesel",
-      "Lemon"
+      "Lemon",
+      "Pine",
+      "Woody",
+      "Citrus",
+      "Earthy"
     ],
     "effects": [
       "Energetic",
@@ -79844,14 +82445,21 @@
   {
     "name": "Tech Labs",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "Kush Mints x F1 Durban",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Linalool"
+    ],
     "flavors": [
       "Ammonia",
       "Chemical",
       "Citrus",
       "Earthy",
-      "Pine"
+      "Pine",
+      "Mint",
+      "Skunk",
+      "Menthol"
     ],
     "effects": [
       "Energetic"
@@ -79910,8 +82518,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Earthy"
+    ],
+    "effects": [
+      "Profound Relaxation",
+      "Cerebral Uplift"
+    ]
   },
   {
     "name": "Terp Quest #4 x Samoa Cookies x Cherry",
@@ -80989,7 +83603,7 @@
   {
     "name": "Toad Venom",
     "type": "",
-    "crosses": "Animal Face x Sin Mintz",
+    "crosses": "Animal Face X Sin Mintz Strain Description: Toad Venom carries real weight for a reason",
     "terpenes": [],
     "flavors": [
       "Chemical",
@@ -81002,10 +83616,7 @@
     ],
     "effects": [
       "Relaxed",
-      "Calm",
-      "Happy",
-      "Sleepy",
-      "Content"
+      "Euphoric"
     ]
   },
   {
@@ -81155,7 +83766,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Big Flavor"
+    ],
     "effects": []
   },
   {
@@ -81493,8 +84106,18 @@
     "type": "",
     "crosses": "Pink Boost Goddess",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Earthy",
+      "Pine",
+      "Sweet",
+      "Woody"
+    ],
+    "effects": [
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ]
   },
   {
     "name": "Triple Berry",
@@ -81523,7 +84146,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "High Terpene Expression",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -81531,8 +84158,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Triple OG",
@@ -81568,10 +84201,30 @@
   {
     "name": "Triple Sour",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "GMO x Sour Diesel x NYC Diesel x Chem D",
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Blue Cheese",
+      "Cheese",
+      "Earthy",
+      "Diesel",
+      "Chemical",
+      "Skunk",
+      "Grapefruit"
+    ],
+    "effects": [
+      "Tingly",
+      "Relaxed",
+      "Creative",
+      "Energetic",
+      "Uplifted",
+      "Talkative"
+    ]
   },
   {
     "name": "Triple Threat",
@@ -81608,10 +84261,22 @@
   {
     "name": "Triple Zour",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Triple Sour x Zkittlez",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Grapefruit",
+      "Grape",
+      "Berry"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry"
+    ]
   },
   {
     "name": "Trop",
@@ -81684,7 +84349,10 @@
       "Tropical",
       "Berry",
       "Cherry",
-      "Funk",
+      "Citrus",
+      "Sweet",
+      "Cookie",
+      "Earthy",
       "Biscotti",
       "Bread",
       "Chemical"
@@ -81795,7 +84463,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -81862,8 +84533,14 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Bold",
+      "Smooth",
+      "Vibrant"
+    ],
+    "effects": [
+      "True-To-Strain Experience"
+    ]
   },
   {
     "name": "Tropaya x Crumpets",
@@ -81908,10 +84585,12 @@
   {
     "name": "Tropaya x Papaya Burger",
     "type": "",
-    "crosses": "",
+    "crosses": "Tropaya x Papaya Burger",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "High"
+    ]
   },
   {
     "name": "Tropaya Yamz",
@@ -81936,7 +84615,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Full-Spectrum Flavor",
+      "Rich Terpene Profiles",
+      "Smooth, True-To-Plant Experience"
+    ],
     "effects": []
   },
   {
@@ -82299,7 +84982,8 @@
     "flavors": [
       "Tropical",
       "Sweet",
-      "Pine"
+      "Pine",
+      "Woody"
     ],
     "effects": [
       "Energetic",
@@ -82452,6 +85136,18 @@
     ]
   },
   {
+    "name": "Tropicana Cherry x Bomb",
+    "type": "",
+    "crosses": "Tropicana Cherry x Bomb",
+    "terpenes": [],
+    "flavors": [
+      "Tasty"
+    ],
+    "effects": [
+      "Potent"
+    ]
+  },
+  {
     "name": "Tropicana Cherry x Cereal Milk",
     "type": "",
     "crosses": "Tropicana Cherry x Cereal Milk",
@@ -82522,18 +85218,28 @@
   {
     "name": "Tropicana Cherry x Sour Cherry",
     "type": "",
-    "crosses": "",
+    "crosses": "Tropicana Cherry x Sour Cherry",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tasty",
+      "Potent"
+    ],
+    "effects": [
+      "Light"
+    ]
   },
   {
     "name": "Tropicana Cherry x Strawnana Mac",
     "type": "",
-    "crosses": "",
+    "crosses": "Tropicana Cherry x Strawnana Mac",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Tasty",
+      "Potent"
+    ],
+    "effects": [
+      "Light"
+    ]
   },
   {
     "name": "tropicana cookies",
@@ -82728,8 +85434,12 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Flavorful"
+    ],
+    "effects": [
+      "Potent"
+    ]
   },
   {
     "name": "Tropicanna Cookies x Garlic Grove",
@@ -82955,7 +85665,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ripe Banana Sweetness",
+      "Creamy Tropical Notes",
+      "Smooth, Dessert-Like Finish"
+    ],
     "effects": []
   },
   {
@@ -83000,9 +85714,11 @@
   {
     "name": "Twisted Peach",
     "type": "",
-    "crosses": "",
+    "crosses": "Peach OZ x Strawbercots #1",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Peach"
+    ],
     "effects": []
   },
   {
@@ -83095,8 +85811,16 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Fruit",
+      "Floral Notes",
+      "Earthy"
+    ],
+    "effects": [
+      "Bright And Uplifting",
+      "Calm",
+      "Full-Body Finish"
+    ]
   },
   {
     "name": "Umami Prez",
@@ -83278,8 +86002,20 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Sweet",
+      "Vanilla",
+      "Earthy"
+    ],
+    "effects": [
+      "Euphoria",
+      "Happy",
+      "Hungry",
+      "Relaxing",
+      "Sleepy"
+    ]
   },
   {
     "name": "Vanilla Cherries",
@@ -83287,7 +86023,11 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Smooth",
+      "Potent",
+      "Easy To Pass Around"
+    ]
   },
   {
     "name": "vanilla frosting",
@@ -83357,7 +86097,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -83512,15 +86255,22 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Popcorn"
+    ],
+    "effects": [
+      "Perfect",
+      "Late-Night"
+    ]
   },
   {
     "name": "Violet Night",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flavorful And Natural"
+    ],
     "effects": []
   },
   {
@@ -83678,7 +86428,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Enhance Your Day"
+    ],
     "effects": []
   },
   {
@@ -84153,7 +86905,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Front Chest Print",
+      "Back Print"
+    ],
     "effects": []
   },
   {
@@ -84446,8 +87201,15 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweetness",
+      "Creamy Dessert",
+      "Savory"
+    ],
+    "effects": [
+      "Indica-Leaning",
+      "Smooth"
+    ]
   },
   {
     "name": "White Cherry Rose",
@@ -84469,12 +87231,17 @@
     "flavors": [
       "Chocolate",
       "Coffee",
-      "Earthy"
+      "Earthy",
+      "Cocoa",
+      "Ripe Melon"
     ],
     "effects": [
       "Uplifted",
       "Euphoric",
-      "Creative"
+      "Creative",
+      "Long Earthy Finish",
+      "Roasted",
+      "Coffee"
     ]
   },
   {
@@ -84793,7 +87560,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -85039,10 +87809,22 @@
   {
     "name": "WiFi Mimosa",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "WiFi Mints x Mimosa Woman-owned and locally grown",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Blueberry",
+      "Diesel",
+      "Berry"
+    ],
+    "effects": [
+      "Energetic",
+      "Creative",
+      "Happy"
+    ]
   },
   {
     "name": "wifi mints",
@@ -85285,7 +88067,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -85643,7 +88427,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smell",
+      "Color",
+      "Structure",
+      "Trim",
+      "Moisture Content"
+    ],
     "effects": []
   },
   {
@@ -85992,10 +88782,19 @@
   {
     "name": "Z Boof",
     "type": "",
-    "crosses": "",
+    "crosses": "Super Boof x Zelousy Mountain Man",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth Melt",
+      "Pure, Uncut Flavor",
+      "Grapefruit",
+      "Citrus",
+      "Orange"
+    ],
+    "effects": [
+      "Consistency",
+      "Elite Quality"
+    ]
   },
   {
     "name": "Z Burst",
@@ -86106,7 +88905,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White Or Yellow"
+    ],
     "effects": []
   },
   {
@@ -86162,8 +88963,18 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Z-Candy Sweetness",
+      "Soft Tropical Fruit",
+      "Creamy Undertones"
+    ],
+    "effects": [
+      "Smooth",
+      "Terp-Forward",
+      "Balanced",
+      "Expressive",
+      "Enjoyable"
+    ]
   },
   {
     "name": "Z Money",
@@ -86224,7 +89035,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich"
+    ],
     "effects": []
   },
   {
@@ -86232,7 +89045,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Rich",
+      "Flavored"
+    ],
     "effects": []
   },
   {
@@ -86346,6 +89162,31 @@
     "effects": [
       "Relaxed",
       "Euphoric",
+      "Uplifted"
+    ]
+  },
+  {
+    "name": "Z Pie #18",
+    "type": "",
+    "crosses": "Zkittlez x Sticky Buns",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Diesel",
+      "Sweet"
+    ],
+    "effects": [
+      "Creative",
+      "Euphoric",
+      "Focused",
+      "Relaxed",
       "Uplifted"
     ]
   },
@@ -86609,7 +89450,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Smooth Melt",
+      "True-To-Strain Authenticity"
+    ],
     "effects": []
   },
   {
@@ -86686,7 +89530,12 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Deep",
+      "Sedative Relaxation",
+      "Buzzing",
+      "Creative Energy"
+    ]
   },
   {
     "name": "Zakura",
@@ -86871,7 +89720,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sugary Fruit",
+      "Earthy Diesel"
+    ],
     "effects": []
   },
   {
@@ -86879,8 +89731,13 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Smooth",
+      "Flavorful"
+    ],
+    "effects": [
+      "Dabbing Experience"
+    ]
   },
   {
     "name": "Zerealz",
@@ -86936,7 +89793,10 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Golden-White",
+      "Yellow"
+    ],
     "effects": []
   },
   {
@@ -87368,10 +90228,27 @@
   {
     "name": "Zour Zepaya",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "papaya x Zkittlez",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene",
+      "Linalool",
+      "Humulene"
+    ],
+    "flavors": [
+      "Tropical Sweetness",
+      "Sour Fuel",
+      "Bright Fruit",
+      "Creamy Papaya",
+      "Subtle Funk",
+      "Gas"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry"
+    ]
   },
   {
     "name": "Zours",
@@ -87556,10 +90433,15 @@
   {
     "name": "Ztan Lee #5",
     "type": "",
-    "crosses": "",
+    "crosses": "710 Labs x Sexual Chocolate",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Petrol Gas"
+    ],
+    "effects": [
+      "Relaxing",
+      "Tingly"
+    ]
   },
   {
     "name": "Ztarburstz",
@@ -87574,15 +90456,23 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet Mixed Fruit Candy",
+      "Sour Grape",
+      "Berry"
+    ],
+    "effects": [
+      "Sour"
+    ]
   },
   {
     "name": "Ztarry",
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Sweet And Sour Citrusy Fruity"
+    ],
     "effects": []
   },
   {
@@ -87640,9 +90530,11 @@
   {
     "name": "Zweet Cream",
     "type": "",
-    "crosses": "",
+    "crosses": "Canal St Runtz x Banana Creme",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Cream"
+    ],
     "effects": []
   },
   {
