@@ -3740,7 +3740,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Green"
+    ],
     "effects": []
   },
   {
@@ -4441,7 +4443,9 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Conscious"
+    ]
   },
   {
     "name": "Banana Chem",
@@ -20102,7 +20106,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Flowers"
+    ],
     "effects": []
   },
   {
@@ -21947,9 +21953,7 @@
     "flavors": [
       "Cheese",
       "Gas",
-      "Earthy",
-      "Sweet",
-      "Funky"
+      "Earthy"
     ],
     "effects": [
       "Relaxed",
@@ -34176,7 +34180,13 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Elevated",
+      "Deeply Satisfying",
+      "Smooth",
+      "Flavorful",
+      "Powerful"
+    ]
   },
   {
     "name": "Gran Daddy Purp",
@@ -36602,11 +36612,10 @@
       "Earthy"
     ],
     "effects": [
+      "Creative",
       "Energetic",
       "Focused",
-      "Creative",
-      "Talkative",
-      "Giggly"
+      "Talkative"
     ]
   },
   {
@@ -56589,7 +56598,13 @@
     "crosses": "GMO x Moroccan Peaches",
     "terpenes": [],
     "flavors": [
-      "Peaches"
+      "Peaches",
+      "Blue Cheese",
+      "Cheese",
+      "Earthy",
+      "Peach",
+      "Apricot",
+      "Chemical"
     ],
     "effects": [
       "Tingly",
@@ -60242,7 +60257,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Ice"
+    ],
     "effects": []
   },
   {
@@ -65176,7 +65193,10 @@
     "crosses": "Moroccan Peaches x Original Z",
     "terpenes": [],
     "flavors": [
-      "Peaches"
+      "Peaches",
+      "Peach",
+      "Apricot",
+      "Chemical"
     ],
     "effects": [
       "Energetic",
@@ -66173,10 +66193,14 @@
   {
     "name": "Pineapple Cup",
     "type": "",
-    "crosses": "",
+    "crosses": "PGB x Styrofoam Cup",
     "terpenes": [],
     "flavors": [],
-    "effects": []
+    "effects": [
+      "Uplifted",
+      "Talkative",
+      "Happy"
+    ]
   },
   {
     "name": "Pineapple Donut",
@@ -71187,7 +71211,13 @@
     "terpenes": [],
     "flavors": [
       "Sweet",
-      "Fruity"
+      "Fruity",
+      "Berry",
+      "Citrus",
+      "Earthy",
+      "Ammonia",
+      "Pineapple",
+      "Mango"
     ],
     "effects": [
       "Energetic",
@@ -73394,7 +73424,11 @@
     "crosses": "SB OG x '97 KC36",
     "terpenes": [],
     "flavors": [
-      "Funky"
+      "Funky",
+      "Berry",
+      "Citrus",
+      "Vanilla",
+      "Relaxed"
     ],
     "effects": [
       "Relaxed",
@@ -76018,7 +76052,9 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Green"
+    ],
     "effects": []
   },
   {
@@ -80621,9 +80657,9 @@
       "Creamy",
       "Fruity",
       "Cream",
-      "Citrus",
+      "Funk",
       "Gas",
-      "Funk"
+      "Citrus"
     ],
     "effects": [
       "Relaxed",
@@ -80784,8 +80820,9 @@
       "Linalool"
     ],
     "flavors": [
+      "Citrus",
       "Cookie",
-      "Sweet"
+      "Sour"
     ],
     "effects": [
       "Energetic",
