@@ -1,34 +1,5 @@
 [
   {
-    "name": "0.5gPreroll5",
-    "type": "",
-    "crosses": "BLACK HAZE: COLOMBIAN BLACK × PURPLE HAZE AND DURBAN LIME: DURBAN POISON × LIME SKUNK",
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene",
-      "Limonene",
-      "Terpinolene",
-      "Pinene"
-    ],
-    "flavors": [
-      "Spicy",
-      "Berry",
-      "Creative",
-      "Lavender",
-      "Flowery",
-      "Violet",
-      "Lime",
-      "Skunk",
-      "Citrus"
-    ],
-    "effects": [
-      "Euphoric",
-      "Energetic",
-      "Creative",
-      "Focused"
-    ]
-  },
-  {
     "name": "10 Bandz",
     "type": "",
     "crosses": "Z x Headband #10",
@@ -130,14 +101,6 @@
       "Euphoric",
       "Uplifted"
     ]
-  },
-  {
-    "name": "2x Giraffe Venom x Burger IWH",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "2x Malibu Lemon Z x Lemon Heads IWH",
@@ -351,21 +314,6 @@
     ]
   },
   {
-    "name": "710 Chem 10- Noodle Doinks",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Skunk",
-      "Chemical"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Relaxed"
-    ]
-  },
-  {
     "name": "710 Chem 1st Press",
     "type": "",
     "crosses": "",
@@ -374,21 +322,6 @@
       "Earthy",
       "Woody",
       "Diesel"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Relaxed"
-    ]
-  },
-  {
-    "name": "710 Chem Single Noodle Doink",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Skunk",
-      "Chemical"
     ],
     "effects": [
       "Happy",
@@ -791,14 +724,6 @@
       "Creative",
       "Euphoric"
     ]
-  },
-  {
-    "name": "Abracadabra ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "abusive og",
@@ -1232,14 +1157,6 @@
     ]
   },
   {
-    "name": "Agent Orange ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "agent x",
     "type": "Hybrid",
     "crosses": "Atomic Apple x Xeno #1",
@@ -1651,14 +1568,6 @@
       "Happy",
       "Tingly"
     ]
-  },
-  {
-    "name": "Alien OG Ultra",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Alien OG x Apples & Bananas",
@@ -2811,37 +2720,6 @@
     ]
   },
   {
-    "name": "Apple Fritter 10- Noodle Doinks",
-    "type": "",
-    "crosses": "Sour Apple x Animal Cookies",
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene",
-      "Pinene",
-      "Limonene"
-    ],
-    "flavors": [
-      "Apple",
-      "Sweet",
-      "Earthy",
-      "Citrus",
-      "Pear",
-      "Tree fruit",
-      "Nutty"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Euphoric",
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Sleepy",
-      "Tingly",
-      "Uplifted"
-    ]
-  },
-  {
     "name": "Apple Fritter BHO",
     "type": "",
     "crosses": "Sour Apple x Animal Cookies",
@@ -2891,37 +2769,6 @@
       "Relaxed",
       "Tingly",
       "Giggly"
-    ]
-  },
-  {
-    "name": "Apple Fritter Single Noodle Doink",
-    "type": "",
-    "crosses": "Sour Apple x Animal Cookies",
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene",
-      "Pinene",
-      "Limonene"
-    ],
-    "flavors": [
-      "Apple",
-      "Sweet",
-      "Sour",
-      "Pear",
-      "Tree fruit",
-      "Nutty",
-      "Earthy"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Euphoric",
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Sleepy",
-      "Tingly",
-      "Uplifted"
     ]
   },
   {
@@ -3314,14 +3161,6 @@
     "effects": [
       "Relaxed"
     ]
-  },
-  {
-    "name": "Arch Angeles OG x Spritzer Rocket LAX",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Arctic Honey",
@@ -4019,18 +3858,6 @@
     ]
   },
   {
-    "name": "Baja Breeze Delta-9 Soda",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Citrus",
-      "Lime",
-      "Tropical"
-    ],
-    "effects": []
-  },
-  {
     "name": "Baked Berry BHO",
     "type": "",
     "crosses": "",
@@ -4392,17 +4219,6 @@
       "Euphoric",
       "Aroused"
     ]
-  },
-  {
-    "name": "Banana Cabana Delta-9 Soda",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Strawberry",
-      "Banana"
-    ],
-    "effects": []
   },
   {
     "name": "Banana Cake",
@@ -5007,14 +4823,6 @@
     ]
   },
   {
-    "name": "Banana OG ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Banana OG x Black Dawg",
     "type": "",
     "crosses": "Banana OG x Black Dawg",
@@ -5252,33 +5060,6 @@
       "Banana",
       "Tree fruit",
       "Tropical"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Hungry",
-      "Sleepy",
-      "Euphoric"
-    ]
-  },
-  {
-    "name": "Banana Pie #14 Single Noodle Doink",
-    "type": "",
-    "crosses": "OG Kush x Skunk Haze",
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene",
-      "Pinene"
-    ],
-    "flavors": [
-      "Strawberry",
-      "Banana",
-      "Woody",
-      "Pine",
-      "Earthy",
-      "Skunk",
-      "Spicy/Herbal"
     ],
     "effects": [
       "Relaxed",
@@ -6760,29 +6541,6 @@
     ]
   },
   {
-    "name": "Biesel #1 10- Noodle Doinks",
-    "type": "",
-    "crosses": "Chemdog x Super Skunk",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Humulene"
-    ],
-    "flavors": [
-      "Apple",
-      "Gas",
-      "Skunk",
-      "Pungent",
-      "Earthy"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Relaxed",
-      "Euphoric"
-    ]
-  },
-  {
     "name": "Biesel #1 1st Press",
     "type": "",
     "crosses": "Chemdog x Super Skunk",
@@ -7024,31 +6782,6 @@
   },
   {
     "name": "Biesel Dawg #61",
-    "type": "",
-    "crosses": "Chemdog x Super Skunk",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Humulene"
-    ],
-    "flavors": [
-      "Diesel",
-      "Lemon",
-      "Citrus",
-      "Pungent",
-      "Chemical",
-      "Skunk",
-      "Earthy"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Relaxed",
-      "Euphoric"
-    ]
-  },
-  {
-    "name": "Biesel Dawg #61 Single Noodle Doink",
     "type": "",
     "crosses": "Chemdog x Super Skunk",
     "terpenes": [
@@ -8494,30 +8227,6 @@
     ]
   },
   {
-    "name": "Black Mamba #6 10- Noodle Doinks",
-    "type": "",
-    "crosses": "Mint Chocolate Chip x The Cube",
-    "terpenes": [
-      "Limonene",
-      "Myrcene",
-      "Caryophyllene",
-      "Linalool"
-    ],
-    "flavors": [
-      "Sweet",
-      "Earthy",
-      "Flowery",
-      "Berry",
-      "Citrus",
-      "Mint",
-      "Vanilla",
-      "Skunk"
-    ],
-    "effects": [
-      "Sleepy"
-    ]
-  },
-  {
     "name": "Black Mamba #6 1st Press",
     "type": "",
     "crosses": "Mint Chocolate Chip x The Cube",
@@ -8543,30 +8252,6 @@
   },
   {
     "name": "Black Mamba #6 2nd Press",
-    "type": "",
-    "crosses": "Mint Chocolate Chip x The Cube",
-    "terpenes": [
-      "Limonene",
-      "Myrcene",
-      "Caryophyllene",
-      "Linalool"
-    ],
-    "flavors": [
-      "Sweet",
-      "Earthy",
-      "Flowery",
-      "Berry",
-      "Citrus",
-      "Mint",
-      "Vanilla",
-      "Skunk"
-    ],
-    "effects": [
-      "Sleepy"
-    ]
-  },
-  {
-    "name": "Black Mamba #6 Single Noodle Doink",
     "type": "",
     "crosses": "Mint Chocolate Chip x The Cube",
     "terpenes": [
@@ -9117,31 +8802,6 @@
     ],
     "flavors": [],
     "effects": []
-  },
-  {
-    "name": "Blackberry Soda",
-    "type": "",
-    "crosses": "BLACKBERRY KUSH × CAVIAR",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Blackberry",
-      "Sweet",
-      "Euphoric",
-      "Calm",
-      "Berry",
-      "Earthy",
-      "Butter",
-      "Blue Cheese",
-      "Chemical"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric"
-    ]
   },
   {
     "name": "Blackberry Widow x Grape Gas",
@@ -9898,14 +9558,6 @@
   },
   {
     "name": "Blue Dream Cold Filtered",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Blue Dream ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -11738,40 +11390,6 @@
     ]
   },
   {
-    "name": "Bluniverse #6 10- Noodle Doinks",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Floral"
-    ],
-    "effects": [
-      "Uplifted",
-      "Sleepy",
-      "Creative",
-      "Energetic",
-      "Euphoric",
-      "Relaxed"
-    ]
-  },
-  {
-    "name": "Bluniverse #6 Single Noodle Doink",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Floral"
-    ],
-    "effects": [
-      "Uplifted",
-      "Sleepy",
-      "Creative",
-      "Energetic",
-      "Euphoric",
-      "Relaxed"
-    ]
-  },
-  {
     "name": "Bluniverse #6 x Lemon Tree",
     "type": "",
     "crosses": "Bluniverse #6 x Lemon Tree",
@@ -12103,27 +11721,6 @@
     ]
   },
   {
-    "name": "Boo Berry 10- Noodle Doinks",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Berry",
-      "Sweet",
-      "Diesel",
-      "Vanilla"
-    ],
-    "effects": [
-      "Tingly",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Creative",
-      "Energetic",
-      "Euphoric"
-    ]
-  },
-  {
     "name": "Boof'd Zkittlez",
     "type": "",
     "crosses": "",
@@ -12274,30 +11871,6 @@
     "terpenes": [],
     "flavors": [
       "Gas"
-    ],
-    "effects": [
-      "Relaxed",
-      "Giggly",
-      "Energetic",
-      "Creative",
-      "Euphoric",
-      "Focused",
-      "Uplifted"
-    ]
-  },
-  {
-    "name": "Bootylicious #1 Single Noodle Doink",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Diesel",
-      "Citrus",
-      "Earthy",
-      "Pine",
-      "Sweet",
-      "Woody",
-      "Chemical"
     ],
     "effects": [
       "Relaxed",
@@ -13027,33 +12600,6 @@
     "effects": [
       "Sleepy",
       "Relaxed",
-      "Tingly"
-    ]
-  },
-  {
-    "name": "Bubba Diagonal 10- Noodle Doinks",
-    "type": "",
-    "crosses": "Bubba Kush x Triangle Kush",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Earthy",
-      "Sweet",
-      "Citrus",
-      "Pine",
-      "Coffee",
-      "Pungent",
-      "Skunk",
-      "Woody"
-    ],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Hungry",
-      "Euphoric",
       "Tingly"
     ]
   },
@@ -13809,22 +13355,6 @@
     ]
   },
   {
-    "name": "Bursters ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Bursters ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Butter Cake",
     "type": "",
     "crosses": "Wedding Cake x Peanut Butter Breath",
@@ -14140,33 +13670,6 @@
     "flavors": [
       "Grape",
       "Sweet",
-      "Vanilla",
-      "Pepper",
-      "Butter",
-      "Berry"
-    ],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Hungry",
-      "Creative",
-      "Euphoric",
-      "Focused",
-      "Sleepy"
-    ]
-  },
-  {
-    "name": "Cake Crasher Single Noodle Doink",
-    "type": "",
-    "crosses": "Wedding Cake x Wedding Crasher",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Cake",
-      "Gas",
       "Vanilla",
       "Pepper",
       "Butter",
@@ -17463,22 +16966,6 @@
     ]
   },
   {
-    "name": "Cherry Lime ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Cherry Lime ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "cherry limeade",
     "type": "Hybrid",
     "crosses": "Cherry Pie x Black Lime Reserve",
@@ -20602,14 +20089,6 @@
     "effects": []
   },
   {
-    "name": "Daily Dosi Tier Silver",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Daily Grape / Lemon Gas 50 50",
     "type": "",
     "crosses": "",
@@ -21221,14 +20700,6 @@
   },
   {
     "name": "Diablo OG Cold Filtered",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Diablo OG ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -21983,30 +21454,6 @@
       "Chemical",
       "Pepper",
       "Tobacco",
-      "Ammonia"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Tingly",
-      "Focused",
-      "Sleepy",
-      "Uplifted",
-      "Euphoric"
-    ]
-  },
-  {
-    "name": "Donny Burger Single Noodle Doink",
-    "type": "",
-    "crosses": "GMO x Han Solo Burger",
-    "terpenes": [],
-    "flavors": [
-      "Onion",
-      "Blue Cheese",
-      "Cheese",
-      "Earthy",
-      "Tobacco",
-      "Pepper",
       "Ammonia"
     ],
     "effects": [
@@ -22802,17 +22249,6 @@
     ]
   },
   {
-    "name": "Dragon Fruit Soda x Shack",
-    "type": "",
-    "crosses": "Dragon Fruit Soda x Shack",
-    "terpenes": [],
-    "flavors": [],
-    "effects": [
-      "Flavorful",
-      "Potent"
-    ]
-  },
-  {
     "name": "Dragon Fruit x Tropicana Cookies",
     "type": "",
     "crosses": "Dragon Fruit x Tropicana Cookies",
@@ -22836,14 +22272,6 @@
       "Energetic",
       "Uplifted"
     ]
-  },
-  {
-    "name": "Dragonfruit Soda",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Dragonfruit Tart",
@@ -24060,14 +23488,6 @@
       "Focused",
       "Creative"
     ]
-  },
-  {
-    "name": "Dutch Treat ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Eagle Scout Trainwreck",
@@ -32092,21 +31512,6 @@
     ]
   },
   {
-    "name": "Glowz Badder",
-    "type": "",
-    "crosses": "MOONBOW 12 x PLANET PURPLE F2",
-    "terpenes": [
-      "Linalool",
-      "Limonene",
-      "Pinene"
-    ],
-    "flavors": [],
-    "effects": [
-      "Sleepy",
-      "Calm"
-    ]
-  },
-  {
     "name": "Glue Stick",
     "type": "",
     "crosses": "Gorilla Glue #4 x Undisclosed",
@@ -32298,31 +31703,6 @@
       "Focused",
       "Relaxed",
       "Uplifted"
-    ]
-  },
-  {
-    "name": "GMO Silver Tier Half & Half",
-    "type": "",
-    "crosses": "Chemdog x GSC",
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "flavors": [
-      "Earthy",
-      "Pungent",
-      "Diesel",
-      "Sweet",
-      "Mint"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Uplifted",
-      "Euphoric",
-      "Sleepy",
-      "Focused"
     ]
   },
   {
@@ -33007,38 +32387,6 @@
       "Relaxed",
       "Sleepy",
       "Uplifted"
-    ]
-  },
-  {
-    "name": "Gold Tier Gold Berry Backhand",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Gold Tier Gold Grape Cream Cake",
-    "type": "",
-    "crosses": "Grape Pie x Wedding Crasher",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Grape",
-      "Pear",
-      "Sweet",
-      "Pepper",
-      "Berry",
-      "Vanilla"
-    ],
-    "effects": [
-      "Relaxed",
-      "Creative",
-      "Energetic"
     ]
   },
   {
@@ -34688,14 +34036,6 @@
     ]
   },
   {
-    "name": "Grape Cream Mintz Tier Silver",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Grape Creamsicle",
     "type": "",
     "crosses": "Grape Pie x Wedding Crasher",
@@ -35350,14 +34690,6 @@
     ]
   },
   {
-    "name": "Grape Pie ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Grape Pie x Shineapple #32",
     "type": "",
     "crosses": "Grape Pie x Shineapple #32",
@@ -35760,14 +35092,6 @@
       "Sweet",
       "Candy"
     ],
-    "effects": []
-  },
-  {
-    "name": "Grapefruit ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
     "effects": []
   },
   {
@@ -36501,14 +35825,6 @@
     ]
   },
   {
-    "name": "Green Label -Napa Peaches",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Green Love Potion",
     "type": "",
     "crosses": "Black Domina x Lavender",
@@ -36681,22 +35997,6 @@
   },
   {
     "name": "GSC Cold Filtered",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "GSC ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "GSC ULTRA Pen",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -40121,14 +39421,6 @@
     ]
   },
   {
-    "name": "Hindu Kush \" \" ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Hindu Lemon Dog BHO",
     "type": "",
     "crosses": "",
@@ -42411,22 +41703,6 @@
     "effects": []
   },
   {
-    "name": "Jack Herer ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Jack Herer ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Jack Herer x SB36",
     "type": "",
     "crosses": "Jack Herer x SB36",
@@ -42491,19 +41767,12 @@
     "terpenes": [
       "Limonene",
       "Caryophyllene",
-      "Myrcene",
-      "Terpinolene",
-      "Pinene"
+      "Myrcene"
     ],
     "flavors": [
       "Lemon",
       "Sweet",
-      "Pine",
-      "Butter",
-      "Honey",
-      "Vanilla",
-      "Woody",
-      "Earthy"
+      "Pine"
     ],
     "effects": [
       "Energetic",
@@ -43178,14 +42447,6 @@
     "effects": []
   },
   {
-    "name": "Jet Pack",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Jetlato BHO",
     "type": "",
     "crosses": "G6 x Gelato",
@@ -43438,24 +42699,6 @@
       "Relaxed",
       "Happy",
       "Uplifted"
-    ]
-  },
-  {
-    "name": "Juice Box",
-    "type": "",
-    "crosses": "Egyptian gold x Moroccan Peaches",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Humulene"
-    ],
-    "flavors": [
-      "Fruit Punch"
-    ],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Talkative"
     ]
   },
   {
@@ -45432,14 +44675,6 @@
     ]
   },
   {
-    "name": "Kush Mints ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Kush Mints x Bomb",
     "type": "",
     "crosses": "Kush Mints x Bomb",
@@ -46393,14 +45628,6 @@
       "Hungry",
       "Euphoric"
     ]
-  },
-  {
-    "name": "Lava Cake ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Lava Cake x Gush Bomb",
@@ -48612,14 +47839,6 @@
     ]
   },
   {
-    "name": "Lazer Fuel Ultra",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "LCG",
     "type": "",
     "crosses": "Sunset Sherbet x Girl Scout Cookies",
@@ -48960,14 +48179,6 @@
     ]
   },
   {
-    "name": "Lemon Cake ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Lemon Cane",
     "type": "",
     "crosses": "",
@@ -49242,14 +48453,6 @@
     ]
   },
   {
-    "name": "Lemon Cherry Remix Silver Tier 50-50",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Lemon Cherry Z",
     "type": "",
     "crosses": "",
@@ -49276,14 +48479,6 @@
       "Uplifted",
       "Energetic"
     ]
-  },
-  {
-    "name": "Lemon Cream Kush Cake Tier Silver",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Lemon Dawg",
@@ -49816,14 +49011,6 @@
       "Tingly",
       "Uplifting"
     ]
-  },
-  {
-    "name": "Lemon Junky Tier Silver",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "lemon kush",
@@ -50445,34 +49632,6 @@
       "Relaxed",
       "Uplifted",
       "Creative"
-    ]
-  },
-  {
-    "name": "Lemon Tart Pucker #1 5- Noodle Doinks",
-    "type": "",
-    "crosses": "Athens x Lemon G13 x Dough Dawg (Animal Cookies x Stardawg)",
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Creamy Finish",
-      "Lemon",
-      "Pine",
-      "Citrus",
-      "Chemical",
-      "Diesel",
-      "Pepper"
-    ],
-    "effects": [
-      "Aroused",
-      "Creative",
-      "Energetic",
-      "Euphoric",
-      "Focused",
-      "Relaxed",
-      "Uplifted"
     ]
   },
   {
@@ -51541,28 +50700,6 @@
     ]
   },
   {
-    "name": "LiveRosinInfused0.5gPreroll5-Pck",
-    "type": "",
-    "crosses": "MIYAZAKI MANGO: JACK SPARROW X WATERMELON PUNCH AND SUGAR BERRY: UNKNOWN",
-    "terpenes": [
-      "Myrcene",
-      "Terpinolene",
-      "Pinene"
-    ],
-    "flavors": [
-      "Mango",
-      "Citrus",
-      "Creative",
-      "Pineapple",
-      "Grape",
-      "Diesel"
-    ],
-    "effects": [
-      "Energetic",
-      "Creative"
-    ]
-  },
-  {
     "name": "LMNO-Z",
     "type": "",
     "crosses": "Chemdog x Super Skunk",
@@ -52195,14 +51332,6 @@
     ]
   },
   {
-    "name": "Mac \" \" ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "mac 1",
     "type": "Hybrid",
     "crosses": "Alien Cookies x Colombian x Starfighter",
@@ -52748,14 +51877,6 @@
     "effects": []
   },
   {
-    "name": "Malibu OG ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "mandarin cookies",
     "type": "Hybrid",
     "crosses": "Forum Cut Cookies x Mandarin Sunset",
@@ -53193,14 +52314,6 @@
       "Relaxed",
       "Sleepy"
     ]
-  },
-  {
-    "name": "Mango OG ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Mango Papaya",
@@ -54504,63 +53617,14 @@
   {
     "name": "Melon Soda",
     "type": "Hybrid",
-    "crosses": "Papaya x MAKs Gak",
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
+    "crosses": "Papaya x MAK’s GaK",
+    "terpenes": [],
     "flavors": [
-      "Sweet",
-      "Effervescent",
       "Citrus",
-      "Melon"
+      "Melon",
+      "Sweet"
     ],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Hungry"
-    ]
-  },
-  {
-    "name": "Melon Soda #24",
-    "type": "",
-    "crosses": "Papaya x MAKs Gak",
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "flavors": [
-      "Tree fruit",
-      "Tropical",
-      "Apricot"
-    ],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Hungry"
-    ]
-  },
-  {
-    "name": "Melon Soda #4",
-    "type": "",
-    "crosses": "Papaya x MAKs Gak",
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "flavors": [
-      "Tree fruit",
-      "Tropical",
-      "Apricot"
-    ],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Hungry"
-    ]
+    "effects": []
   },
   {
     "name": "Melon Tangie",
@@ -55835,17 +54899,6 @@
     "effects": []
   },
   {
-    "name": "MM-BanginOasis-MRCC-2602-1g",
-    "type": "",
-    "crosses": "Bangerang x Govt. Oasis",
-    "terpenes": [],
-    "flavors": [
-      "Gas",
-      "Funk"
-    ],
-    "effects": []
-  },
-  {
     "name": "MM-Benzina-FSCC-2604",
     "type": "",
     "crosses": "Papaya Berry Runtz x Government Oasis",
@@ -55918,14 +54971,6 @@
   },
   {
     "name": "MM-GMO-FSCC-2601",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-GMO-FSCC-2601-1g",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -56011,16 +55056,6 @@
   },
   {
     "name": "MM-GrilledPeaches-SIGCC-2601",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Cherry Pie X Kimbo Kush"
-    ],
-    "effects": []
-  },
-  {
-    "name": "MM-GrilledPeaches-SIGCC-2601-1g",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -56214,14 +55249,6 @@
   },
   {
     "name": "MM-TropCookies-FSCC-2601",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-TropCookies-FSCC-2601-1G",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -56475,14 +55502,6 @@
     ]
   },
   {
-    "name": "Modified Cherry Syrup Tier Silver",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Modified Grape",
     "type": "",
     "crosses": "GMO Cookies x Purple Punch",
@@ -56613,14 +55632,6 @@
       "Energetic",
       "Focused"
     ]
-  },
-  {
-    "name": "Modified Pie Silver Tier Half & Half",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Modified Rose",
@@ -59054,14 +58065,6 @@
       "Focused",
       "Happy"
     ]
-  },
-  {
-    "name": "Northern Lights ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Northern LIghts x Backcross",
@@ -61894,24 +60897,6 @@
     "effects": []
   },
   {
-    "name": "Orange Soda",
-    "type": "",
-    "crosses": "Tangie x Grandma's Cookies pheno #7",
-    "terpenes": [
-      "Myrcene",
-      "Pinene",
-      "Caryophyllene"
-    ],
-    "flavors": [
-      "Cookie"
-    ],
-    "effects": [
-      "Uplifted",
-      "Focused",
-      "Relaxed"
-    ]
-  },
-  {
     "name": "orange sunset",
     "type": "Indica",
     "crosses": "Orange Banana x OZ Kush",
@@ -64381,16 +63366,6 @@
     ]
   },
   {
-    "name": "Passionfruit Soda",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Woody"
-    ],
-    "effects": []
-  },
-  {
     "name": "pavé",
     "type": "Hybrid",
     "crosses": "Paris OG x The Menthol",
@@ -65970,14 +64945,6 @@
     ]
   },
   {
-    "name": "Piff ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Pilot Candy",
     "type": "",
     "crosses": "",
@@ -66256,14 +65223,6 @@
   },
   {
     "name": "Pineapple Express Cold Filtered",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Pineapple Express ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -66899,14 +65858,6 @@
     ]
   },
   {
-    "name": "Pineapple Trainwreck Ultra",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Pineapple Truck",
     "type": "",
     "crosses": "PGB x Dump Truck",
@@ -67193,22 +66144,6 @@
     "terpenes": [],
     "flavors": [],
     "effects": []
-  },
-  {
-    "name": "Pink Drink",
-    "type": "",
-    "crosses": "BANANA PUNCH × OG FRUIT SMOOTHIE",
-    "terpenes": [],
-    "flavors": [
-      "Citrus",
-      "Tropical",
-      "Sour"
-    ],
-    "effects": [
-      "Energetic",
-      "Uplifted",
-      "Happy"
-    ]
   },
   {
     "name": "Pink Fumez",
@@ -69097,29 +68032,6 @@
     ]
   },
   {
-    "name": "PSYOP Box",
-    "type": "",
-    "crosses": "(Planetary OG x Runtz) x Dark Web #3",
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Tree fruit",
-      "Apricot",
-      "Sweet"
-    ],
-    "effects": [
-      "Uplifted",
-      "Euphoric",
-      "Aroused",
-      "Talkative",
-      "Giggly",
-      "Relaxed"
-    ]
-  },
-  {
     "name": "Pudding Pops",
     "type": "",
     "crosses": "",
@@ -70178,22 +69090,6 @@
       "Sleepy",
       "Happy"
     ]
-  },
-  {
-    "name": "Purple Punch ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Purple Punch ULTRA Pen",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "Purple Push Pop",
@@ -72274,14 +71170,6 @@
     ]
   },
   {
-    "name": "Romulan ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Root Beer GMO",
     "type": "",
     "crosses": "",
@@ -72352,40 +71240,6 @@
       "Relaxed",
       "Euphoric",
       "Happy"
-    ]
-  },
-  {
-    "name": "RosinInfus0.5gPreroll5-Pa",
-    "type": "",
-    "crosses": "ROSWELL 47: JEALOUSY × C-NOTE AND PAPAYA PUNCH: CITRAL #13 × ICE #2",
-    "terpenes": [],
-    "flavors": [
-      "Fruit",
-      "Pepper",
-      "Euphoric",
-      "Apple",
-      "Blueberry",
-      "Berry"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted"
-    ]
-  },
-  {
-    "name": "RosinInfused 0.5gPrerol5-Pa",
-    "type": "",
-    "crosses": "LEMON TREE SKORANGE X STREET GURU LEMON TREE × ZKITTLES",
-    "terpenes": [],
-    "flavors": [
-      "Lemon",
-      "Citrus",
-      "Creative"
-    ],
-    "effects": [
-      "Euphoric",
-      "Energetic",
-      "Creative"
     ]
   },
   {
@@ -74132,16 +72986,6 @@
   },
   {
     "name": "Shack",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Woody"
-    ],
-    "effects": []
-  },
-  {
-    "name": "Shackfire Soda",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -79263,14 +78107,6 @@
     "effects": []
   },
   {
-    "name": "Strawberry Cough ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "strawberry cream",
     "type": "Hybrid",
     "crosses": "Strawberry Diesel x Cookies and Cream",
@@ -81298,14 +80134,6 @@
     ]
   },
   {
-    "name": "Super Lemon Haze \" \" ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Super Lemon Haze x Garlic Grove",
     "type": "",
     "crosses": "Super Lemon Haze x Garlic Grove",
@@ -82373,14 +81201,6 @@
     "effects": []
   },
   {
-    "name": "Tangie ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "TangieBerto",
     "type": "Hybrid",
     "crosses": "Tangie x Key Lime Pie",
@@ -83270,14 +82090,6 @@
   },
   {
     "name": "The Truth Cold Filtered",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "The Truth ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -84858,28 +83670,6 @@
       "Relaxed",
       "Creative",
       "Uplifted"
-    ]
-  },
-  {
-    "name": "Tropical Juice Box",
-    "type": "",
-    "crosses": "Orange Juice x Pearadise #4",
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Citrus",
-      "Tropical",
-      "Mango",
-      "Pear",
-      "Sweet"
-    ],
-    "effects": [
-      "Uplifted",
-      "Relaxed",
-      "Euphoric"
     ]
   },
   {
@@ -86840,14 +85630,6 @@
     ]
   },
   {
-    "name": "Watermelon Z ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Watermelon Z x Whitethorn Rose",
     "type": "",
     "crosses": "Watermelon Z x Whitethorn Rose",
@@ -86930,14 +85712,6 @@
     ]
   },
   {
-    "name": "Wave Runners ULTRA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "Wavey Tee",
     "type": "",
     "crosses": "",
@@ -87007,14 +85781,6 @@
   },
   {
     "name": "Wedding Cake 483",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Wedding Cake ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -89458,14 +88224,6 @@
   },
   {
     "name": "Z-Artist FKA",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Z-Artist FKA ULTRA",
     "type": "",
     "crosses": "",
     "terpenes": [],
