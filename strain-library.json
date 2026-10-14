@@ -15623,7 +15623,7 @@
   },
   {
     "name": "Champaya",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Papaya x Mimosa",
     "terpenes": [
       "Myrcene",
@@ -20792,7 +20792,7 @@
   },
   {
     "name": "Directors Cut",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Larry OG x Crown OG",
     "terpenes": [
       "Myrcene",
@@ -26959,7 +26959,7 @@
   },
   {
     "name": "Gak Smoovie",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Gak x 4 Locoz",
     "terpenes": [
       "Myrcene",
@@ -40020,7 +40020,7 @@
   },
   {
     "name": "Honey Butter",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -52630,7 +52630,7 @@
   },
   {
     "name": "Mashup Mystery",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Mystery",
     "terpenes": [],
     "flavors": [
@@ -59242,7 +59242,7 @@
   },
   {
     "name": "OG Spritzer",
-    "type": "",
+    "type": "Sativa",
     "crosses": "OGKushblend + Spritzer",
     "terpenes": [
       "Sabinene",
@@ -63192,7 +63192,7 @@
   },
   {
     "name": "Paytons Pie #1",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Gary Payton x Georgia Pie",
     "terpenes": [],
     "flavors": [
@@ -64772,7 +64772,7 @@
   },
   {
     "name": "Pina Smothie",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -66280,7 +66280,7 @@
   },
   {
     "name": "Pink Pitaya",
-    "type": "",
+    "type": "Indica",
     "crosses": "Strawguava Bx #6 x Original Z",
     "terpenes": [
       "β-Caryophyllene",
@@ -69411,7 +69411,7 @@
   },
   {
     "name": "Rainbow Beltz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Zkittlez x Moonbow",
     "terpenes": [
       "Caryophyllene",
@@ -70255,7 +70255,7 @@
   },
   {
     "name": "Red Diamond",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [
       "β-Caryophyllene",
@@ -75414,7 +75414,7 @@
   },
   {
     "name": "Sour Garlic Cookies",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "GSC x Chemdawg",
     "terpenes": [
       "Limonene",
@@ -75424,7 +75424,11 @@
     "flavors": [
       "Citrus",
       "Lemon",
-      "Pepper"
+      "Pepper",
+      "Creamy",
+      "Funky",
+      "Garlic",
+      "Sour"
     ],
     "effects": [
       "Relaxed",
@@ -75493,7 +75497,7 @@
   },
   {
     "name": "Sour Gorilla Dog",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -76372,7 +76376,9 @@
       "Citrus",
       "Orange",
       "Diesel",
-      "Sweet"
+      "Sweet",
+      "Gas",
+      "Sour"
     ],
     "effects": [
       "Happy",
@@ -76909,7 +76915,7 @@
   },
   {
     "name": "Spring Training",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -80934,7 +80940,7 @@
   },
   {
     "name": "TangieBerto",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Tangie x Key Lime Pie",
     "terpenes": [
       "Caryophyllene",
