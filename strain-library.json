@@ -14381,17 +14381,29 @@
     "terpenes": [
       "Caryophyllene",
       "Limonene",
-      "Myrcene"
+      "Myrcene",
+      "Humulene",
+      "Linalool",
+      "Farnesene",
+      "Pinene"
     ],
     "flavors": [
       "Apricot",
       "Sweet",
-      "Tree fruit"
+      "Tree fruit",
+      "Funk",
+      "Gas",
+      "Citrus",
+      "Pungent Diesel",
+      "Skunk"
     ],
     "effects": [
+      "Creative",
+      "Focused",
+      "Happy",
+      "Relaxed",
       "Talkative",
-      "Giggly",
-      "Relaxed"
+      "Giggly"
     ]
   },
   {
@@ -51598,16 +51610,20 @@
   {
     "name": "Madison Zquared Garden #2",
     "type": "",
-    "crosses": "",
+    "crosses": "ONYCD x ZCubed) #13 x SpritZer",
     "terpenes": [],
     "flavors": [
-      "Sweet"
+      "Sweet",
+      "Chemical",
+      "Citrus",
+      "Fruit",
+      "Gas"
     ],
     "effects": [
-      "Euphoric",
       "Happy",
       "Relaxed",
-      "Uplifted"
+      "Uplifted",
+      "Euphoric"
     ]
   },
   {
@@ -51938,6 +51954,18 @@
       "Uplifted",
       "Sleepy"
     ]
+  },
+  {
+    "name": "Mango Bannana #9",
+    "type": "",
+    "crosses": "SB 36 x Forbidden Banana F1",
+    "terpenes": [],
+    "flavors": [
+      "Banana",
+      "Citrus",
+      "Mango"
+    ],
+    "effects": []
   },
   {
     "name": "Mango Cake BHO",
@@ -53242,7 +53270,23 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Earthy",
+      "Peach",
+      "Ripe Fruit"
+    ],
+    "effects": []
+  },
+  {
+    "name": "Mega Peaches #24",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Earthy",
+      "Peach",
+      "Ripe Fruit"
+    ],
     "effects": []
   },
   {
@@ -69434,7 +69478,8 @@
     "terpenes": [
       "Caryophyllene",
       "Linalool",
-      "Humulene"
+      "Humulene",
+      "Limonene"
     ],
     "flavors": [
       "Citrus",
@@ -79964,6 +80009,18 @@
       "Uplifted",
       "Euphoric"
     ]
+  },
+  {
+    "name": "Super Peaches",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Earthy",
+      "Peach",
+      "Ripe Fruit"
+    ],
+    "effects": []
   },
   {
     "name": "Super Runtz",
