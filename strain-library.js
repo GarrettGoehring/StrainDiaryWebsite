@@ -104,16 +104,11 @@
     if(!globalList)return;
     const visible=globalItems.slice(0,globalShown);
     globalList.innerHTML=visible.length?visible.map(item=>{
-      const owner=clean(item.displayName)||clean(item.username)||'Strain Diary community';
-      const handle=clean(item.username);
-      const initial=(owner.charAt(0)||'S').toUpperCase();
       const details=[item.brand,item.form,item.extractType,item.type,item.potency].map(clean).filter(Boolean).slice(0,4).join(' · ');
       const shared=formatDate(item.sharedAt);
       const rating=Number(item.rating)>0?'<span class="global-rating">★ '+Number(item.rating).toFixed(1)+'</span>':'';
-      const review=clean(item.review)?'<p class="global-review">“'+escapeHTML(item.review)+'”</p>':'';
-      const profile=handle?'<a class="global-profile-link" href="straindiary://profile?username='+encodeURIComponent(handle)+'">@'+escapeHTML(handle)+'</a>':'<span>'+escapeHTML(owner)+'</span>';
       const chips=[...((item.flavors||[]).slice(0,2)),...((item.effects||[]).slice(0,2)),...((item.terpenes||[]).slice(0,2))];
-      return '<article class="global-shared-card"><div class="global-card-owner"><span class="global-avatar">'+escapeHTML(initial)+'</span><div><strong>'+escapeHTML(owner)+'</strong><small>Shared by '+profile+(shared?' · '+escapeHTML(shared):'')+'</small></div></div><div class="global-card-title"><h3>'+escapeHTML(item.name)+'</h3>'+rating+'</div>'+(details?'<p class="global-details">'+escapeHTML(details)+'</p>':'')+(chips.length?'<div class="global-card-tags">'+globalTags(chips,6)+'</div>':'')+review+'</article>';
+      return '<article class="global-shared-card"><div class="global-card-meta">GLOBAL SHARE'+(shared?' · '+escapeHTML(shared):'')+'</div><div class="global-card-title"><h3>'+escapeHTML(item.name)+'</h3>'+rating+'</div>'+(details?'<p class="global-details">'+escapeHTML(details)+'</p>':'')+(chips.length?'<div class="global-card-tags">'+globalTags(chips,6)+'</div>':'')+'</article>';
     }).join(''):'<div class="strain-empty">No Global strains are available right now. Check back soon.</div>';
     if(globalCount)globalCount.textContent=globalItems.length.toLocaleString()+' recent public '+(globalItems.length===1?'strain':'strains');
     if(globalMore){
