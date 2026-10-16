@@ -42,6 +42,7 @@
 .global-card-owner small{display:block;margin-top:3px;color:var(--muted,#9197a1);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .global-profile-link{color:var(--accent,#c4efa0);text-decoration:none}
 .global-profile-link:hover{text-decoration:underline}
+.global-card-meta{margin-bottom:12px;color:var(--muted,#858b96);font-size:9px;font-weight:700;letter-spacing:.15em}
 .global-card-title{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
 .global-card-title h3{margin:0;font:800 22px/1.18 Manrope,sans-serif;letter-spacing:-.03em;text-transform:capitalize}
 .global-rating{flex:none;color:#f3ce67;font:800 15px Manrope,sans-serif}
