@@ -77,6 +77,14 @@ const list = value => {
 };
 const flavors = value => list(value).filter(item => !item.startsWith('__'));
 const publicFlag = value => value === true || value === 1 || value === '1';
+const number = value => Number.isFinite(Number(value)) ? Number(value) : 0;
+const recordDate = record => {
+  const raw = record?.modified?.timestamp ?? record?.created?.timestamp;
+  if (raw == null) return '';
+  const numeric = typeof raw === 'number' && raw < 100000000000 ? raw * 1000 : raw;
+  const date = new Date(numeric);
+  return Number.isNaN(date.getTime()) ? '' : date.toISOString();
+};
 const keyFor = value => text(value).toLocaleLowerCase('en-US').replace(/\s+/g, ' ');
 const unique = values => [...new Map(values.map(value => [value.toLocaleLowerCase('en-US'), value])).values()];
 
@@ -108,7 +116,8 @@ const community = await fetchRecords('CommunityStrain', [
   'strainName', 'displayName', 'brand', 'crosses', 'terpenes', 'terpProfiles', 'effects',
 ]);
 const publicPosts = await fetchRecords('PublicStrain', [
-  'name', 'brand', 'type', 'crosses', 'terpenes', 'terpProfiles', 'effects', 'isPublic',
+  'name', 'brand', 'form', 'extractType', 'type', 'crosses',
+  'terpenes', 'terpProfiles', 'effects', 'potency', 'rating', 'isPublic',
 ]);
 
 const merged = new Map();
@@ -144,15 +153,36 @@ for (const record of publicPosts) {
   if (key) merged.set(key, mergeEntry(merged.get(key), entry));
 }
 
+const globalShared = publicPosts
+  .filter(record => publicFlag(field(record, 'isPublic')))
+  .map(record => ({
+    name: text(field(record, 'name')),
+    brand: text(field(record, 'brand')),
+    form: text(field(record, 'form')),
+    extractType: text(field(record, 'extractType')),
+    type: text(field(record, 'type')),
+    potency: text(field(record, 'potency')),
+    rating: number(field(record, 'rating')),
+    flavors: unique(flavors(field(record, 'terpProfiles'))),
+    terpenes: unique(list(field(record, 'terpenes'))),
+    effects: unique(list(field(record, 'effects'))),
+    sharedAt: recordDate(record),
+  }))
+  .filter(entry => entry.name)
+  .sort((a, b) => (b.sharedAt || '').localeCompare(a.sharedAt || ''))
+  .slice(0, 200);
+
 const catalog = [...merged.values()].sort((a, b) => a.name.localeCompare(b.name, 'en-US', { sensitivity: 'base' }));
 const metadata = {
   total: catalog.length,
   bundledRecords: bundled.length,
   communityRecords: community.length,
   publicRecords: publicRecordCount,
+  globalSharedRecords: globalShared.length,
   generatedAt: new Date().toISOString(),
 };
 
 await writeFile('strain-library.json', `${JSON.stringify(catalog, null, 2)}\n`);
 await writeFile('strain-library-meta.json', `${JSON.stringify(metadata, null, 2)}\n`);
-console.log(`Wrote ${catalog.length.toLocaleString('en-US')} unique public strain profiles`, metadata);
+await writeFile('global-shared-strains.json', `${JSON.stringify(globalShared, null, 2)}\n`);
+console.log(`Wrote ${catalog.length.toLocaleString('en-US')} unique public strain profiles and ${globalShared.length.toLocaleString('en-US')} recent anonymous Global posts`, metadata);
