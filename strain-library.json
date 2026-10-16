@@ -12,43 +12,12 @@
     "effects": []
   },
   {
-    "name": "1x1g Malibu Lemon Z x Lemon Heads IWH",
-    "type": "",
-    "crosses": "1x1g Malibu Lemon Z x Lemon Heads IWH",
-    "terpenes": [],
-    "flavors": [
-      "Citrus"
-    ],
-    "effects": []
-  },
-  {
     "name": "2 Scoops Of Gelato",
     "type": "",
     "crosses": "",
     "terpenes": [],
     "flavors": [],
     "effects": []
-  },
-  {
-    "name": "2 x 4",
-    "type": "",
-    "crosses": "Oishii x Dark Rainbow",
-    "terpenes": [
-      "Caryophyllene",
-      "Terpinolene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Sweet Berry Tones",
-      "Soft Candy Gas",
-      "Mellow Earthy Finish"
-    ],
-    "effects": [
-      "Easy",
-      "Everyday",
-      "Solid Flavor",
-      "Smooth Dabs"
-    ]
   },
   {
     "name": "24.8k #6",
@@ -110,14 +79,6 @@
     "flavors": [
       "Citrus"
     ],
-    "effects": []
-  },
-  {
-    "name": "3 Bears Kush",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
     "effects": []
   },
   {
@@ -592,9 +553,9 @@
       "Woody"
     ],
     "effects": [
-      "Euphoric",
       "Creative",
-      "Focused"
+      "Focused",
+      "Euphoric"
     ]
   },
   {
@@ -57348,6 +57309,45 @@
     ]
   },
   {
+    "name": "NEON PANTHER COLD CURE LIVE ROSIN",
+    "type": "",
+    "crosses": "",
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Beta-Pinene",
+      "Trans-Beta-Farnesene",
+      "α-Humulene",
+      "Fenchol",
+      "Terpineol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Valencene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "Terpinolene",
+      "Citronellol",
+      "Geraniol",
+      "Sabinene",
+      "β-Ocimene"
+    ],
+    "flavors": [
+      "Floral",
+      "Sweet"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Focused",
+      "Relaxed",
+      "Uplifted"
+    ]
+  },
+  {
     "name": "Neon Truffle",
     "type": "",
     "crosses": "",
@@ -61328,6 +61328,28 @@
     "terpenes": [],
     "flavors": [],
     "effects": []
+  },
+  {
+    "name": "P x Whitethorn Rose",
+    "type": "",
+    "crosses": "Giraffe P x Whitethorn Rose",
+    "terpenes": [],
+    "flavors": [
+      "Butter",
+      "Apricot",
+      "Diesel",
+      "Lavender",
+      "Berry",
+      "Rose"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Uplifted",
+      "Euphoric",
+      "Giggly"
+    ]
   },
   {
     "name": "P.G.B.",
