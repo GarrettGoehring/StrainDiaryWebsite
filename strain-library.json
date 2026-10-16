@@ -51627,6 +51627,32 @@
     ]
   },
   {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "type": "Hybrid",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "effects": []
+  },
+  {
+    "name": "Madison Zquared Garden #2 +Rainbow Beltz",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Funk",
+      "Gassy",
+      "Zkittles",
+      "Chemical"
+    ],
+    "effects": []
+  },
+  {
     "name": "Madizon Zquare Garden",
     "type": "",
     "crosses": "",
@@ -60131,6 +60157,17 @@
       "Focused",
       "Creative"
     ]
+  },
+  {
+    "name": "Orange Elixir",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Citrus",
+      "Creamy"
+    ],
+    "effects": []
   },
   {
     "name": "Orange GMO's",
@@ -79685,7 +79722,8 @@
     "terpenes": [
       "Caryophyllene",
       "Limonene",
-      "Myrcene"
+      "Myrcene",
+      "d-Limonene"
     ],
     "flavors": [
       "Cherry",
@@ -79700,6 +79738,7 @@
       "Euphoric",
       "Creative",
       "Giggly",
+      "Energetic",
       "Focused"
     ]
   },
