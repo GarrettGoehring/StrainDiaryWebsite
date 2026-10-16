@@ -88,6 +88,52 @@
       loadCatalog();
     }
   }
+  const globalList=document.getElementById('global-shared-results');
+  const globalCount=document.getElementById('global-shared-count');
+  const globalMore=document.getElementById('global-shared-more');
+  const globalPageSize=12;
+  let globalItems=[];
+  let globalShown=globalPageSize;
+  const formatDate=value=>{
+    if(!value)return '';
+    const date=new Date(value);
+    return Number.isNaN(date.getTime())?'':new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric',year:'numeric'}).format(date);
+  };
+  const globalTags=(items,limit=3)=>(items||[]).slice(0,limit).map(value=>'<span>'+escapeHTML(value)+'</span>').join('');
+  const renderGlobal=()=>{
+    if(!globalList)return;
+    const visible=globalItems.slice(0,globalShown);
+    globalList.innerHTML=visible.length?visible.map(item=>{
+      const owner=clean(item.displayName)||clean(item.username)||'Strain Diary community';
+      const handle=clean(item.username);
+      const initial=(owner.charAt(0)||'S').toUpperCase();
+      const details=[item.brand,item.form,item.extractType,item.type,item.potency].map(clean).filter(Boolean).slice(0,4).join(' · ');
+      const shared=formatDate(item.sharedAt);
+      const rating=Number(item.rating)>0?'<span class="global-rating">★ '+Number(item.rating).toFixed(1)+'</span>':'';
+      const review=clean(item.review)?'<p class="global-review">“'+escapeHTML(item.review)+'”</p>':'';
+      const profile=handle?'<a class="global-profile-link" href="straindiary://profile?username='+encodeURIComponent(handle)+'">@'+escapeHTML(handle)+'</a>':'<span>'+escapeHTML(owner)+'</span>';
+      const chips=[...((item.flavors||[]).slice(0,2)),...((item.effects||[]).slice(0,2)),...((item.terpenes||[]).slice(0,2))];
+      return '<article class="global-shared-card"><div class="global-card-owner"><span class="global-avatar">'+escapeHTML(initial)+'</span><div><strong>'+escapeHTML(owner)+'</strong><small>Shared by '+profile+(shared?' · '+escapeHTML(shared):'')+'</small></div></div><div class="global-card-title"><h3>'+escapeHTML(item.name)+'</h3>'+rating+'</div>'+(details?'<p class="global-details">'+escapeHTML(details)+'</p>':'')+(chips.length?'<div class="global-card-tags">'+globalTags(chips,6)+'</div>':'')+review+'</article>';
+    }).join(''):'<div class="strain-empty">No Global strains are available right now. Check back soon.</div>';
+    if(globalCount)globalCount.textContent=globalItems.length.toLocaleString()+' recent public '+(globalItems.length===1?'strain':'strains');
+    if(globalMore){
+      globalMore.hidden=globalShown>=globalItems.length;
+      globalMore.textContent='Show more shared strains ('+Math.min(globalPageSize,globalItems.length-globalShown)+' more)';
+    }
+  };
+  const loadGlobal=()=>{
+    if(!globalList)return;
+    fetch('global-shared-strains.json',{cache:'no-cache'})
+      .then(response=>{if(!response.ok)throw new Error('global feed');return response.json();})
+      .then(data=>{globalItems=Array.isArray(data)?data:[];renderGlobal();})
+      .catch(()=>{
+        if(globalCount)globalCount.textContent='Global feed temporarily unavailable';
+        globalList.innerHTML='<div class="strain-empty">The Global feed could not load right now. Please try again later.</div>';
+      });
+  };
+  loadGlobal();
+  globalMore?.addEventListener('click',()=>{globalShown+=globalPageSize;renderGlobal();});
+
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stopTimer();else startTimer();});
   input?.addEventListener('input',search);
   more?.addEventListener('click',()=>{shown+=pageSize;renderResults();});
