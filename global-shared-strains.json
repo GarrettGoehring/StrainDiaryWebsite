@@ -1,5 +1,35 @@
 [
   {
+    "name": "Tropicana Punch",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8,
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene oxide",
+      "Beta-Pinene",
+      "Alpha-Bisabolol",
+      "d-Limonene",
+      "Linalool",
+      "Guaiol"
+    ],
+    "effects": [
+      "Relaxed",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-10-17T18:02:02.333Z"
+  },
+  {
     "name": "Madison Zquared Garden #2 + Rainbow Beltz",
     "brand": "710 labs",
     "form": "Concentrate",
@@ -33,36 +63,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-16T19:21:40.843Z"
-  },
-  {
-    "name": "Tropicana Punch",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8,
-    "flavors": [
-      "Berry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene oxide",
-      "Beta-Pinene",
-      "Alpha-Bisabolol",
-      "d-Limonene",
-      "Linalool",
-      "Guaiol"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-10-16T18:11:37.890Z"
   },
   {
     "name": "Super Boof",

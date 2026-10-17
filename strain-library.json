@@ -22754,7 +22754,23 @@
     "terpenes": [
       "Terpinolene",
       "Myrcene",
-      "Ocimene"
+      "Ocimene",
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Limonene",
+      "Linalool",
+      "α-Bisabolol",
+      "Alpha-Pinene",
+      "Fenchol",
+      "α-Terpineol",
+      "Beta-Pinene",
+      "Camphene",
+      "Caryophyllene Oxide",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "α-Terpinene",
+      "β-Myrcene"
     ],
     "flavors": [
       "Citrus",
@@ -51914,6 +51930,14 @@
     ]
   },
   {
+    "name": "Mango Banana #9 + Mega Peaches",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "Mango Banana #9 x Banana Punch #4",
     "type": "",
     "crosses": "Banana OG x Purple Punch",
@@ -79244,6 +79268,24 @@
       "Relaxed",
       "Sleepy",
       "Creative"
+    ]
+  },
+  {
+    "name": "Sugar Berry",
+    "type": "",
+    "crosses": "Afghani x Blueberry",
+    "terpenes": [],
+    "flavors": [
+      "Fruity",
+      "Grape",
+      "Berry",
+      "Sugary"
+    ],
+    "effects": [
+      "Happy",
+      "Creative",
+      "Sleepy",
+      "Hungry"
     ]
   },
   {
