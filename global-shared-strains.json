@@ -1,5 +1,1409 @@
 [
   {
+    "name": "SuperBoof",
+    "brand": "CAM",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Sativa",
+    "potency": "50%",
+    "rating": 8.9,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Orange",
+      "Pepper"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T06:06:43.874Z"
+  },
+  {
+    "name": "Sour Gorilla Dog",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "87%",
+    "rating": 9.3,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Gas"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:53.786Z"
+  },
+  {
+    "name": "Directors Cut",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "86%",
+    "rating": 9.1,
+    "flavors": [
+      "Biscotti",
+      "Cherry",
+      "Creamy",
+      "Glue",
+      "Sweet",
+      "Diesel",
+      "Chemical",
+      "Earthy",
+      "Lemon",
+      "Pine",
+      "Citrus",
+      "Pungent"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-19T05:16:53.432Z"
+  },
+  {
+    "name": "Red Diamond",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8.8,
+    "flavors": [
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "α-Humulene",
+      "α-Bisabolol",
+      "Beta-Pinene",
+      "Alpha-Pinene",
+      "Fenchol",
+      "Linalool",
+      "α-Terpineol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "α-Terpinene",
+      "β-Myrcene",
+      "Terpinolene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:53.245Z"
+  },
+  {
+    "name": "Sour Garlic Cookies",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Creamy",
+      "Funky",
+      "Garlic",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy"
+    ],
+    "sharedAt": "2026-10-19T05:16:52.968Z"
+  },
+  {
+    "name": "Sour Tangie",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "73%",
+    "rating": 8.9,
+    "flavors": [
+      "Citrus",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:52.472Z"
+  },
+  {
+    "name": "Slow-Go",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Creamy",
+      "Gas",
+      "Glue",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:52.083Z"
+  },
+  {
+    "name": "Pina Smothie",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Bread",
+      "Creamy",
+      "Earthy",
+      "Pineapple"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:51.581Z"
+  },
+  {
+    "name": "Honey Butter",
+    "brand": "Rosin Tech Labs",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "87%",
+    "rating": 8.6,
+    "flavors": [
+      "Bread",
+      "Creamy",
+      "Honey",
+      "Peppery"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:51.085Z"
+  },
+  {
+    "name": "Gak Smoovie",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "83%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Melon",
+      "Smoothie"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:50.580Z"
+  },
+  {
+    "name": "Cherry Ludens",
+    "brand": "",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "81%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Cherry",
+      "Gassy",
+      "Menthol",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:50.119Z"
+  },
+  {
+    "name": "Superboof",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Orange",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:49.619Z"
+  },
+  {
+    "name": "Chocolate Oranges",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "β-Caryophyllene",
+      "Linalool",
+      "α-Pinene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:49.057Z"
+  },
+  {
+    "name": "Strawberry Guava",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "84%",
+    "rating": 8.3,
+    "flavors": [
+      "Guava",
+      "Strawberry"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:48.576Z"
+  },
+  {
+    "name": "Aguas Frescas",
+    "brand": "Holy Water",
+    "form": "Pen",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 8.6,
+    "flavors": [
+      "Fruit",
+      "Herbal",
+      "Water"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:48.056Z"
+  },
+  {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.5,
+    "flavors": [
+      "Creamy",
+      "Fruity",
+      "Funk",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-19T05:16:47.436Z"
+  },
+  {
+    "name": "Lunarz",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 7,
+    "flavors": [
+      "Fruit",
+      "Melon"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:46.464Z"
+  },
+  {
+    "name": "Crumpets",
+    "brand": "Jetty",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "84%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Biscotti",
+      "Cake",
+      "Lemon"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "β-Myrcene",
+      "Myrcene",
+      "α-Humulene",
+      "Linalool",
+      "Beta-Pinene",
+      "Alpha-Pinene",
+      "Terpineol",
+      "Fenchol",
+      "Trans-Beta-Farnesene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Geraniol",
+      "Fenchone",
+      "Terpinolene",
+      "Terpinene",
+      "β-Ocimene",
+      "α-Terpinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:45.747Z"
+  },
+  {
+    "name": "OG Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "62%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Pepper",
+      "Pine"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "β-Limonene",
+      "Limonene",
+      "α-Humulene",
+      "Linalool",
+      "Myrcene",
+      "Beta-Pinene",
+      "Trans-Beta-Farnesene",
+      "α-Bisabolol",
+      "Alpha-Pinene",
+      "Terpineol",
+      "Fenchol",
+      "Guaiol",
+      "Nerolidol",
+      "β-Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Terpinolene",
+      "Fenchone",
+      "Citronellol",
+      "Eucalyptol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:45.051Z"
+  },
+  {
+    "name": "Frozen Bananas",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9,
+    "flavors": [
+      "Banana",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:44.400Z"
+  },
+  {
+    "name": "TangieBerto",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Cake",
+      "Citrus",
+      "Creamy"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "α-Humulene",
+      "Guaiol",
+      "Linalool",
+      "Beta-Pinene",
+      "Fenchol",
+      "Alpha-Pinene",
+      "α-Terpineol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "β-Myrcene",
+      "Terpinolene"
+    ],
+    "effects": [
+      "Energetic",
+      "Euphoric",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Talkative",
+      "Tingly",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-19T05:16:42.645Z"
+  },
+  {
+    "name": "Gamer Fuel",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.6,
+    "flavors": [
+      "Fuel",
+      "Gassy",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Uplifted",
+      "Sleepy"
+    ],
+    "sharedAt": "2026-10-19T05:16:41.935Z"
+  },
+  {
+    "name": "Watermelon Taffy",
+    "brand": "Team Elite Genetics",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.9,
+    "flavors": [
+      "Citrus",
+      "Sweet",
+      "Earthy"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Energetic",
+      "Uplifted",
+      "Relaxed"
+    ],
+    "sharedAt": "2026-10-19T05:16:40.865Z"
+  },
+  {
+    "name": "Mashup Mystery",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Fruit",
+      "Gassy",
+      "Lemon",
+      "Melon",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:40.266Z"
+  },
+  {
+    "name": "Canal St Runtz",
+    "brand": "Mountain Man Melts",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.3,
+    "flavors": [
+      "Apricot",
+      "Funk",
+      "Gas",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Talkative",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-19T05:16:39.117Z"
+  },
+  {
+    "name": "Terp Broth",
+    "brand": "PinePark",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Funk",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:38.597Z"
+  },
+  {
+    "name": "Melon Ball",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 9.3,
+    "flavors": [
+      "Melon",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Valencene",
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Linalool",
+      "Guaiol",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Terpineol",
+      "Fenchol",
+      "Trans-Beta-Farnesene",
+      "Myrcene",
+      "Camphene",
+      "Beta-Pinene",
+      "Borneol",
+      "Terpinolene",
+      "Ocimene",
+      "Geraniol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:37.479Z"
+  },
+  {
+    "name": "Blue Dream",
+    "brand": "",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "81%",
+    "rating": 7.5,
+    "flavors": [],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:36.639Z"
+  },
+  {
+    "name": "Papaya Squared",
+    "brand": "Jetty",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.4,
+    "flavors": [],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:36.129Z"
+  },
+  {
+    "name": "Zmoothie",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "88%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:35.549Z"
+  },
+  {
+    "name": "Purple Paya",
+    "brand": "Rosin Tech Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 9,
+    "flavors": [
+      "Banana",
+      "Grape",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy"
+    ],
+    "sharedAt": "2026-10-19T05:16:34.999Z"
+  },
+  {
+    "name": "Scottis Cake",
+    "brand": "CAM",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "86%",
+    "rating": 8.6,
+    "flavors": [
+      "Biscotti",
+      "Creamy",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:34.502Z"
+  },
+  {
+    "name": "Gran Daddy Purp",
+    "brand": "LAX",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Indica",
+    "potency": "50%",
+    "rating": 8.9,
+    "flavors": [
+      "Grape",
+      "OG",
+      "Pine"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "β-Caryophyllene",
+      "Terpinolene",
+      "β-Pinene",
+      "α-Pinene",
+      "δ-Limonene",
+      "Caryophyllene Oxide",
+      "α-Bisabolol",
+      "Linalool",
+      "α-Humulene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:33.973Z"
+  },
+  {
+    "name": "Gorilla Dosha",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Gas",
+      "Guava"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:33.488Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Heavy Hitters",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "α-Bisabolol",
+      "Caryophyllene Oxide",
+      "Caryophyllene",
+      "δ-Limonene",
+      "β-Pinene",
+      "Linalool",
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Limonene",
+      "Myrcene",
+      "α-Pinene",
+      "Camphene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Heady"
+    ],
+    "sharedAt": "2026-10-19T05:16:32.961Z"
+  },
+  {
+    "name": "Sea Shock",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "71%",
+    "rating": 9.2,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Fruit",
+      "Salty Sea"
+    ],
+    "terpenes": [
+      "Sabinene",
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene",
+      "Beta-Pinene",
+      "Linalool",
+      "Alpha-Pinene",
+      "Guaiol",
+      "Trans-Beta-Farnesene",
+      "Terpineol",
+      "Camphene",
+      "Ocimene",
+      "Terpinolene",
+      "Borneol",
+      "Nerolidol",
+      "Fenchol",
+      "Valencene",
+      "Geraniol",
+      "Bisabolol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:32.472Z"
+  },
+  {
+    "name": "Zakura",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "93%",
+    "rating": 8.3,
+    "flavors": [
+      "Fruit"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:31.991Z"
+  },
+  {
+    "name": "Nimbus Snacks",
+    "brand": "Holy Water",
+    "form": "Pen",
+    "extractType": "Live Resin",
+    "type": "Sativa",
+    "potency": "80%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Citrus",
+      "Earthy",
+      "Floral",
+      "Kushy"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:31.456Z"
+  },
+  {
+    "name": "Papaya Push Pop",
+    "brand": "Swol",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "86%",
+    "rating": 9.3,
+    "flavors": [
+      "Creamy",
+      "Papaya",
+      "Tropical"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:30.252Z"
+  },
+  {
+    "name": "Agua Frescas",
+    "brand": "Holy Water",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 8.1,
+    "flavors": [
+      "Fruit",
+      "Water"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:29.857Z"
+  },
+  {
+    "name": "Cranberry Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "67%",
+    "rating": 8.6,
+    "flavors": [
+      "Berry",
+      "Creamy",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Beta-Pinene",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Trans-Beta-Farnesene",
+      "Guaiol",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Myrcene",
+      "Terpinolene",
+      "Linalool",
+      "Sabinene",
+      "Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:29.334Z"
+  },
+  {
+    "name": "Freeze Truck",
+    "brand": "Team Elite Genetics",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "86%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Fruit",
+      "Rotten"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Energetic",
+      "Uplifted",
+      "Relaxed"
+    ],
+    "sharedAt": "2026-10-19T05:16:28.413Z"
+  },
+  {
+    "name": "GG4",
+    "brand": "",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.9,
+    "flavors": [
+      "Earthy",
+      "Pine",
+      "Pungent"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Hungry"
+    ],
+    "sharedAt": "2026-10-19T05:16:28.069Z"
+  },
+  {
+    "name": "Papaya Lime Pie",
+    "brand": "Karisma",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "76%",
+    "rating": 9.4,
+    "flavors": [
+      "Lime",
+      "Mango",
+      "Peppery",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Pinene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Happy",
+      "Sleepy"
+    ],
+    "sharedAt": "2026-10-19T05:16:27.527Z"
+  },
+  {
+    "name": "Champaya",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Papaya",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Focused",
+      "Happy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-19T05:16:26.826Z"
+  },
+  {
+    "name": "Rainbow Beltz",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "84%",
+    "rating": 9.3,
+    "flavors": [
+      "Citrus",
+      "Fruity",
+      "Melon"
+    ],
+    "terpenes": [
+      "Linalool",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:26.310Z"
+  },
+  {
+    "name": "Melon Soda",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Citrus",
+      "Melon",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:25.809Z"
+  },
+  {
+    "name": "Grilled Peaches",
+    "brand": "Master Makers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "81%",
+    "rating": 8.8,
+    "flavors": [
+      "Peaches",
+      "Pine",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-10-19T05:16:25.307Z"
+  },
+  {
+    "name": "DDP",
+    "brand": "Jurassic Extracts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 7.800000000000001,
+    "flavors": [
+      "Fruity",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:24.689Z"
+  },
+  {
+    "name": "Tallyman",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.8,
+    "flavors": [
+      "Banana",
+      "Gas",
+      "Kushy"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Pinene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:24.186Z"
+  },
+  {
+    "name": "Purple Chem",
+    "brand": "Shasta Hash and Flowers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Peppery",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Caryophyllene Oxide",
+      "Linalool",
+      "β-Myrcene",
+      "α-Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:23.636Z"
+  },
+  {
+    "name": "Pink Pitaya",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "67%",
+    "rating": 8.8,
+    "flavors": [
+      "Dragon Fruit",
+      "Floral",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Limonene",
+      "Linalool",
+      "α-Bisabolol",
+      "Guaiol",
+      "Beta-Pinene",
+      "Fenchol",
+      "Alpha-Pinene",
+      "α-Terpineol",
+      "Camphene",
+      "β-Citronellol",
+      "Geraniol",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "β-Myrcene",
+      "Terpinolene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:22.764Z"
+  },
+  {
+    "name": "Zmoothie",
+    "brand": "",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.4,
+    "flavors": [
+      "Berry",
+      "Fruit",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:22.081Z"
+  },
+  {
+    "name": "Wedding Pie",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "84%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Cake",
+      "Creamy",
+      "Pine",
+      "Sweet",
+      "Butter",
+      "Grape"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Sleepy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-19T05:16:21.556Z"
+  },
+  {
+    "name": "Peach Jolly + The Sweeties #7",
+    "brand": "710 Labs",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "60%",
+    "rating": 9,
+    "flavors": [
+      "Creamy",
+      "Gas",
+      "Tropical"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:21.060Z"
+  },
+  {
+    "name": "Spring Training",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "77%",
+    "rating": 9.5,
+    "flavors": [
+      "Baseball",
+      "Chemical",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:20.568Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Linalool",
+      "α-Pinene",
+      "β-Caryophyllene",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "Caryophyllene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "α-Humulene",
+      "Limonene",
+      "β-Myrcene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-19T05:16:20.039Z"
+  },
+  {
+    "name": "Grease Bucket #9 + Gorilla Dosha #3",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.6,
+    "flavors": [
+      "Chemical",
+      "Gas",
+      "Glue",
+      "Pine"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-19T05:16:19.498Z"
+  },
+  {
+    "name": "Zimosa #2 + LunarZ",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Citrus",
+      "Earthy",
+      "Fruit",
+      "Gas"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Heady"
+    ],
+    "sharedAt": "2026-10-19T05:16:18.566Z"
+  },
+  {
+    "name": "Bacio Pancakes",
+    "brand": "Master Makers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "87%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Gas",
+      "Maple",
+      "Piney"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Aroused",
+      "Focused",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-19T05:16:18.079Z"
+  },
+  {
     "name": "Mango Banana #9 + Mega Peaches",
     "brand": "710 Labs",
     "form": "Concentrate",

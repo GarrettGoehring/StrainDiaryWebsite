@@ -1196,7 +1196,7 @@
   },
   {
     "name": "Agua Frescas",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -1207,7 +1207,7 @@
   },
   {
     "name": "Aguas Frescas",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -3645,7 +3645,7 @@
   },
   {
     "name": "Bacio Pancakes",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Bacio Gelato x Pancakes",
     "terpenes": [
       "Linalool",
@@ -14337,7 +14337,7 @@
   },
   {
     "name": "Canal St Runtz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Runtz x Unknown",
     "terpenes": [
       "Caryophyllene",
@@ -14362,7 +14362,9 @@
       "Creative",
       "Focused",
       "Happy",
-      "Relaxed"
+      "Relaxed",
+      "Talkative",
+      "Giggly"
     ]
   },
   {
@@ -15594,7 +15596,7 @@
   },
   {
     "name": "Champaya",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Papaya x Mimosa",
     "terpenes": [
       "Myrcene",
@@ -16910,7 +16912,7 @@
   },
   {
     "name": "Cherry Ludens",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Cherry Thai x Lost Coast OG",
     "terpenes": [
       "Caryophyllene",
@@ -17664,7 +17666,7 @@
   },
   {
     "name": "Chocolate Oranges",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Mint Chocolate Chip x Orange Valley OG",
     "terpenes": [
       "Caryophyllene",
@@ -17676,7 +17678,11 @@
       "β-Myrcene"
     ],
     "flavors": [
-      "Citrus"
+      "Citrus",
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
     ],
     "effects": []
   },
@@ -19238,7 +19244,7 @@
   },
   {
     "name": "Cranberry Spritzer",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Cranberry Z x Papaya Spritzer",
     "terpenes": [
       "Sabinene",
@@ -19651,7 +19657,7 @@
   },
   {
     "name": "Crumpets",
-    "type": "",
+    "type": "Indica",
     "crosses": "London Pound Cake",
     "terpenes": [
       "Caryophyllene",
@@ -20279,7 +20285,7 @@
   },
   {
     "name": "DDP",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -20763,7 +20769,7 @@
   },
   {
     "name": "Directors Cut",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Larry OG x Crown OG",
     "terpenes": [
       "Myrcene",
@@ -25477,7 +25483,7 @@
   },
   {
     "name": "Freeze Truck",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Freeze Cup x Dump Truck",
     "terpenes": [
       "Pinene",
@@ -25879,7 +25885,7 @@
   },
   {
     "name": "Frozen Bananas",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "OG Kush x Banana Kush",
     "terpenes": [
       "Myrcene",
@@ -26946,7 +26952,7 @@
   },
   {
     "name": "Gak Smoovie",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Gak x 4 Locoz",
     "terpenes": [
       "Myrcene",
@@ -27168,7 +27174,7 @@
   },
   {
     "name": "Gamer Fuel",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -32584,7 +32590,11 @@
       "Earthy",
       "Cheese",
       "Diesel",
-      "Cookie"
+      "Cookie",
+      "Chemical",
+      "Creamy",
+      "Gas",
+      "Guava"
     ],
     "effects": [
       "Creative",
@@ -33421,7 +33431,7 @@
   },
   {
     "name": "Gran Daddy Purp",
-    "type": "",
+    "type": "Indica",
     "crosses": "",
     "terpenes": [
       "β-Myrcene",
@@ -35258,7 +35268,7 @@
   },
   {
     "name": "Grease Bucket #9 + Gorilla Dosha #3",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Grease Bucket #9 + Gorilla Dosha #3",
     "terpenes": [],
     "flavors": [
@@ -35791,7 +35801,7 @@
   },
   {
     "name": "Grilled Peaches",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Moroccan Peaches x Molotov Cocktail",
     "terpenes": [],
     "flavors": [
@@ -40003,7 +40013,7 @@
   },
   {
     "name": "Honey Butter",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -51012,12 +51022,14 @@
   },
   {
     "name": "Lunarz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy"
+      "Candy",
+      "Fruit",
+      "Melon"
     ],
     "effects": []
   },
@@ -52663,7 +52675,7 @@
   },
   {
     "name": "Mashup Mystery",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Mystery",
     "terpenes": [],
     "flavors": [
@@ -53353,7 +53365,7 @@
   },
   {
     "name": "Melon Ball",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Papaya x Devil Driver",
     "terpenes": [
       "Pinene",
@@ -53495,6 +53507,18 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
+    "effects": []
+  },
+  {
+    "name": "Melon Soda",
+    "type": "Hybrid",
+    "crosses": "Papaya x MAK’s GaK",
+    "terpenes": [],
+    "flavors": [
+      "Citrus",
+      "Melon",
+      "Sweet"
+    ],
     "effects": []
   },
   {
@@ -57610,7 +57634,7 @@
   },
   {
     "name": "Nimbus Snacks",
-    "type": "",
+    "type": "Sativa",
     "crosses": "GSC",
     "terpenes": [],
     "flavors": [
@@ -59330,7 +59354,7 @@
   },
   {
     "name": "OG Spritzer",
-    "type": "",
+    "type": "Sativa",
     "crosses": "OGKushblend + Spritzer",
     "terpenes": [
       "Sabinene",
@@ -62416,7 +62440,7 @@
   },
   {
     "name": "Papaya Lime Pie",
-    "type": "",
+    "type": "Indica",
     "crosses": "Papaya x Key Lime Pie",
     "terpenes": [
       "Myrcene",
@@ -62677,7 +62701,7 @@
   },
   {
     "name": "Papaya Push Pop",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -62831,7 +62855,7 @@
   },
   {
     "name": "Papaya Squared",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -63604,7 +63628,7 @@
   },
   {
     "name": "Peach Jolly + The Sweeties #7",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Peach Jolly + The Sweeties #7",
     "terpenes": [],
     "flavors": [
@@ -64893,7 +64917,7 @@
   },
   {
     "name": "Pina Smothie",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -66401,7 +66425,7 @@
   },
   {
     "name": "Pink Pitaya",
-    "type": "",
+    "type": "Indica",
     "crosses": "Strawguava Bx #6 x Original Z",
     "terpenes": [
       "β-Caryophyllene",
@@ -68133,7 +68157,7 @@
   },
   {
     "name": "Purple Chem",
-    "type": "",
+    "type": "Indica",
     "crosses": "Chem 91 × Pre-98 Bubba Kush",
     "terpenes": [
       "β-Caryophyllene",
@@ -68790,7 +68814,7 @@
   },
   {
     "name": "Purple Paya",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Grape Gas x Bannana Pie Paya",
     "terpenes": [
       "Caryophyllene",
@@ -69532,7 +69556,7 @@
   },
   {
     "name": "Rainbow Beltz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Zkittlez x Moonbow",
     "terpenes": [
       "Caryophyllene",
@@ -70394,7 +70418,7 @@
   },
   {
     "name": "Red Diamond",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [
       "β-Caryophyllene",
@@ -72364,7 +72388,7 @@
   },
   {
     "name": "Scottis Cake",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -72439,7 +72463,7 @@
   },
   {
     "name": "Sea Shock",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Shocktane x Seafoam OG",
     "terpenes": [
       "Sabinene",
@@ -74230,7 +74254,7 @@
   },
   {
     "name": "Slow-Go",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -75553,7 +75577,7 @@
   },
   {
     "name": "Sour Garlic Cookies",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "GSC x Chemdawg",
     "terpenes": [
       "Limonene",
@@ -75563,7 +75587,11 @@
     "flavors": [
       "Citrus",
       "Lemon",
-      "Pepper"
+      "Pepper",
+      "Creamy",
+      "Funky",
+      "Garlic",
+      "Sour"
     ],
     "effects": [
       "Relaxed",
@@ -75632,7 +75660,7 @@
   },
   {
     "name": "Sour Gorilla Dog",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -76511,7 +76539,9 @@
       "Citrus",
       "Orange",
       "Diesel",
-      "Sweet"
+      "Sweet",
+      "Gas",
+      "Sour"
     ],
     "effects": [
       "Happy",
@@ -77048,7 +77078,7 @@
   },
   {
     "name": "Spring Training",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -80285,7 +80315,7 @@
   },
   {
     "name": "SuperBoof",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Black Cherry Punch x Tropicana Cookies",
     "terpenes": [
       "Myrcene",
@@ -80740,7 +80770,7 @@
   },
   {
     "name": "Tallyman",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Banana Kush x Papaya",
     "terpenes": [
       "Caryophyllene",
@@ -81105,7 +81135,7 @@
   },
   {
     "name": "TangieBerto",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Tangie x Key Lime Pie",
     "terpenes": [
       "Caryophyllene",
@@ -81247,7 +81277,7 @@
   },
   {
     "name": "Terp Broth",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -85444,11 +85474,19 @@
   },
   {
     "name": "Watermelon Taffy",
-    "type": "",
-    "crosses": "",
+    "type": "Hybrid",
+    "crosses": "Freeze Cup x Banana Taffy",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Citrus",
+      "Sweet",
+      "Earthy"
+    ],
+    "effects": [
+      "Energetic",
+      "Uplifted",
+      "Relaxed"
+    ]
   },
   {
     "name": "Watermelon Welch'z",
@@ -86419,7 +86457,7 @@
   },
   {
     "name": "WhiteThorn Rose",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Paradise Punch x Lemon Og",
     "terpenes": [
       "β-Myrcene",
@@ -88222,7 +88260,7 @@
   },
   {
     "name": "Zakura",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -88536,7 +88574,7 @@
   },
   {
     "name": "Zimosa #2 + LunarZ",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Zimosa #2 + LunarZ",
     "terpenes": [],
     "flavors": [
@@ -88749,7 +88787,7 @@
   },
   {
     "name": "Zmoothie",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
     "flavors": [
