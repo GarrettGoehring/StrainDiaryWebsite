@@ -14337,7 +14337,7 @@
   },
   {
     "name": "Canal St Runtz",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Runtz x Unknown",
     "terpenes": [
       "Caryophyllene",
@@ -14362,9 +14362,7 @@
       "Creative",
       "Focused",
       "Happy",
-      "Relaxed",
-      "Talkative",
-      "Giggly"
+      "Relaxed"
     ]
   },
   {
@@ -17666,7 +17664,7 @@
   },
   {
     "name": "Chocolate Oranges",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Mint Chocolate Chip x Orange Valley OG",
     "terpenes": [
       "Caryophyllene",
@@ -17678,11 +17676,7 @@
       "β-Myrcene"
     ],
     "flavors": [
-      "Citrus",
-      "Chocolate",
-      "Lemon",
-      "Mint",
-      "Orange"
+      "Citrus"
     ],
     "effects": []
   },
@@ -19244,7 +19238,7 @@
   },
   {
     "name": "Cranberry Spritzer",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Cranberry Z x Papaya Spritzer",
     "terpenes": [
       "Sabinene",
@@ -51018,14 +51012,12 @@
   },
   {
     "name": "Lunarz",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy",
-      "Fruit",
-      "Melon"
+      "Candy"
     ],
     "effects": []
   },
@@ -52671,7 +52663,7 @@
   },
   {
     "name": "Mashup Mystery",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Mystery",
     "terpenes": [],
     "flavors": [
@@ -53361,7 +53353,7 @@
   },
   {
     "name": "Melon Ball",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Papaya x Devil Driver",
     "terpenes": [
       "Pinene",
@@ -59338,7 +59330,7 @@
   },
   {
     "name": "OG Spritzer",
-    "type": "Sativa",
+    "type": "",
     "crosses": "OGKushblend + Spritzer",
     "terpenes": [
       "Sabinene",
@@ -62839,7 +62831,7 @@
   },
   {
     "name": "Papaya Squared",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -63612,7 +63604,7 @@
   },
   {
     "name": "Peach Jolly + The Sweeties #7",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Peach Jolly + The Sweeties #7",
     "terpenes": [],
     "flavors": [
@@ -64901,7 +64893,7 @@
   },
   {
     "name": "Pina Smothie",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -66409,7 +66401,7 @@
   },
   {
     "name": "Pink Pitaya",
-    "type": "Indica",
+    "type": "",
     "crosses": "Strawguava Bx #6 x Original Z",
     "terpenes": [
       "β-Caryophyllene",
@@ -69540,7 +69532,7 @@
   },
   {
     "name": "Rainbow Beltz",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Zkittlez x Moonbow",
     "terpenes": [
       "Caryophyllene",
@@ -70402,7 +70394,7 @@
   },
   {
     "name": "Red Diamond",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "",
     "terpenes": [
       "β-Caryophyllene",
@@ -72447,7 +72439,7 @@
   },
   {
     "name": "Sea Shock",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Shocktane x Seafoam OG",
     "terpenes": [
       "Sabinene",
@@ -74238,7 +74230,7 @@
   },
   {
     "name": "Slow-Go",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "",
     "terpenes": [],
     "flavors": [
@@ -76519,9 +76511,7 @@
       "Citrus",
       "Orange",
       "Diesel",
-      "Sweet",
-      "Gas",
-      "Sour"
+      "Sweet"
     ],
     "effects": [
       "Happy",
@@ -80295,7 +80285,7 @@
   },
   {
     "name": "SuperBoof",
-    "type": "Sativa",
+    "type": "",
     "crosses": "Black Cherry Punch x Tropicana Cookies",
     "terpenes": [
       "Myrcene",
@@ -81115,7 +81105,7 @@
   },
   {
     "name": "TangieBerto",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Tangie x Key Lime Pie",
     "terpenes": [
       "Caryophyllene",
