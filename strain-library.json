@@ -24052,6 +24052,24 @@
     ]
   },
   {
+    "name": "EXCLUSIVE FRUIT",
+    "type": "",
+    "crosses": "GRAPE GAS X SOUR DRAGONFRUIT",
+    "terpenes": [],
+    "flavors": [
+      "Candy",
+      "Citrus",
+      "Creamy",
+      "Grape",
+      "Tropical"
+    ],
+    "effects": [
+      "Creative",
+      "Focused",
+      "Happy"
+    ]
+  },
+  {
     "name": "Exodus",
     "type": "",
     "crosses": "",
