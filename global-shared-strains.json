@@ -1,5 +1,175 @@
 [
   {
+    "name": "OG Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "62%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Pepper",
+      "Pine"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "β-Limonene",
+      "α-Humulene",
+      "Linalool",
+      "Myrcene",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Bisabolol",
+      "α-Pinene",
+      "Terpineol",
+      "Fenchol",
+      "Guaiol",
+      "Nerolidol",
+      "β-Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Terpinolene",
+      "Fenchone",
+      "Citronellol",
+      "Eucalyptol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-21T21:27:24.907Z"
+  },
+  {
+    "name": "Chocolate Oranges",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Linalool",
+      "α-Pinene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-21T21:27:14.418Z"
+  },
+  {
+    "name": "Crumpets",
+    "brand": "Jetty",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "84%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Biscotti",
+      "Cake",
+      "Lemon"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "β-Myrcene",
+      "α-Humulene",
+      "Linalool",
+      "β-Pinene",
+      "α-Pinene",
+      "Terpineol",
+      "Fenchol",
+      "Trans-β-Farnesene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Geraniol",
+      "Fenchone",
+      "Terpinolene",
+      "β-Ocimene",
+      "α-Terpinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-21T21:27:13.576Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Heavy Hitters",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "α-Bisabolol",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "β-Pinene",
+      "Linalool",
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Pinene",
+      "Camphene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Heady"
+    ],
+    "sharedAt": "2026-10-21T21:27:11.543Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Linalool",
+      "α-Pinene",
+      "β-Caryophyllene",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-21T21:27:10.361Z"
+  },
+  {
     "name": "Mango Banana #9 + Mega Peaches",
     "brand": "710 Labs",
     "form": "Concentrate",
@@ -283,32 +453,6 @@
     "sharedAt": "2026-10-19T05:16:49.619Z"
   },
   {
-    "name": "Chocolate Oranges",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.2,
-    "flavors": [
-      "Chocolate",
-      "Lemon",
-      "Mint",
-      "Orange"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "β-Caryophyllene",
-      "Linalool",
-      "α-Pinene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:49.057Z"
-  },
-  {
     "name": "Strawberry Guava",
     "brand": "Mountain Man Melts",
     "form": "Concentrate",
@@ -384,87 +528,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:46.464Z"
-  },
-  {
-    "name": "Crumpets",
-    "brand": "Jetty",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Indica",
-    "potency": "84%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Biscotti",
-      "Cake",
-      "Lemon"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "β-Myrcene",
-      "Myrcene",
-      "α-Humulene",
-      "Linalool",
-      "Beta-Pinene",
-      "Alpha-Pinene",
-      "Terpineol",
-      "Fenchol",
-      "Trans-Beta-Farnesene",
-      "α-Bisabolol",
-      "Camphene",
-      "Borneol",
-      "Geraniol",
-      "Fenchone",
-      "Terpinolene",
-      "Terpinene",
-      "β-Ocimene",
-      "α-Terpinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:45.747Z"
-  },
-  {
-    "name": "OG Spritzer",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "62%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Creamy",
-      "Earthy",
-      "Gas",
-      "Pepper",
-      "Pine"
-    ],
-    "terpenes": [
-      "β-Caryophyllene",
-      "β-Limonene",
-      "Limonene",
-      "α-Humulene",
-      "Linalool",
-      "Myrcene",
-      "Beta-Pinene",
-      "Trans-Beta-Farnesene",
-      "α-Bisabolol",
-      "Alpha-Pinene",
-      "Terpineol",
-      "Fenchol",
-      "Guaiol",
-      "Nerolidol",
-      "β-Ocimene",
-      "Camphene",
-      "Geraniol",
-      "Borneol",
-      "Terpinolene",
-      "Fenchone",
-      "Citronellol",
-      "Eucalyptol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:45.051Z"
   },
   {
     "name": "Frozen Bananas",
@@ -805,41 +868,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:33.488Z"
-  },
-  {
-    "name": "WhiteThorn Rose",
-    "brand": "Heavy Hitters",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "β-Myrcene",
-      "α-Bisabolol",
-      "Caryophyllene Oxide",
-      "Caryophyllene",
-      "δ-Limonene",
-      "β-Pinene",
-      "Linalool",
-      "β-Caryophyllene",
-      "α-Humulene",
-      "Limonene",
-      "Myrcene",
-      "α-Pinene",
-      "Camphene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Heady"
-    ],
-    "sharedAt": "2026-10-19T05:16:32.961Z"
   },
   {
     "name": "Sea Shock",
@@ -1320,44 +1348,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:20.568Z"
-  },
-  {
-    "name": "WhiteThorn Rose",
-    "brand": "Quale",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "82%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Citrus",
-      "Fruit Punch",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Linalool",
-      "α-Pinene",
-      "β-Caryophyllene",
-      "Caryophyllene Oxide",
-      "δ-Limonene",
-      "Caryophyllene",
-      "α-Bisabolol",
-      "β-Pinene",
-      "Camphene",
-      "α-Humulene",
-      "Limonene",
-      "β-Myrcene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-19T05:16:20.039Z"
   },
   {
     "name": "Grease Bucket #9 + Gorilla Dosha #3",

@@ -19680,7 +19680,10 @@
       "Terpinolene",
       "Terpinene",
       "β-Ocimene",
-      "α-Terpinene"
+      "α-Terpinene",
+      "β-Pinene",
+      "α-Pinene",
+      "Trans-β-Farnesene"
     ],
     "flavors": [
       "Biscotti",
@@ -39617,7 +39620,27 @@
     "terpenes": [
       "Limonene",
       "Myrcene",
-      "Caryophyllene"
+      "Caryophyllene",
+      "β-Caryophyllene",
+      "β-Limonene",
+      "β-Myrcene",
+      "α-Humulene",
+      "Linalool",
+      "Trans-Beta-Farnesene",
+      "Beta-Pinene",
+      "α-Bisabolol",
+      "Nerolidol",
+      "Alpha-Pinene",
+      "Fenchol",
+      "Terpineol",
+      "Camphene",
+      "Borneol",
+      "Terpinolene",
+      "Fenchone",
+      "β-Ocimene",
+      "Trans-β-Farnesene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [
       "Sweet",
@@ -59406,7 +59429,10 @@
       "β-Limonene",
       "α-Humulene",
       "α-Bisabolol",
-      "β-Ocimene"
+      "β-Ocimene",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Pinene"
     ],
     "flavors": [
       "Citrus",
@@ -62258,6 +62284,30 @@
       "Pungent"
     ],
     "effects": [
+      "Uplifted"
+    ]
+  },
+  {
+    "name": "Papaya Fumez #17 · 710 Labs",
+    "type": "",
+    "crosses": "Papaya x Candy fumez",
+    "terpenes": [
+      "β- Caryiohyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Candy",
+      "Funk",
+      "Gassy",
+      "Papaya",
+      "Sweet",
+      "Tropical"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
       "Uplifted"
     ]
   },
