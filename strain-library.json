@@ -51949,8 +51949,16 @@
     "type": "Hybrid",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Sweet",
+      "Earthy",
+      "Citrus",
+      "Berry"
+    ],
+    "effects": [
+      "Hungry",
+      "Sleepy"
+    ]
   },
   {
     "name": "Mango Banana #9 x Banana Punch #4",

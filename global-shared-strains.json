@@ -1,5 +1,26 @@
 [
   {
+    "name": "Mango Banana #9 + Mega Peaches",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Sweet",
+      "Earthy",
+      "Citrus",
+      "Berry"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Hungry",
+      "Sleepy"
+    ],
+    "sharedAt": "2026-10-21T00:18:38.994Z"
+  },
+  {
     "name": "SuperBoof",
     "brand": "CAM",
     "form": "Flower",
@@ -1402,19 +1423,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-10-19T05:16:18.079Z"
-  },
-  {
-    "name": "Mango Banana #9 + Mega Peaches",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 9.200000000000001,
-    "flavors": [],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-18T21:04:36.081Z"
   },
   {
     "name": "Madison Zquared Garden #2 + Rainbow Beltz",
