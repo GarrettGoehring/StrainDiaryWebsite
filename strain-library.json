@@ -2329,6 +2329,14 @@
     ]
   },
   {
+    "name": "Animal Face X Sin Mintz Strain Description: Toad Venom carries real weight for a reason",
+    "type": "",
+    "crosses": "Animal Face x Sin Mintz",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "animal mint cake",
     "type": "Hybrid",
     "crosses": "Animal Cookies x Wedding Cake",
@@ -18489,6 +18497,39 @@
     ]
   },
   {
+    "name": "Coldfire | Trop Cherries Super Boof | Live Badder | 1g",
+    "type": "",
+    "crosses": "",
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "β-Myrcene",
+      "Linalool",
+      "α-Humulene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Pinene",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Camphene",
+      "Borneol",
+      "Terpinolene",
+      "β-Ocimene",
+      "Fenchone",
+      "Guaiol",
+      "Citronellol"
+    ],
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Floral",
+      "Orange"
+    ],
+    "effects": []
+  },
+  {
     "name": "Collection",
     "type": "",
     "crosses": "",
@@ -25512,7 +25553,10 @@
     "terpenes": [
       "Pinene",
       "Myrcene",
-      "Caryophyllene"
+      "Caryophyllene",
+      "Fenchol",
+      "Limonene",
+      "β-Caryophyllene"
     ],
     "flavors": [
       "Citrus",
@@ -25528,8 +25572,8 @@
     ],
     "effects": [
       "Energetic",
-      "Uplifted",
-      "Relaxed"
+      "Relaxed",
+      "Uplifted"
     ]
   },
   {
@@ -39726,7 +39770,7 @@
   },
   {
     "name": "Honey Banana Jam",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Honey Boo Boo x Banana OG",
     "terpenes": [
       "β-Myrcene",
@@ -39740,15 +39784,15 @@
       "Sweet"
     ],
     "effects": [
-      "Body High",
       "Calm",
       "Creative",
-      "Euphoric",
       "Happy",
-      "Heady",
       "Relaxed",
       "Sleepy",
-      "Uplifted"
+      "Uplifted",
+      "Body High",
+      "Euphoric",
+      "Heady"
     ]
   },
   {
@@ -60194,6 +60238,40 @@
     "effects": []
   },
   {
+    "name": "Orange Drip",
+    "type": "Indica",
+    "crosses": "",
+    "terpenes": [
+      "Linalool",
+      "β-Caryophyllene",
+      "β-Limonene",
+      "Myrcene",
+      "α-Humulene",
+      "Trans-β-Farnesene",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "β-Pinene",
+      "α-Pinene",
+      "α-Bisabolol",
+      "Borneol",
+      "Citronellol",
+      "Camphene",
+      "Geraniol",
+      "Terpinolene",
+      "Fenchone",
+      "β-Ocimene",
+      "Terpinene"
+    ],
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Floral",
+      "Orange"
+    ],
+    "effects": []
+  },
+  {
     "name": "Orange Durban",
     "type": "",
     "crosses": "Durban Poison",
@@ -73959,6 +74037,14 @@
     ]
   },
   {
+    "name": "Sin Mintz",
+    "type": "",
+    "crosses": "Girl Scout Cookies x Blue Power",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "singapore sling",
     "type": "Hybrid",
     "crosses": "Creamsicle x Tiki Cookies",
@@ -78669,7 +78755,7 @@
   },
   {
     "name": "Strawberry Pop",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Red Runtz x Red Pop",
     "terpenes": [],
     "flavors": [
@@ -78681,13 +78767,13 @@
       "Candy"
     ],
     "effects": [
-      "Aroused",
       "Calm",
-      "Euphoric",
       "Focused",
       "Happy",
       "Relaxed",
-      "Sleepy"
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
     ]
   },
   {
@@ -82435,7 +82521,7 @@
   {
     "name": "Toad Venom",
     "type": "",
-    "crosses": "Animal Face X Sin Mintz Strain Description: Toad Venom carries real weight for a reason",
+    "crosses": "Animal Face x Sin Mintz",
     "terpenes": [],
     "flavors": [
       "Chemical",
@@ -83167,6 +83253,41 @@
     "crosses": "",
     "terpenes": [],
     "flavors": [],
+    "effects": []
+  },
+  {
+    "name": "Trop Cherries Super Boof",
+    "type": "Hybrid",
+    "crosses": "",
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "β-Myrcene",
+      "Linalool",
+      "α-Humulene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Pinene",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Camphene",
+      "Borneol",
+      "Terpinolene",
+      "β-Ocimene",
+      "Fenchone",
+      "Guaiol",
+      "Citronellol"
+    ],
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Lemon",
+      "Orange",
+      "Creamy",
+      "Floral"
+    ],
     "effects": []
   },
   {
@@ -85177,11 +85298,22 @@
   },
   {
     "name": "Wakanda",
-    "type": "",
+    "type": "Sativa",
     "crosses": "Nigerian Haze x Purple Punch PROFILE: Haze, candy LINE: Reserve",
     "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "flavors": [
+      "Floral",
+      "Fruit",
+      "Funk",
+      "Herbal",
+      "Sour"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Uplifted"
+    ]
   },
   {
     "name": "Walker",
