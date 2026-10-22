@@ -51972,18 +51972,23 @@
   {
     "name": "Mango Banana #9 + Mega Peaches",
     "type": "Hybrid",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [
-      "Sweet",
-      "Earthy",
-      "Citrus",
-      "Berry"
+    "crosses": "SB 36 x Forbidden Banana F1",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene"
     ],
-    "effects": [
-      "Hungry",
-      "Sleepy"
-    ]
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Earthy",
+      "Sweet",
+      "Bread",
+      "Dough",
+      "Juicy Peach",
+      "Ripe Mango",
+      "Sweet Banana"
+    ],
+    "effects": []
   },
   {
     "name": "Mango Banana #9 x Banana Punch #4",
@@ -72532,7 +72537,10 @@
       "Fenchol",
       "Valencene",
       "Geraniol",
-      "Bisabolol"
+      "Bisabolol",
+      "β-Pinene",
+      "α-Pinene",
+      "Trans-β-Farnesene"
     ],
     "flavors": [
       "Chemical",

@@ -1,5 +1,114 @@
 [
   {
+    "name": "Wedding Pie",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "84%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Butter",
+      "Cake",
+      "Creamy",
+      "Grape",
+      "Pine",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-22T06:23:13.314Z"
+  },
+  {
+    "name": "Sea Shock",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "71%",
+    "rating": 9.2,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Fruit",
+      "Gas",
+      "Salty Sea"
+    ],
+    "terpenes": [
+      "Sabinene",
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene",
+      "Beta-Pinene",
+      "Linalool",
+      "Alpha-Pinene",
+      "Guaiol",
+      "Trans-Beta-Farnesene",
+      "Terpineol",
+      "Camphene",
+      "Ocimene",
+      "Terpinolene",
+      "Borneol",
+      "Nerolidol",
+      "Fenchol",
+      "Valencene",
+      "Geraniol",
+      "Bisabolol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-22T06:13:16.315Z"
+  },
+  {
+    "name": "Mango Banana #9 + Mega Peaches",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Bread",
+      "Dough",
+      "Earthy",
+      "Juicy Peach",
+      "Ripe Mango",
+      "Sweet Banana"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-22T05:11:03.858Z"
+  },
+  {
+    "name": "Paytons Pie #1",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9,
+    "flavors": [
+      "Dough",
+      "Earthy",
+      "Peaches",
+      "Pepper"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-22T05:01:50.803Z"
+  },
+  {
     "name": "Chocolate Oranges",
     "brand": "710 Labs",
     "form": "Pen",
@@ -169,27 +278,6 @@
       "Euphoric"
     ],
     "sharedAt": "2026-10-21T21:27:10.361Z"
-  },
-  {
-    "name": "Mango Banana #9 + Mega Peaches",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Sweet",
-      "Earthy",
-      "Citrus",
-      "Berry"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Hungry",
-      "Sleepy"
-    ],
-    "sharedAt": "2026-10-21T00:18:38.994Z"
   },
   {
     "name": "SuperBoof",
@@ -871,45 +959,6 @@
     "sharedAt": "2026-10-19T05:16:33.488Z"
   },
   {
-    "name": "Sea Shock",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "71%",
-    "rating": 9.2,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Fruit",
-      "Salty Sea"
-    ],
-    "terpenes": [
-      "Sabinene",
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene",
-      "Humulene",
-      "Beta-Pinene",
-      "Linalool",
-      "Alpha-Pinene",
-      "Guaiol",
-      "Trans-Beta-Farnesene",
-      "Terpineol",
-      "Camphene",
-      "Ocimene",
-      "Terpinolene",
-      "Borneol",
-      "Nerolidol",
-      "Fenchol",
-      "Valencene",
-      "Geraniol",
-      "Bisabolol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:32.472Z"
-  },
-  {
     "name": "Zakura",
     "brand": "",
     "form": "Concentrate",
@@ -1289,34 +1338,6 @@
     "sharedAt": "2026-10-19T05:16:22.081Z"
   },
   {
-    "name": "Wedding Pie",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "84%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Cake",
-      "Creamy",
-      "Pine",
-      "Sweet",
-      "Butter",
-      "Grape"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool"
-    ],
-    "effects": [
-      "Sleepy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-10-19T05:16:21.556Z"
-  },
-  {
     "name": "Peach Jolly + The Sweeties #7",
     "brand": "710 Labs",
     "form": "Flower",
@@ -1432,24 +1453,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-18T03:20:08.773Z"
-  },
-  {
-    "name": "Paytons Pie #1",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 8.9,
-    "flavors": [
-      "Dough",
-      "Earthy",
-      "Peaches",
-      "Pepper"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-18T03:20:08.151Z"
   },
   {
     "name": "First Class Funk",
