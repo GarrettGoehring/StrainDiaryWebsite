@@ -1,5 +1,44 @@
 [
   {
+    "name": "Cranberry Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "67%",
+    "rating": 8.6,
+    "flavors": [
+      "Berry",
+      "Creamy",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Beta-Pinene",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Trans-Beta-Farnesene",
+      "Guaiol",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Myrcene",
+      "Terpinolene",
+      "Linalool",
+      "Sabinene",
+      "Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-22T16:56:28.694Z"
+  },
+  {
     "name": "Wedding Pie",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -1023,45 +1062,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:29.857Z"
-  },
-  {
-    "name": "Cranberry Spritzer",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "67%",
-    "rating": 8.6,
-    "flavors": [
-      "Berry",
-      "Creamy",
-      "Gas",
-      "Sour"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Beta-Pinene",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Trans-Beta-Farnesene",
-      "Guaiol",
-      "Nerolidol",
-      "Fenchol",
-      "Terpineol",
-      "Ocimene",
-      "Camphene",
-      "Geraniol",
-      "Borneol",
-      "Myrcene",
-      "Terpinolene",
-      "Linalool",
-      "Sabinene",
-      "Pinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:29.334Z"
   },
   {
     "name": "Freeze Truck",
