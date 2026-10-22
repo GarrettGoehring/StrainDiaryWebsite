@@ -39655,7 +39655,9 @@
       "Lemon",
       "Strawberry",
       "Tree fruit",
-      "Tropical"
+      "Tropical",
+      "Banana",
+      "Creamy"
     ],
     "effects": [
       "Happy",
@@ -59599,34 +59601,6 @@
     "terpenes": [],
     "flavors": [],
     "effects": []
-  },
-  {
-    "name": "OGZ o2",
-    "type": "",
-    "crosses": "OG Kush x Zkittlez",
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene",
-      "Linalool",
-      "Humulene"
-    ],
-    "flavors": [
-      "Citrus",
-      "Diesel",
-      "Woody",
-      "Pine",
-      "Earthy",
-      "Grapefruit",
-      "Grape",
-      "Berry"
-    ],
-    "effects": [
-      "Creative",
-      "Happy",
-      "Relaxed",
-      "Talkative"
-    ]
   },
   {
     "name": "Oh Mai Tai",

@@ -1,5 +1,31 @@
 [
   {
+    "name": "Chocolate Oranges",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Linalool",
+      "α-Pinene",
+      "α-Humulene",
+      "β-Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-21T21:55:44.150Z"
+  },
+  {
     "name": "OG Spritzer",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -40,31 +66,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-21T21:27:24.907Z"
-  },
-  {
-    "name": "Chocolate Oranges",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.2,
-    "flavors": [
-      "Chocolate",
-      "Lemon",
-      "Mint",
-      "Orange"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "Linalool",
-      "α-Pinene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-21T21:27:14.418Z"
   },
   {
     "name": "Crumpets",
