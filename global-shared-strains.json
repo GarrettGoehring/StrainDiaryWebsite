@@ -1,5 +1,87 @@
 [
   {
+    "name": "Strawberry Pop",
+    "brand": "Bryantist",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "65%",
+    "rating": 7.8,
+    "flavors": [
+      "Creamy",
+      "Earthy",
+      "Strawberry",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-23T17:15:39.957Z"
+  },
+  {
+    "name": "Wakanda",
+    "brand": "Ay Papi",
+    "form": "Concentrate",
+    "extractType": "Hash",
+    "type": "Sativa",
+    "potency": "64%",
+    "rating": 8,
+    "flavors": [
+      "Floral",
+      "Fruit",
+      "Funk",
+      "Herbal",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-23T17:15:39.739Z"
+  },
+  {
+    "name": "Honey Banana Jam",
+    "brand": "Bryantist",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "75%",
+    "rating": 7.7,
+    "flavors": [
+      "Banana",
+      "Earthy",
+      "Honey",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "δ-Limonene",
+      "β-Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Body High",
+      "Euphoric",
+      "Heady"
+    ],
+    "sharedAt": "2026-10-23T17:15:39.522Z"
+  },
+  {
     "name": "Orange Drip",
     "brand": "Coldfire",
     "form": "Concentrate",
@@ -75,88 +157,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-22T23:14:09.302Z"
-  },
-  {
-    "name": "Wakanda",
-    "brand": "Ay Papi",
-    "form": "Concentrate",
-    "extractType": "Hash",
-    "type": "Sativa",
-    "potency": "64%",
-    "rating": 8,
-    "flavors": [
-      "Floral",
-      "Fruit",
-      "Funk",
-      "Herbal",
-      "Sour"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Happy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-22T21:08:08.087Z"
-  },
-  {
-    "name": "Strawberry Pop",
-    "brand": "Bryantist",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "65%",
-    "rating": 7.8,
-    "flavors": [
-      "Creamy",
-      "Earthy",
-      "Strawberry",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Calm",
-      "Focused",
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-22T21:08:01.333Z"
-  },
-  {
-    "name": "Honey Banana Jam",
-    "brand": "Bryantist",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "75%",
-    "rating": 7.7,
-    "flavors": [
-      "Banana",
-      "Earthy",
-      "Honey",
-      "Sweet"
-    ],
-    "terpenes": [
-      "β-Myrcene",
-      "δ-Limonene",
-      "β-Caryophyllene"
-    ],
-    "effects": [
-      "Calm",
-      "Creative",
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Body High",
-      "Euphoric",
-      "Heady"
-    ],
-    "sharedAt": "2026-10-22T21:07:43.462Z"
   },
   {
     "name": "Freeze Truck",
