@@ -3637,8 +3637,8 @@
       "Relaxed",
       "Happy",
       "Euphoric",
-      "Aroused",
-      "Sleepy"
+      "Sleepy",
+      "Aroused"
     ]
   },
   {
@@ -15002,8 +15002,8 @@
       "Euphoric",
       "Relaxed",
       "Happy",
-      "Body High",
       "Calm",
+      "Body High",
       "Giggly",
       "Tingly"
     ]
@@ -28916,9 +28916,14 @@
   },
   {
     "name": "Gassy Taffy",
-    "type": "",
+    "type": "Sativa",
     "crosses": "Sour Diesel x Blueberry",
-    "terpenes": [],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
     "flavors": [
       "Blueberry",
       "Diesel",
@@ -28926,12 +28931,16 @@
       "Fuel",
       "Gas",
       "Fast-Acting",
-      "Uplifting"
+      "Uplifting",
+      "Funk",
+      "Skunk"
     ],
     "effects": [
       "Giggly",
       "Energetic",
-      "Uplifted"
+      "Uplifted",
+      "Focused",
+      "Happy"
     ]
   },
   {
@@ -35599,8 +35608,8 @@
       "Tingly",
       "Relaxed",
       "Euphoric",
-      "Sleepy",
       "Hungry",
+      "Sleepy",
       "Talkative",
       "Giggly"
     ]
@@ -51181,9 +51190,9 @@
     "effects": [
       "Creative",
       "Energetic",
-      "Giggly",
       "Relaxed",
       "Talkative",
+      "Giggly",
       "Tingly"
     ]
   },
@@ -57586,12 +57595,12 @@
       "Blueberry"
     ],
     "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Energetic",
       "Creative",
+      "Energetic",
       "Focused",
-      "Talkative"
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
     ]
   },
   {
@@ -74357,13 +74366,13 @@
       "Pungent"
     ],
     "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Sleepy",
       "Hungry",
+      "Relaxed",
+      "Sleepy",
       "Talkative",
-      "Giggly",
-      "Aroused"
+      "Aroused",
+      "Euphoric",
+      "Giggly"
     ]
   },
   {
