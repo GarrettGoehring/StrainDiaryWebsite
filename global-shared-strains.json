@@ -1,5 +1,181 @@
 [
   {
+    "name": "Gassy Taffy",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Sativa",
+    "potency": "88%",
+    "rating": 9.1,
+    "flavors": [
+      "Funk",
+      "Gas",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy"
+    ],
+    "sharedAt": "2026-10-25T20:03:59.289Z"
+  },
+  {
+    "name": "Bacio Gelato",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.5,
+    "flavors": [
+      "Berry",
+      "Earthy",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-25T20:03:57.846Z"
+  },
+  {
+    "name": "Guava Bomb",
+    "brand": "Hash Rosin Company",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Gassy",
+      "Guava",
+      "Pepper",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Giggly",
+      "Calm",
+      "Body High"
+    ],
+    "sharedAt": "2026-10-25T20:03:53.761Z"
+  },
+  {
+    "name": "Nyc Diesel",
+    "brand": "WNC-CBD",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Lime"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Happy",
+      "Uplifted",
+      "Creative"
+    ],
+    "sharedAt": "2026-10-25T20:03:51.063Z"
+  },
+  {
+    "name": "New Money",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Hybrid",
+    "potency": "90%",
+    "rating": 9,
+    "flavors": [
+      "Apple",
+      "Blue Cheese",
+      "Blueberry",
+      "Chemical",
+      "Diesel"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-25T20:03:48.178Z"
+  },
+  {
+    "name": "Slapz",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Ammonia",
+      "Apricot",
+      "Chemical",
+      "Diesel",
+      "Earthy",
+      "Pungent",
+      "Skunk",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Talkative",
+      "Aroused",
+      "Euphoric",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-25T20:03:44.514Z"
+  },
+  {
     "name": "Madison Zquared Garden #2 + Rainbow Beltz",
     "brand": "710 labs",
     "form": "Concentrate",
@@ -295,182 +471,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-24T23:40:47.514Z"
-  },
-  {
-    "name": "Gassy Taffy",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Sativa",
-    "potency": "88%",
-    "rating": 9.1,
-    "flavors": [
-      "Funk",
-      "Gas",
-      "Skunk"
-    ],
-    "terpenes": [
-      "Pinene",
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Happy"
-    ],
-    "sharedAt": "2026-10-24T21:04:26.907Z"
-  },
-  {
-    "name": "Bacio Gelato",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.5,
-    "flavors": [
-      "Berry",
-      "Earthy",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool"
-    ],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-24T21:04:25.607Z"
-  },
-  {
-    "name": "Guava Bomb",
-    "brand": "Hash Rosin Company",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Gassy",
-      "Guava",
-      "Pepper",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Giggly",
-      "Calm",
-      "Body High"
-    ],
-    "sharedAt": "2026-10-24T21:04:21.652Z"
-  },
-  {
-    "name": "Nyc Diesel",
-    "brand": "WNC-CBD",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Diesel",
-      "Lime"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Creative"
-    ],
-    "sharedAt": "2026-10-24T21:04:19.313Z"
-  },
-  {
-    "name": "New Money",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Hybrid",
-    "potency": "90%",
-    "rating": 9,
-    "flavors": [
-      "Apple",
-      "Blue Cheese",
-      "Blueberry",
-      "Chemical",
-      "Diesel"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Relaxed",
-      "Talkative",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-24T21:04:16.947Z"
-  },
-  {
-    "name": "Slapz",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Ammonia",
-      "Apricot",
-      "Chemical",
-      "Diesel",
-      "Earthy",
-      "Pungent",
-      "Skunk",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Talkative",
-      "Aroused",
-      "Euphoric",
-      "Giggly"
-    ],
-    "sharedAt": "2026-10-24T21:04:14.408Z"
   },
   {
     "name": "Strawberry Pop",
