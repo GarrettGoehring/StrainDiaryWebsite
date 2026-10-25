@@ -3667,11 +3667,11 @@
       "Piney"
     ],
     "effects": [
-      "Aroused",
       "Focused",
       "Relaxed",
       "Sleepy",
-      "Uplifted"
+      "Uplifted",
+      "Aroused"
     ]
   },
   {
@@ -14367,9 +14367,6 @@
       "Skunk"
     ],
     "effects": [
-      "Creative",
-      "Focused",
-      "Happy",
       "Relaxed",
       "Talkative",
       "Giggly"
@@ -53496,7 +53493,10 @@
       "Borneol",
       "Terpinolene",
       "Ocimene",
-      "Geraniol"
+      "Geraniol",
+      "β-Pinene",
+      "α-Pinene",
+      "Trans-β-Farnesene"
     ],
     "flavors": [
       "Melon",
@@ -62608,8 +62608,8 @@
       "Tropical"
     ],
     "effects": [
-      "Relaxed",
       "Happy",
+      "Relaxed",
       "Sleepy"
     ]
   },
@@ -68981,9 +68981,9 @@
       "Tropical"
     ],
     "effects": [
+      "Happy",
       "Relaxed",
-      "Euphoric",
-      "Happy"
+      "Euphoric"
     ]
   },
   {
@@ -87462,9 +87462,8 @@
       "Creative",
       "Uplifted",
       "Energetic",
-      "Focused",
-      "Euphoric",
-      "Happy"
+      "Happy",
+      "Euphoric"
     ]
   },
   {

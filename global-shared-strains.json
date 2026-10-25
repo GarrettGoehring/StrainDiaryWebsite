@@ -1,5 +1,302 @@
 [
   {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "brand": "710 labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-24T23:54:58.118Z"
+  },
+  {
+    "name": "Melon Ball",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 9.3,
+    "flavors": [
+      "Melon",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Valencene",
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Linalool",
+      "Guaiol",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Terpineol",
+      "Fenchol",
+      "Trans-Beta-Farnesene",
+      "Myrcene",
+      "Camphene",
+      "Beta-Pinene",
+      "Borneol",
+      "Terpinolene",
+      "Ocimene",
+      "Geraniol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-24T23:54:23.044Z"
+  },
+  {
+    "name": "Canal St Runtz",
+    "brand": "Mountain Man Melts",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Apricot",
+      "Funk",
+      "Gas",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Talkative",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-24T23:54:06.782Z"
+  },
+  {
+    "name": "Mashup Mystery",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Creamy",
+      "Fruit",
+      "Gassy",
+      "Lemon",
+      "Melon",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-24T23:53:59.289Z"
+  },
+  {
+    "name": "Purple Chem",
+    "brand": "Shasta Hash and Flowers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Peppery",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Caryophyllene Oxide",
+      "Linalool",
+      "β-Myrcene",
+      "α-Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-24T23:53:43.373Z"
+  },
+  {
+    "name": "Papaya Lime Pie",
+    "brand": "Karisma",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "76%",
+    "rating": 9.5,
+    "flavors": [
+      "Lime",
+      "Mango",
+      "Peppery",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Pinene"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Sleepy"
+    ],
+    "sharedAt": "2026-10-24T23:53:31.395Z"
+  },
+  {
+    "name": "Bacio Pancakes",
+    "brand": "Master Makers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "87%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Gas",
+      "Maple",
+      "Piney"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Focused",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Aroused"
+    ],
+    "sharedAt": "2026-10-24T23:53:03.236Z"
+  },
+  {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.5,
+    "flavors": [
+      "Creamy",
+      "Fruity",
+      "Funk",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-24T23:52:50.570Z"
+  },
+  {
+    "name": "Freeze Truck",
+    "brand": "Team Elite Genetics",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Fruit",
+      "Rotten"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Fenchol"
+    ],
+    "effects": [
+      "Energetic",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-24T23:52:40.593Z"
+  },
+  {
+    "name": "Purple Paya",
+    "brand": "Rosin Tech Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 9,
+    "flavors": [
+      "Banana",
+      "Grape",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-24T23:51:28.164Z"
+  },
+  {
+    "name": "Orange Drip",
+    "brand": "Coldfire",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "73%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Floral",
+      "Orange"
+    ],
+    "terpenes": [
+      "Linalool",
+      "β-Caryophyllene",
+      "β-Limonene",
+      "Myrcene",
+      "α-Humulene",
+      "Trans-β-Farnesene",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "β-Pinene",
+      "α-Pinene",
+      "α-Bisabolol",
+      "Borneol",
+      "Citronellol",
+      "Camphene",
+      "Geraniol",
+      "Terpinolene",
+      "Fenchone",
+      "β-Ocimene",
+      "Terpinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-24T23:40:47.514Z"
+  },
+  {
     "name": "Gassy Taffy",
     "brand": "Tesoro",
     "form": "Concentrate",
@@ -23,7 +320,7 @@
       "Focused",
       "Happy"
     ],
-    "sharedAt": "2026-10-24T20:44:44.774Z"
+    "sharedAt": "2026-10-24T21:04:26.907Z"
   },
   {
     "name": "Bacio Gelato",
@@ -50,7 +347,7 @@
       "Aroused",
       "Euphoric"
     ],
-    "sharedAt": "2026-10-24T20:44:43.387Z"
+    "sharedAt": "2026-10-24T21:04:25.607Z"
   },
   {
     "name": "Guava Bomb",
@@ -83,7 +380,7 @@
       "Calm",
       "Body High"
     ],
-    "sharedAt": "2026-10-24T20:44:39.606Z"
+    "sharedAt": "2026-10-24T21:04:21.652Z"
   },
   {
     "name": "Nyc Diesel",
@@ -108,7 +405,7 @@
       "Uplifted",
       "Creative"
     ],
-    "sharedAt": "2026-10-24T20:44:37.392Z"
+    "sharedAt": "2026-10-24T21:04:19.313Z"
   },
   {
     "name": "New Money",
@@ -138,7 +435,7 @@
       "Talkative",
       "Euphoric"
     ],
-    "sharedAt": "2026-10-24T20:44:35.125Z"
+    "sharedAt": "2026-10-24T21:04:16.947Z"
   },
   {
     "name": "Slapz",
@@ -173,7 +470,7 @@
       "Euphoric",
       "Giggly"
     ],
-    "sharedAt": "2026-10-24T20:44:32.411Z"
+    "sharedAt": "2026-10-24T21:04:14.408Z"
   },
   {
     "name": "Strawberry Pop",
@@ -258,45 +555,6 @@
     "sharedAt": "2026-10-23T17:15:39.522Z"
   },
   {
-    "name": "Orange Drip",
-    "brand": "Coldfire",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "73%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Creamy",
-      "Floral",
-      "Orange"
-    ],
-    "terpenes": [
-      "Linalool",
-      "β-Caryophyllene",
-      "β-Limonene",
-      "Myrcene",
-      "α-Humulene",
-      "Trans-β-Farnesene",
-      "Nerolidol",
-      "Fenchol",
-      "Terpineol",
-      "β-Pinene",
-      "α-Pinene",
-      "α-Bisabolol",
-      "Borneol",
-      "Citronellol",
-      "Camphene",
-      "Geraniol",
-      "Terpinolene",
-      "Fenchone",
-      "β-Ocimene",
-      "Terpinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-22T23:14:09.473Z"
-  },
-  {
     "name": "Trop Cherries Super Boof",
     "brand": "ColdFire",
     "form": "Concentrate",
@@ -333,32 +591,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-22T23:14:09.302Z"
-  },
-  {
-    "name": "Freeze Truck",
-    "brand": "Team Elite Genetics",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Fruit",
-      "Rotten"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "Myrcene",
-      "Fenchol"
-    ],
-    "effects": [
-      "Energetic",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-22T21:07:42.506Z"
   },
   {
     "name": "Cranberry Spritzer",
@@ -975,34 +1207,6 @@
     "sharedAt": "2026-10-19T05:16:48.056Z"
   },
   {
-    "name": "Sundae Driver",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.5,
-    "flavors": [
-      "Creamy",
-      "Fruity",
-      "Funk",
-      "Gas",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-10-19T05:16:47.436Z"
-  },
-  {
     "name": "Lunarz",
     "brand": "",
     "form": "Concentrate",
@@ -1121,53 +1325,6 @@
     "sharedAt": "2026-10-19T05:16:40.865Z"
   },
   {
-    "name": "Mashup Mystery",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.4,
-    "flavors": [
-      "Creamy",
-      "Fruit",
-      "Gassy",
-      "Lemon",
-      "Melon",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:40.266Z"
-  },
-  {
-    "name": "Canal St Runtz",
-    "brand": "Mountain Man Melts",
-    "form": "Flower",
-    "extractType": "",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.3,
-    "flavors": [
-      "Apricot",
-      "Funk",
-      "Gas",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Talkative",
-      "Giggly"
-    ],
-    "sharedAt": "2026-10-19T05:16:39.117Z"
-  },
-  {
     "name": "Terp Broth",
     "brand": "PinePark",
     "form": "Concentrate",
@@ -1183,43 +1340,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:38.597Z"
-  },
-  {
-    "name": "Melon Ball",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 9.3,
-    "flavors": [
-      "Melon",
-      "Sweet",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Valencene",
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Linalool",
-      "Guaiol",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Nerolidol",
-      "Terpineol",
-      "Fenchol",
-      "Trans-Beta-Farnesene",
-      "Myrcene",
-      "Camphene",
-      "Beta-Pinene",
-      "Borneol",
-      "Terpinolene",
-      "Ocimene",
-      "Geraniol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:37.479Z"
   },
   {
     "name": "Blue Dream",
@@ -1263,32 +1383,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:35.549Z"
-  },
-  {
-    "name": "Purple Paya",
-    "brand": "Rosin Tech Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 9,
-    "flavors": [
-      "Banana",
-      "Grape",
-      "Sweet",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy"
-    ],
-    "sharedAt": "2026-10-19T05:16:34.999Z"
   },
   {
     "name": "Scottis Cake",
@@ -1450,33 +1544,6 @@
     "sharedAt": "2026-10-19T05:16:28.069Z"
   },
   {
-    "name": "Papaya Lime Pie",
-    "brand": "Karisma",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Indica",
-    "potency": "76%",
-    "rating": 9.4,
-    "flavors": [
-      "Lime",
-      "Mango",
-      "Peppery",
-      "Sweet",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene",
-      "Pinene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Happy",
-      "Sleepy"
-    ],
-    "sharedAt": "2026-10-19T05:16:27.527Z"
-  },
-  {
     "name": "Champaya",
     "brand": "Mountain Man Melts",
     "form": "Concentrate",
@@ -1598,31 +1665,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:24.186Z"
-  },
-  {
-    "name": "Purple Chem",
-    "brand": "Shasta Hash and Flowers",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Indica",
-    "potency": "50%",
-    "rating": 9.4,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Peppery",
-      "Sweet"
-    ],
-    "terpenes": [
-      "β-Caryophyllene",
-      "α-Humulene",
-      "Caryophyllene Oxide",
-      "Linalool",
-      "β-Myrcene",
-      "α-Pinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:23.636Z"
   },
   {
     "name": "Pink Pitaya",
@@ -1751,48 +1793,6 @@
       "Heady"
     ],
     "sharedAt": "2026-10-19T05:16:18.566Z"
-  },
-  {
-    "name": "Bacio Pancakes",
-    "brand": "Master Makers",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "87%",
-    "rating": 9.4,
-    "flavors": [
-      "Creamy",
-      "Gas",
-      "Maple",
-      "Piney"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Aroused",
-      "Focused",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-19T05:16:18.079Z"
-  },
-  {
-    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
-    "brand": "710 labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Chemical",
-      "Funk",
-      "Gassy",
-      "Zkittles"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-18T03:20:08.773Z"
   },
   {
     "name": "First Class Funk",
