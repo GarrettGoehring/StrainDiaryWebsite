@@ -1,58 +1,5 @@
 [
   {
-    "name": "Gassy Taffy",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Sativa",
-    "potency": "88%",
-    "rating": 9.1,
-    "flavors": [
-      "Funk",
-      "Gas",
-      "Skunk"
-    ],
-    "terpenes": [
-      "Pinene",
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Happy"
-    ],
-    "sharedAt": "2026-10-25T20:03:59.289Z"
-  },
-  {
-    "name": "Bacio Gelato",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.5,
-    "flavors": [
-      "Berry",
-      "Earthy",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool"
-    ],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-25T20:03:57.846Z"
-  },
-  {
     "name": "Guava Bomb",
     "brand": "Hash Rosin Company",
     "form": "Concentrate",
@@ -83,7 +30,7 @@
       "Calm",
       "Body High"
     ],
-    "sharedAt": "2026-10-25T20:03:53.761Z"
+    "sharedAt": "2026-10-26T20:08:56.027Z"
   },
   {
     "name": "Nyc Diesel",
@@ -108,7 +55,7 @@
       "Uplifted",
       "Creative"
     ],
-    "sharedAt": "2026-10-25T20:03:51.063Z"
+    "sharedAt": "2026-10-26T20:08:53.790Z"
   },
   {
     "name": "New Money",
@@ -131,14 +78,14 @@
       "Myrcene"
     ],
     "effects": [
-      "Creative",
-      "Energetic",
-      "Focused",
       "Relaxed",
-      "Talkative",
-      "Euphoric"
+      "Euphoric",
+      "Energetic",
+      "Creative",
+      "Focused",
+      "Talkative"
     ],
-    "sharedAt": "2026-10-25T20:03:48.178Z"
+    "sharedAt": "2026-10-26T20:08:51.064Z"
   },
   {
     "name": "Slapz",
@@ -165,15 +112,41 @@
       "Myrcene"
     ],
     "effects": [
-      "Hungry",
       "Relaxed",
-      "Sleepy",
-      "Talkative",
-      "Aroused",
       "Euphoric",
-      "Giggly"
+      "Sleepy",
+      "Hungry",
+      "Talkative",
+      "Giggly",
+      "Aroused"
     ],
-    "sharedAt": "2026-10-25T20:03:44.514Z"
+    "sharedAt": "2026-10-26T20:08:46.536Z"
+  },
+  {
+    "name": "Gassy Taffy",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Sativa",
+    "potency": "88%",
+    "rating": 9.1,
+    "flavors": [
+      "Funk",
+      "Gas",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy"
+    ],
+    "sharedAt": "2026-10-25T20:03:59.289Z"
   },
   {
     "name": "Madison Zquared Garden #2 + Rainbow Beltz",
