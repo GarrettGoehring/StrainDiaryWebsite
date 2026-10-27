@@ -1,23 +1,5 @@
 [
   {
-    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.4,
-    "flavors": [
-      "Chemical",
-      "Funk",
-      "Gassy",
-      "Zkittles"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-27T16:15:57.155Z"
-  },
-  {
     "name": "Chocolate Oranges",
     "brand": "710 Labs",
     "form": "Pen",
@@ -41,7 +23,134 @@
       "Caryophyllene"
     ],
     "effects": [],
-    "sharedAt": "2026-10-27T15:08:09.879Z"
+    "sharedAt": "2026-10-27T21:52:51.582Z"
+  },
+  {
+    "name": "Grease Bucket #9 + Gorilla Dosha #3",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.6,
+    "flavors": [
+      "Chemical",
+      "Gas",
+      "Glue",
+      "Pine"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-27T21:52:51.385Z"
+  },
+  {
+    "name": "Cranberry Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "67%",
+    "rating": 8.6,
+    "flavors": [
+      "Berry",
+      "Creamy",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Beta-Pinene",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Trans-Beta-Farnesene",
+      "Guaiol",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Myrcene",
+      "Terpinolene",
+      "Linalool",
+      "Sabinene",
+      "Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-27T21:52:51.093Z"
+  },
+  {
+    "name": "Mango Banana #9 + Mega Peaches",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Bread",
+      "Dough",
+      "Earthy",
+      "Juicy Peach",
+      "Ripe Mango",
+      "Sweet Banana"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-27T21:52:50.735Z"
+  },
+  {
+    "name": "Vaso de Fruta",
+    "brand": "Heritage Hash Co.",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 8.3,
+    "flavors": [
+      "Sharp Citrus",
+      "Spice",
+      "Sweet Melon",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-27T21:51:35.801Z"
+  },
+  {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-27T21:30:03.243Z"
   },
   {
     "name": "Moroccan Peaches",
@@ -686,45 +795,6 @@
     "sharedAt": "2026-10-22T23:14:09.302Z"
   },
   {
-    "name": "Cranberry Spritzer",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "67%",
-    "rating": 8.6,
-    "flavors": [
-      "Berry",
-      "Creamy",
-      "Gas",
-      "Sour"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Beta-Pinene",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Trans-Beta-Farnesene",
-      "Guaiol",
-      "Nerolidol",
-      "Fenchol",
-      "Terpineol",
-      "Ocimene",
-      "Camphene",
-      "Geraniol",
-      "Borneol",
-      "Myrcene",
-      "Terpinolene",
-      "Linalool",
-      "Sabinene",
-      "Pinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-22T17:46:19.252Z"
-  },
-  {
     "name": "Wedding Pie",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -791,29 +861,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-22T06:13:16.315Z"
-  },
-  {
-    "name": "Mango Banana #9 + Mega Peaches",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Bread",
-      "Dough",
-      "Earthy",
-      "Juicy Peach",
-      "Ripe Mango",
-      "Sweet Banana"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-22T05:11:03.858Z"
   },
   {
     "name": "Paytons Pie #1",
@@ -1803,24 +1850,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:20.568Z"
-  },
-  {
-    "name": "Grease Bucket #9 + Gorilla Dosha #3",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.6,
-    "flavors": [
-      "Chemical",
-      "Gas",
-      "Glue",
-      "Pine"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:19.498Z"
   },
   {
     "name": "Zimosa #2 + LunarZ",

@@ -50696,6 +50696,28 @@
     ]
   },
   {
+    "name": "LMNO-Z · 710 Labs",
+    "type": "",
+    "crosses": "Chemdog x Super Skunk",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Chemical",
+      "Citrus",
+      "Diesel",
+      "Earthy",
+      "Lemon",
+      "Pungent",
+      "Skunk"
+    ],
+    "effects": [
+      "Happy"
+    ]
+  },
+  {
     "name": "Loaf Pina",
     "type": "",
     "crosses": "",
@@ -85076,6 +85098,30 @@
       "True-To-Strain Authenticity"
     ],
     "effects": []
+  },
+  {
+    "name": "Vaso de Fruta",
+    "type": "Hybrid",
+    "crosses": "",
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sharp Citrus",
+      "Spice",
+      "Sweet Melon",
+      "Tropical"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ]
   },
   {
     "name": "veganic og",
