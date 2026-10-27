@@ -1,5 +1,49 @@
 [
   {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-27T16:15:57.155Z"
+  },
+  {
+    "name": "Chocolate Oranges",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Linalool",
+      "α-Pinene",
+      "α-Humulene",
+      "β-Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-27T15:08:09.879Z"
+  },
+  {
     "name": "Moroccan Peaches",
     "brand": "",
     "form": "Concentrate",
@@ -129,24 +173,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-27T06:47:55.919Z"
-  },
-  {
-    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
-    "brand": "710 labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.4,
-    "flavors": [
-      "Chemical",
-      "Funk",
-      "Gassy",
-      "Zkittles"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-27T06:16:44.343Z"
   },
   {
     "name": "Guava Bomb",
@@ -808,32 +834,6 @@
     "sharedAt": "2026-10-22T05:01:50.803Z"
   },
   {
-    "name": "Chocolate Oranges",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.2,
-    "flavors": [
-      "Chocolate",
-      "Lemon",
-      "Mint",
-      "Orange"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "Linalool",
-      "α-Pinene",
-      "α-Humulene",
-      "β-Myrcene",
-      "Caryophyllene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-21T21:55:44.150Z"
-  },
-  {
     "name": "OG Spritzer",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -1272,22 +1272,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-19T05:16:48.056Z"
-  },
-  {
-    "name": "Lunarz",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 7,
-    "flavors": [
-      "Fruit",
-      "Melon"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-19T05:16:46.464Z"
   },
   {
     "name": "Frozen Bananas",

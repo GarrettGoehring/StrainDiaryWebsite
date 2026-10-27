@@ -30782,6 +30782,26 @@
     ]
   },
   {
+    "name": "GG4 + GMO",
+    "type": "",
+    "crosses": "LIVE ROSIN BADDER\nGG4 + GMO",
+    "terpenes": [
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Chocolate",
+      "Citrus",
+      "Diesel",
+      "Earthy",
+      "Pine",
+      "Sour"
+    ],
+    "effects": [
+      "Relaxed",
+      "Sleepy"
+    ]
+  },
+  {
     "name": "GG4 OG",
     "type": "",
     "crosses": "Chem's Sister x Sour Dubble",
@@ -51115,14 +51135,12 @@
   },
   {
     "name": "Lunarz",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy",
-      "Fruit",
-      "Melon"
+      "Candy"
     ],
     "effects": []
   },
