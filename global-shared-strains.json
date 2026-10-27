@@ -1,5 +1,154 @@
 [
   {
+    "name": "Moroccan Peaches",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Sativa",
+    "potency": "70%",
+    "rating": 7,
+    "flavors": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Terpineol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-27T07:01:56.103Z"
+  },
+  {
+    "name": "Super Boof",
+    "brand": "Matrix: Fresh Press Rosin",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-27T07:01:55.121Z"
+  },
+  {
+    "name": "Grapefruit",
+    "brand": "Matrix: Live Rosin Badder",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Grapefruit",
+      "Sweet"
+    ],
+    "terpenes": [
+      "beta-Myrcene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-27T07:01:54.060Z"
+  },
+  {
+    "name": "Tropicana Punch",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8,
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene oxide",
+      "Beta-Pinene",
+      "Alpha-Bisabolol",
+      "d-Limonene",
+      "Linalool",
+      "Guaiol"
+    ],
+    "effects": [
+      "Relaxed",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-10-27T07:01:50.011Z"
+  },
+  {
+    "name": "Melon Ball",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 9.3,
+    "flavors": [
+      "Melon",
+      "Sweet",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Valencene",
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Linalool",
+      "Guaiol",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Terpineol",
+      "Fenchol",
+      "Trans-Beta-Farnesene",
+      "Myrcene",
+      "Camphene",
+      "Beta-Pinene",
+      "Borneol",
+      "Terpinolene",
+      "Ocimene",
+      "Geraniol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-27T06:47:55.919Z"
+  },
+  {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "brand": "710 labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-10-27T06:16:44.343Z"
+  },
+  {
     "name": "Guava Bomb",
     "brand": "Hash Rosin Company",
     "form": "Concentrate",
@@ -147,61 +296,6 @@
       "Happy"
     ],
     "sharedAt": "2026-10-25T20:03:59.289Z"
-  },
-  {
-    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
-    "brand": "710 labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.4,
-    "flavors": [
-      "Chemical",
-      "Funk",
-      "Gassy",
-      "Zkittles"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-24T23:54:58.118Z"
-  },
-  {
-    "name": "Melon Ball",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 9.3,
-    "flavors": [
-      "Melon",
-      "Sweet",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Valencene",
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Linalool",
-      "Guaiol",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Nerolidol",
-      "Terpineol",
-      "Fenchol",
-      "Trans-Beta-Farnesene",
-      "Myrcene",
-      "Camphene",
-      "Beta-Pinene",
-      "Borneol",
-      "Terpinolene",
-      "Ocimene",
-      "Geraniol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-24T23:54:23.044Z"
   },
   {
     "name": "Canal St Runtz",
@@ -1844,83 +1938,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-10-18T03:20:06.688Z"
-  },
-  {
-    "name": "Tropicana Punch",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8,
-    "flavors": [
-      "Berry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene oxide",
-      "Beta-Pinene",
-      "Alpha-Bisabolol",
-      "d-Limonene",
-      "Linalool",
-      "Guaiol"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-10-17T18:02:02.333Z"
-  },
-  {
-    "name": "Super Boof",
-    "brand": "Matrix: Fresh Press Rosin",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-16T06:34:55.921Z"
-  },
-  {
-    "name": "Grapefruit",
-    "brand": "Matrix: Live Rosin Badder",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Grapefruit",
-      "Sweet"
-    ],
-    "terpenes": [
-      "beta-Myrcene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-16T06:34:53.751Z"
   },
   {
     "name": "Super Boof",

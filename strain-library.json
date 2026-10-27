@@ -56349,9 +56349,13 @@
   },
   {
     "name": "Moroccan Peaches",
-    "type": "",
+    "type": "Sativa",
     "crosses": "Lemon Tree x Barbara Bud",
-    "terpenes": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Terpineol"
+    ],
     "flavors": [
       "Peach",
       "Apricot",
