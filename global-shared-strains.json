@@ -1,5 +1,64 @@
 [
   {
+    "name": "Vaso de Fruta",
+    "brand": "Heritage Hash Co.",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 8.3,
+    "flavors": [
+      "Sharp Citrus",
+      "Spice",
+      "Sweet Melon",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-28T19:14:25.620Z"
+  },
+  {
+    "name": "Tropicana Punch",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8,
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene oxide",
+      "Beta-Pinene",
+      "Alpha-Bisabolol",
+      "d-Limonene",
+      "Linalool",
+      "Guaiol"
+    ],
+    "effects": [
+      "Relaxed",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-10-28T18:55:08.304Z"
+  },
+  {
     "name": "Wedding Pie",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -90,36 +149,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-10-28T04:54:09.771Z"
-  },
-  {
-    "name": "Tropicana Punch",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8,
-    "flavors": [
-      "Berry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene oxide",
-      "Beta-Pinene",
-      "Alpha-Bisabolol",
-      "d-Limonene",
-      "Linalool",
-      "Guaiol"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-10-28T04:53:45.278Z"
   },
   {
     "name": "Gassy Taffy",
@@ -402,35 +431,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-27T21:52:50.735Z"
-  },
-  {
-    "name": "Vaso de Fruta",
-    "brand": "Heritage Hash Co.",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 8.3,
-    "flavors": [
-      "Sharp Citrus",
-      "Spice",
-      "Sweet Melon",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Calm",
-      "Creative",
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-27T21:51:35.801Z"
   },
   {
     "name": "Madison Zquared Garden #2 + Rainbow Beltz",
