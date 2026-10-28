@@ -1,5 +1,275 @@
 [
   {
+    "name": "Moroccan Peaches",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Sativa",
+    "potency": "70%",
+    "rating": 7,
+    "flavors": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Terpineol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-28T04:54:12.219Z"
+  },
+  {
+    "name": "Super Boof",
+    "brand": "Matrix: Fresh Press Rosin",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-28T04:54:10.911Z"
+  },
+  {
+    "name": "Grapefruit",
+    "brand": "Matrix: Live Rosin Badder",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Grapefruit",
+      "Sweet"
+    ],
+    "terpenes": [
+      "beta-Myrcene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-28T04:54:09.771Z"
+  },
+  {
+    "name": "Tropicana Punch",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8,
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene oxide",
+      "Beta-Pinene",
+      "Alpha-Bisabolol",
+      "d-Limonene",
+      "Linalool",
+      "Guaiol"
+    ],
+    "effects": [
+      "Relaxed",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-10-28T04:53:45.278Z"
+  },
+  {
+    "name": "Gassy Taffy",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Sativa",
+    "potency": "88%",
+    "rating": 9.1,
+    "flavors": [
+      "Funk",
+      "Gas",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy"
+    ],
+    "sharedAt": "2026-10-28T02:08:15.721Z"
+  },
+  {
+    "name": "Bacio Gelato",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.5,
+    "flavors": [
+      "Berry",
+      "Earthy",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-28T02:08:14.460Z"
+  },
+  {
+    "name": "Guava Bomb",
+    "brand": "Hash Rosin Company",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Gassy",
+      "Guava",
+      "Pepper",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Giggly",
+      "Calm",
+      "Body High"
+    ],
+    "sharedAt": "2026-10-28T02:08:10.409Z"
+  },
+  {
+    "name": "Nyc Diesel",
+    "brand": "WNC-CBD",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Lime"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Happy",
+      "Uplifted",
+      "Creative"
+    ],
+    "sharedAt": "2026-10-28T02:08:07.501Z"
+  },
+  {
+    "name": "New Money",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Hybrid",
+    "potency": "90%",
+    "rating": 9,
+    "flavors": [
+      "Apple",
+      "Blue Cheese",
+      "Blueberry",
+      "Chemical",
+      "Diesel"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-28T02:08:05.046Z"
+  },
+  {
+    "name": "Slapz",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Ammonia",
+      "Apricot",
+      "Chemical",
+      "Diesel",
+      "Earthy",
+      "Pungent",
+      "Skunk",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Talkative",
+      "Aroused",
+      "Euphoric",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-28T02:08:02.425Z"
+  },
+  {
     "name": "Chocolate Oranges",
     "brand": "710 Labs",
     "form": "Pen",
@@ -153,100 +423,6 @@
     "sharedAt": "2026-10-27T21:30:03.243Z"
   },
   {
-    "name": "Moroccan Peaches",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Sativa",
-    "potency": "70%",
-    "rating": 7,
-    "flavors": [],
-    "terpenes": [
-      "β-Caryophyllene",
-      "α-Humulene",
-      "α-Terpineol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-27T07:01:56.103Z"
-  },
-  {
-    "name": "Super Boof",
-    "brand": "Matrix: Fresh Press Rosin",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-27T07:01:55.121Z"
-  },
-  {
-    "name": "Grapefruit",
-    "brand": "Matrix: Live Rosin Badder",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Grapefruit",
-      "Sweet"
-    ],
-    "terpenes": [
-      "beta-Myrcene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-27T07:01:54.060Z"
-  },
-  {
-    "name": "Tropicana Punch",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8,
-    "flavors": [
-      "Berry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene oxide",
-      "Beta-Pinene",
-      "Alpha-Bisabolol",
-      "d-Limonene",
-      "Linalool",
-      "Guaiol"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-10-27T07:01:50.011Z"
-  },
-  {
     "name": "Melon Ball",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -282,155 +458,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-10-27T06:47:55.919Z"
-  },
-  {
-    "name": "Guava Bomb",
-    "brand": "Hash Rosin Company",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Gassy",
-      "Guava",
-      "Pepper",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Giggly",
-      "Calm",
-      "Body High"
-    ],
-    "sharedAt": "2026-10-26T20:08:56.027Z"
-  },
-  {
-    "name": "Nyc Diesel",
-    "brand": "WNC-CBD",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Diesel",
-      "Lime"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Creative"
-    ],
-    "sharedAt": "2026-10-26T20:08:53.790Z"
-  },
-  {
-    "name": "New Money",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Hybrid",
-    "potency": "90%",
-    "rating": 9,
-    "flavors": [
-      "Apple",
-      "Blue Cheese",
-      "Blueberry",
-      "Chemical",
-      "Diesel"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Energetic",
-      "Creative",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-10-26T20:08:51.064Z"
-  },
-  {
-    "name": "Slapz",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Ammonia",
-      "Apricot",
-      "Chemical",
-      "Diesel",
-      "Earthy",
-      "Pungent",
-      "Skunk",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Sleepy",
-      "Hungry",
-      "Talkative",
-      "Giggly",
-      "Aroused"
-    ],
-    "sharedAt": "2026-10-26T20:08:46.536Z"
-  },
-  {
-    "name": "Gassy Taffy",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Sativa",
-    "potency": "88%",
-    "rating": 9.1,
-    "flavors": [
-      "Funk",
-      "Gas",
-      "Skunk"
-    ],
-    "terpenes": [
-      "Pinene",
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Happy"
-    ],
-    "sharedAt": "2026-10-25T20:03:59.289Z"
   },
   {
     "name": "Canal St Runtz",
