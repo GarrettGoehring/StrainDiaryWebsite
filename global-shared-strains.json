@@ -1,32 +1,67 @@
 [
   {
-    "name": "Vaso de Fruta",
-    "brand": "Heritage Hash Co.",
+    "name": "Moroccan Peaches",
+    "brand": "",
     "form": "Concentrate",
-    "extractType": "Live Rosin",
+    "extractType": "Fresh Press",
+    "type": "Sativa",
+    "potency": "70%",
+    "rating": 7,
+    "flavors": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Terpineol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-10-29T12:07:56.430Z"
+  },
+  {
+    "name": "Super Boof",
+    "brand": "Matrix: Fresh Press Rosin",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
     "type": "Hybrid",
-    "potency": "68%",
-    "rating": 8.3,
+    "potency": "74%",
+    "rating": 9.5,
     "flavors": [
-      "Sharp Citrus",
-      "Spice",
-      "Sweet Melon",
-      "Tropical"
+      "Cherry",
+      "Citrus",
+      "Sweet"
     ],
     "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
+      "d-Limonene"
     ],
     "effects": [
-      "Calm",
-      "Creative",
       "Energetic",
       "Happy",
       "Relaxed",
       "Uplifted"
     ],
-    "sharedAt": "2026-10-28T19:14:25.620Z"
+    "sharedAt": "2026-10-29T12:07:55.293Z"
+  },
+  {
+    "name": "Grapefruit",
+    "brand": "Matrix: Live Rosin Badder",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Grapefruit",
+      "Sweet"
+    ],
+    "terpenes": [
+      "beta-Myrcene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-29T12:07:54.268Z"
   },
   {
     "name": "Tropicana Punch",
@@ -56,7 +91,36 @@
       "Focused",
       "Talkative"
     ],
-    "sharedAt": "2026-10-28T18:55:08.304Z"
+    "sharedAt": "2026-10-29T12:07:49.704Z"
+  },
+  {
+    "name": "Vaso de Fruta",
+    "brand": "Heritage Hash Co.",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 8.3,
+    "flavors": [
+      "Sharp Citrus",
+      "Spice",
+      "Sweet Melon",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-28T19:14:25.620Z"
   },
   {
     "name": "Wedding Pie",
@@ -85,70 +149,6 @@
       "Giggly"
     ],
     "sharedAt": "2026-10-28T06:26:37.607Z"
-  },
-  {
-    "name": "Moroccan Peaches",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Sativa",
-    "potency": "70%",
-    "rating": 7,
-    "flavors": [],
-    "terpenes": [
-      "β-Caryophyllene",
-      "α-Humulene",
-      "α-Terpineol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-28T04:54:12.219Z"
-  },
-  {
-    "name": "Super Boof",
-    "brand": "Matrix: Fresh Press Rosin",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-28T04:54:10.911Z"
-  },
-  {
-    "name": "Grapefruit",
-    "brand": "Matrix: Live Rosin Badder",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Grapefruit",
-      "Sweet"
-    ],
-    "terpenes": [
-      "beta-Myrcene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-28T04:54:09.771Z"
   },
   {
     "name": "Gassy Taffy",
