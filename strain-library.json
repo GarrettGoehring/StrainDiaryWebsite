@@ -39733,13 +39733,10 @@
       "Creamy"
     ],
     "effects": [
-      "Happy",
-      "Relaxed",
-      "Uplifted",
-      "Creative",
       "Energetic",
-      "Euphoric",
-      "Sleepy"
+      "Happy",
+      "Talkative",
+      "Uplifted"
     ]
   },
   {
@@ -57483,6 +57480,48 @@
       "Uplifted",
       "Creative",
       "Euphoric"
+    ]
+  },
+  {
+    "name": "Neon Panther",
+    "type": "Hybrid",
+    "crosses": "",
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Beta-Pinene",
+      "Trans-Beta-Farnesene",
+      "α-Humulene",
+      "Fenchol",
+      "Terpineol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Valencene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "Terpinolene",
+      "Citronellol",
+      "Geraniol",
+      "Sabinene",
+      "β-Ocimene",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Pinene"
+    ],
+    "flavors": [
+      "Floral",
+      "Sweet"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Focused",
+      "Relaxed",
+      "Uplifted"
     ]
   },
   {

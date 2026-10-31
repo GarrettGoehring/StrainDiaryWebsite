@@ -1,5 +1,114 @@
 [
   {
+    "name": "New Money",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Hybrid",
+    "potency": "90%",
+    "rating": 9,
+    "flavors": [
+      "Apple",
+      "Blue Cheese",
+      "Blueberry",
+      "Chemical",
+      "Diesel"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-10-31T01:24:28.004Z"
+  },
+  {
+    "name": "Slapz",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Ammonia",
+      "Apricot",
+      "Chemical",
+      "Diesel",
+      "Earthy",
+      "Pungent",
+      "Skunk",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Talkative",
+      "Aroused",
+      "Euphoric",
+      "Giggly"
+    ],
+    "sharedAt": "2026-10-31T01:24:22.262Z"
+  },
+  {
+    "name": "Neon Panther",
+    "brand": "Moon Valley Cannabis",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9,
+    "flavors": [
+      "Floral",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Beta-Pinene",
+      "Trans-Beta-Farnesene",
+      "α-Humulene",
+      "Fenchol",
+      "Terpineol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Valencene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "Terpinolene",
+      "Citronellol",
+      "Geraniol",
+      "Sabinene",
+      "β-Ocimene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Focused",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-10-30T23:37:42.068Z"
+  },
+  {
     "name": "Moroccan Peaches",
     "brand": "",
     "form": "Concentrate",
@@ -299,71 +408,6 @@
       "Creative"
     ],
     "sharedAt": "2026-10-28T02:08:07.501Z"
-  },
-  {
-    "name": "New Money",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Hybrid",
-    "potency": "90%",
-    "rating": 9,
-    "flavors": [
-      "Apple",
-      "Blue Cheese",
-      "Blueberry",
-      "Chemical",
-      "Diesel"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Relaxed",
-      "Talkative",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-28T02:08:05.046Z"
-  },
-  {
-    "name": "Slapz",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Ammonia",
-      "Apricot",
-      "Chemical",
-      "Diesel",
-      "Earthy",
-      "Pungent",
-      "Skunk",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Talkative",
-      "Aroused",
-      "Euphoric",
-      "Giggly"
-    ],
-    "sharedAt": "2026-10-28T02:08:02.425Z"
   },
   {
     "name": "Chocolate Oranges",
