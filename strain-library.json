@@ -30682,6 +30682,14 @@
     ]
   },
   {
+    "name": "Gg",
+    "type": "",
+    "crosses": "Ggg",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "GG #4",
     "type": "",
     "crosses": "Sour Dubb x Chem Sis",
@@ -36279,7 +36287,9 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
+      "Terpinolene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [],
     "effects": []
@@ -60521,7 +60531,9 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
+      "Terpinolene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [
       "Citrus",
@@ -66681,7 +66693,9 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
+      "Terpinolene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [
       "Dragon Fruit",
