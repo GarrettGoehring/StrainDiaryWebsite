@@ -51164,12 +51164,14 @@
   },
   {
     "name": "Lunarz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy"
+      "Candy",
+      "Fruit",
+      "Melon"
     ],
     "effects": []
   },
@@ -59807,7 +59809,11 @@
     "type": "",
     "crosses": "",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Chemical",
+      "Earthy",
+      "Gas"
+    ],
     "effects": []
   },
   {
@@ -81418,7 +81424,9 @@
       "α-Humulene",
       "α-Terpineol",
       "δ-Carene",
-      "β-Myrcene"
+      "β-Myrcene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [
       "Cake",
