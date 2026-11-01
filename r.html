@@ -48,6 +48,13 @@ h1{margin:6px 0 12px;font-size:34px;line-height:1.05;font-weight:900;letter-spac
 .note a{text-decoration:underline}
 .empty{max-width:440px;text-align:center;padding:40px 10px}
 .empty h1{font-size:28px}
+/* Likes and comments from the strain's Social post. */
+.pill.likes{color:#ff8a9a}
+.comments{display:flex;flex-direction:column;gap:8px}
+.comment{padding:11px 14px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.comment b{font-size:13px;font-weight:800}
+.comment small{margin-left:6px;font-size:12px;color:var(--muted);font-weight:600}
+.comment p{margin:4px 0 0;font-size:15px;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere}
 footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-align:center}
 </style>
 </head>
@@ -160,6 +167,10 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
     openBtn.href = "straindiary://diary";
   }
 
+  // Likes and comments, filled in from the live copy (the link's own
+  // snapshot has none).
+  var social = {l: 0, cm: []};
+
   function show(data, code){
   app.innerHTML = "";
 
@@ -175,6 +186,7 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
   if (data.t) meta.appendChild(el("span","pill type",data.t));
   if (data.r > 0) meta.appendChild(el("span","pill rating","★ " + Number(data.r).toFixed(1) + " / 10"));
   if (data.x) meta.appendChild(el("span","pill",data.x));
+  if (social.l > 0) meta.appendChild(el("span","pill likes","♥ " + social.l + (social.l === 1 ? " like" : " likes")));
   hero.appendChild(meta);
   card.appendChild(hero);
 
@@ -228,6 +240,21 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
   }).sort(function(a,b){ return b.w - a.w; }));
   section("Smell", list(data.s), flavorColor);
   section("Effects", list(data.e), effectColor);
+  // Comments people left on the Social post (only shown for posts on the
+  // Global feed). Plain text only.
+  if (social.cm.length) {
+    var cs = el("div"); cs.appendChild(el("div","label","Comments · " + social.cm.length));
+    var box = el("div","comments");
+    var when = new Intl.DateTimeFormat("en-US", {month:"short", day:"numeric"});
+    social.cm.forEach(function(c){
+      var row = el("div","comment"), top = el("div");
+      top.appendChild(el("b",null,c.a || "Someone"));
+      if (c.t > 0) top.appendChild(el("small",null,when.format(new Date(c.t * 1000))));
+      row.appendChild(top); row.appendChild(el("p",null,c.x));
+      box.appendChild(row);
+    });
+    cs.appendChild(box); body.appendChild(cs);
+  }
   card.appendChild(body);
   app.appendChild(card);
 
@@ -250,6 +277,7 @@ footer{margin-top:auto;padding-top:28px;font-size:12px;color:var(--muted);text-a
       // Text written just for this share stays; everything else is current.
       if (data && data.k) { live.q = data.q; live.k = 1; }
       var code = (data && data.k) ? encode(live) : json.code;
+      social = {l: json.l > 0 ? json.l : 0, cm: Array.isArray(json.cm) ? json.cm : []};
       show(live, code);
     })
     .catch(function(){ /* offline or Worker down: keep the snapshot */ });
