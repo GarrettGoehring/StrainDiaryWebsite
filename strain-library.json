@@ -51164,14 +51164,12 @@
   },
   {
     "name": "Lunarz",
-    "type": "Hybrid",
+    "type": "",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy",
-      "Fruit",
-      "Melon"
+      "Candy"
     ],
     "effects": []
   },
