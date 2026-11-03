@@ -1,5 +1,27 @@
 [
   {
+    "name": "Paytons Pie #1",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9,
+    "flavors": [
+      "Dough",
+      "Earthy",
+      "Peaches",
+      "Pepper"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-02T22:48:44.921Z"
+  },
+  {
     "name": "SuperBoof",
     "brand": "CAM",
     "form": "Flower",
@@ -1617,24 +1639,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-10-31T16:34:06.266Z"
-  },
-  {
-    "name": "Paytons Pie #1",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9,
-    "flavors": [
-      "Dough",
-      "Earthy",
-      "Peaches",
-      "Pepper"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-10-31T16:34:05.581Z"
   },
   {
     "name": "Trop Cherries Super Boof",
