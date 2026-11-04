@@ -1,5 +1,132 @@
 [
   {
+    "name": "Red Diamond",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8.8,
+    "flavors": [
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "α-Humulene",
+      "α-Bisabolol",
+      "Beta-Pinene",
+      "Alpha-Pinene",
+      "Fenchol",
+      "Linalool",
+      "α-Terpineol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "α-Terpinene",
+      "β-Myrcene",
+      "Terpinolene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-04T20:06:39.216Z"
+  },
+  {
+    "name": "OG Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "62%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Pepper",
+      "Pine"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "β-Limonene",
+      "α-Humulene",
+      "Linalool",
+      "Myrcene",
+      "β-Pinene",
+      "Trans-β-Farnesene",
+      "α-Bisabolol",
+      "α-Pinene",
+      "Terpineol",
+      "Fenchol",
+      "Guaiol",
+      "Nerolidol",
+      "β-Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Terpinolene",
+      "Fenchone",
+      "Citronellol",
+      "Eucalyptol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-04T20:06:37.592Z"
+  },
+  {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.5,
+    "flavors": [
+      "Creamy",
+      "Fruity",
+      "Funk",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-04T18:48:14.749Z"
+  },
+  {
+    "name": "SuperBoof",
+    "brand": "CAM",
+    "form": "Flower",
+    "extractType": "",
+    "type": "Sativa",
+    "potency": "50%",
+    "rating": 8.9,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Orange",
+      "Pepper"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-04T16:28:43.326Z"
+  },
+  {
     "name": "Gassy Taffy",
     "brand": "Tesoro",
     "form": "Concentrate",
@@ -174,28 +301,6 @@
       "Giggly"
     ],
     "sharedAt": "2026-11-04T02:00:39.162Z"
-  },
-  {
-    "name": "SuperBoof",
-    "brand": "CAM",
-    "form": "Flower",
-    "extractType": "",
-    "type": "Sativa",
-    "potency": "50%",
-    "rating": 8.9,
-    "flavors": [
-      "Citrus",
-      "Fruit Punch",
-      "Orange",
-      "Pepper"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-03T17:38:09.519Z"
   },
   {
     "name": "Sour Gorilla Dog",
@@ -460,34 +565,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-11-03T17:38:02.549Z"
-  },
-  {
-    "name": "Sundae Driver",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.5,
-    "flavors": [
-      "Creamy",
-      "Fruity",
-      "Funk",
-      "Gas",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-03T17:38:01.957Z"
   },
   {
     "name": "Crumpets",
