@@ -1,5 +1,181 @@
 [
   {
+    "name": "Gassy Taffy",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Sativa",
+    "potency": "88%",
+    "rating": 9.1,
+    "flavors": [
+      "Funk",
+      "Gas",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy"
+    ],
+    "sharedAt": "2026-11-06T02:12:00.808Z"
+  },
+  {
+    "name": "Bacio Gelato",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.5,
+    "flavors": [
+      "Berry",
+      "Earthy",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-06T02:11:59.648Z"
+  },
+  {
+    "name": "Guava Bomb",
+    "brand": "Hash Rosin Company",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Gassy",
+      "Guava",
+      "Pepper",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Giggly",
+      "Calm",
+      "Body High"
+    ],
+    "sharedAt": "2026-11-06T02:11:56.221Z"
+  },
+  {
+    "name": "Nyc Diesel",
+    "brand": "WNC-CBD",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Lime"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Happy",
+      "Uplifted",
+      "Creative"
+    ],
+    "sharedAt": "2026-11-06T02:11:54.091Z"
+  },
+  {
+    "name": "New Money",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Hybrid",
+    "potency": "90%",
+    "rating": 9,
+    "flavors": [
+      "Apple",
+      "Blue Cheese",
+      "Blueberry",
+      "Chemical",
+      "Diesel"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-06T02:11:51.932Z"
+  },
+  {
+    "name": "Slapz",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Ammonia",
+      "Apricot",
+      "Chemical",
+      "Diesel",
+      "Earthy",
+      "Pungent",
+      "Skunk",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Talkative",
+      "Aroused",
+      "Euphoric",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-06T02:11:49.342Z"
+  },
+  {
     "name": "Sour Gorilla Dog",
     "brand": "",
     "form": "Concentrate",
@@ -859,41 +1035,6 @@
     "sharedAt": "2026-11-05T02:45:19.441Z"
   },
   {
-    "name": "Slapz",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Ammonia",
-      "Apricot",
-      "Chemical",
-      "Diesel",
-      "Earthy",
-      "Pungent",
-      "Skunk",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Talkative",
-      "Aroused",
-      "Euphoric",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-05T02:06:38.106Z"
-  },
-  {
     "name": "Red Diamond",
     "brand": "Pistil Whip",
     "form": "Concentrate",
@@ -991,147 +1132,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-04T16:28:43.326Z"
-  },
-  {
-    "name": "Gassy Taffy",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Sativa",
-    "potency": "88%",
-    "rating": 9.1,
-    "flavors": [
-      "Funk",
-      "Gas",
-      "Skunk"
-    ],
-    "terpenes": [
-      "Pinene",
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Happy"
-    ],
-    "sharedAt": "2026-11-04T02:00:52.554Z"
-  },
-  {
-    "name": "Bacio Gelato",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.5,
-    "flavors": [
-      "Berry",
-      "Earthy",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool"
-    ],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-04T02:00:51.321Z"
-  },
-  {
-    "name": "Guava Bomb",
-    "brand": "Hash Rosin Company",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Gassy",
-      "Guava",
-      "Pepper",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Giggly",
-      "Calm",
-      "Body High"
-    ],
-    "sharedAt": "2026-11-04T02:00:47.830Z"
-  },
-  {
-    "name": "Nyc Diesel",
-    "brand": "WNC-CBD",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Diesel",
-      "Lime"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Creative"
-    ],
-    "sharedAt": "2026-11-04T02:00:45.434Z"
-  },
-  {
-    "name": "New Money",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Hybrid",
-    "potency": "90%",
-    "rating": 9,
-    "flavors": [
-      "Apple",
-      "Blue Cheese",
-      "Blueberry",
-      "Chemical",
-      "Diesel"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Relaxed",
-      "Talkative",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-04T02:00:43.119Z"
   },
   {
     "name": "Sour Tangie",
