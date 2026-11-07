@@ -66889,13 +66889,24 @@
     "name": "Pink Zing",
     "type": "",
     "crosses": "Pink Zaza x Cranberry Z",
-    "terpenes": [],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene"
+    ],
     "flavors": [
       "Bright Pink Candy",
       "Sweet",
-      "Zippy"
+      "Zippy",
+      "Sweet Berry",
+      "Tart Cranberry",
+      "Candy",
+      "Citrus",
+      "Pine"
     ],
-    "effects": []
+    "effects": [
+      "Happy"
+    ]
   },
   {
     "name": "pink zote",
