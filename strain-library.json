@@ -71251,6 +71251,33 @@
     "effects": []
   },
   {
+    "name": "Ridgeline Rose",
+    "type": "",
+    "crosses": "WhiteThorn Rose x Lantz",
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "Linalool",
+      "α-Humulene",
+      "Guaiol",
+      "α-Pinene",
+      "β-Myrcene",
+      "Fenchol",
+      "α-Terpineol",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "Terpinolene",
+      "Borneol",
+      "Eucalyptol",
+      "Fenchone",
+      "α-Terpinene",
+      "δ-Carene"
+    ],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "ringo's gift",
     "type": "Hybrid",
     "crosses": "Harle-Tsu x ACDC",
