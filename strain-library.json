@@ -22814,7 +22814,9 @@
       "Fenchone",
       "δ-Carene",
       "α-Terpinene",
-      "β-Myrcene"
+      "β-Myrcene",
+      "α-Pinene",
+      "β-Pinene"
     ],
     "flavors": [
       "Citrus",
@@ -69040,7 +69042,11 @@
     "name": "Purple Papaya",
     "type": "",
     "crosses": "Pinewarp",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene"
+    ],
     "flavors": [
       "Mango",
       "Blueberry",
@@ -69051,12 +69057,15 @@
       "Tropical",
       "Sedating",
       "Calming",
-      "Papaya"
+      "Papaya",
+      "Sweet Tropical Fruit",
+      "Ripe Papaya",
+      "Sour Citrus",
+      "Spicy-Peppery"
     ],
     "effects": [
-      "Creative",
-      "Tingly",
-      "Relaxed"
+      "Relaxed",
+      "Sleepy"
     ]
   },
   {
