@@ -59807,14 +59807,27 @@
   {
     "name": "Oishi Chem",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
+    "crosses": "Flavor Pack #7 x Moonbow 112 F2",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Linalool",
+      "Pinene"
+    ],
     "flavors": [
       "Chemical",
       "Earthy",
-      "Gas"
+      "Gas",
+      "Sweet Sugary Citrus Candy",
+      "Lime",
+      "Berry",
+      "Creamy/Mochi"
     ],
-    "effects": []
+    "effects": [
+      "Dry Eyes",
+      "Dry Mouth"
+    ]
   },
   {
     "name": "Oishii",
@@ -89195,10 +89208,23 @@
   {
     "name": "ZkyscraperZ #10",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "OG Kush #1 x SpritZer",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Sweet Red Fruit",
+      "Play Dough",
+      "Anise",
+      "Sweet Cherry Kush Inhale",
+      "Slight Grape Or Earthy-Pine Exhale",
+      "Zesty Citrus And Subtle Herbal/Peppery Undertones"
+    ],
+    "effects": [
+      "Calm"
+    ]
   },
   {
     "name": "Zlushie",
@@ -89603,9 +89629,17 @@
     "name": "Ztan Lee #5",
     "type": "",
     "crosses": "710 Labs x Sexual Chocolate",
-    "terpenes": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool",
+      "Myrcene"
+    ],
     "flavors": [
-      "Petrol Gas"
+      "Petrol Gas",
+      "Sweet Cream",
+      "Funky Petrol Gas",
+      "Subtle Citrus"
     ],
     "effects": [
       "Relaxing",
