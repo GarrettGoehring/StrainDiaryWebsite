@@ -25220,6 +25220,23 @@
     ]
   },
   {
+    "name": "Flavor Pack #7",
+    "type": "",
+    "crosses": "Flavor Pack #7 x Moonbow 112 F2 #60",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Sweet Citrus",
+      "Lemon-Lime",
+      "Candy",
+      "Fruit",
+      "Fuel"
+    ],
+    "effects": []
+  },
+  {
     "name": "florida kush",
     "type": "Hybrid",
     "crosses": "",
@@ -56151,6 +56168,29 @@
       "Euphoric",
       "Focused",
       "Creative"
+    ]
+  },
+  {
+    "name": "Moonbow 112 F2",
+    "type": "",
+    "crosses": "Zkittlez x Do-Si-Dos",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool",
+      "Nerolidol"
+    ],
+    "flavors": [
+      "Sweet Zkittlez Candy",
+      "Sugary-Sweet Dough",
+      "Blackcurrant",
+      "Zesty Lime/Citrus",
+      "Gassy/Petrol Undertones",
+      "Og Earthiness"
+    ],
+    "effects": [
+      "Uplifted"
     ]
   },
   {

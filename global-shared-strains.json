@@ -1,5 +1,121 @@
 [
   {
+    "name": "Paytons Pie #1",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9,
+    "flavors": [
+      "Dough",
+      "Earthy",
+      "Peaches",
+      "Pepper"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-09T21:59:36.313Z"
+  },
+  {
+    "name": "Moroccan Peaches",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Sativa",
+    "potency": "70%",
+    "rating": 7,
+    "flavors": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Terpineol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-09T20:06:26.833Z"
+  },
+  {
+    "name": "Super Boof",
+    "brand": "Matrix: Fresh Press Rosin",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-09T20:06:23.076Z"
+  },
+  {
+    "name": "Grapefruit",
+    "brand": "Matrix: Live Rosin Badder",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Grapefruit",
+      "Sweet"
+    ],
+    "terpenes": [
+      "beta-Myrcene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-09T20:06:18.036Z"
+  },
+  {
+    "name": "Tropicana Punch",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8,
+    "flavors": [
+      "Berry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene oxide",
+      "Beta-Pinene",
+      "Alpha-Bisabolol",
+      "d-Limonene",
+      "Linalool",
+      "Guaiol"
+    ],
+    "effects": [
+      "Relaxed",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
+    ],
+    "sharedAt": "2026-11-09T20:05:59.041Z"
+  },
+  {
     "name": "Gassy Taffy",
     "brand": "Tesoro",
     "form": "Concentrate",
@@ -1013,28 +1129,6 @@
     "sharedAt": "2026-11-05T05:18:08.335Z"
   },
   {
-    "name": "Paytons Pie #1",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9,
-    "flavors": [
-      "Dough",
-      "Earthy",
-      "Peaches",
-      "Pepper"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-05T02:45:19.441Z"
-  },
-  {
     "name": "Red Diamond",
     "brand": "Pistil Whip",
     "form": "Concentrate",
@@ -1591,36 +1685,6 @@
     "sharedAt": "2026-11-03T17:37:36.888Z"
   },
   {
-    "name": "Tropicana Punch",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8,
-    "flavors": [
-      "Berry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene oxide",
-      "Beta-Pinene",
-      "Alpha-Bisabolol",
-      "d-Limonene",
-      "Linalool",
-      "Guaiol"
-    ],
-    "effects": [
-      "Relaxed",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Talkative"
-    ],
-    "sharedAt": "2026-11-03T11:38:04.942Z"
-  },
-  {
     "name": "Orange Papaya",
     "brand": "Pistil Whip",
     "form": "Concentrate",
@@ -1816,70 +1880,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-10-30T23:37:42.068Z"
-  },
-  {
-    "name": "Moroccan Peaches",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Sativa",
-    "potency": "70%",
-    "rating": 7,
-    "flavors": [],
-    "terpenes": [
-      "β-Caryophyllene",
-      "α-Humulene",
-      "α-Terpineol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-10-30T12:44:43.666Z"
-  },
-  {
-    "name": "Super Boof",
-    "brand": "Matrix: Fresh Press Rosin",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-30T12:44:41.819Z"
-  },
-  {
-    "name": "Grapefruit",
-    "brand": "Matrix: Live Rosin Badder",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Grapefruit",
-      "Sweet"
-    ],
-    "terpenes": [
-      "beta-Myrcene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-30T12:44:39.586Z"
   },
   {
     "name": "Vaso de Fruta",
