@@ -1,27 +1,5 @@
 [
   {
-    "name": "Paytons Pie #1",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9,
-    "flavors": [
-      "Dough",
-      "Earthy",
-      "Peaches",
-      "Pepper"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-09T21:59:36.313Z"
-  },
-  {
     "name": "Moroccan Peaches",
     "brand": "",
     "form": "Concentrate",
@@ -36,7 +14,7 @@
       "α-Terpineol"
     ],
     "effects": [],
-    "sharedAt": "2026-11-09T20:06:26.833Z"
+    "sharedAt": "2026-11-10T16:42:54.492Z"
   },
   {
     "name": "Super Boof",
@@ -60,7 +38,7 @@
       "Relaxed",
       "Uplifted"
     ],
-    "sharedAt": "2026-11-09T20:06:23.076Z"
+    "sharedAt": "2026-11-10T16:42:53.587Z"
   },
   {
     "name": "Grapefruit",
@@ -83,7 +61,29 @@
       "Focused",
       "Uplifted"
     ],
-    "sharedAt": "2026-11-09T20:06:18.036Z"
+    "sharedAt": "2026-11-10T16:42:52.773Z"
+  },
+  {
+    "name": "Paytons Pie #1",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9,
+    "flavors": [
+      "Dough",
+      "Earthy",
+      "Peaches",
+      "Pepper"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-09T21:59:36.313Z"
   },
   {
     "name": "Tropicana Punch",
