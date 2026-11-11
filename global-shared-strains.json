@@ -1,5 +1,123 @@
 [
   {
+    "name": "Spring Training",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "77%",
+    "rating": 9.5,
+    "flavors": [
+      "Baseball",
+      "Chemical",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-11T02:28:29.035Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Tropical",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Linalool",
+      "α-Pinene",
+      "β-Caryophyllene",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-11T02:28:27.653Z"
+  },
+  {
+    "name": "Grease Bucket #9 + Gorilla Dosha #3",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.6,
+    "flavors": [
+      "Chemical",
+      "Gas",
+      "Glue",
+      "Pine"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-11T02:28:26.105Z"
+  },
+  {
+    "name": "Zimosa #2 + LunarZ",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Citrus",
+      "Earthy",
+      "Fruit",
+      "Gas"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Heady"
+    ],
+    "sharedAt": "2026-11-11T02:28:24.168Z"
+  },
+  {
+    "name": "Bacio Pancakes",
+    "brand": "Master Makers",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "87%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Gas",
+      "Maple",
+      "Piney"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Focused",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Aroused"
+    ],
+    "sharedAt": "2026-11-11T02:28:21.208Z"
+  },
+  {
     "name": "Moroccan Peaches",
     "brand": "",
     "form": "Concentrate",
@@ -998,106 +1116,6 @@
     "sharedAt": "2026-11-05T06:53:52.032Z"
   },
   {
-    "name": "Spring Training",
-    "brand": "Mountain Man Melts",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "77%",
-    "rating": 9.5,
-    "flavors": [
-      "Baseball",
-      "Chemical",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-05T06:53:51.456Z"
-  },
-  {
-    "name": "WhiteThorn Rose",
-    "brand": "Quale",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "82%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Citrus",
-      "Fruit Punch",
-      "Tropical",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Linalool",
-      "α-Pinene",
-      "β-Caryophyllene",
-      "Caryophyllene Oxide",
-      "δ-Limonene",
-      "α-Bisabolol",
-      "β-Pinene",
-      "Camphene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-05T06:53:50.944Z"
-  },
-  {
-    "name": "Zimosa #2 + LunarZ",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Citrus",
-      "Earthy",
-      "Fruit",
-      "Gas"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Euphoric",
-      "Happy",
-      "Uplifted",
-      "Heady"
-    ],
-    "sharedAt": "2026-11-05T06:53:49.687Z"
-  },
-  {
-    "name": "Bacio Pancakes",
-    "brand": "Master Makers",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "87%",
-    "rating": 9.4,
-    "flavors": [
-      "Creamy",
-      "Gas",
-      "Maple",
-      "Piney"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Focused",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Aroused"
-    ],
-    "sharedAt": "2026-11-05T06:53:49.081Z"
-  },
-  {
     "name": "Sundae Driver",
     "brand": "710 Labs",
     "form": "Pen",
@@ -1665,24 +1683,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-11-03T17:37:39.998Z"
-  },
-  {
-    "name": "Grease Bucket #9 + Gorilla Dosha #3",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.6,
-    "flavors": [
-      "Chemical",
-      "Gas",
-      "Glue",
-      "Pine"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-03T17:37:36.888Z"
   },
   {
     "name": "Orange Papaya",

@@ -81784,14 +81784,20 @@
   {
     "name": "Test",
     "type": "",
-    "crosses": "",
+    "crosses": "Alien OG x Blueberry F4",
     "terpenes": [],
     "flavors": [
       "Banana",
       "Gas",
-      "Sweet"
+      "Sweet",
+      "Earthy",
+      "Fruity",
+      "Lemon",
+      "Pine"
     ],
-    "effects": []
+    "effects": [
+      "Relaxed"
+    ]
   },
   {
     "name": "Tester 51",
