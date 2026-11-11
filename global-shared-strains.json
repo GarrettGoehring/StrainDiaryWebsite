@@ -1,5 +1,75 @@
 [
   {
+    "name": "Cranberry Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "67%",
+    "rating": 8.6,
+    "flavors": [
+      "Berry",
+      "Creamy",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Beta-Pinene",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Trans-Beta-Farnesene",
+      "Guaiol",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Myrcene",
+      "Terpinolene",
+      "Linalool",
+      "Sabinene",
+      "Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-11T07:41:53.048Z"
+  },
+  {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Creamy Vanilla",
+      "Funk",
+      "Gas",
+      "Subtle Grape",
+      "Sweet",
+      "Sweet Berry"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool",
+      "Pinene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-11T06:17:55.806Z"
+  },
+  {
     "name": "Spring Training",
     "brand": "Mountain Man Melts",
     "form": "Concentrate",
@@ -1116,37 +1186,6 @@
     "sharedAt": "2026-11-05T06:53:52.032Z"
   },
   {
-    "name": "Sundae Driver",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.5,
-    "flavors": [
-      "Creamy Vanilla",
-      "Funk",
-      "Gas",
-      "Subtle Grape",
-      "Sweet",
-      "Sweet Berry"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene",
-      "Linalool",
-      "Pinene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-05T05:18:08.335Z"
-  },
-  {
     "name": "Red Diamond",
     "brand": "Pistil Whip",
     "form": "Concentrate",
@@ -1521,45 +1560,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-03T17:37:52.415Z"
-  },
-  {
-    "name": "Cranberry Spritzer",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "67%",
-    "rating": 8.6,
-    "flavors": [
-      "Berry",
-      "Creamy",
-      "Gas",
-      "Sour"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Beta-Pinene",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Trans-Beta-Farnesene",
-      "Guaiol",
-      "Nerolidol",
-      "Fenchol",
-      "Terpineol",
-      "Ocimene",
-      "Camphene",
-      "Geraniol",
-      "Borneol",
-      "Myrcene",
-      "Terpinolene",
-      "Linalool",
-      "Sabinene",
-      "Pinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-03T17:37:49.929Z"
   },
   {
     "name": "GG4",
