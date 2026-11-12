@@ -1,5 +1,26 @@
 [
   {
+    "name": "GMO",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 8.8,
+    "flavors": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Tingly"
+    ],
+    "sharedAt": "2026-11-12T21:32:54.227Z"
+  },
+  {
     "name": "Sour Garlic Cookies",
     "brand": "",
     "form": "Concentrate",
