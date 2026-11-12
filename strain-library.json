@@ -20328,6 +20328,14 @@
     "effects": []
   },
   {
+    "name": "Ddbdbdvdvdv",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "DDP",
     "type": "Hybrid",
     "crosses": "",
@@ -26579,6 +26587,27 @@
       "Relaxed",
       "Sleepy",
       "Uplifted"
+    ]
+  },
+  {
+    "name": "Funk Mt",
+    "type": "",
+    "crosses": "Tropicana Cookies (Mountain Cut) × Strawberry Guava",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Berry",
+      "Tropical Fruit"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Sleepy"
     ]
   },
   {
@@ -76023,9 +76052,9 @@
       "Sour"
     ],
     "effects": [
+      "Happy",
       "Relaxed",
-      "Euphoric",
-      "Happy"
+      "Euphoric"
     ]
   },
   {

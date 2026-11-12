@@ -1,5 +1,42 @@
 [
   {
+    "name": "Sour Garlic Cookies",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Funky",
+      "Garlic",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-12T02:35:34.930Z"
+  },
+  {
+    "name": "Zakura",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "93%",
+    "rating": 8.3,
+    "flavors": [
+      "Fruit"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-12T02:34:50.685Z"
+  },
+  {
     "name": "Mango Banana #9 + Mega Peaches",
     "brand": "710 Labs",
     "form": "Concentrate",
@@ -645,28 +682,6 @@
     "sharedAt": "2026-11-05T06:54:07.940Z"
   },
   {
-    "name": "Sour Garlic Cookies",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Creamy",
-      "Funky",
-      "Garlic",
-      "Sour"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy"
-    ],
-    "sharedAt": "2026-11-05T06:54:07.612Z"
-  },
-  {
     "name": "Honey Butter",
     "brand": "Rosin Tech Labs",
     "form": "Flower",
@@ -1031,21 +1046,6 @@
     "sharedAt": "2026-11-05T06:53:59.064Z"
   },
   {
-    "name": "Zakura",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "93%",
-    "rating": 8.3,
-    "flavors": [
-      "Fruit"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-05T06:53:58.572Z"
-  },
-  {
     "name": "Papaya Push Pop",
     "brand": "Swol",
     "form": "Concentrate",
@@ -1235,23 +1235,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-05T06:53:53.292Z"
-  },
-  {
-    "name": "Zmoothie",
-    "brand": "",
-    "form": "Flower",
-    "extractType": "",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.4,
-    "flavors": [
-      "Berry",
-      "Fruit",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-05T06:53:52.759Z"
   },
   {
     "name": "Wedding Pie",
