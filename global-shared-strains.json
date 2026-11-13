@@ -1,5 +1,77 @@
 [
   {
+    "name": "Super Boof",
+    "brand": "Matrix: Fresh Press Rosin",
+    "form": "Concentrate",
+    "extractType": "Fresh Press",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-13T05:58:08.769Z"
+  },
+  {
+    "name": "Grapefruit",
+    "brand": "Matrix: Live Rosin Badder",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "74%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Grapefruit",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Myrcene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-13T05:55:07.107Z"
+  },
+  {
+    "name": "Super boof",
+    "brand": "Ideal",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "75%",
+    "rating": 8.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-13T05:41:27.480Z"
+  },
+  {
     "name": "GMO",
     "brand": "Quale",
     "form": "Concentrate",
@@ -397,53 +469,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-10T16:42:54.492Z"
-  },
-  {
-    "name": "Super Boof",
-    "brand": "Matrix: Fresh Press Rosin",
-    "form": "Concentrate",
-    "extractType": "Fresh Press",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-10T16:42:53.587Z"
-  },
-  {
-    "name": "Grapefruit",
-    "brand": "Matrix: Live Rosin Badder",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Sativa",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Grapefruit",
-      "Sweet"
-    ],
-    "terpenes": [
-      "beta-Myrcene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-10T16:42:52.773Z"
   },
   {
     "name": "Tropicana Punch",
