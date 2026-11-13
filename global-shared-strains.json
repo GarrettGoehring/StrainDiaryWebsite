@@ -21,7 +21,28 @@
       "Relaxed",
       "Uplifted"
     ],
-    "sharedAt": "2026-11-13T05:58:08.769Z"
+    "sharedAt": "2026-11-13T08:06:59.301Z"
+  },
+  {
+    "name": "GMO",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 8.8,
+    "flavors": [],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Tingly"
+    ],
+    "sharedAt": "2026-11-13T07:34:04.874Z"
   },
   {
     "name": "Grapefruit",
@@ -70,27 +91,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-11-13T05:41:27.480Z"
-  },
-  {
-    "name": "GMO",
-    "brand": "Quale",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 8.8,
-    "flavors": [],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Hungry",
-      "Tingly"
-    ],
-    "sharedAt": "2026-11-12T21:32:54.227Z"
   },
   {
     "name": "Sour Garlic Cookies",
