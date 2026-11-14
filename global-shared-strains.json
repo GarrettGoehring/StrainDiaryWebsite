@@ -1,5 +1,58 @@
 [
   {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Creamy Vanilla",
+      "Funk",
+      "Gas",
+      "Subtle Grape",
+      "Sweet",
+      "Sweet Berry"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool",
+      "Pinene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-14T04:52:20.547Z"
+  },
+  {
+    "name": "Sour Garlic Cookies",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Creamy",
+      "Funky",
+      "Garlic",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-14T04:48:42.982Z"
+  },
+  {
     "name": "Super Boof",
     "brand": "Matrix: Fresh Press Rosin",
     "form": "Concentrate",
@@ -91,28 +144,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-11-13T05:41:27.480Z"
-  },
-  {
-    "name": "Sour Garlic Cookies",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.4,
-    "flavors": [
-      "Creamy",
-      "Funky",
-      "Garlic",
-      "Sour"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-12T02:35:34.930Z"
   },
   {
     "name": "Zakura",
@@ -318,37 +349,6 @@
       "Euphoric"
     ],
     "sharedAt": "2026-11-11T17:18:23.255Z"
-  },
-  {
-    "name": "Sundae Driver",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Creamy Vanilla",
-      "Funk",
-      "Gas",
-      "Subtle Grape",
-      "Sweet",
-      "Sweet Berry"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene",
-      "Linalool",
-      "Pinene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-11T16:19:22.163Z"
   },
   {
     "name": "Cranberry Spritzer",
