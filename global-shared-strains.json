@@ -1,5 +1,30 @@
 [
   {
+    "name": "Super boof",
+    "brand": "Ideal",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "75%",
+    "rating": 8.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "d-Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-15T15:27:46.548Z"
+  },
+  {
     "name": "WhiteThorn Rose",
     "brand": "Quale",
     "form": "Concentrate",
@@ -155,31 +180,6 @@
       "Uplifted"
     ],
     "sharedAt": "2026-11-13T05:55:07.107Z"
-  },
-  {
-    "name": "Super boof",
-    "brand": "Ideal",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "75%",
-    "rating": 8.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Sweet"
-    ],
-    "terpenes": [
-      "β-Caryophyllene",
-      "d-Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-13T05:41:27.480Z"
   },
   {
     "name": "Zakura",
