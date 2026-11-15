@@ -23453,6 +23453,14 @@
     ]
   },
   {
+    "name": "Dvdvdv",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
     "name": "Eagle Scout Trainwreck",
     "type": "",
     "crosses": "",
@@ -36473,12 +36481,19 @@
     "flavors": [
       "Guava",
       "Tropical",
-      "Sweet"
+      "Sweet",
+      "Apricot",
+      "Fresh Juicy Strawberries",
+      "Sour, Citrusy Tropical Guavas",
+      "Sweet Creamy Vanilla"
     ],
     "effects": [
       "Happy",
       "Relaxed",
-      "Uplifted"
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Talkative"
     ]
   },
   {

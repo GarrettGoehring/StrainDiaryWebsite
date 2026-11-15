@@ -1,5 +1,41 @@
 [
   {
+    "name": "WhiteThorn Rose",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Tropical",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Linalool",
+      "α-Pinene",
+      "β-Caryophyllene",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-15T00:53:06.295Z"
+  },
+  {
     "name": "Sundae Driver",
     "brand": "710 Labs",
     "form": "Pen",
@@ -313,42 +349,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-11-11T22:22:42.713Z"
-  },
-  {
-    "name": "WhiteThorn Rose",
-    "brand": "Quale",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "82%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Citrus",
-      "Fruit Punch",
-      "Tropical",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Linalool",
-      "α-Pinene",
-      "β-Caryophyllene",
-      "Caryophyllene Oxide",
-      "δ-Limonene",
-      "α-Bisabolol",
-      "β-Pinene",
-      "Camphene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-11T17:18:23.255Z"
   },
   {
     "name": "Cranberry Spritzer",
