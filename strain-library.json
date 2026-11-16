@@ -35868,6 +35868,31 @@
     ]
   },
   {
+    "name": "Green Lantern",
+    "type": "",
+    "crosses": "Green Crack x White Rhino",
+    "terpenes": [
+      "Limonene",
+      "Pinene",
+      "Caryophyllene",
+      "Humulene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Citrus",
+      "Earthy",
+      "Pine"
+    ],
+    "effects": [
+      "Uplifted",
+      "Happy",
+      "Creative",
+      "Focused",
+      "Relaxed",
+      "Sleepy"
+    ]
+  },
+  {
     "name": "Green Love Potion",
     "type": "",
     "crosses": "Black Domina x Lavender",
@@ -39364,6 +39389,23 @@
       "Tingly",
       "Relaxed",
       "Euphoric"
+    ]
+  },
+  {
+    "name": "High Society",
+    "type": "",
+    "crosses": "Jet Fuel Gelato x Biscotti",
+    "terpenes": [
+      "β-Linalool",
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Biscotti"
+    ],
+    "effects": [
+      "Stupid"
     ]
   },
   {
@@ -51227,12 +51269,14 @@
   },
   {
     "name": "Lunarz",
-    "type": "",
+    "type": "Hybrid",
     "crosses": "Moonbow #112 x Planet Purple F2 #144",
     "terpenes": [],
     "flavors": [
       "Gas",
-      "Candy"
+      "Candy",
+      "Fruit",
+      "Melon"
     ],
     "effects": []
   },
@@ -71384,6 +71428,24 @@
     "effects": []
   },
   {
+    "name": "Ridgeline Runtz",
+    "type": "",
+    "crosses": "The Original Zkittlez x Gelato",
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sweet, Candy-Like Fruit Punch",
+      "Berry",
+      "Tropical",
+      "Creamy"
+    ],
+    "effects": []
+  },
+  {
     "name": "ringo's gift",
     "type": "Hybrid",
     "crosses": "Harle-Tsu x ACDC",
@@ -82259,6 +82321,29 @@
       "Relaxed",
       "Happy",
       "Euphoric"
+    ]
+  },
+  {
+    "name": "The Original Zkittlez",
+    "type": "",
+    "crosses": "Grape Ape x Grapefruit",
+    "terpenes": [
+      "Caryophyllene",
+      "Linalool",
+      "Humulene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "flavors": [
+      "Sweet",
+      "Grape-Forward Candy",
+      "Tropical Berries",
+      "Bright Citrus",
+      "Subtle Earthy Or Diesel"
+    ],
+    "effects": [
+      "Happy",
+      "Focused"
     ]
   },
   {
