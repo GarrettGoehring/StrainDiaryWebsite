@@ -11223,7 +11223,8 @@
       "Linalool",
       "α-Pinene",
       "α-Humulene",
-      "β-Myrcene"
+      "β-Myrcene",
+      "Caryophyllene"
     ],
     "flavors": [
       "Chocolate",
@@ -37452,7 +37453,9 @@
       "Borneol",
       "Terpinolene",
       "Fenchone",
-      "δ-Carene"
+      "δ-Carene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [
       "Citrus",
@@ -37999,6 +38002,14 @@
       "Energetic",
       "Uplifted"
     ]
+  },
+  {
+    "name": "Other",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
   },
   {
     "name": "OZ Burger",
@@ -50926,7 +50937,9 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
+      "Terpinolene",
+      "Beta-Pinene",
+      "Alpha-Pinene"
     ],
     "flavors": [
       "Cake",

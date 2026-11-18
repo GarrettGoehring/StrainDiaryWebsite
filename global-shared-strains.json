@@ -1,5 +1,44 @@
 [
   {
+    "name": "Chocolate Oranges",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.2,
+    "flavors": [
+      "Chocolate",
+      "Lemon",
+      "Mint",
+      "Orange"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Linalool",
+      "α-Pinene",
+      "α-Humulene",
+      "β-Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-18T20:04:55.810Z"
+  },
+  {
+    "name": "Other",
+    "brand": "",
+    "form": "__social_post_v1__",
+    "extractType": "",
+    "type": "",
+    "potency": "",
+    "rating": 0,
+    "flavors": [],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-18T19:47:38.727Z"
+  },
+  {
     "name": "Orange Papaya",
     "brand": "Pistil Whip",
     "form": "Concentrate",
@@ -27,10 +66,12 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
+      "Terpinolene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "effects": [],
-    "sharedAt": "2026-11-18T06:40:29.126Z"
+    "sharedAt": "2026-11-18T19:05:37.385Z"
   },
   {
     "name": "SuperBoof",
@@ -52,7 +93,122 @@
       "Caryophyllene"
     ],
     "effects": [],
-    "sharedAt": "2026-11-18T06:40:28.758Z"
+    "sharedAt": "2026-11-18T19:05:37.032Z"
+  },
+  {
+    "name": "Sundae Driver",
+    "brand": "710 Labs",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Creamy Vanilla",
+      "Funk",
+      "Gas",
+      "Subtle Grape",
+      "Sweet",
+      "Sweet Berry"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool",
+      "Pinene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-18T19:05:35.857Z"
+  },
+  {
+    "name": "TangieBerto",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Cake",
+      "Citrus",
+      "Creamy"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "α-Humulene",
+      "Guaiol",
+      "Linalool",
+      "β-Pinene",
+      "Fenchol",
+      "α-Pinene",
+      "α-Terpineol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "β-Myrcene",
+      "Terpinolene",
+      "Beta-Pinene",
+      "Alpha-Pinene"
+    ],
+    "effects": [
+      "Energetic",
+      "Euphoric",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Talkative",
+      "Tingly",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-18T19:05:35.354Z"
+  },
+  {
+    "name": "Sea Shock",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "71%",
+    "rating": 9.2,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Fruit",
+      "Salty Sea",
+      "Gas"
+    ],
+    "terpenes": [
+      "Sabinene",
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene",
+      "Beta-Pinene",
+      "Linalool",
+      "Alpha-Pinene",
+      "Guaiol",
+      "Trans-Beta-Farnesene",
+      "Terpineol",
+      "Camphene",
+      "Ocimene",
+      "Terpinolene",
+      "Borneol",
+      "Nerolidol",
+      "Fenchol",
+      "Valencene",
+      "Geraniol",
+      "Bisabolol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-18T19:05:34.826Z"
   },
   {
     "name": "Pink Pitaya",
@@ -85,149 +241,12 @@
       "Fenchone",
       "δ-Carene",
       "β-Myrcene",
-      "Terpinolene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-18T06:40:28.170Z"
-  },
-  {
-    "name": "Sundae Driver",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Creamy Vanilla",
-      "Funk",
-      "Gas",
-      "Subtle Grape",
-      "Sweet",
-      "Sweet Berry",
-      "Creamy",
-      "Fruity"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene",
-      "Linalool",
-      "Pinene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Relaxed",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-18T06:40:27.465Z"
-  },
-  {
-    "name": "TangieBerto",
-    "brand": "Pistil Whip",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 8.700000000000001,
-    "flavors": [
-      "Cake",
-      "Citrus",
-      "Creamy"
-    ],
-    "terpenes": [
-      "β-Caryophyllene",
-      "Limonene",
-      "α-Humulene",
-      "Guaiol",
-      "Linalool",
-      "β-Pinene",
-      "Fenchol",
-      "α-Pinene",
-      "α-Terpineol",
-      "Camphene",
-      "Borneol",
-      "Fenchone",
-      "δ-Carene",
-      "β-Myrcene",
-      "Terpinolene"
-    ],
-    "effects": [
-      "Energetic",
-      "Euphoric",
-      "Focused",
-      "Happy",
-      "Relaxed",
-      "Talkative",
-      "Tingly",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-18T06:40:26.952Z"
-  },
-  {
-    "name": "Sea Shock",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "71%",
-    "rating": 9.2,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Fruit",
-      "Salty Sea"
-    ],
-    "terpenes": [
-      "Sabinene",
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene",
-      "Humulene",
-      "Beta-Pinene",
-      "Linalool",
-      "Alpha-Pinene",
-      "Guaiol",
-      "Trans-Beta-Farnesene",
-      "Terpineol",
-      "Camphene",
-      "Ocimene",
       "Terpinolene",
-      "Borneol",
-      "Nerolidol",
-      "Fenchol",
-      "Valencene",
-      "Geraniol",
-      "Bisabolol"
+      "β-Pinene",
+      "α-Pinene"
     ],
     "effects": [],
-    "sharedAt": "2026-11-18T06:40:24.430Z"
-  },
-  {
-    "name": "Chocolate Oranges",
-    "brand": "710 Labs",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.2,
-    "flavors": [
-      "Chocolate",
-      "Lemon",
-      "Mint",
-      "Orange"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "Linalool",
-      "α-Pinene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-18T06:40:23.436Z"
+    "sharedAt": "2026-11-18T19:05:34.045Z"
   },
   {
     "name": "Orange Drip",
