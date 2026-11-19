@@ -28,6 +28,10 @@
     .code-row{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin:12px 0 8px}
     #competition-code{font:800 clamp(2.8rem,10vw,5.5rem)/1.1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.07em;overflow-wrap:anywhere;color:var(--lime)}
     button,.button{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:999px;padding:13px 21px;background:var(--lime);color:#0b2011;font:800 16px Figtree,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+    .button.secondary{background:transparent;color:var(--lime);border:1px solid rgba(185,233,123,.55)}
+    .app-actions{margin:28px 0 12px}
+    .app-actions p{margin:10px 0 0;color:#b6c9b9;font-size:.95rem}
+    .button[hidden]{display:none}
     button:focus-visible,.button:focus-visible,a:focus-visible{outline:3px solid #fff;outline-offset:4px}
     .jar{font-size:1.3rem;font-weight:750}
     .steps{margin:34px 0;padding-left:1.5em}
@@ -40,7 +44,7 @@
 <body>
   <header class="competition-header"><a class="brand" href="/"><img src="/assets/app-icon-small.webp" width="38" height="38" alt=""><span>Strain Diary</span></a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/features.html">Features</a><a href="/education.html">Education</a></nav><a class="nav-cta" href="/beta.html">Early access ↗</a></header>
   <main><p class="kicker">Join the event</p><h1>Strain Diary Competition</h1><div class="panel">
-    <section id="valid" hidden><p>Your competition code</p><div class="code-row"><span id="competition-code"></span><button id="copy-code" type="button">Copy Code</button></div><p id="jar" class="jar" hidden></p><ol class="steps"><li>Get Strain Diary. <a class="button" href="https://testflight.apple.com/join/4TjvnXjD">Get Strain Diary ↗</a></li><li>Open the app → Settings → Competitions → Join a Competition.</li><li>Enter this code (or scan the poster again with the app's Scan button).</li></ol><p class="note">Judges need a free Strain Diary account. Sign in with Apple takes a few seconds.</p></section>
+    <section id="valid" hidden><p>Your competition code</p><div class="code-row"><span id="competition-code"></span><button id="copy-code" type="button">Copy Code</button></div><p id="jar" class="jar" hidden></p><div class="app-actions"><a id="open-app" class="button" hidden>Open in Strain Diary</a><p>Already have the app? This opens Competitions with the code filled in.</p></div><ol class="steps"><li>Get Strain Diary. <a class="button secondary" href="https://testflight.apple.com/join/4TjvnXjD">Get Strain Diary ↗</a></li><li>Open the app → Settings → Competitions → Join a Competition.</li><li>Enter this code (or scan the poster again with the app's Scan button).</li></ol><p class="note">Judges need a free Strain Diary account. Sign in with Apple takes a few seconds.</p></section>
     <p id="invalid" hidden>This competition link is missing its code. Ask the organizer for the 6-character code.</p>
   </div></main>
   <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="/"><img src="/assets/app-icon-small.webp" width="38" height="38" alt=""><span>Strain Diary</span></a><p>A private cannabis journal for remembering what you tried and what was worth trying again.</p></div><div class="footer-column"><strong>Explore</strong><a href="/">Home</a><a href="/features.html">Features</a><a href="/education.html">Education</a></div><div class="footer-column"><strong>Get the app</strong><a href="/beta.html">Early access</a><a href="https://testflight.apple.com/join/4TjvnXjD">TestFlight</a></div><div class="footer-column"><strong>More</strong><a href="/privacy-policy.html">Privacy</a><a href="/contact.html">Contact</a></div></div></footer>
@@ -55,6 +59,9 @@
       if (!valid) return;
       const code = match[1];
       document.getElementById("competition-code").textContent = code;
+      const openApp = document.getElementById("open-app");
+      openApp.href = `straindiary://c/${encodeURIComponent(code + (match[2] ? "-" + match[2] : ""))}`;
+      openApp.hidden = false;
       if (match[2]) {
         const jar = document.getElementById("jar");
         jar.textContent = `Jar #${match[2]}`;
