@@ -128,6 +128,8 @@ function parseCompetition(record, requestedCode) {
     code: requestedCode,
     title: cleanText(value.title) || `Competition ${requestedCode}`,
     hostName: cleanText(value.hostName),
+    hostDisplayName: cleanText(value.hostDisplayName),
+    creator: cleanText(record.created?.userRecordName),
     blind: value.blind === true,
     revealed: value.revealed === true,
     judgingOpen: value.judgingOpen === true,
@@ -140,7 +142,7 @@ function parseCompetition(record, requestedCode) {
 
 function buildSafeResponse(competition, scorecardRecords) {
   const removed = new Set(competition.removedJudges);
-  const newestByCreator = new Map();
+  const newestByJudge = new Map();
 
   for (const record of scorecardRecords) {
     if (field(record, "configKey") !== `compCard:${competition.code}`) continue;
@@ -149,16 +151,19 @@ function buildSafeResponse(competition, scorecardRecords) {
 
     const card = parseJSON(field(record, "homeURL"));
     if (!isObject(card) || !isObject(card.entries)) continue;
-    if (removed.has(cleanText(card.judgeAccountID))) continue;
+    const judgeAccountID = cleanText(card.judgeAccountID);
+    if (removed.has(judgeAccountID)) continue;
+    if (card.isTest === true && (creator !== competition.creator || !judgeAccountID)) continue;
+    const key = card.isTest === true ? `${creator}|${judgeAccountID}` : creator;
 
     const updatedAt = timestamp(card.updatedAt, record.modified?.timestamp);
-    const current = newestByCreator.get(creator);
+    const current = newestByJudge.get(key);
     if (!current || updatedAt > current.updatedAt) {
-      newestByCreator.set(creator, { card, updatedAt });
+      newestByJudge.set(key, { card, updatedAt });
     }
   }
 
-  const cards = [...newestByCreator.values()].map(value => value.card);
+  const cards = [...newestByJudge.values()].map(value => value.card);
   const judgeCount = cards.length;
   const namesPublic = competition.blind === false || competition.revealed === true;
   const criteria = competition.criteria.map(criterion => ({
@@ -222,6 +227,7 @@ function buildSafeResponse(competition, scorecardRecords) {
   return {
     title: competition.title,
     hostName: competition.hostName,
+    hostDisplayName: competition.hostDisplayName,
     judgingOpen: competition.judgingOpen,
     namesPublic,
     judgeCount,
