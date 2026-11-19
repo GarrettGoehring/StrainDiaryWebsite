@@ -134,6 +134,8 @@ function parseCompetition(record, requestedCode) {
     revealed: value.revealed === true,
     judgingOpen: value.judgingOpen === true,
     criteria: Array.isArray(value.criteria) ? value.criteria : [],
+    checklist: Array.isArray(value.checklist) ? value.checklist : [],
+    checklistWeight: typeof value.checklistWeight === "number" && Number.isFinite(value.checklistWeight) && value.checklistWeight > 0 ? value.checklistWeight : 0,
     entries: Array.isArray(value.entries) ? value.entries : [],
     removedJudges: Array.isArray(value.removedJudges) ? value.removedJudges.map(cleanText).filter(Boolean) : [],
     photoVersion: value.photoVersion != null && Number.isInteger(Number(value.photoVersion)) ? Number(value.photoVersion) : null,
@@ -170,12 +172,16 @@ function buildSafeResponse(competition, scorecardRecords) {
     id: cleanText(criterion?.id),
     weight: finiteNumber(criterion?.weight),
   })).filter(criterion => criterion.id && criterion.weight > 0);
+  const checklist = competition.checklist;
+  const checklistWeight = checklist.length > 0 ? competition.checklistWeight : 0;
+  const checklistItems = new Set(checklist);
 
   let submitted = 0;
   const entries = competition.entries.map(rawEntry => {
     const number = normalizeEntryNumber(rawEntry?.number);
     let scoredBy = 0;
     const scoresByCriterion = new Map(criteria.map(criterion => [criterion.id, []]));
+    const checklistScores = [];
 
     for (const card of cards) {
       const scoredEntry = card.entries?.[String(number)];
@@ -185,9 +191,18 @@ function buildSafeResponse(competition, scorecardRecords) {
         submitted += 1;
       }
       if (!isObject(scoredEntry.scores)) continue;
+      let hasCriterionScore = false;
       for (const criterion of criteria) {
         const score = finiteNumber(scoredEntry.scores[criterion.id]);
-        if (score >= 1 && score <= 10) scoresByCriterion.get(criterion.id).push(score);
+        if (score >= 1 && score <= 10) {
+          scoresByCriterion.get(criterion.id).push(score);
+          hasCriterionScore = true;
+        }
+      }
+      if (checklistWeight > 0 && hasCriterionScore) {
+        const selected = new Set(Array.isArray(scoredEntry.checks) ? scoredEntry.checks : []);
+        const matched = [...selected].filter(item => checklistItems.has(item)).length;
+        checklistScores.push(1 + 9 * matched / checklist.length);
       }
     }
 
@@ -199,6 +214,11 @@ function buildSafeResponse(competition, scorecardRecords) {
       const average = values.reduce((sum, score) => sum + score, 0) / values.length;
       weightedTotal += average * criterion.weight;
       usedWeight += criterion.weight;
+    }
+    if (checklistWeight > 0 && usedWeight > 0 && checklistScores.length > 0) {
+      const checklistAverage = checklistScores.reduce((sum, score) => sum + score, 0) / checklistScores.length;
+      weightedTotal += checklistAverage * checklistWeight;
+      usedWeight += checklistWeight;
     }
 
     const entry = {
