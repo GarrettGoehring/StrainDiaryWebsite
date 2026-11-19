@@ -257,6 +257,27 @@
       background: linear-gradient(145deg, var(--panel-2), var(--panel));
     }
 
+    .entry-card.just-reviewed {
+      border-color: rgba(128, 240, 166, 0.8);
+      box-shadow: 0 0 0 2px rgba(128, 240, 166, 0.18), 0 0 36px rgba(56, 186, 109, 0.22);
+    }
+
+    .activity-toast {
+      position: absolute;
+      z-index: 2;
+      left: clamp(22px, 2.2vw, 44px);
+      bottom: clamp(20px, 2vw, 36px);
+      max-width: min(70vw, 540px);
+      padding: 14px 22px;
+      border: 1px solid rgba(128, 240, 166, 0.6);
+      border-radius: 18px;
+      background: #193a29;
+      color: var(--text);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+      font-size: clamp(1rem, 1.5vw, 1.6rem);
+      font-weight: 800;
+    }
+
     .entry-title {
       overflow: hidden;
       margin: 0;
@@ -408,6 +429,9 @@
       let renderedSignature = "";
       let timer = null;
       let ageTimer = null;
+      let activityText = "";
+      let activityUntil = 0;
+      let recentEntryNumbers = new Set();
 
       const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, character => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
@@ -464,12 +488,14 @@
         const cards = data.entries.map(entry => {
           const ratio = percent(entry.scoredBy, entry.judgeCount);
           const name = data.namesPublic && entry.name ? `<p class="entry-name">${escapeHTML(entry.name)}</p>` : "";
-          return `<article class="entry-card"><div><h3 class="entry-title">${entryLabel(entry)}</h3>${name}</div><div><div class="entry-count"><span>Judges scored</span><strong>${escapeHTML(entry.scoredBy)}/${escapeHTML(entry.judgeCount)}</strong></div><div class="entry-track"><div class="fill" style="width:${ratio.toFixed(2)}%"></div></div></div></article>`;
+          const recent = Date.now() < activityUntil && recentEntryNumbers.has(String(entry.number));
+          return `<article class="entry-card${recent ? " just-reviewed" : ""}"><div><h3 class="entry-title">${entryLabel(entry)}</h3>${name}</div><div><div class="entry-count"><span>Judges scored</span><strong>${escapeHTML(entry.scoredBy)}/${escapeHTML(entry.judgeCount)}</strong></div><div class="entry-track"><div class="fill" style="width:${ratio.toFixed(2)}%"></div></div></div></article>`;
         }).join("");
 
         return `${commonHeader(data)}
           <section class="summary"><div><div class="summary-labels"><strong>Judging progress</strong><span>${submitted} of ${possible} submissions</span></div><div class="track"><div class="fill" style="width:${percent(submitted, possible).toFixed(2)}%"></div></div></div><div class="judge-stat"><strong>${escapeHTML(data.judgeCount)}</strong><span>Judges</span></div></section>
-          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">Judging open</span></div><div class="entry-grid" style="--cols:${cols};--rows:${rows}">${cards}</div></section>`;
+          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">Judging open</span></div><div class="entry-grid" style="--cols:${cols};--rows:${rows}">${cards}</div></section>
+          ${Date.now() < activityUntil ? `<div id="activity-toast" class="activity-toast" role="status">${escapeHTML(activityText)}</div>` : ""}`;
       }
 
       function renderClosed(data) {
@@ -494,6 +520,25 @@
           new QRCode(qr, { text: `https://straindiary.com/c#${code}`, width: 76, height: 76, colorDark: "#07110d", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M });
         }
         document.title = `${data.title} | Strain Diary Live`;
+      }
+
+      function noteNewReviews(previous, current) {
+        if (!previous?.judgingOpen || !current.judgingOpen) return;
+        const previousCounts = new Map(previous.entries.map(entry => [String(entry.number), Number(entry.scoredBy) || 0]));
+        const increased = current.entries.filter(entry =>
+          previousCounts.has(String(entry.number)) && (Number(entry.scoredBy) || 0) > previousCounts.get(String(entry.number))
+        );
+        if (!increased.length) return;
+        recentEntryNumbers = new Set(increased.map(entry => String(entry.number)));
+        activityText = increased.length === 1
+          ? `Entry #${increased[0].number} just reviewed`
+          : `${increased.length} entries just reviewed`;
+        activityUntil = Date.now() + 8000;
+        setTimeout(() => {
+          if (Date.now() < activityUntil) return;
+          document.getElementById("activity-toast")?.remove();
+          document.querySelectorAll(".entry-card.just-reviewed").forEach(card => card.classList.remove("just-reviewed"));
+        }, 8100);
       }
 
       function render(data) {
@@ -536,6 +581,7 @@
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
           if (!data || !Array.isArray(data.entries)) throw new Error("Invalid response");
+          noteNewReviews(lastGoodData, data);
           lastGoodData = data;
           lastGoodAt = Date.now();
           reconnecting = false;
