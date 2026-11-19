@@ -484,9 +484,14 @@
       })[character]);
 
       const entryLabel = entry => `#${escapeHTML(entry.number)} · ${escapeHTML(entry.category || "Entry")}`;
-      const hostLabel = value => {
-        const clean = String(value || "").trim().replace(/^@+/, "");
-        return clean ? `Hosted by @${escapeHTML(clean)}` : "";
+      const hostLabel = data => {
+        const username = String(data.hostName || "").trim().replace(/^@+/, "");
+        const displayName = String(data.hostDisplayName || "").trim().replace(/^@+/, "");
+        if (!displayName) return username ? `Hosted by @${escapeHTML(username)}` : "";
+        if (displayName.toLowerCase() === username.toLowerCase()) {
+          return `Hosted by @${escapeHTML(displayName)}`;
+        }
+        return `Hosted by ${escapeHTML(displayName)} (@${escapeHTML(username)})`;
       };
       const percent = (part, whole) => whole > 0 ? Math.max(0, Math.min(100, (part / whole) * 100)) : 0;
 
@@ -520,7 +525,7 @@
         const photo = data.hasPhoto
           ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
           : "";
-        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data.hostName)}</p></div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
+        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p></div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
       }
 
       function joinMarkup() {
