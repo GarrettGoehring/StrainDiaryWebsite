@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "VD6F7W84GV.Gary.Strain-Diary-Public",
+        "paths": ["/c", "/c/*"],
+        "appIDs": ["VD6F7W84GV.Gary.Strain-Diary-Public"],
+        "components": [
+          { "/": "/c", "comment": "Competition join and jar links" },
+          { "/": "/c/*" }
+        ]
+      }
+    ]
+  }
+}
