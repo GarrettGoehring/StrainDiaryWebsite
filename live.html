@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Live Competition | Strain Diary</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/footer.css">
+  <style>
+    :root {
+      --bg: #07110d;
+      --panel: rgba(18, 34, 27, 0.9);
+      --panel-2: rgba(28, 49, 40, 0.88);
+      --line: rgba(191, 255, 211, 0.17);
+      --text: #f4fff7;
+      --muted: #a9beb0;
+      --green: #80f0a6;
+      --green-2: #38ba6d;
+      --gold: #f4c95d;
+      --silver: #c9d2dc;
+      --bronze: #d58a5d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Figtree, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 15% 0%, rgba(64, 193, 111, 0.16), transparent 35%),
+        radial-gradient(circle at 92% 100%, rgba(48, 130, 86, 0.14), transparent 36%),
+        var(--bg);
+    }
+
+    #app {
+      position: relative;
+      width: 100vw;
+      height: 100dvh;
+      min-height: 100vh;
+      padding: clamp(22px, 2.2vw, 44px);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(16px, 1.6vw, 30px);
+      isolation: isolate;
+    }
+
+    .photo-banner {
+      position: absolute;
+      z-index: -1;
+      inset: 0 0 auto 0;
+      width: 100%;
+      height: 31vh;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 500ms ease;
+      -webkit-mask-image: linear-gradient(to bottom, #000 25%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 25%, transparent 100%);
+    }
+
+    .photo-banner.ready { opacity: 0.32; }
+
+    .topbar {
+      min-height: 12vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
+      gap: 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.35em;
+      color: var(--green);
+      font-size: clamp(0.78rem, 1.05vw, 1.2rem);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 76vw;
+      margin: 0;
+      font-size: clamp(2.35rem, 4.7vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      text-wrap: balance;
+    }
+
+    .host {
+      margin: 0.45em 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.55vw, 1.85rem);
+      font-weight: 650;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      min-width: 210px;
+      color: var(--muted);
+      font-size: clamp(0.82rem, 1vw, 1.05rem);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(128, 240, 166, 0.1);
+    }
+
+    .status.reconnecting .status-dot {
+      background: var(--gold);
+      animation: breathe 1.5s ease-in-out infinite;
+    }
+
+    @keyframes breathe { 50% { opacity: 0.35; } }
+
+    .top-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(20px, 3vw, 54px);
+      padding: clamp(18px, 1.7vw, 28px) clamp(20px, 2.1vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(13, 28, 21, 0.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .summary-labels {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 12px;
+      font-weight: 750;
+    }
+
+    .summary-labels strong { font-size: clamp(1.15rem, 1.7vw, 2rem); }
+    .summary-labels span { color: var(--muted); font-size: clamp(0.9rem, 1.15vw, 1.25rem); }
+
+    .track, .entry-track {
+      overflow: hidden;
+      width: 100%;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.085);
+    }
+
+    .track { height: clamp(14px, 1.25vw, 22px); }
+    .entry-track { height: clamp(9px, 0.8vw, 14px); }
+
+    .fill {
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--green-2), var(--green));
+      transition: width 450ms ease;
+    }
+
+    .judge-stat {
+      min-width: 160px;
+      text-align: right;
+    }
+
+    .judge-stat strong {
+      display: block;
+      font-size: clamp(2.1rem, 3.6vw, 4.3rem);
+      line-height: 0.9;
+    }
+
+    .judge-stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .content {
+      min-height: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 0 0 clamp(12px, 1.2vw, 20px);
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(1.25rem, 2vw, 2.4rem);
+      letter-spacing: -0.03em;
+    }
+
+    .pill {
+      padding: 0.45em 0.8em;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(128, 240, 166, 0.07);
+      font-size: clamp(0.76rem, 0.95vw, 1rem);
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .entry-grid {
+      --cols: 4;
+      --rows: 2;
+      min-height: 0;
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+      grid-template-rows: repeat(var(--rows), minmax(0, 1fr));
+      gap: clamp(10px, 1.1vw, 20px);
+    }
+
+    .entry-card {
+      min-width: 0;
+      min-height: 0;
+      padding: clamp(14px, 1.4vw, 24px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: clamp(16px, 1.5vw, 24px);
+      background: linear-gradient(145deg, var(--panel-2), var(--panel));
+    }
+
+    .entry-title {
+      overflow: hidden;
+      margin: 0;
+      font-size: clamp(1.05rem, 1.7vw, 2rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .entry-name {
+      overflow: hidden;
+      margin: 0.35em 0 0;
+      color: var(--muted);
+      font-size: clamp(0.78rem, 1vw, 1.1rem);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .entry-count {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+      color: var(--muted);
+      font-size: clamp(0.78rem, 1vw, 1.05rem);
+      font-weight: 750;
+    }
+
+    .leaderboard {
+      min-height: 0;
+      flex: 1;
+      display: grid;
+      grid-template-rows: repeat(10, minmax(0, 1fr));
+      gap: clamp(5px, 0.55vw, 10px);
+    }
+
+    .leader-row {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: clamp(52px, 5vw, 92px) minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(14px, 2vw, 34px);
+      padding: 0 clamp(16px, 1.8vw, 30px);
+      border: 1px solid var(--line);
+      border-radius: clamp(12px, 1vw, 18px);
+      background: linear-gradient(90deg, rgba(24, 44, 35, 0.93), rgba(13, 28, 21, 0.82));
+    }
+
+    .leader-row.gold { border-color: rgba(244, 201, 93, 0.52); background: linear-gradient(90deg, rgba(102, 78, 21, 0.48), rgba(35, 33, 21, 0.85)); }
+    .leader-row.silver { border-color: rgba(201, 210, 220, 0.45); background: linear-gradient(90deg, rgba(79, 90, 101, 0.42), rgba(26, 32, 31, 0.86)); }
+    .leader-row.bronze { border-color: rgba(213, 138, 93, 0.45); background: linear-gradient(90deg, rgba(95, 52, 32, 0.44), rgba(33, 28, 24, 0.86)); }
+
+    .rank {
+      font-size: clamp(1.25rem, 2vw, 2.4rem);
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .gold .rank { color: var(--gold); }
+    .silver .rank { color: var(--silver); }
+    .bronze .rank { color: var(--bronze); }
+
+    .leader-main { min-width: 0; }
+    .leader-main strong {
+      display: block;
+      overflow: hidden;
+      font-size: clamp(1rem, 1.55vw, 1.8rem);
+      line-height: 1.05;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .leader-main span {
+      display: block;
+      overflow: hidden;
+      margin-top: 0.2em;
+      color: var(--muted);
+      font-size: clamp(0.7rem, 0.9vw, 1rem);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .score { text-align: right; }
+    .score strong {
+      display: block;
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(1.45rem, 2.35vw, 2.8rem);
+      line-height: 0.95;
+    }
+    .score span { color: var(--muted); font-size: clamp(0.67rem, 0.8vw, 0.9rem); font-weight: 700; }
+
+    .join {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 10px 13px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(6, 15, 11, 0.88);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .join strong { display: block; font-size: clamp(0.8rem, 0.95vw, 1.05rem); }
+    .join span { display: block; color: var(--muted); font-size: clamp(0.62rem, 0.7vw, 0.78rem); }
+    #qr { width: 76px; height: 76px; padding: 5px; border-radius: 8px; background: #fff; }
+    #qr img, #qr canvas { width: 100% !important; height: 100% !important; }
+
+    .empty-screen {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .empty-screen h1 { max-width: none; font-size: clamp(3rem, 7vw, 8rem); }
+    .empty-screen p { margin: 1em 0 0; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.8rem); }
+
+    @media (max-aspect-ratio: 4/3) {
+      .join { display: none; }
+      h1 { max-width: 88vw; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main id="app" aria-live="polite">
+    <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    (() => {
+      "use strict";
+
+      // Replace this with the URL of the separate live-competition Worker.
+      const WORKER_URL = "https://YOUR-LIVE-WORKER.YOUR-SUBDOMAIN.workers.dev/";
+      const REFRESH_MS = 20000;
+      const app = document.getElementById("app");
+      const code = location.hash.slice(1).toUpperCase();
+      let lastGoodData = null;
+      let lastGoodAt = 0;
+      let reconnecting = false;
+      let renderedSignature = "";
+      let timer = null;
+      let ageTimer = null;
+
+      const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, character => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
+      })[character]);
+
+      const entryLabel = entry => `#${escapeHTML(entry.number)} · ${escapeHTML(entry.category || "Entry")}`;
+      const hostLabel = value => {
+        const clean = String(value || "").trim().replace(/^@+/, "");
+        return clean ? `Hosted by @${escapeHTML(clean)}` : "";
+      };
+      const percent = (part, whole) => whole > 0 ? Math.max(0, Math.min(100, (part / whole) * 100)) : 0;
+
+      function showNotFound() {
+        document.title = "Competition not found | Strain Diary";
+        app.innerHTML = `<div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Competition not found</h1><p>Check the competition code and try again.</p></div></div>`;
+      }
+
+      function showConnecting() {
+        app.innerHTML = `<div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Connecting…</h1><p>Waiting for competition data.</p></div></div>`;
+      }
+
+      function gridSize(count) {
+        if (count <= 2) return [2, 1];
+        if (count <= 4) return [2, 2];
+        if (count <= 8) return [4, 2];
+        if (count <= 12) return [4, 3];
+        if (count <= 20) return [5, 4];
+        const cols = Math.ceil(Math.sqrt(count * (16 / 9)));
+        return [cols, Math.ceil(count / cols)];
+      }
+
+      function statusMarkup() {
+        return `<div id="live-status" class="status${reconnecting ? " reconnecting" : ""}">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="updated-label">${reconnecting ? "reconnecting…" : "Updated just now"}</span>
+        </div>`;
+      }
+
+      function commonHeader(data) {
+        const photo = data.hasPhoto
+          ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
+          : "";
+        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data.hostName)}</p></div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
+      }
+
+      function joinMarkup() {
+        return `<aside class="join" aria-label="Join this competition to judge"><div><strong>Join to judge</strong><span>straindiary.com/c#${escapeHTML(code)}</span></div><div id="qr" aria-hidden="true"></div></aside>`;
+      }
+
+      function renderOpen(data) {
+        const submitted = Number(data.progress?.submitted) || 0;
+        const possible = Number(data.progress?.possible) || 0;
+        const [cols, rows] = gridSize(data.entries.length);
+        const cards = data.entries.map(entry => {
+          const ratio = percent(entry.scoredBy, entry.judgeCount);
+          const name = data.namesPublic && entry.name ? `<p class="entry-name">${escapeHTML(entry.name)}</p>` : "";
+          return `<article class="entry-card"><div><h3 class="entry-title">${entryLabel(entry)}</h3>${name}</div><div><div class="entry-count"><span>Judges scored</span><strong>${escapeHTML(entry.scoredBy)}/${escapeHTML(entry.judgeCount)}</strong></div><div class="entry-track"><div class="fill" style="width:${ratio.toFixed(2)}%"></div></div></div></article>`;
+        }).join("");
+
+        return `${commonHeader(data)}
+          <section class="summary"><div><div class="summary-labels"><strong>Judging progress</strong><span>${submitted} of ${possible} submissions</span></div><div class="track"><div class="fill" style="width:${percent(submitted, possible).toFixed(2)}%"></div></div></div><div class="judge-stat"><strong>${escapeHTML(data.judgeCount)}</strong><span>Judges</span></div></section>
+          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">Judging open</span></div><div class="entry-grid" style="--cols:${cols};--rows:${rows}">${cards}</div></section>`;
+      }
+
+      function renderClosed(data) {
+        const ranked = data.entries.filter(entry => typeof entry.total === "number").slice(0, 10);
+        const rows = ranked.map((entry, index) => {
+          const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
+          const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
+          return `<article class="leader-row${medal}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}</strong><span>Entry #${escapeHTML(entry.number)}${publicName}</span></div><div class="score"><strong>${entry.total.toFixed(1)}</strong><span>${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</span></div></article>`;
+        }).join("");
+        const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
+        return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>Leaderboard</h2><span class="pill">Final results</span></div><div class="leaderboard">${rows || empty}</div></section>`;
+      }
+
+      function initializeExtras(data) {
+        const photo = document.getElementById("cup-photo");
+        if (photo) {
+          if (photo.complete && photo.naturalWidth) photo.classList.add("ready");
+          else photo.addEventListener("load", () => photo.classList.add("ready"), { once: true });
+        }
+        const qr = document.getElementById("qr");
+        if (qr && window.QRCode) {
+          new QRCode(qr, { text: `https://straindiary.com/c#${code}`, width: 76, height: 76, colorDark: "#07110d", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M });
+        }
+        document.title = `${data.title} | Strain Diary Live`;
+      }
+
+      function render(data) {
+        const signature = JSON.stringify(data);
+        if (signature === renderedSignature) {
+          updateStatus();
+          return;
+        }
+        renderedSignature = signature;
+        app.innerHTML = data.judgingOpen ? renderOpen(data) : renderClosed(data);
+        initializeExtras(data);
+        updateStatus();
+      }
+
+      function updateStatus() {
+        const status = document.getElementById("live-status");
+        const label = document.getElementById("updated-label");
+        if (!status || !label) return;
+        status.classList.toggle("reconnecting", reconnecting);
+        if (reconnecting) {
+          label.textContent = "reconnecting…";
+          return;
+        }
+        const seconds = Math.max(0, Math.floor((Date.now() - lastGoodAt) / 1000));
+        label.textContent = seconds < 2 ? "Updated just now" : `Updated ${seconds}s ago`;
+      }
+
+      async function refresh() {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 12000);
+        try {
+          const endpoint = new URL(WORKER_URL);
+          endpoint.searchParams.set("code", code);
+          const response = await fetch(endpoint, { headers: { "Accept": "application/json" }, cache: "no-store", signal: controller.signal });
+          if (response.status === 404 && !lastGoodData) {
+            lastGoodData = null;
+            showNotFound();
+            return;
+          }
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const data = await response.json();
+          if (!data || !Array.isArray(data.entries)) throw new Error("Invalid response");
+          lastGoodData = data;
+          lastGoodAt = Date.now();
+          reconnecting = false;
+          render(data);
+        } catch (error) {
+          reconnecting = true;
+          if (lastGoodData) render(lastGoodData);
+          else showConnecting();
+          updateStatus();
+        } finally {
+          clearTimeout(timeout);
+        }
+      }
+
+      if (!/^[A-Z0-9]{4,8}$/.test(code)) {
+        showNotFound();
+        return;
+      }
+
+      refresh();
+      timer = setInterval(refresh, REFRESH_MS);
+      ageTimer = setInterval(updateStatus, 1000);
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) refresh();
+      });
+      window.addEventListener("beforeunload", () => {
+        clearInterval(timer);
+        clearInterval(ageTimer);
+      });
+    })();
+  </script>
+</body>
+</html>
