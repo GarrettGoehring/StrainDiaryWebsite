@@ -1,5 +1,18 @@
 [
   {
+    "name": "Other",
+    "brand": "",
+    "form": "__social_post_v1__",
+    "extractType": "",
+    "type": "",
+    "potency": "",
+    "rating": 0,
+    "flavors": [],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-18T21:06:45.008Z"
+  },
+  {
     "name": "Chocolate Oranges",
     "brand": "710 Labs",
     "form": "Pen",
@@ -24,19 +37,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-18T20:04:55.810Z"
-  },
-  {
-    "name": "Other",
-    "brand": "",
-    "form": "__social_post_v1__",
-    "extractType": "",
-    "type": "",
-    "potency": "",
-    "rating": 0,
-    "flavors": [],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-18T19:47:38.727Z"
   },
   {
     "name": "Orange Papaya",

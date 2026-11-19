@@ -55405,20 +55405,24 @@
       "Limonene"
     ],
     "flavors": [
-      "Pear",
-      "Flowery",
+      "Berry",
       "Chestnut",
       "Diesel",
       "Earthy",
-      "Sweet",
-      "Grapefruit",
+      "Flowery",
       "Grape",
-      "Berry",
-      "Pepper"
+      "Grapefruit",
+      "Pear",
+      "Pepper",
+      "Sweet"
     ],
     "effects": [
-      "Relaxed",
+      "Creative",
+      "Focused",
       "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
       "Euphoric"
     ]
   },
