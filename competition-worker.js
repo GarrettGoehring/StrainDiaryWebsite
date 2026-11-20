@@ -123,6 +123,8 @@ function parseCompetition(record, requestedCode) {
   if (!isObject(value)) return null;
   const code = cleanText(value.code).toUpperCase();
   if (code && code !== requestedCode) return null;
+  const rawEndsAt = cleanText(value.judgingEndsAt);
+  const judgingEndsAt = rawEndsAt && Number.isFinite(Date.parse(rawEndsAt)) ? new Date(rawEndsAt).toISOString() : null;
 
   return {
     code: requestedCode,
@@ -132,7 +134,8 @@ function parseCompetition(record, requestedCode) {
     creator: cleanText(record.created?.userRecordName),
     blind: value.blind === true,
     revealed: value.revealed === true,
-    judgingOpen: value.judgingOpen === true,
+    judgingOpen: value.judgingOpen === true && (judgingEndsAt === null || Date.now() < Date.parse(judgingEndsAt)),
+    judgingEndsAt,
     criteria: Array.isArray(value.criteria) ? value.criteria : [],
     checklist: Array.isArray(value.checklist) ? value.checklist : [],
     checklistWeight: typeof value.checklistWeight === "number" && Number.isFinite(value.checklistWeight) && value.checklistWeight > 0 ? value.checklistWeight : 0,
@@ -293,6 +296,7 @@ function buildSafeResponse(competition, scorecardRecords) {
     hostName: competition.hostName,
     hostDisplayName: competition.hostDisplayName,
     judgingOpen: competition.judgingOpen,
+    judgingEndsAt: competition.judgingEndsAt,
     namesPublic,
     judgeCount,
     entries,
