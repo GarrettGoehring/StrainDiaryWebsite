@@ -170,6 +170,7 @@ function buildSafeResponse(competition, scorecardRecords) {
   const namesPublic = competition.blind === false || competition.revealed === true;
   const criteria = competition.criteria.map(criterion => ({
     id: cleanText(criterion?.id),
+    name: cleanText(criterion?.name) || cleanText(criterion?.id),
     weight: finiteNumber(criterion?.weight),
   })).filter(criterion => criterion.id && criterion.weight > 0);
   const checklist = competition.checklist;
@@ -182,6 +183,7 @@ function buildSafeResponse(competition, scorecardRecords) {
     let scoredBy = 0;
     const scoresByCriterion = new Map(criteria.map(criterion => [criterion.id, []]));
     const checklistScores = [];
+    const checklistCounts = new Map(checklist.map(item => [item, 0]));
 
     for (const card of cards) {
       const scoredEntry = card.entries?.[String(number)];
@@ -189,6 +191,10 @@ function buildSafeResponse(competition, scorecardRecords) {
       if (entryHasSubmission(scoredEntry)) {
         scoredBy += 1;
         submitted += 1;
+        const selected = new Set(Array.isArray(scoredEntry.checks) ? scoredEntry.checks : []);
+        for (const item of checklistCounts.keys()) {
+          if (selected.has(item)) checklistCounts.set(item, checklistCounts.get(item) + 1);
+        }
       }
       if (!isObject(scoredEntry.scores)) continue;
       let hasCriterionScore = false;
@@ -208,10 +214,12 @@ function buildSafeResponse(competition, scorecardRecords) {
 
     let weightedTotal = 0;
     let usedWeight = 0;
+    const criterionResults = [];
     for (const criterion of criteria) {
       const values = scoresByCriterion.get(criterion.id);
       if (!values.length) continue;
       const average = values.reduce((sum, score) => sum + score, 0) / values.length;
+      criterionResults.push({ name: criterion.name, average: round(average, 2), judgeCount: values.length });
       weightedTotal += average * criterion.weight;
       usedWeight += criterion.weight;
     }
@@ -228,7 +236,16 @@ function buildSafeResponse(competition, scorecardRecords) {
       judgeCount,
     };
     if (namesPublic) entry.name = publicEntryName(rawEntry);
-    if (!competition.judgingOpen) entry.total = usedWeight > 0 ? round(weightedTotal / usedWeight, 4) : null;
+    if (!competition.judgingOpen) {
+      entry.total = usedWeight > 0 ? round(weightedTotal / usedWeight, 4) : null;
+      entry.criteria = criterionResults;
+      entry.checklist = checklist.map(item => ({
+        name: cleanText(item),
+        percent: scoredBy > 0 ? round(100 * checklistCounts.get(item) / scoredBy, 1) : 0,
+        checkedBy: checklistCounts.get(item),
+        judgeCount: scoredBy,
+      }));
+    }
     return entry;
   });
 
