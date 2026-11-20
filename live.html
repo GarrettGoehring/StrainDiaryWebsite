@@ -458,7 +458,7 @@
     .settings-panel h2 { margin: 0 0 18px; font-size: 2rem; }
     .settings-panel label { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; font-size: 1.1rem; }
     .settings-panel input { width: 24px; height: 24px; accent-color: var(--green); }
-    .settings-panel button { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 18px; background: var(--panel-2); color: var(--text); font: inherit; cursor: pointer; }
+    .settings-preview { margin-top: 16px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); }\n    .settings-preview h3 { margin: 0; font-size: 1.2rem; }\n    .settings-preview p { margin: 6px 0 14px; color: var(--muted); }\n    .preview-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; font-size: 1.15rem; }\n    .preview-row span { overflow-wrap: anywhere; }\n    .preview-row small { grid-column: 2 / 4; color: var(--muted); }\n    .settings-panel button { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 18px; background: var(--panel-2); color: var(--text); font: inherit; cursor: pointer; }
     html.compact-live .leader-row { min-height: 60px; }
     html.compact-live .entry-card { padding: 10px; }
     html.large-live #app { font-size: 1.2em; }
@@ -556,7 +556,7 @@
   <main id="app" aria-live="polite">
     <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
   </main>
-  <div id="settings-layer" class="settings-layer" hidden role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><h2 id="settings-title">Display settings</h2><label>Compact entries <input type="checkbox" data-setting="compact"></label><label>Larger text <input type="checkbox" data-setting="large"></label><label>Show cup picture <input type="checkbox" data-setting="photo"></label><button type="button" id="settings-close">Done</button></section></div>
+  <div id="settings-layer" class="settings-layer" hidden role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><h2 id="settings-title">Display settings</h2><label>Compact entries <input type="checkbox" data-setting="compact"></label><label>Larger text <input type="checkbox" data-setting="large"></label><label>Show cup picture <input type="checkbox" data-setting="photo"></label><div class="settings-preview"><h3>Projector preview</h3><p>Sample layout, not real competition results</p><div class="preview-row"><strong>1</strong><span>Flower #2 · Sample strain name that wraps onto another line</span><strong>8.3</strong><small>5 judges</small></div></div><button type="button" id="settings-close">Done</button></section></div>
   <div id="ceremony-layer" class="ceremony-layer" hidden role="presentation"><div class="confetti-field" aria-hidden="true"></div><section class="ceremony-panel" role="dialog" aria-modal="true" aria-label="Awards ceremony"></section><div class="ceremony-controls"></div></div>
   <div id="detail-layer" class="detail-layer" hidden role="presentation"><section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title"></section></div>
 
@@ -708,7 +708,7 @@
           ${Date.now() < activityUntil ? `<div id="activity-toast" class="activity-toast" role="status">${escapeHTML(activityText)}</div>` : ""}`;
       }
 
-      function renderClosed(data) {
+      const sameScore = (a, b) => Math.abs(a - b) < 1e-9;\n      const competitionPlace = (entries, index) => 1 + entries.slice(0, index).filter(entry => entry.total > entries[index].total && !sameScore(entry.total, entries[index].total)).length;\n      function renderClosed(data) {
         if (!ceremonyFinished) {
           const available = ceremonySlides(data).length > 0;
           return `${commonHeader(data)}<section class="ceremony-wait"><div><p class="eyebrow">Judging complete</p><h2>Winners are under wraps</h2><p>${available ? "Start the awards ceremony to reveal each category’s winners." : "Results will appear when scorecards are available."}</p>${available ? `<button type="button" class="ceremony-start">Start Awards Ceremony</button>` : ""}</div></section>`;
@@ -717,9 +717,9 @@
         const category = currentCategory(categories);
         const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 10);
         const rows = ranked.map((entry, index) => {
-          const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
+          const place = competitionPlace(ranked, index);\n          const medal = place === 1 ? " gold" : place === 2 ? " silver" : place === 3 ? " bronze" : "";
           const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
-          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
+          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${place}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
         const position = `${categoryPicker(categories)}<button type="button" class="ceremony-start">Start Awards Ceremony</button>`;
@@ -730,10 +730,10 @@
         if (!data || data.judgingOpen) return [];
         const slides = [];
         for (const category of categoriesInOrder(data.entries)) {
-          const winners = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 3);
+          const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number");\n          const winners = ranked.filter((entry, index) => competitionPlace(ranked, index) <= 3);
           if (!winners.length) continue;
           slides.push({ type: "intro", category });
-          winners.map((entry, index) => ({ type: "award", category, entry, place: index + 1 }))
+          winners.map((entry, index) => ({ type: "award", category, entry, place: competitionPlace(ranked, index) }))
             .reverse().forEach(slide => slides.push(slide));
         }
         if (slides.length) slides.push({ type: "finish" });
