@@ -216,6 +216,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 20px;
       margin: 0 0 clamp(12px, 1.2vw, 20px);
     }
@@ -437,6 +438,24 @@
     }
     .judge-count { color: var(--muted); font-size: clamp(0.8rem, 1vw, 1.1rem); font-weight: 700; text-align: right; white-space: nowrap; }
 
+    .ceremony-layer[hidden] { display: none; }
+    .ceremony-layer { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: clamp(16px, 3vw, 48px); background: radial-gradient(circle at 50% 35%, hsl(var(--accent-hue) 45% 20% / .85), #040b07 75%); color: var(--text); }
+    .ceremony-panel { width: min(1100px, 100%); text-align: center; }
+    .ceremony-kicker { color: var(--green); font-size: clamp(1rem, 1.6vw, 1.6rem); font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+    .ceremony-title { margin: .25em 0; font-size: clamp(3rem, 7vw, 8rem); line-height: 1; text-wrap: balance; }
+    .ceremony-entry { margin: .2em 0; font-size: clamp(2rem, 4vw, 4rem); font-weight: 800; }
+    .ceremony-name { margin: .25em 0; color: var(--green); font-size: clamp(1.5rem, 3vw, 3rem); font-weight: 750; }
+    .ceremony-score { color: var(--muted); font-size: clamp(1.2rem, 2vw, 2rem); }
+    .ceremony-controls { position: absolute; bottom: clamp(20px, 3vw, 48px); left: 0; right: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 0 16px; }
+    .ceremony-controls button, .ceremony-start { border: 1px solid var(--line); border-radius: 999px; padding: .65em 1em; background: var(--panel-2); color: var(--text); font: inherit; font-size: clamp(.9rem, 1.2vw, 1.25rem); font-weight: 800; cursor: pointer; }
+    .ceremony-controls button:disabled { opacity: .4; cursor: default; }
+    .ceremony-start { background: var(--green); color: var(--bg); }
+    .ceremony-slide { animation: ceremony-reveal .65s ease-out both; }
+    .ceremony-slide.gold .ceremony-title { color: var(--gold); }
+    .ceremony-slide.silver .ceremony-title { color: var(--silver); }
+    .ceremony-slide.bronze .ceremony-title { color: var(--bronze); }
+    @keyframes ceremony-reveal { from { opacity: 0; transform: translateY(22px) scale(.97); } to { opacity: 1; transform: none; } }
+
     .detail-layer[hidden] { display: none; }
     .detail-layer { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 3vw; background: rgba(1, 9, 5, .8); backdrop-filter: blur(12px); }
     .detail-panel { width: min(1100px, 94vw); max-height: 90dvh; overflow: auto; padding: clamp(22px, 2.8vw, 44px); border: 1px solid var(--line); border-radius: 26px; background: #12251b; box-shadow: 0 28px 100px rgba(0, 0, 0, .6); }
@@ -511,6 +530,7 @@
   <main id="app" aria-live="polite">
     <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
   </main>
+  <div id="ceremony-layer" class="ceremony-layer" hidden role="presentation"><section class="ceremony-panel" role="dialog" aria-modal="true" aria-label="Awards ceremony"></section><div class="ceremony-controls"></div></div>
   <div id="detail-layer" class="detail-layer" hidden role="presentation"><section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title"></section></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -534,6 +554,10 @@
       let recentEntryNumbers = new Set();
       let selectedEntryNumber = null;
       let selectedCategory = null;
+      let ceremonyStep = -1;
+      const ceremonyLayer = document.getElementById("ceremony-layer");
+      const ceremonyPanel = ceremonyLayer.querySelector(".ceremony-panel");
+      const ceremonyControls = ceremonyLayer.querySelector(".ceremony-controls");
       let previousFocus = null;
       const detailLayer = document.getElementById("detail-layer");
       const detailPanel = detailLayer.querySelector(".detail-panel");
@@ -644,9 +668,61 @@
           return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        const position = categoryPicker(categories);
+        const position = `${categoryPicker(categories)}<button type="button" class="ceremony-start">Start Awards Ceremony</button>`;
         return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>${escapeHTML(category || "Leaderboard")} leaderboard</h2>${position}</div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
+
+      function ceremonySlides(data) {
+        if (!data || data.judgingOpen) return [];
+        const slides = [];
+        for (const category of categoriesInOrder(data.entries)) {
+          const winners = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 3);
+          if (!winners.length) continue;
+          slides.push({ type: "intro", category });
+          winners.map((entry, index) => ({ type: "award", category, entry, place: index + 1 }))
+            .reverse().forEach(slide => slides.push(slide));
+        }
+        if (slides.length) slides.push({ type: "finish" });
+        return slides;
+      }
+
+      function renderCeremony() {
+        const slides = ceremonySlides(lastGoodData);
+        if (ceremonyStep < 0 || !slides.length) { closeCeremony(); return; }
+        ceremonyStep = Math.min(ceremonyStep, slides.length - 1);
+        const slide = slides[ceremonyStep];
+        const medal = slide.place === 1 ? "gold" : slide.place === 2 ? "silver" : slide.place === 3 ? "bronze" : "";
+        const placeName = slide.place === 1 ? "First place" : slide.place === 2 ? "Second place" : "Third place";
+        const title = slide.type === "intro" ? escapeHTML(slide.category) : slide.type === "finish" ? "Congratulations!" : placeName;
+        const entry = slide.entry;
+        const name = entry && lastGoodData.namesPublic && entry.name ? `<p class="ceremony-name">${escapeHTML(entry.name)}</p>` : "";
+        ceremonyPanel.innerHTML = `<div class="ceremony-slide ${medal}" key="${ceremonyStep}"><p class="ceremony-kicker">Strain Diary Awards · ${ceremonyStep + 1} of ${slides.length}</p><h2 class="ceremony-title">${title}</h2>${entry ? `<p class="ceremony-entry">${entryLabel(entry)}</p>${name}<p class="ceremony-score">${entry.total.toFixed(1)} / 10 · ${escapeHTML(entry.scoredBy)} judges</p>` : `<p class="ceremony-entry">${slide.type === "intro" ? "Ready to reveal the winners?" : "Thanks to everyone who judged."}</p>`}</div>`;
+        ceremonyControls.innerHTML = `<button type="button" data-ceremony="exit">Exit ceremony</button><button type="button" data-ceremony="previous" ${ceremonyStep === 0 ? "disabled" : ""}>Previous</button><button type="button" data-ceremony="next">${ceremonyStep === slides.length - 1 ? "Finish" : "Reveal next"}</button>`;
+        ceremonyLayer.hidden = false;
+      }
+
+      function closeCeremony() {
+        ceremonyStep = -1;
+        ceremonyLayer.hidden = true;
+      }
+
+      ceremonyLayer.addEventListener("click", event => {
+        const action = event.target.closest("[data-ceremony]")?.dataset.ceremony;
+        if (!action) return;
+        if (action === "exit") { closeCeremony(); return; }
+        if (action === "previous") ceremonyStep = Math.max(0, ceremonyStep - 1);
+        if (action === "next") {
+          if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) { closeCeremony(); return; }
+          ceremonyStep++;
+        }
+        renderCeremony();
+      });
+      document.addEventListener("keydown", event => {
+        if (ceremonyStep < 0) return;
+        if (event.key === "Escape") closeCeremony();
+        else if (event.key === "ArrowRight") { ceremonyStep++; renderCeremony(); }
+        else if (event.key === "ArrowLeft") { ceremonyStep = Math.max(0, ceremonyStep - 1); renderCeremony(); }
+      });
 
       function detailMetric(name, value, maximum, caption, note = "") {
         const width = percent(value, maximum);
@@ -675,6 +751,12 @@
       }
 
       app.addEventListener("click", event => {
+        if (event.target.closest(".ceremony-start") && lastGoodData && !lastGoodData.judgingOpen) {
+          ceremonyStep = 0;
+          renderCeremony();
+          ceremonyControls.querySelector('[data-ceremony="next"]')?.focus();
+          return;
+        }
         const tab = event.target.closest(".category-tab[data-category]");
         if (tab && lastGoodData) {
           selectedCategory = tab.dataset.category;
@@ -773,6 +855,7 @@
         app.innerHTML = data.judgingOpen ? renderOpen(data) : renderClosed(data);
         initializeExtras(data);
         if (selectedEntryNumber !== null) renderDetail();
+        if (ceremonyStep >= 0) renderCeremony();
         updateStatus();
       }
 
