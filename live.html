@@ -98,6 +98,9 @@
       text-wrap: balance;
     }
 
+    .end-label { margin: .55em 0 0; color: var(--green); font-size: clamp(.95rem, 1.25vw, 1.45rem); font-weight: 750; }
+    .end-countdown { display: inline-block; margin-left: .55em; color: var(--text); font-variant-numeric: tabular-nums; }
+
     .host {
       margin: 0.45em 0 0;
       color: var(--muted);
@@ -583,11 +586,25 @@
         </div>`;
       }
 
+      function endTimeLabel(value) {
+        const end = new Date(value);
+        if (!Number.isFinite(end.getTime())) return "";
+        const today = end.toDateString() === new Date().toDateString();
+        const options = today ? { hour: "numeric", minute: "2-digit" } : { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" };
+        return `Judging ends ${new Intl.DateTimeFormat(undefined, options).format(end)}`;
+      }
+
+      function endMarkup(data) {
+        if (!data.judgingOpen || !data.judgingEndsAt) return "";
+        const label = endTimeLabel(data.judgingEndsAt);
+        return label ? `<p class="end-label">${escapeHTML(label)}<span id="end-countdown" class="end-countdown"></span></p>` : "";
+      }
+
       function commonHeader(data) {
         const photo = data.hasPhoto
           ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" crossorigin="anonymous" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
           : "";
-        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p></div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
+        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p>${endMarkup(data)}</div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
       }
 
       function joinMarkup() {
@@ -760,6 +777,15 @@
       }
 
       function updateStatus() {
+        const countdown = document.getElementById("end-countdown");
+        if (countdown && lastGoodData?.judgingEndsAt) {
+          const remaining = Date.parse(lastGoodData.judgingEndsAt) - Date.now();
+          if (remaining <= 0) countdown.textContent = "Judging ended · updating results…";
+          else if (remaining < 3600000) {
+            const seconds = Math.ceil(remaining / 1000);
+            countdown.textContent = `Judging ends in ${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
+          } else countdown.textContent = "";
+        }
         const status = document.getElementById("live-status");
         const label = document.getElementById("updated-label");
         if (!status || !label) return;
