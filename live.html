@@ -457,6 +457,7 @@
     .settings-panel { width: min(480px, 100%); padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: #14271c; box-shadow: 0 20px 60px #0008; }
     .settings-panel h2 { margin: 0 0 18px; font-size: 2rem; }
     .settings-panel label { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; font-size: 1.1rem; }
+    .settings-panel select { max-width: 55%; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: #07110d; color: var(--text); font: inherit; }
     .settings-panel input { width: 24px; height: 24px; accent-color: var(--green); }
     .settings-preview { margin-top: 16px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); }
     .settings-preview h3 { margin: 0; font-size: 1.2rem; }
@@ -562,7 +563,7 @@
   <main id="app" aria-live="polite">
     <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
   </main>
-  <div id="settings-layer" class="settings-layer" hidden role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><h2 id="settings-title">Display settings</h2><label>Compact entries <input type="checkbox" data-setting="compact"></label><label>Larger text <input type="checkbox" data-setting="large"></label><label>Show cup picture <input type="checkbox" data-setting="photo"></label><div class="settings-preview"><h3>Projector preview</h3><p>Sample layout, not real competition results</p><div class="preview-row"><strong>1</strong><span>Flower #2 · Sample strain name that wraps onto another line</span><strong>8.3</strong><small>5 judges</small></div></div><button type="button" id="settings-close">Done</button></section></div>
+  <div id="settings-layer" class="settings-layer" hidden role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><h2 id="settings-title">Display settings</h2><label>Compact entries <input type="checkbox" data-setting="compact"></label><label>Larger text <input type="checkbox" data-setting="large"></label><label>Show cup picture <input type="checkbox" data-setting="photo"></label><label>Color theme <select id="display-theme"><option value="auto">Match cup picture</option><option value="green">Strain Diary green</option><option value="blue">Midnight blue</option><option value="purple">Purple haze</option><option value="amber">Golden hour</option></select></label><div class="settings-preview"><h3>Projector preview</h3><p>Sample layout, not real competition results</p><div class="preview-row"><strong>1</strong><span>Flower #2 · Sample strain name that wraps onto another line</span><strong>8.3</strong><small>5 judges</small></div></div><button type="button" id="settings-close">Done</button></section></div>
   <div id="ceremony-layer" class="ceremony-layer" hidden role="presentation"><div class="confetti-field" aria-hidden="true"></div><section class="ceremony-panel" role="dialog" aria-modal="true" aria-label="Awards ceremony"></section><div class="ceremony-controls"></div></div>
   <div id="detail-layer" class="detail-layer" hidden role="presentation"><section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title"></section></div>
 
@@ -588,18 +589,38 @@
       let selectedEntryNumber = null;
       let selectedCategory = null;
       let ceremonyStep = -1;
+      const ceremonyStepKey = `awards-step:${code}`;
       let ceremonyFinished = false;
       try { ceremonyFinished = sessionStorage.getItem(`awards-finished:${code}`) === "yes"; } catch {}
       let lastCelebratedStep = -1;
       let ceremonySignature = "";
       const settingsLayer = document.getElementById("settings-layer");
-      const displaySettings = { compact: false, large: false, photo: true };
+      const displaySettings = { compact: false, large: false, photo: true, theme: "auto" };
       try { Object.assign(displaySettings, JSON.parse(localStorage.getItem("strain-live-display") || "{}")); } catch {}
+      function applyTheme() {
+        const themes = { green: [145, 78], blue: [215, 75], purple: [275, 73], amber: [38, 80] };
+        const root = document.documentElement.style;
+        const selected = themes[displaySettings.theme];
+        if (!selected) {
+          ["--accent-hue", "--bg", "--panel", "--panel-2", "--line", "--green", "--green-2"].forEach(name => root.removeProperty(name));
+          return;
+        }
+        const [hue, saturation] = selected;
+        root.setProperty("--accent-hue", hue);
+        root.setProperty("--bg", `hsl(${hue} 28% 6%)`);
+        root.setProperty("--panel", `hsl(${hue} 28% 11% / .9)`);
+        root.setProperty("--panel-2", `hsl(${hue} 29% 16% / .88)`);
+        root.setProperty("--line", `hsl(${hue} 65% 75% / .2)`);
+        root.setProperty("--green", `hsl(${hue} ${saturation}% 72%)`);
+        root.setProperty("--green-2", `hsl(${hue} 62% 44%)`);
+      }
       function applyDisplaySettings() {
         document.documentElement.classList.toggle("compact-live", !!displaySettings.compact);
         document.documentElement.classList.toggle("large-live", !!displaySettings.large);
         document.documentElement.classList.toggle("no-live-photo", !displaySettings.photo);
         settingsLayer.querySelectorAll("[data-setting]").forEach(input => { input.checked = !!displaySettings[input.dataset.setting]; });
+        settingsLayer.querySelector("#display-theme").value = ["auto", "green", "blue", "purple", "amber"].includes(displaySettings.theme) ? displaySettings.theme : "auto";
+        applyTheme();
       }
       applyDisplaySettings();
       settingsLayer.addEventListener("change", event => {
@@ -608,6 +629,15 @@
         displaySettings[key] = event.target.checked;
         try { localStorage.setItem("strain-live-display", JSON.stringify(displaySettings)); } catch {}
         applyDisplaySettings();
+      });
+      settingsLayer.querySelector("#display-theme").addEventListener("change", event => {
+        displaySettings.theme = event.target.value;
+        try { localStorage.setItem("strain-live-display", JSON.stringify(displaySettings)); } catch {}
+        if (displaySettings.theme === "auto") {
+          const photo = document.getElementById("cup-photo");
+          if (photo?.complete && photo.naturalWidth) applyPhotoTheme(photo);
+          else applyTheme();
+        } else applyTheme();
       });
       settingsLayer.addEventListener("click", event => { if (event.target === settingsLayer || event.target.id === "settings-close") settingsLayer.hidden = true; });
       const ceremonyLayer = document.getElementById("ceremony-layer");
@@ -779,6 +809,7 @@
         const signature = JSON.stringify({ step: ceremonyStep, slide, namesPublic: lastGoodData.namesPublic });
         if (signature === ceremonySignature && !ceremonyLayer.hidden) return;
         ceremonySignature = signature;
+        try { sessionStorage.setItem(ceremonyStepKey, String(ceremonyStep)); } catch {}
         const medal = slide.place === 1 ? "gold" : slide.place === 2 ? "silver" : slide.place === 3 ? "bronze" : "";
         const placeName = slide.place === 1 ? "First place" : slide.place === 2 ? "Second place" : "Third place";
         const title = slide.type === "intro" ? escapeHTML(slide.category) : slide.type === "finish" ? "Congratulations!" : placeName;
@@ -795,7 +826,7 @@
 
       function finishCeremony() {
         ceremonyFinished = true;
-        try { sessionStorage.setItem(`awards-finished:${code}`, "yes"); } catch {}
+        try { sessionStorage.setItem(`awards-finished:${code}`, "yes"); sessionStorage.removeItem(ceremonyStepKey); } catch {}
         closeCeremony();
         renderedSignature = "";
         if (lastGoodData) render(lastGoodData);
@@ -882,6 +913,7 @@
       document.addEventListener("keydown", event => { if (event.key === "Escape") closeDetail(); });
 
       function applyPhotoTheme(photo) {
+        if (displaySettings.theme !== "auto") return;
         // Sample only the existing cup image. Keep fixed dark/light values for contrast.
         try {
           const canvas = document.createElement("canvas");
@@ -960,6 +992,12 @@
         app.innerHTML = data.judgingOpen ? renderOpen(data) : renderClosed(data);
         initializeExtras(data);
         if (selectedEntryNumber !== null) renderDetail();
+        if (ceremonyStep < 0 && !ceremonyFinished && !data.judgingOpen) {
+          try {
+            const saved = sessionStorage.getItem(ceremonyStepKey);
+            if (saved !== null && Number.isInteger(Number(saved)) && Number(saved) >= 0 && Number(saved) < ceremonySlides(data).length) ceremonyStep = Number(saved);
+          } catch {}
+        }
         if (ceremonyStep >= 0) renderCeremony();
         updateStatus();
       }
