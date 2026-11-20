@@ -221,6 +221,11 @@
       letter-spacing: -0.03em;
     }
 
+    .category-tabs { display: flex; gap: 8px; max-width: 65vw; overflow-x: auto; scrollbar-width: thin; }
+    .category-tab { flex: none; padding: .45em .8em; border: 1px solid var(--line); border-radius: 999px; background: rgba(128, 240, 166, .07); color: var(--muted); font: inherit; font-size: clamp(.85rem, 1vw, 1.1rem); font-weight: 800; cursor: pointer; }
+    .category-tab[aria-pressed="true"] { color: var(--bg); background: var(--green); border-color: var(--green); }
+    .category-tab:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
     .pill {
       padding: 0.45em 0.8em;
       border: 1px solid var(--line);
@@ -476,6 +481,8 @@
     .empty-screen p { margin: 1em 0 0; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.8rem); }
 
     @media (max-width: 750px) {
+      .section-heading { align-items: stretch; flex-direction: column; gap: 12px; }
+      .category-tabs { max-width: 100%; width: 100%; }
       html, body { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
       #app { height: auto; min-height: 100dvh; }
       .content, .leaderboard, .category-groups, .entry-grid { flex: none; }
@@ -521,8 +528,7 @@
       let activityUntil = 0;
       let recentEntryNumbers = new Set();
       let selectedEntryNumber = null;
-      let activeCategoryIndex = 0;
-      let categoryTimer = null;
+      let selectedCategory = null;
       let previousFocus = null;
       const detailLayer = document.getElementById("detail-layer");
       const detailPanel = detailLayer.querySelector(".detail-panel");
@@ -534,6 +540,10 @@
       const entryText = entry => `${entry.category || "Entry"}${entry.catNumber == null ? "" : ` #${entry.catNumber}`}`;
       const entryLabel = entry => escapeHTML(entryText(entry));
       const categoriesInOrder = entries => [...new Set([...entries].sort((a, b) => Number(a.number) - Number(b.number)).map(entry => entry.category || "Entry"))];
+      const currentCategory = categories => categories.includes(selectedCategory) ? selectedCategory : categories[0];
+      const categoryPicker = categories => categories.length > 1
+        ? `<nav class="category-tabs" aria-label="Competition categories">${categories.map(category => `<button type="button" class="category-tab" data-category="${escapeHTML(category)}" aria-pressed="${category === currentCategory(categories)}">${escapeHTML(category)}</button>`).join("")}</nav>`
+        : "";
       const hostLabel = data => {
         const username = String(data.hostName || "").trim().replace(/^@+/, "");
         const displayName = String(data.hostDisplayName || "").trim().replace(/^@+/, "");
@@ -586,8 +596,7 @@
         const submitted = Number(data.progress?.submitted) || 0;
         const possible = Number(data.progress?.possible) || 0;
         const categories = categoriesInOrder(data.entries);
-        const rotateOpen = categories.length > 1 && (categories.length > 2 || data.entries.length > 12);
-        const visibleCategories = rotateOpen ? [categories[activeCategoryIndex % categories.length]] : categories;
+        const visibleCategories = categories.length > 1 ? [currentCategory(categories)] : categories;
         const groups = visibleCategories.map(category => {
           const entries = data.entries.filter(entry => (entry.category || "Entry") === category);
           const [cols, rows] = gridSize(entries.length);
@@ -602,14 +611,13 @@
 
         return `${commonHeader(data)}
           <section class="summary"><div><div class="summary-labels"><strong>Judging progress</strong><span>${submitted} of ${possible} submissions</span></div><div class="track"><div class="fill" style="width:${percent(submitted, possible).toFixed(2)}%"></div></div></div><div class="judge-stat"><strong>${escapeHTML(data.judgeCount)}</strong><span>Judges</span></div></section>
-          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">${rotateOpen ? `${activeCategoryIndex % categories.length + 1} of ${categories.length} · rotates every 15s` : "Judging open"}</span></div><div class="category-groups" style="--group-count:${Math.max(visibleCategories.length, 1)}">${groups}</div></section>
+          <section class="content"><div class="section-heading"><h2>Entries</h2>${categoryPicker(categories)}</div><div class="category-groups" style="--group-count:${Math.max(visibleCategories.length, 1)}">${groups}</div></section>
           ${Date.now() < activityUntil ? `<div id="activity-toast" class="activity-toast" role="status">${escapeHTML(activityText)}</div>` : ""}`;
       }
 
       function renderClosed(data) {
         const categories = categoriesInOrder(data.entries);
-        activeCategoryIndex %= Math.max(categories.length, 1);
-        const category = categories[activeCategoryIndex];
+        const category = currentCategory(categories);
         const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 10);
         const rows = ranked.map((entry, index) => {
           const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
@@ -617,7 +625,7 @@
           return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        const position = categories.length > 1 ? `<span class="pill">${activeCategoryIndex + 1} of ${categories.length} · rotates every 15s</span>` : `<span class="pill">Final results</span>`;
+        const position = categoryPicker(categories);
         return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>${escapeHTML(category || "Leaderboard")} leaderboard</h2>${position}</div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
 
@@ -648,6 +656,13 @@
       }
 
       app.addEventListener("click", event => {
+        const tab = event.target.closest(".category-tab[data-category]");
+        if (tab && lastGoodData) {
+          selectedCategory = tab.dataset.category;
+          render(lastGoodData);
+          [...app.querySelectorAll(".category-tab")].find(button => button.dataset.category === selectedCategory)?.focus();
+          return;
+        }
         const row = event.target.closest(".leader-row[data-entry]");
         if (!row || !lastGoodData || lastGoodData.judgingOpen) return;
         selectedEntryNumber = row.dataset.entry;
@@ -693,7 +708,7 @@
       }
 
       function render(data) {
-        const signature = JSON.stringify(data) + `|category:${activeCategoryIndex}`;
+        const signature = JSON.stringify(data) + `|category:${selectedCategory || ""}`;
         if (signature === renderedSignature) {
           updateStatus();
           return;
@@ -756,21 +771,12 @@
       refresh();
       timer = setInterval(refresh, REFRESH_MS);
       ageTimer = setInterval(updateStatus, 1000);
-      categoryTimer = setInterval(() => {
-        if (!lastGoodData || selectedEntryNumber !== null) return;
-        const count = categoriesInOrder(lastGoodData.entries).length;
-        if (count < 2) return;
-        if (lastGoodData.judgingOpen && count <= 2 && lastGoodData.entries.length <= 12) return;
-        activeCategoryIndex = (activeCategoryIndex + 1) % count;
-        render(lastGoodData);
-      }, 15000);
       document.addEventListener("visibilitychange", () => {
         if (!document.hidden) refresh();
       });
       window.addEventListener("beforeunload", () => {
         clearInterval(timer);
         clearInterval(ageTimer);
-        clearInterval(categoryTimer);
       });
     })();
   </script>
