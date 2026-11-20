@@ -233,6 +233,10 @@
       text-transform: uppercase;
     }
 
+    .category-groups { min-height: 0; flex: 1; display: grid; grid-template-rows: repeat(var(--group-count), minmax(0, 1fr)); gap: clamp(8px, .9vw, 16px); }
+    .category-group { min-height: 0; display: flex; flex-direction: column; }
+    .category-heading { margin: 0 0 8px; color: var(--green); font-size: clamp(1rem, 1.35vw, 1.5rem); }
+
     .entry-grid {
       --cols: 4;
       --rows: 2;
@@ -507,6 +511,8 @@
       let activityUntil = 0;
       let recentEntryNumbers = new Set();
       let selectedEntryNumber = null;
+      let activeCategoryIndex = 0;
+      let categoryTimer = null;
       let previousFocus = null;
       const detailLayer = document.getElementById("detail-layer");
       const detailPanel = detailLayer.querySelector(".detail-panel");
@@ -515,7 +521,9 @@
         "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
       })[character]);
 
-      const entryLabel = entry => `#${escapeHTML(entry.number)} · ${escapeHTML(entry.category || "Entry")}`;
+      const entryText = entry => `${entry.category || "Entry"}${entry.catNumber == null ? "" : ` #${entry.catNumber}`}`;
+      const entryLabel = entry => escapeHTML(entryText(entry));
+      const categoriesInOrder = entries => [...new Set([...entries].sort((a, b) => Number(a.number) - Number(b.number)).map(entry => entry.category || "Entry"))];
       const hostLabel = data => {
         const username = String(data.hostName || "").trim().replace(/^@+/, "");
         const displayName = String(data.hostDisplayName || "").trim().replace(/^@+/, "");
@@ -567,29 +575,40 @@
       function renderOpen(data) {
         const submitted = Number(data.progress?.submitted) || 0;
         const possible = Number(data.progress?.possible) || 0;
-        const [cols, rows] = gridSize(data.entries.length);
-        const cards = data.entries.map(entry => {
-          const ratio = percent(entry.scoredBy, entry.judgeCount);
-          const name = data.namesPublic && entry.name ? `<p class="entry-name">${escapeHTML(entry.name)}</p>` : "";
-          const recent = Date.now() < activityUntil && recentEntryNumbers.has(String(entry.number));
-          return `<article class="entry-card${recent ? " just-reviewed" : ""}"><div><h3 class="entry-title">${entryLabel(entry)}</h3>${name}</div><div><div class="entry-count"><span>Judges scored</span><strong>${escapeHTML(entry.scoredBy)}/${escapeHTML(entry.judgeCount)}</strong></div><div class="entry-track"><div class="fill" style="width:${ratio.toFixed(2)}%"></div></div></div></article>`;
+        const categories = categoriesInOrder(data.entries);
+        const rotateOpen = categories.length > 1 && (categories.length > 2 || data.entries.length > 12);
+        const visibleCategories = rotateOpen ? [categories[activeCategoryIndex % categories.length]] : categories;
+        const groups = visibleCategories.map(category => {
+          const entries = data.entries.filter(entry => (entry.category || "Entry") === category);
+          const [cols, rows] = gridSize(entries.length);
+          const cards = entries.map(entry => {
+            const ratio = percent(entry.scoredBy, entry.judgeCount);
+            const name = data.namesPublic && entry.name ? `<p class="entry-name">${escapeHTML(entry.name)}</p>` : "";
+            const recent = Date.now() < activityUntil && recentEntryNumbers.has(String(entry.number));
+            return `<article class="entry-card${recent ? " just-reviewed" : ""}"><div><h3 class="entry-title">${entryLabel(entry)}</h3>${name}</div><div><div class="entry-count"><span>Judges scored</span><strong>${escapeHTML(entry.scoredBy)}/${escapeHTML(entry.judgeCount)}</strong></div><div class="entry-track"><div class="fill" style="width:${ratio.toFixed(2)}%"></div></div></div></article>`;
+          }).join("");
+          return `<section class="category-group" aria-label="${escapeHTML(category)}"><h3 class="category-heading">${escapeHTML(category)}</h3><div class="entry-grid" style="--cols:${cols};--rows:${rows}">${cards}</div></section>`;
         }).join("");
 
         return `${commonHeader(data)}
           <section class="summary"><div><div class="summary-labels"><strong>Judging progress</strong><span>${submitted} of ${possible} submissions</span></div><div class="track"><div class="fill" style="width:${percent(submitted, possible).toFixed(2)}%"></div></div></div><div class="judge-stat"><strong>${escapeHTML(data.judgeCount)}</strong><span>Judges</span></div></section>
-          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">Judging open</span></div><div class="entry-grid" style="--cols:${cols};--rows:${rows}">${cards}</div></section>
+          <section class="content"><div class="section-heading"><h2>Entries</h2><span class="pill">${rotateOpen ? `${activeCategoryIndex % categories.length + 1} of ${categories.length} · rotates every 15s` : "Judging open"}</span></div><div class="category-groups" style="--group-count:${Math.max(visibleCategories.length, 1)}">${groups}</div></section>
           ${Date.now() < activityUntil ? `<div id="activity-toast" class="activity-toast" role="status">${escapeHTML(activityText)}</div>` : ""}`;
       }
 
       function renderClosed(data) {
-        const ranked = data.entries.filter(entry => typeof entry.total === "number").slice(0, 10);
+        const categories = categoriesInOrder(data.entries);
+        activeCategoryIndex %= Math.max(categories.length, 1);
+        const category = categories[activeCategoryIndex];
+        const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 10);
         const rows = ranked.map((entry, index) => {
           const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
           const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
-          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for entry ${escapeHTML(entry.number)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
+          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>Leaderboard</h2><span class="pill">Final results</span></div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
+        const position = categories.length > 1 ? `<span class="pill">${activeCategoryIndex + 1} of ${categories.length} · rotates every 15s</span>` : `<span class="pill">Final results</span>`;
+        return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>${escapeHTML(category || "Leaderboard")} leaderboard</h2>${position}</div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
 
       function detailMetric(name, value, maximum, caption, note = "") {
@@ -603,8 +622,8 @@
         if (!entry || typeof entry.total !== "number") { closeDetail(); return; }
         const criteria = Array.isArray(entry.criteria) ? entry.criteria : [];
         const checklist = Array.isArray(entry.checklist) ? entry.checklist : [];
-        const heading = lastGoodData.namesPublic && entry.name ? entry.name : `Entry #${entry.number}`;
-        detailPanel.innerHTML = `<div class="detail-head"><div><p class="eyebrow">Entry #${escapeHTML(entry.number)} · ${escapeHTML(entry.category)}</p><h2 id="detail-title">${escapeHTML(heading)}</h2></div><button type="button" class="detail-close" aria-label="Close details">Close</button></div>
+        const heading = lastGoodData.namesPublic && entry.name ? entry.name : entryText(entry);
+        detailPanel.innerHTML = `<div class="detail-head"><div><p class="eyebrow">${entryLabel(entry)}</p><h2 id="detail-title">${escapeHTML(heading)}</h2></div><button type="button" class="detail-close" aria-label="Close details">Close</button></div>
           <div class="detail-summary"><strong>${entry.total.toFixed(1)} / 10</strong><span>${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"} scored this entry</span></div>
           <div class="detail-columns"><section><h3>Rating breakdown</h3>${criteria.length ? criteria.map(item => detailMetric(item.name, item.average, 10, `${Number(item.average).toFixed(1)} / 10`, `${item.judgeCount} judge${item.judgeCount === 1 ? "" : "s"} rated this criterion`)).join("") : `<p class="detail-empty">No criterion scores available.</p>`}</section>
           <section><h3>Quality checklist</h3>${checklist.length ? checklist.map(item => detailMetric(item.name, item.percent, 100, `${Number(item.percent).toFixed(1)}%`, `${item.checkedBy} of ${item.judgeCount} judges checked this`)).join("") : `<p class="detail-empty">No quality checklist for this competition.</p>`}</section></div>`;
@@ -653,7 +672,7 @@
         if (!increased.length) return;
         recentEntryNumbers = new Set(increased.map(entry => String(entry.number)));
         activityText = increased.length === 1
-          ? `Entry #${increased[0].number} just reviewed`
+          ? `${entryText(increased[0])} just reviewed`
           : `${increased.length} entries just reviewed`;
         activityUntil = Date.now() + 8000;
         setTimeout(() => {
@@ -664,7 +683,7 @@
       }
 
       function render(data) {
-        const signature = JSON.stringify(data);
+        const signature = JSON.stringify(data) + `|category:${activeCategoryIndex}`;
         if (signature === renderedSignature) {
           updateStatus();
           return;
@@ -727,12 +746,21 @@
       refresh();
       timer = setInterval(refresh, REFRESH_MS);
       ageTimer = setInterval(updateStatus, 1000);
+      categoryTimer = setInterval(() => {
+        if (!lastGoodData || selectedEntryNumber !== null) return;
+        const count = categoriesInOrder(lastGoodData.entries).length;
+        if (count < 2) return;
+        if (lastGoodData.judgingOpen && count <= 2 && lastGoodData.entries.length <= 12) return;
+        activeCategoryIndex = (activeCategoryIndex + 1) % count;
+        render(lastGoodData);
+      }, 15000);
       document.addEventListener("visibilitychange", () => {
         if (!document.hidden) refresh();
       });
       window.addEventListener("beforeunload", () => {
         clearInterval(timer);
         clearInterval(ageTimer);
+        clearInterval(categoryTimer);
       });
     })();
   </script>
