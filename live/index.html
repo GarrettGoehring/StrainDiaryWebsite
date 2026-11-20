@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Open a Live Competition | Strain Diary</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top, #173727, #07110d 65%); color: #f4fff7; font-family: system-ui, sans-serif; }
+    main { width: min(100%, 520px); padding: clamp(28px, 6vw, 48px); border: 1px solid #365542; border-radius: 24px; background: #14251b; box-shadow: 0 20px 60px #0007; }
+    .eyebrow { color: #80f0a6; text-transform: uppercase; letter-spacing: .16em; font-weight: 800; }
+    h1 { font-size: clamp(2rem, 7vw, 3rem); line-height: 1.1; }
+    p { color: #b6c9bc; line-height: 1.5; }
+    label { display: block; margin: 30px 0 10px; font-weight: 700; }
+    input { width: 100%; padding: 18px; border: 2px solid #56735f; border-radius: 12px; background: #07110d; color: white; font: 700 1.5rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .12em; }
+    input:focus-visible, button:focus-visible { outline: 3px solid #80f0a6; outline-offset: 3px; }
+    button { width: 100%; margin-top: 18px; padding: 18px; border: 0; border-radius: 12px; background: #80f0a6; color: #07110d; font: 800 1.1rem system-ui; cursor: pointer; }
+    .error { min-height: 1.5em; color: #ffb8a8; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Strain Diary Live</p>
+    <h1>Open a competition</h1>
+    <p>Enter the code from your competition to show its live display.</p>
+    <form id="form">
+      <label for="code">Competition code</label>
+      <input id="code" name="code" maxlength="8" minlength="4" pattern="[A-Za-z0-9]{4,8}" autocomplete="off" autocapitalize="characters" spellcheck="false" required>
+      <button type="submit">Open competition</button>
+      <p class="error" id="error" role="alert"></p>
+    </form>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById("code");
+      const error = document.getElementById("error");
+      function openCode(value) {
+        const code = value.trim().toUpperCase();
+        if (!/^[A-Z0-9]{4,8}$/.test(code)) {
+          input.value = code;
+          error.textContent = "Enter a 4–8 character competition code using letters and numbers.";
+          return;
+        }
+        location.replace("/live.html#" + encodeURIComponent(code));
+      }
+      document.getElementById("form").addEventListener("submit", event => {
+        event.preventDefault();
+        openCode(input.value);
+      });
+      if (location.hash.length > 1) openCode(decodeURIComponent(location.hash.slice(1)));
+    })();
+  </script>
+</body>
+</html>
