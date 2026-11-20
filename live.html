@@ -475,6 +475,16 @@
     .empty-screen h1 { max-width: none; font-size: clamp(3rem, 7vw, 8rem); }
     .empty-screen p { margin: 1em 0 0; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.8rem); }
 
+    @media (max-width: 750px) {
+      html, body { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+      #app { height: auto; min-height: 100dvh; }
+      .content, .leaderboard, .category-groups, .entry-grid { flex: none; }
+      .leaderboard, .category-groups, .entry-grid { grid-template-rows: none; grid-auto-rows: auto; }
+      .leader-row { min-height: 84px; }
+      .detail-layer { overflow-y: auto; align-items: start; }
+      .detail-panel { max-height: 90dvh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+    }
+
     @media (max-aspect-ratio: 4/3) {
       .join { display: none; }
       h1 { max-width: 88vw; }
