@@ -177,6 +177,32 @@ function buildSafeResponse(competition, scorecardRecords) {
   const checklistWeight = checklist.length > 0 ? competition.checklistWeight : 0;
   const checklistItems = new Set(checklist);
 
+  // The internal number remains the scorecard key. Assign display numbers within
+  // each category, preserving explicitly supplied category numbers.
+  const orderedRawEntries = [...competition.entries].sort((a, b) =>
+    compareEntryNumbers(normalizeEntryNumber(a?.number), normalizeEntryNumber(b?.number))
+  );
+  const nextByCategory = new Map();
+  for (const rawEntry of orderedRawEntries) {
+    const category = cleanText(rawEntry?.category) || "Entry";
+    const catNumber = Number(rawEntry?.catNumber);
+    if (Number.isInteger(catNumber) && catNumber > 0) {
+      nextByCategory.set(category, Math.max(nextByCategory.get(category) || 0, catNumber));
+    }
+  }
+  const displayNumbers = new Map();
+  for (const rawEntry of orderedRawEntries) {
+    const category = cleanText(rawEntry?.category) || "Entry";
+    const supplied = Number(rawEntry?.catNumber);
+    if (Number.isInteger(supplied) && supplied > 0) {
+      displayNumbers.set(rawEntry, supplied);
+    } else {
+      const next = (nextByCategory.get(category) || 0) + 1;
+      nextByCategory.set(category, next);
+      displayNumbers.set(rawEntry, next);
+    }
+  }
+
   let submitted = 0;
   const entries = competition.entries.map(rawEntry => {
     const number = normalizeEntryNumber(rawEntry?.number);
@@ -232,6 +258,7 @@ function buildSafeResponse(competition, scorecardRecords) {
     const entry = {
       number,
       category: cleanText(rawEntry?.category) || "Entry",
+      catNumber: displayNumbers.get(rawEntry),
       scoredBy,
       judgeCount,
     };
