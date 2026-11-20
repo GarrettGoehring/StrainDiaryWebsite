@@ -448,6 +448,22 @@
     .ceremony-slide .ceremony-score { animation: ceremony-text .6s .8s ease-out both; }
     @keyframes ceremony-text { from { opacity: 0; transform: translateY(28px) scale(.94); filter: blur(7px); } to { opacity: 1; transform: none; filter: blur(0); } }
     @media (prefers-reduced-motion: reduce) { .confetti-piece { display: none; } }
+    .ceremony-wait { flex: 1; display: grid; place-items: center; text-align: center; gap: 22px; padding: 4vh 16px; }
+    .ceremony-wait h2 { margin: 0; font-size: clamp(2.5rem, 5vw, 5rem); }
+    .ceremony-wait p { color: var(--muted); font-size: clamp(1.1rem, 1.6vw, 1.8rem); }
+    .display-button { border: 1px solid var(--line); border-radius: 999px; padding: .45em .8em; background: var(--panel); color: var(--text); font: inherit; font-weight: 750; cursor: pointer; }
+    .settings-layer[hidden] { display: none; }
+    .settings-layer { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 20px; background: rgba(0,0,0,.7); }
+    .settings-panel { width: min(480px, 100%); padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: #14271c; box-shadow: 0 20px 60px #0008; }
+    .settings-panel h2 { margin: 0 0 18px; font-size: 2rem; }
+    .settings-panel label { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; font-size: 1.1rem; }
+    .settings-panel input { width: 24px; height: 24px; accent-color: var(--green); }
+    .settings-panel button { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 18px; background: var(--panel-2); color: var(--text); font: inherit; cursor: pointer; }
+    html.compact-live .leader-row { min-height: 60px; }
+    html.compact-live .entry-card { padding: 10px; }
+    html.large-live #app { font-size: 1.2em; }
+    html.large-live .leader-main strong, html.large-live .entry-title { font-size: clamp(1.3rem, 2vw, 2.3rem); }
+    html.no-live-photo .photo-banner { display: none; }
     .ceremony-layer[hidden] { display: none; }
     .ceremony-layer { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: clamp(16px, 3vw, 48px); background: radial-gradient(circle at 50% 35%, hsl(var(--accent-hue) 45% 20% / .85), #040b07 75%); color: var(--text); }
     .ceremony-panel { width: min(1100px, 100%); text-align: center; }
@@ -540,6 +556,7 @@
   <main id="app" aria-live="polite">
     <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
   </main>
+  <div id="settings-layer" class="settings-layer" hidden role="presentation"><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><h2 id="settings-title">Display settings</h2><label>Compact entries <input type="checkbox" data-setting="compact"></label><label>Larger text <input type="checkbox" data-setting="large"></label><label>Show cup picture <input type="checkbox" data-setting="photo"></label><button type="button" id="settings-close">Done</button></section></div>
   <div id="ceremony-layer" class="ceremony-layer" hidden role="presentation"><div class="confetti-field" aria-hidden="true"></div><section class="ceremony-panel" role="dialog" aria-modal="true" aria-label="Awards ceremony"></section><div class="ceremony-controls"></div></div>
   <div id="detail-layer" class="detail-layer" hidden role="presentation"><section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title"></section></div>
 
@@ -565,8 +582,28 @@
       let selectedEntryNumber = null;
       let selectedCategory = null;
       let ceremonyStep = -1;
+      let ceremonyFinished = false;
+      try { ceremonyFinished = sessionStorage.getItem(`awards-finished:${code}`) === "yes"; } catch {}
       let lastCelebratedStep = -1;
       let ceremonySignature = "";
+      const settingsLayer = document.getElementById("settings-layer");
+      const displaySettings = { compact: false, large: false, photo: true };
+      try { Object.assign(displaySettings, JSON.parse(localStorage.getItem("strain-live-display") || "{}")); } catch {}
+      function applyDisplaySettings() {
+        document.documentElement.classList.toggle("compact-live", !!displaySettings.compact);
+        document.documentElement.classList.toggle("large-live", !!displaySettings.large);
+        document.documentElement.classList.toggle("no-live-photo", !displaySettings.photo);
+        settingsLayer.querySelectorAll("[data-setting]").forEach(input => { input.checked = !!displaySettings[input.dataset.setting]; });
+      }
+      applyDisplaySettings();
+      settingsLayer.addEventListener("change", event => {
+        const key = event.target.dataset.setting;
+        if (!(key in displaySettings)) return;
+        displaySettings[key] = event.target.checked;
+        try { localStorage.setItem("strain-live-display", JSON.stringify(displaySettings)); } catch {}
+        applyDisplaySettings();
+      });
+      settingsLayer.addEventListener("click", event => { if (event.target === settingsLayer || event.target.id === "settings-close") settingsLayer.hidden = true; });
       const ceremonyLayer = document.getElementById("ceremony-layer");
       const ceremonyPanel = ceremonyLayer.querySelector(".ceremony-panel");
       const confettiField = ceremonyLayer.querySelector(".confetti-field");
@@ -641,7 +678,7 @@
         const photo = data.hasPhoto
           ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" crossorigin="anonymous" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
           : "";
-        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p>${endMarkup(data)}</div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
+        return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p>${endMarkup(data)}</div><div class="top-right">${statusMarkup()}<button type="button" class="display-button">Display settings</button>${joinMarkup()}</div></header>`;
       }
 
       function joinMarkup() {
@@ -672,6 +709,10 @@
       }
 
       function renderClosed(data) {
+        if (!ceremonyFinished) {
+          const available = ceremonySlides(data).length > 0;
+          return `${commonHeader(data)}<section class="ceremony-wait"><div><p class="eyebrow">Judging complete</p><h2>Winners are under wraps</h2><p>${available ? "Start the awards ceremony to reveal each category’s winners." : "Results will appear when scorecards are available."}</p>${available ? `<button type="button" class="ceremony-start">Start Awards Ceremony</button>` : ""}</div></section>`;
+        }
         const categories = categoriesInOrder(data.entries);
         const category = currentCategory(categories);
         const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 10);
@@ -742,6 +783,14 @@
         } else if (slide.type !== "award") confettiField.replaceChildren();
       }
 
+      function finishCeremony() {
+        ceremonyFinished = true;
+        try { sessionStorage.setItem(`awards-finished:${code}`, "yes"); } catch {}
+        closeCeremony();
+        renderedSignature = "";
+        if (lastGoodData) render(lastGoodData);
+      }
+
       function closeCeremony() {
         ceremonyStep = -1;
         lastCelebratedStep = -1;
@@ -756,15 +805,16 @@
         if (action === "exit") { closeCeremony(); return; }
         if (action === "previous") ceremonyStep = Math.max(0, ceremonyStep - 1);
         if (action === "next") {
-          if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) { closeCeremony(); return; }
+          if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) { finishCeremony(); return; }
           ceremonyStep++;
         }
         renderCeremony();
       });
       document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !settingsLayer.hidden) { settingsLayer.hidden = true; return; }
         if (ceremonyStep < 0) return;
         if (event.key === "Escape") closeCeremony();
-        else if (event.key === "ArrowRight") { ceremonyStep++; renderCeremony(); }
+        else if (event.key === "ArrowRight") { if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) finishCeremony(); else { ceremonyStep++; renderCeremony(); } }
         else if (event.key === "ArrowLeft") { ceremonyStep = Math.max(0, ceremonyStep - 1); renderCeremony(); }
       });
 
@@ -795,6 +845,7 @@
       }
 
       app.addEventListener("click", event => {
+        if (event.target.closest(".display-button")) { settingsLayer.hidden = false; settingsLayer.querySelector("#settings-close")?.focus(); return; }
         if (event.target.closest(".ceremony-start") && lastGoodData && !lastGoodData.judgingOpen) {
           ceremonyStep = 0;
           renderCeremony();
@@ -890,7 +941,7 @@
       }
 
       function render(data) {
-        const signature = JSON.stringify(data) + `|category:${selectedCategory || ""}`;
+        const signature = JSON.stringify(data) + `|category:${selectedCategory || ""}|finished:${ceremonyFinished}`;
         if (signature === renderedSignature) {
           updateStatus();
           return;
