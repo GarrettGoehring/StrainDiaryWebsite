@@ -362,6 +362,11 @@
     }
 
     .leader-row {
+      width: 100%;
+      color: var(--text);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
       min-height: 0;
       display: grid;
       grid-template-columns: clamp(52px, 5vw, 92px) minmax(0, 1fr) auto minmax(95px, 10vw);
@@ -372,6 +377,8 @@
       border-radius: clamp(12px, 1vw, 18px);
       background: linear-gradient(90deg, rgba(24, 44, 35, 0.93), rgba(13, 28, 21, 0.82));
     }
+
+    .leader-row:hover, .leader-row:focus-visible { border-color: var(--green); outline: 2px solid transparent; background-color: rgba(128, 240, 166, 0.08); }
 
     .leader-row.gold { border-color: rgba(244, 201, 93, 0.52); background: linear-gradient(90deg, rgba(102, 78, 21, 0.48), rgba(35, 33, 21, 0.85)); }
     .leader-row.silver { border-color: rgba(201, 210, 220, 0.45); background: linear-gradient(90deg, rgba(79, 90, 101, 0.42), rgba(26, 32, 31, 0.86)); }
@@ -416,6 +423,26 @@
     }
     .judge-count { color: var(--muted); font-size: clamp(0.8rem, 1vw, 1.1rem); font-weight: 700; text-align: right; white-space: nowrap; }
 
+    .detail-layer[hidden] { display: none; }
+    .detail-layer { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 3vw; background: rgba(1, 9, 5, .8); backdrop-filter: blur(12px); }
+    .detail-panel { width: min(1100px, 94vw); max-height: 90dvh; overflow: auto; padding: clamp(22px, 2.8vw, 44px); border: 1px solid var(--line); border-radius: 26px; background: #12251b; box-shadow: 0 28px 100px rgba(0, 0, 0, .6); }
+    .detail-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+    .detail-head h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 4rem); line-height: 1.05; }
+    .detail-head p { color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.5rem); }
+    .detail-close { border: 1px solid var(--line); border-radius: 12px; padding: .5em .8em; color: var(--text); background: var(--panel-2); font: inherit; font-size: 1.3rem; cursor: pointer; }
+    .detail-summary { display: flex; gap: 30px; align-items: baseline; padding: 16px 0; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.5rem); }
+    .detail-summary strong { color: var(--green); font-size: clamp(2.5rem, 4vw, 4.5rem); }
+    .detail-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 50px); }
+    .detail-columns h3 { font-size: clamp(1.3rem, 2vw, 2.2rem); margin: 0 0 18px; }
+    .detail-metric { margin: 0 0 18px; }
+    .detail-metric-line { display: flex; justify-content: space-between; gap: 15px; font-size: clamp(1rem, 1.35vw, 1.45rem); font-weight: 700; }
+    .detail-metric-line span { overflow: hidden; text-overflow: ellipsis; }
+    .detail-metric-line strong { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .detail-metric small { display: block; margin-top: 5px; color: var(--muted); font-size: .9rem; }
+    .detail-metric .entry-track { margin-top: 9px; height: 12px; }
+    .detail-empty { color: var(--muted); font-size: 1.1rem; }
+    @media (max-width: 750px) { .detail-columns { grid-template-columns: 1fr; } .detail-panel { max-height: 94dvh; } }
+
     .join {
       display: flex;
       align-items: center;
@@ -458,6 +485,7 @@
   <main id="app" aria-live="polite">
     <div class="empty-screen"><div><p class="eyebrow">Strain Diary Live</p><h1>Loading competition…</h1></div></div>
   </main>
+  <div id="detail-layer" class="detail-layer" hidden role="presentation"><section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title"></section></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
@@ -478,6 +506,10 @@
       let activityText = "";
       let activityUntil = 0;
       let recentEntryNumbers = new Set();
+      let selectedEntryNumber = null;
+      let previousFocus = null;
+      const detailLayer = document.getElementById("detail-layer");
+      const detailPanel = detailLayer.querySelector(".detail-panel");
 
       const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, character => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
@@ -554,11 +586,50 @@
         const rows = ranked.map((entry, index) => {
           const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
           const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
-          return `<article class="leader-row${medal}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></article>`;
+          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for entry ${escapeHTML(entry.number)}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
         return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>Leaderboard</h2><span class="pill">Final results</span></div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
+
+      function detailMetric(name, value, maximum, caption, note = "") {
+        const width = percent(value, maximum);
+        return `<div class="detail-metric"><div class="detail-metric-line"><span>${escapeHTML(name)}</span><strong>${escapeHTML(caption)}</strong></div><div class="entry-track"><div class="fill" style="width:${width.toFixed(2)}%"></div></div>${note ? `<small>${escapeHTML(note)}</small>` : ""}</div>`;
+      }
+
+      function renderDetail() {
+        if (selectedEntryNumber === null || !lastGoodData || lastGoodData.judgingOpen) { closeDetail(); return; }
+        const entry = lastGoodData.entries.find(item => String(item.number) === selectedEntryNumber);
+        if (!entry || typeof entry.total !== "number") { closeDetail(); return; }
+        const criteria = Array.isArray(entry.criteria) ? entry.criteria : [];
+        const checklist = Array.isArray(entry.checklist) ? entry.checklist : [];
+        const heading = lastGoodData.namesPublic && entry.name ? entry.name : `Entry #${entry.number}`;
+        detailPanel.innerHTML = `<div class="detail-head"><div><p class="eyebrow">Entry #${escapeHTML(entry.number)} · ${escapeHTML(entry.category)}</p><h2 id="detail-title">${escapeHTML(heading)}</h2></div><button type="button" class="detail-close" aria-label="Close details">Close</button></div>
+          <div class="detail-summary"><strong>${entry.total.toFixed(1)} / 10</strong><span>${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"} scored this entry</span></div>
+          <div class="detail-columns"><section><h3>Rating breakdown</h3>${criteria.length ? criteria.map(item => detailMetric(item.name, item.average, 10, `${Number(item.average).toFixed(1)} / 10`, `${item.judgeCount} judge${item.judgeCount === 1 ? "" : "s"} rated this criterion`)).join("") : `<p class="detail-empty">No criterion scores available.</p>`}</section>
+          <section><h3>Quality checklist</h3>${checklist.length ? checklist.map(item => detailMetric(item.name, item.percent, 100, `${Number(item.percent).toFixed(1)}%`, `${item.checkedBy} of ${item.judgeCount} judges checked this`)).join("") : `<p class="detail-empty">No quality checklist for this competition.</p>`}</section></div>`;
+        detailLayer.hidden = false;
+      }
+
+      function closeDetail() {
+        if (detailLayer.hidden) return;
+        detailLayer.hidden = true;
+        selectedEntryNumber = null;
+        previousFocus?.focus();
+      }
+
+      app.addEventListener("click", event => {
+        const row = event.target.closest(".leader-row[data-entry]");
+        if (!row || !lastGoodData || lastGoodData.judgingOpen) return;
+        selectedEntryNumber = row.dataset.entry;
+        previousFocus = row;
+        renderDetail();
+        detailPanel.querySelector(".detail-close")?.focus();
+      });
+      detailLayer.addEventListener("click", event => {
+        if (event.target === detailLayer || event.target.closest(".detail-close")) closeDetail();
+      });
+      document.addEventListener("keydown", event => { if (event.key === "Escape") closeDetail(); });
 
       function initializeExtras(data) {
         const photo = document.getElementById("cup-photo");
@@ -601,6 +672,7 @@
         renderedSignature = signature;
         app.innerHTML = data.judgingOpen ? renderOpen(data) : renderClosed(data);
         initializeExtras(data);
+        if (selectedEntryNumber !== null) renderDetail();
         updateStatus();
       }
 
