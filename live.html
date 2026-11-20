@@ -22,6 +22,7 @@
       --gold: #f4c95d;
       --silver: #c9d2dc;
       --bronze: #d58a5d;
+      --accent-hue: 145;
     }
 
     * { box-sizing: border-box; }
@@ -39,8 +40,8 @@
 
     body {
       background:
-        radial-gradient(circle at 15% 0%, rgba(64, 193, 111, 0.16), transparent 35%),
-        radial-gradient(circle at 92% 100%, rgba(48, 130, 86, 0.14), transparent 36%),
+        radial-gradient(circle at 15% 0%, hsl(var(--accent-hue) 55% 30% / 0.24), transparent 35%),
+        radial-gradient(circle at 92% 100%, hsl(var(--accent-hue) 45% 26% / 0.18), transparent 36%),
         var(--bg);
     }
 
@@ -60,15 +61,16 @@
       z-index: -1;
       inset: 0 0 auto 0;
       width: 100%;
-      height: 31vh;
+      height: 42vh;
       object-fit: cover;
+      filter: brightness(.72) saturate(1.15);
       opacity: 0;
       transition: opacity 500ms ease;
       -webkit-mask-image: linear-gradient(to bottom, #000 25%, transparent 100%);
       mask-image: linear-gradient(to bottom, #000 25%, transparent 100%);
     }
 
-    .photo-banner.ready { opacity: 0.32; }
+    .photo-banner.ready { opacity: 0.52; }
 
     .topbar {
       min-height: 12vh;
@@ -145,7 +147,7 @@
       padding: clamp(18px, 1.7vw, 28px) clamp(20px, 2.1vw, 38px);
       border: 1px solid var(--line);
       border-radius: 24px;
-      background: rgba(13, 28, 21, 0.78);
+      background: hsl(var(--accent-hue) 30% 9% / .78);
       backdrop-filter: blur(18px);
     }
 
@@ -384,7 +386,7 @@
       padding: 0 clamp(16px, 1.8vw, 30px);
       border: 1px solid var(--line);
       border-radius: clamp(12px, 1vw, 18px);
-      background: linear-gradient(90deg, rgba(24, 44, 35, 0.93), rgba(13, 28, 21, 0.82));
+      background: linear-gradient(90deg, hsl(var(--accent-hue) 30% 17% / .93), hsl(var(--accent-hue) 29% 9% / .82));
     }
 
     .leader-row:hover, .leader-row:focus-visible { border-color: var(--green); outline: 2px solid transparent; background-color: rgba(128, 240, 166, 0.08); }
@@ -583,7 +585,7 @@
 
       function commonHeader(data) {
         const photo = data.hasPhoto
-          ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
+          ? `<img id="cup-photo" class="photo-banner" alt="Competition cup" crossorigin="anonymous" src="${escapeHTML(WORKER_URL)}?code=${encodeURIComponent(code)}&photo=1">`
           : "";
         return `${photo}<header class="topbar"><div><p class="eyebrow">Strain Diary Live</p><h1>${escapeHTML(data.title)}</h1><p class="host">${hostLabel(data)}</p></div><div class="top-right">${statusMarkup()}${joinMarkup()}</div></header>`;
       }
@@ -675,11 +677,48 @@
       });
       document.addEventListener("keydown", event => { if (event.key === "Escape") closeDetail(); });
 
+      function applyPhotoTheme(photo) {
+        // Sample only the existing cup image. Keep fixed dark/light values for contrast.
+        try {
+          const canvas = document.createElement("canvas");
+          canvas.width = canvas.height = 24;
+          const context = canvas.getContext("2d", { willReadFrequently: true });
+          context.drawImage(photo, 0, 0, 24, 24);
+          const pixels = context.getImageData(0, 0, 24, 24).data;
+          let sine = 0, cosine = 0, weight = 0;
+          for (let i = 0; i < pixels.length; i += 4) {
+            const r = pixels[i] / 255, g = pixels[i + 1] / 255, b = pixels[i + 2] / 255;
+            const max = Math.max(r, g, b), min = Math.min(r, g, b), delta = max - min;
+            const light = (max + min) / 2;
+            if (delta < .12 || light < .12 || light > .9) continue;
+            let hue = max === r ? ((g - b) / delta) % 6 : max === g ? (b - r) / delta + 2 : (r - g) / delta + 4;
+            hue *= Math.PI / 3;
+            const strength = delta * (1 - Math.abs(light - .5));
+            sine += Math.sin(hue) * strength;
+            cosine += Math.cos(hue) * strength;
+            weight += strength;
+          }
+          if (weight < 3) return;
+          const hue = Math.round((Math.atan2(sine, cosine) * 180 / Math.PI + 360) % 360);
+          const root = document.documentElement.style;
+          root.setProperty("--accent-hue", hue);
+          root.setProperty("--bg", `hsl(${hue} 28% 6%)`);
+          root.setProperty("--panel", `hsl(${hue} 28% 11% / .9)`);
+          root.setProperty("--panel-2", `hsl(${hue} 29% 16% / .88)`);
+          root.setProperty("--line", `hsl(${hue} 65% 75% / .2)`);
+          root.setProperty("--green", `hsl(${hue} 78% 72%)`);
+          root.setProperty("--green-2", `hsl(${hue} 62% 44%)`);
+        } catch {
+          // A missing image or unavailable canvas leaves the default theme intact.
+        }
+      }
+
       function initializeExtras(data) {
         const photo = document.getElementById("cup-photo");
         if (photo) {
-          if (photo.complete && photo.naturalWidth) photo.classList.add("ready");
-          else photo.addEventListener("load", () => photo.classList.add("ready"), { once: true });
+          const showPhoto = () => { photo.classList.add("ready"); applyPhotoTheme(photo); };
+          if (photo.complete && photo.naturalWidth) showPhoto();
+          else photo.addEventListener("load", showPhoto, { once: true });
         }
         const qr = document.getElementById("qr");
         if (qr && window.QRCode) {
