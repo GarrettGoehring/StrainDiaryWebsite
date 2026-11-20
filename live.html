@@ -357,14 +357,14 @@
       min-height: 0;
       flex: 1;
       display: grid;
-      grid-template-rows: repeat(10, minmax(0, 1fr));
+      grid-template-rows: repeat(var(--leader-rows, 10), minmax(0, 1fr));
       gap: clamp(5px, 0.55vw, 10px);
     }
 
     .leader-row {
       min-height: 0;
       display: grid;
-      grid-template-columns: clamp(52px, 5vw, 92px) minmax(0, 1fr) auto;
+      grid-template-columns: clamp(52px, 5vw, 92px) minmax(0, 1fr) auto minmax(95px, 10vw);
       align-items: center;
       gap: clamp(14px, 2vw, 34px);
       padding: 0 clamp(16px, 1.8vw, 30px);
@@ -387,7 +387,7 @@
     .silver .rank { color: var(--silver); }
     .bronze .rank { color: var(--bronze); }
 
-    .leader-main { min-width: 0; }
+    .leader-main { min-width: 0; align-self: center; }
     .leader-main strong {
       display: block;
       overflow: hidden;
@@ -407,14 +407,14 @@
       white-space: nowrap;
     }
 
-    .score { text-align: right; }
+    .score { text-align: right; white-space: nowrap; }
     .score strong {
       display: block;
       font-variant-numeric: tabular-nums;
       font-size: clamp(1.45rem, 2.35vw, 2.8rem);
       line-height: 0.95;
     }
-    .score span { color: var(--muted); font-size: clamp(0.67rem, 0.8vw, 0.9rem); font-weight: 700; }
+    .judge-count { color: var(--muted); font-size: clamp(0.8rem, 1vw, 1.1rem); font-weight: 700; text-align: right; white-space: nowrap; }
 
     .join {
       display: flex;
@@ -554,10 +554,10 @@
         const rows = ranked.map((entry, index) => {
           const medal = index === 0 ? " gold" : index === 1 ? " silver" : index === 2 ? " bronze" : "";
           const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
-          return `<article class="leader-row${medal}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}</strong><span>Entry #${escapeHTML(entry.number)}${publicName}</span></div><div class="score"><strong>${entry.total.toFixed(1)}</strong><span>${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</span></div></article>`;
+          return `<article class="leader-row${medal}"><div class="rank">${index + 1}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></article>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>Leaderboard</h2><span class="pill">Final results</span></div><div class="leaderboard">${rows || empty}</div></section>`;
+        return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>Leaderboard</h2><span class="pill">Final results</span></div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
 
       function initializeExtras(data) {
