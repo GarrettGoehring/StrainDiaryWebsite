@@ -82,6 +82,15 @@ export default {
           }
           output.namesPublic = true;
         }
+        // Public results show placements and ratings only. Detailed criterion and
+        // checklist data stays on the authenticated presenter endpoint.
+        output.entries = output.entries.map(entry => ({
+          number: entry.number, category: entry.category, catNumber: entry.catNumber,
+          label: entry.category + " #" + entry.catNumber,
+          scoredBy: entry.scoredBy, judgeCount: entry.judgeCount,
+          total: entry.total,
+          ...(entry.name ? { name: entry.name } : {}),
+        }));
         output.presenter = { ceremonyDone: done, revealed: [] };
       }
       return json(output, 200, cors, "public, max-age=15");
