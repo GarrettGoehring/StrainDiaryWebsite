@@ -74,7 +74,16 @@ export default {
           });
         }
         output.presenter = { ceremonyDone: done, revealed };
-      } else output.presenter = { ceremonyDone: done, revealed: [] };
+      } else {
+        if (done && !competition.judgingOpen && Object.keys(ceremony.names || {}).length) {
+          for (const entry of output.entries) {
+            const privateName = ceremony.names[String(entry.number)];
+            if (!entry.name && privateName) entry.name = [cleanText(privateName.strain), cleanText(privateName.brand)].filter(Boolean).join(" · ");
+          }
+          output.namesPublic = true;
+        }
+        output.presenter = { ceremonyDone: done, revealed: [] };
+      }
       return json(output, 200, cors, "public, max-age=15");
     } catch (error) {
       console.error("Live competition upstream error", error instanceof Error ? error.message : error);
@@ -631,13 +640,15 @@ export class CompetitionState {
       if (!comp || comp.judgingOpen) return err("judgingOpen", 409);
       const cards = await queryScorecards(this.env, code);
       const ranked = buildSafeResponse(comp, cards).entries.filter(item => item.category === category && typeof item.total === "number");
-      const entry = ranked.find((item, index) => 1 + ranked.slice(0, index).filter(other => other.total > item.total).length === place);
-      if (!entry) return err("notFound", 404);
+      const winners = ranked.filter((item, index) => 1 + ranked.slice(0, index).filter(other => other.total > item.total + 1e-9).length === place);
+      if (!winners.length) return err("notFound", 404);
       const revealed = await this.state.storage.get("revealed") || [];
       const filtered = revealed.filter(item => !(item.category === category && item.place === place));
       if (path.endsWith("/reveal")) {
-        const existing = revealed.find(item => item.category === category && item.place === place);
-        filtered.push(existing || { category, place, number: entry.number, at: new Date(now).toISOString() });
+        for (const entry of winners) {
+          const existing = revealed.find(item => item.category === category && item.place === place && String(item.number) === String(entry.number));
+          filtered.push(existing || { category, place, number: entry.number, at: new Date(now).toISOString() });
+        }
       }
       await this.state.storage.put("revealed", filtered);
       return noStore({ ceremonyDone: false, revealed: filtered });
