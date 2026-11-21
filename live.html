@@ -1123,7 +1123,7 @@
         if (presenterSession && !ceremonyFinished && !data.judgingOpen) {
           const revealed = data.presenter?.revealed || [];
           const serverSignature = JSON.stringify(revealed);
-          if (lastServerRevealSignature !== null && serverSignature !== lastServerRevealSignature && revealed.length) {
+          if ((lastServerRevealSignature !== null && serverSignature !== lastServerRevealSignature || ceremonyStep < 0 && revealed.length) && revealed.length) {
             const slides = ceremonySlides(data);
             const matching = slides.map((slide, index) => ({ slide, index })).filter(({ slide }) =>
               slide.type === "award" && revealed.some(item => item.category === slide.category && item.place === slide.place && String(item.number) === String(slide.entry.number)));
