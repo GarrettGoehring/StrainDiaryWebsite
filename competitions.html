@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Cannabis Competitions | Strain Diary</title>
+  <meta name="description" content="Host a Strain Diary cannabis competition, join as a judge, or watch live judging progress and awards with a competition code.">
+  <link rel="canonical" href="https://straindiary.com/competitions.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Competitions | Strain Diary">
+  <meta property="og:description" content="Host, judge, and follow a Strain Diary competition. Enter your code to see live progress or join in the app.">
+  <meta property="og:url" content="https://straindiary.com/competitions.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/footer.css">
+  <style>
+    :root{--ink:#f4fff7;--muted:#b4c8ba;--lime:#80f0a6;--line:rgba(191,255,211,.17);color-scheme:dark}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 15% 5%,#173a26 0,transparent 32%),#07110d;color:var(--ink);font:16px/1.6 Figtree,system-ui,sans-serif}
+    .competition-header{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1440px;margin:auto;padding:18px max(22px,7vw);border-bottom:1px solid var(--line)}
+    .competition-header .brand{display:inline-flex;align-items:center;gap:10px;color:inherit;text-decoration:none;font-weight:800;font-size:18px}
+    .competition-header .brand img{width:38px;height:38px;border-radius:10px}
+    .competition-header nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .competition-header nav a{color:#c8d5cc;text-decoration:none}
+    .competition-header nav a[aria-current]{color:var(--lime);font-weight:800}
+    .competition-header .nav-cta{padding:10px 16px;border-radius:999px;background:var(--lime);color:#0c1711;text-decoration:none;font-weight:800}
+    main{width:min(100% - 36px,1120px);margin:clamp(44px,7vw,100px) auto 100px}
+    .kicker{color:var(--lime);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.85rem}
+    h1,h2{font-family:Caprasimo,Georgia,serif;letter-spacing:-.03em;line-height:1.08}
+    h1{font-size:clamp(2.6rem,7vw,5.5rem);margin:.2em 0}
+    h2{font-size:clamp(1.7rem,3vw,2.6rem);margin:0 0 .5em}
+    .lead{max-width:760px;color:var(--muted);font-size:clamp(1.1rem,2vw,1.4rem);margin:0 0 42px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .card{background:#13231a;border:1px solid var(--line);border-radius:26px;padding:clamp(24px,4vw,42px);box-shadow:0 24px 70px #0003}
+    .card p{color:var(--muted);margin:0 0 20px}
+    .card ol{padding-left:1.4em;color:var(--muted);margin:0 0 26px}
+    .card li{padding:4px 0}
+    .button,button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border:1px solid var(--lime);border-radius:999px;padding:11px 20px;background:var(--lime);color:#07110d;text-decoration:none;font:800 16px Figtree,system-ui,sans-serif;cursor:pointer}
+    .button.secondary,button.secondary{background:transparent;color:var(--lime)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .code-label{display:block;font-weight:750;margin:20px 0 7px}
+    .code-input{display:block;width:100%;min-height:56px;border:1px solid #6a9178;border-radius:14px;padding:12px 16px;background:#07110d;color:var(--ink);font:700 1.4rem ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}
+    .code-input:focus-visible,.button:focus-visible,button:focus-visible,.competition-header a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+    .hint{font-size:.95rem}
+    .error{color:#ffbdad!important;min-height:1.5em;margin:8px 0 12px!important}
+    .fine{margin-top:36px;color:var(--muted);font-size:.95rem}
+    .site-footer{background:#0a1710}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.competition-header{flex-wrap:wrap}.competition-header nav{order:3;width:100%;gap:12px 18px}.competition-header .nav-cta{margin-left:auto}.actions>*{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="competition-header">
+    <a class="brand" href="/"><img src="/assets/app-icon-small.webp" width="38" height="38" alt=""><span>Strain Diary</span></a>
+    <nav aria-label="Main navigation"><a href="/">Home</a><a href="/features.html">Features</a><a href="/competitions.html" aria-current="page">Competitions</a><a href="/education.html">Education</a></nav>
+    <a class="nav-cta" href="/beta.html">Early access</a>
+  </header>
+  <main>
+    <p class="kicker">Strain Diary competitions</p>
+    <h1>One event. Every entry. Live progress.</h1>
+    <p class="lead">Run a competition in the Strain Diary app, score entries as a judge, or follow the event on the live display. During judging, viewers see progress, not scores or rankings. Awards and results appear when the host reveals them.</p>
+    <div class="grid">
+      <section class="card" aria-labelledby="host-title">
+        <p class="kicker">For organizers</p>
+        <h2 id="host-title">Host a competition</h2>
+        <p>Create categories and entries, invite judges with a code or QR label, and control when judging closes and results are shared.</p>
+        <ol><li>Install Strain Diary on your iPhone.</li><li>Open Settings → Competitions and create your event.</li><li>Share the competition code with judges and viewers.</li></ol>
+        <div class="actions"><a class="button" href="https://testflight.apple.com/join/4TjvnXjD">Get Strain Diary on TestFlight</a></div>
+      </section>
+      <section class="card" aria-labelledby="follow-title">
+        <p class="kicker">For judges &amp; viewers</p>
+        <h2 id="follow-title">Follow a competition</h2>
+        <p>Enter the code from your poster or organizer. Watch the live judging progress, or open the join page to score entries in the app.</p>
+        <form id="competition-form" novalidate>
+          <label class="code-label" for="competition-code">Competition code</label>
+          <input class="code-input" id="competition-code" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="text" maxlength="8" placeholder="K7Q2MX" aria-describedby="code-hint code-error" required>
+          <p class="hint" id="code-hint">4–8 letters or numbers, no spaces.</p>
+          <p class="error" id="code-error" role="alert"></p>
+          <div class="actions"><button type="submit">Watch live progress</button><button class="secondary" type="button" id="join-button">Join as a judge</button></div>
+        </form>
+      </section>
+    </div>
+    <p class="fine">A free Strain Diary account is required to judge. The live display is for viewing; the host approves presenter controls separately in the app. Results remain under wraps until the host releases them.</p>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="/"><img src="/assets/app-icon-small.webp" width="38" height="38" alt=""><span>Strain Diary</span></a><p>A private cannabis journal for remembering what you tried and what was worth trying again.</p></div><div class="footer-column"><strong>Explore</strong><a href="/">Home</a><a href="/features.html">Features</a><a href="/competitions.html">Competitions</a><a href="/education.html">Education</a></div><div class="footer-column"><strong>Get the app</strong><a href="/beta.html">Early access</a><a href="https://testflight.apple.com/join/4TjvnXjD">TestFlight</a></div><div class="footer-column"><strong>Good to know</strong><a href="/privacy-policy.html">Privacy policy</a><span>21+ only</span></div></div><div class="footer-bottom"><span>© 2026 Strain Diary. All rights reserved.</span></div></footer>
+  <script>
+    (() => {
+      const form = document.getElementById("competition-form");
+      const input = document.getElementById("competition-code");
+      const error = document.getElementById("code-error");
+      function code() {
+        const value = input.value.trim().toUpperCase();
+        if (!/^[A-Z0-9]{4,8}$/.test(value)) {
+          error.textContent = "Enter a valid competition code (4–8 letters or numbers).";
+          input.focus();
+          return null;
+        }
+        error.textContent = "";
+        return value;
+      }
+      input.addEventListener("input", () => { error.textContent = ""; });
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        const value = code();
+        if (value) location.href = "/live.html#" + encodeURIComponent(value);
+      });
+      document.getElementById("join-button").addEventListener("click", () => {
+        const value = code();
+        if (value) location.href = "/c#" + encodeURIComponent(value);
+      });
+    })();
+  </script>
+</body>
+</html>
