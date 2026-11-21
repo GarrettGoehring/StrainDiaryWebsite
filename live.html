@@ -457,7 +457,7 @@
     .display-button { border: 1px solid var(--line); border-radius: 999px; padding: .45em .8em; background: var(--panel); color: var(--text); font: inherit; font-weight: 750; cursor: pointer; }
     .settings-layer[hidden] { display: none; }
     .settings-layer { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 20px; background: rgba(0,0,0,.7); }
-    .settings-panel { width: min(480px, 100%); padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: #14271c; box-shadow: 0 20px 60px #0008; }
+    .settings-panel { width: min(480px, 100%); max-height: calc(100dvh - 40px); overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding: 28px; border: 1px solid var(--line); border-radius: 24px; background: #14271c; box-shadow: 0 20px 60px #0008; }
     .settings-panel h2 { margin: 0 0 18px; font-size: 2rem; }
     .settings-panel label { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; font-size: 1.1rem; }
     .settings-panel select { max-width: 55%; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: #07110d; color: var(--text); font: inherit; }
