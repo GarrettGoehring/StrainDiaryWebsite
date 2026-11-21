@@ -608,6 +608,7 @@
       let ceremonyFinished = false;
       try { ceremonyFinished = sessionStorage.getItem(`awards-finished:${code}`) === "yes"; } catch {}
       let lastCelebratedStep = -1;
+      let revealReady = true;
       let ceremonySignature = "";
       const settingsLayer = document.getElementById("settings-layer");
       const sessionKey = `presenter-session:${code}`;
@@ -911,10 +912,19 @@
         ceremonyControls.innerHTML = `<button type="button" data-ceremony="exit">Exit ceremony</button><button type="button" data-ceremony="previous" ${ceremonyStep === 0 ? "disabled" : ""}>Previous</button><button type="button" data-ceremony="next">${ceremonyStep === slides.length - 1 ? "Finish" : "Reveal next"}</button>`;
         ceremonyLayer.hidden = false;
         if (presenterSession && slide.type === "award" && lastCelebratedStep !== ceremonyStep) {
-          presenterRequest("/presenter/reveal", { code, category: slide.category, place: slide.place }).catch(() => {
-            ceremonyControls.querySelector('[data-ceremony="next"]').textContent = "Reveal failed · retry";
+          const requestedStep = ceremonyStep;
+          revealReady = false;
+          const next = ceremonyControls.querySelector('[data-ceremony="next"]');
+          if (next) next.disabled = true;
+          presenterRequest("/presenter/reveal", { code, category: slide.category, place: slide.place }).then(() => {
+            if (ceremonyStep !== requestedStep) return;
+            revealReady = true;
+            if (next) next.disabled = false;
+          }).catch(() => {
+            if (ceremonyStep !== requestedStep) return;
+            if (next) { next.disabled = false; next.dataset.ceremony = "retry"; next.textContent = "Retry reveal"; }
           });
-        }
+        } else revealReady = true;
         if (slide.type === "award" && lastCelebratedStep !== ceremonyStep) {
           lastCelebratedStep = ceremonyStep;
           launchConfetti(slide.place);
@@ -946,8 +956,19 @@
         const action = event.target.closest("[data-ceremony]")?.dataset.ceremony;
         if (!action) return;
         if (action === "exit") { closeCeremony(); return; }
+        if (action === "retry") {
+          const slide = ceremonySlides(lastGoodData)[ceremonyStep];
+          if (!slide || slide.type !== "award") return;
+          const button = event.target.closest("[data-ceremony]");
+          button.disabled = true;
+          presenterRequest("/presenter/reveal", { code, category: slide.category, place: slide.place }).then(() => {
+            revealReady = true; button.disabled = false; button.dataset.ceremony = "next"; button.textContent = "Reveal next";
+          }).catch(() => { button.disabled = false; });
+          return;
+        }
         if (action === "previous") ceremonyStep = Math.max(0, ceremonyStep - 1);
         if (action === "next") {
+          if (!revealReady) return;
           if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) { finishCeremony(); return; }
           ceremonyStep++;
         }
@@ -957,7 +978,7 @@
         if (event.key === "Escape" && !settingsLayer.hidden) { settingsLayer.hidden = true; return; }
         if (ceremonyStep < 0) return;
         if (event.key === "Escape") closeCeremony();
-        else if (event.key === "ArrowRight") { if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) finishCeremony(); else { ceremonyStep++; renderCeremony(); } }
+        else if (event.key === "ArrowRight") { if (!revealReady) return; if (ceremonyStep >= ceremonySlides(lastGoodData).length - 1) finishCeremony(); else { ceremonyStep++; renderCeremony(); } }
         else if (event.key === "ArrowLeft") { ceremonyStep = Math.max(0, ceremonyStep - 1); renderCeremony(); }
       });
 
