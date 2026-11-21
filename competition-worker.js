@@ -447,7 +447,7 @@ const randomToken = bytes => {
 const digest = async value => [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value)))]
   .map(byte => byte.toString(16).padStart(2, "0")).join("");
 const bearer = request => (request.headers.get("Authorization") || "").match(/^Bearer ([A-Za-z0-9_-]{30,100})$/)?.[1] || "";
-const internalCode = requestId => /^([A-Z0-9]{4,8})\.([A-Za-z0-9_-]{20,30})$/.exec(requestId || "")?.[1] || "";
+
 const presenterCors = cors => ({ ...cors, "Access-Control-Allow-Methods": "GET, POST, OPTIONS", "Access-Control-Allow-Headers": "Accept, Authorization, Content-Type", "Access-Control-Max-Age": "600" });
 const noStore = (body, status = 200, cors = {}) => json(body, status, cors, "no-store");
 const doStub = (env, code) => env.COMPETITION_STATE.get(env.COMPETITION_STATE.idFromName(code));
@@ -466,8 +466,8 @@ async function presenterRoute(request, env, cors) {
     try { body = await request.json(); } catch { return noStore({ error: "invalidBody" }, 400, headers); }
   }
   const requestId = request.method === "POST" ? body.requestId : url.searchParams.get("requestId");
-  const code = cleanText(body.code || url.searchParams.get("code") || internalCode(requestId)).toUpperCase();
-  if (!CODE_PATTERN.test(code) || (requestId && internalCode(requestId) !== code)) return noStore({ error: "invalidCode" }, 400, headers);
+  const code = cleanText(body.code || url.searchParams.get("code")).toUpperCase();
+  if (!CODE_PATTERN.test(code)) return noStore({ error: "invalidCode" }, 400, headers);
   if (url.pathname === "/presenter/pair" && request.method === "POST") {
     const record = await lookupRecord(env, `competition-${code}`, ["configKey", "homeURL"]);
     if (!parseCompetition(record, code)) return noStore({ error: "notFound" }, 404, headers);
@@ -493,7 +493,7 @@ export class CompetitionState {
     }
     const path = url.pathname;
     const body = request.method === "POST" ? await request.json().catch(() => ({})) : {};
-    const code = cleanText(body.code || url.searchParams.get("code") || internalCode(body.requestId || url.searchParams.get("requestId"))).toUpperCase();
+    const code = cleanText(body.code || url.searchParams.get("code")).toUpperCase();
     const err = (name, status = 400) => noStore({ error: name }, status);
     if (!CODE_PATTERN.test(code)) return err("invalidCode");
     const now = Date.now();
@@ -507,7 +507,7 @@ export class CompetitionState {
       let pairCode;
       do { pairCode = String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, "0"); }
       while ([...requests.values()].some(item => item.pairCode === pairCode && item.status === "pending" && item.expiresAt > now));
-      const id = code + "." + randomToken(16); // opaque to the app; code prefix routes the request to this object
+      const id = randomToken(16);
       const pollToken = randomToken(32);
       const entry = { id, code, pairCode, pollHash: await digest(pollToken), ip, status: "pending", createdAt: now, expiresAt: now + 600000, device: (request.headers.get("User-Agent") || "Computer").slice(0, 100) };
       await this.state.storage.put("request:" + id, entry);
@@ -531,7 +531,25 @@ export class CompetitionState {
       if (!entry || entry.code !== code) return err("notFound", 404);
       if (path.endsWith("/status") && await digest(bearer(request)) !== entry.pollHash) return err("unauthorized", 401);
       if (entry.expiresAt <= now) return path.endsWith("/approve") ? err("expired") : noStore({ status: "expired" });
-      if (entry.status === "claimed") return path.endsWith("/approve") ? noStore({ status: "approved" }) : noStore({ status: "claimed" });
+      if (entry.status === "claimed") {
+        if (path.endsWith("/approve") && body.names != null) {
+          const approval = await lookupRecord(this.env, entry.approvalName, ["configKey", "homeURL"]);
+          const record = await lookupRecord(this.env, `competition-${code}`, ["configKey", "homeURL"]);
+          const comp = parseCompetition(record, code);
+          const approved = parseJSON(field(approval, "homeURL"));
+          if (!comp?.creator || approval?.created?.userRecordName !== comp.creator || approved?.requestId !== requestId || approved?.code !== code) return err("notHost", 403);
+          if (typeof body.names !== "string" || typeof body.namesNonce !== "string" || !/^[0-9a-f]{64}$/.test(approved.namesDigest || "") || await digest(body.namesNonce + body.names) !== approved.namesDigest) return err("invalidNames", 403);
+          const parsed = parseJSON(body.names);
+          if (!isObject(parsed)) return err("invalidNames", 403);
+          const clean = {};
+          for (const [number, value] of Object.entries(parsed)) {
+            if (!/^\d{1,5}$/.test(number) || !isObject(value)) return err("invalidNames", 403);
+            clean[number] = { strain: cleanText(value.strain).slice(0, 200), brand: cleanText(value.brand).slice(0, 200) };
+          }
+          await this.state.storage.put("names", clean);
+        }
+        return path.endsWith("/approve") ? noStore({ status: "approved" }) : noStore({ status: "claimed" });
+      }
       if (entry.status === "pending") {
         const approval = await lookupRecord(this.env, "presenterApproval-" + requestId, ["configKey", "homeURL"]);
         if (!approval) return path.endsWith("/approve") ? err("approvalNotFound", 409) : noStore({ status: "pending", expiresAt: new Date(entry.expiresAt).toISOString() });
@@ -597,6 +615,7 @@ export class CompetitionState {
       for (const entry of output.entries) {
         if (!entry.name && names[String(entry.number)]) entry.name = [names[String(entry.number)].strain, names[String(entry.number)].brand].filter(Boolean).join(" · ");
       }
+      if (Object.keys(names).length) output.namesPublic = true;
       output.presenter = { ceremonyDone: await this.state.storage.get("done") || comp.resultsPublic, revealed: await this.state.storage.get("revealed") || [] };
       output.expiresAt = new Date(session.expiresAt).toISOString();
       return noStore(output);
@@ -616,7 +635,10 @@ export class CompetitionState {
       if (!entry) return err("notFound", 404);
       const revealed = await this.state.storage.get("revealed") || [];
       const filtered = revealed.filter(item => !(item.category === category && item.place === place));
-      if (path.endsWith("/reveal")) filtered.push({ category, place, number: entry.number, at: new Date(now).toISOString() });
+      if (path.endsWith("/reveal")) {
+        const existing = revealed.find(item => item.category === category && item.place === place);
+        filtered.push(existing || { category, place, number: entry.number, at: new Date(now).toISOString() });
+      }
       await this.state.storage.put("revealed", filtered);
       return noStore({ ceremonyDone: false, revealed: filtered });
     }
