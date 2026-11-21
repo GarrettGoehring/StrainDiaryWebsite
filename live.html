@@ -835,8 +835,9 @@
         if (!data.presenter?.ceremonyDone && !presenterSession) {
           const revealed = data.presenter?.revealed || [];
           const latest = revealed.at(-1);
-          const announced = latest ? `<div class="audience-award"><p class="eyebrow">Just announced · ${escapeHTML(latest.category)}</p><h3>${escapeHTML(latest.place)}${latest.place === 1 ? "st" : latest.place === 2 ? "nd" : "rd"} place</h3><p>${escapeHTML(latest.label)}${latest.strain ? " · " + escapeHTML(latest.strain) : ""}${latest.brand ? " by " + escapeHTML(latest.brand) : ""}</p><strong>${Number(latest.total).toFixed(1)} / 10</strong></div>` : "";
-          return `${commonHeader(data)}<section class="ceremony-wait"><div><p class="eyebrow">Judging complete</p><h2>Winners are under wraps</h2><p>Watch here as the host announces each award.</p>${announced}</div></section>`;
+          const latestAwards = latest ? revealed.filter(item => item.category === latest.category && item.place === latest.place) : [];
+          const announced = latest ? `<div class="audience-award"><p class="eyebrow">Just announced · ${escapeHTML(latest.category)}</p><h3>${escapeHTML(latest.place)}${latest.place === 1 ? "st" : latest.place === 2 ? "nd" : "rd"} place</h3><p>${latestAwards.map(item => escapeHTML(item.label) + (item.strain ? " · " + escapeHTML(item.strain) : "") + (item.brand ? " by " + escapeHTML(item.brand) : "")).join("<br>")}</p><strong>${Number(latest.total).toFixed(1)} / 10</strong></div>` : "";
+          return `${commonHeader(data)}<section class="ceremony-wait"><div><p class="eyebrow">Judging complete</p><h2>${latest ? "Awards ceremony" : "Winners are under wraps"}</h2><p>Watch here as the host announces each award.</p>${announced}</div></section>`;
         }
         if (!ceremonyFinished) {
           const available = ceremonySlides(data).length > 0;
