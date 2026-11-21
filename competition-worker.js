@@ -49,6 +49,20 @@ export default {
 
       const scorecardRecords = await queryScorecards(env, code);
       const output = buildSafeResponse(competition, scorecardRecords);
+      // A public CloudKit scorecard is not a license to expose its results here.
+      // Results remain hidden until the host explicitly makes them public.
+      if (!competition.judgingOpen && !competition.resultsPublic) {
+        output.entries = output.entries
+          .map(entry => ({
+            number: entry.number,
+            category: entry.category,
+            catNumber: entry.catNumber,
+            judgeCount: entry.judgeCount,
+            scoredBy: entry.scoredBy,
+          }))
+          .sort((a, b) => compareEntryNumbers(a.number, b.number));
+      }
+      output.presenter = { ceremonyDone: competition.resultsPublic, revealed: [] };
       return json(output, 200, cors, "public, max-age=15");
     } catch (error) {
       console.error("Live competition upstream error", error instanceof Error ? error.message : error);
@@ -141,6 +155,7 @@ function parseCompetition(record, requestedCode) {
     checklistWeight: typeof value.checklistWeight === "number" && Number.isFinite(value.checklistWeight) && value.checklistWeight > 0 ? value.checklistWeight : 0,
     entries: Array.isArray(value.entries) ? value.entries : [],
     removedJudges: Array.isArray(value.removedJudges) ? value.removedJudges.map(cleanText).filter(Boolean) : [],
+    resultsPublic: value.resultsPublic === true,
     photoVersion: value.photoVersion != null && Number.isInteger(Number(value.photoVersion)) ? Number(value.photoVersion) : null,
   };
 }
@@ -265,7 +280,7 @@ function buildSafeResponse(competition, scorecardRecords) {
       scoredBy,
       judgeCount,
     };
-    if (namesPublic) entry.name = publicEntryName(rawEntry);
+    if (namesPublic && (competition.judgingOpen || competition.resultsPublic)) entry.name = publicEntryName(rawEntry);
     if (!competition.judgingOpen) {
       entry.total = usedWeight > 0 ? round(weightedTotal / usedWeight, 4) : null;
       entry.criteria = criterionResults;
