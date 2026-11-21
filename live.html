@@ -510,17 +510,23 @@
     @media (max-width: 750px) { .detail-columns { grid-template-columns: 1fr; } .detail-panel { max-height: 94dvh; } }
 
     .join {
+      position: fixed;
+      z-index: 5;
+      right: max(18px, env(safe-area-inset-right));
+      bottom: max(18px, env(safe-area-inset-bottom));
       display: flex;
       align-items: center;
       gap: 13px;
       padding: 10px 13px;
       border: 1px solid var(--line);
       border-radius: 18px;
-      background: rgba(6, 15, 11, 0.88);
+      background: rgba(6, 15, 11, 0.96);
       backdrop-filter: blur(16px);
       box-shadow: 0 16px 50px rgba(0, 0, 0, 0.28);
     }
 
+    .join a { display: block; color: var(--green); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+    .join a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
     .join strong { display: block; font-size: clamp(0.8rem, 0.95vw, 1.05rem); }
     .join span { display: block; color: var(--muted); font-size: clamp(0.62rem, 0.7vw, 0.78rem); }
     #qr { width: 76px; height: 76px; padding: 5px; border-radius: 8px; background: #fff; }
@@ -550,7 +556,9 @@
     }
 
     @media (max-aspect-ratio: 4/3) {
-      .join { display: none; }
+      .join { left: 16px; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); justify-content: center; }
+      .join #qr { display: none; }
+      #app { padding-bottom: 110px; }
       h1 { max-width: 88vw; }
     }
 
@@ -718,7 +726,7 @@
       }
 
       function joinMarkup() {
-        return `<aside class="join" aria-label="Join this competition to judge"><div><strong>Join to judge</strong><span>straindiary.com/c#${escapeHTML(code)}</span></div><div id="qr" aria-hidden="true"></div></aside>`;
+        return `<aside class="join" aria-label="Join this competition to judge"><div><strong>Want to judge?</strong><a href="/c#${encodeURIComponent(code)}">Join competition · ${escapeHTML(code)}</a></div><div id="qr" aria-hidden="true"></div></aside>`;
       }
 
       function renderOpen(data) {
