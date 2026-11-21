@@ -847,15 +847,18 @@
         }
         const categories = categoriesInOrder(data.entries);
         const category = currentCategory(categories);
-        const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number").slice(0, 10);
+        const ranked = data.entries.filter(entry => entry.category === category && typeof entry.total === "number");
         const rows = ranked.map((entry, index) => {
           const place = competitionPlace(ranked, index);
           const medal = place === 1 ? " gold" : place === 2 ? " silver" : place === 3 ? " bronze" : "";
           const publicName = data.namesPublic && entry.name ? ` · ${escapeHTML(entry.name)}` : "";
-          return `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}"><div class="rank">${place}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div></button>`;
+          const content = `<div class="rank">${place}</div><div class="leader-main"><strong>${entryLabel(entry)}${publicName}</strong></div><div class="score"><strong>${entry.total.toFixed(1)}</strong></div><div class="judge-count">${escapeHTML(entry.scoredBy)} judge${entry.scoredBy === 1 ? "" : "s"}</div>`;
+          return presenterSession
+            ? `<button type="button" class="leader-row${medal}" data-entry="${escapeHTML(entry.number)}" aria-label="View detailed results for ${entryLabel(entry)}">${content}</button>`
+            : `<div class="leader-row${medal}">${content}</div>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        const position = `${categoryPicker(categories)}<button type="button" class="ceremony-start">Start Awards Ceremony</button>`;
+        const position = `${categoryPicker(categories)}${presenterSession ? '<button type="button" class="ceremony-start">Start Awards Ceremony</button>' : ""}`;
         return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>${escapeHTML(category || "Leaderboard")} leaderboard</h2>${position}</div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
 
@@ -1001,7 +1004,7 @@
       }
 
       function renderDetail() {
-        if (selectedEntryNumber === null || !lastGoodData || lastGoodData.judgingOpen) { closeDetail(); return; }
+        if (!presenterSession || selectedEntryNumber === null || !lastGoodData || lastGoodData.judgingOpen) { closeDetail(); return; }
         const entry = lastGoodData.entries.find(item => String(item.number) === selectedEntryNumber);
         if (!entry || typeof entry.total !== "number") { closeDetail(); return; }
         const criteria = Array.isArray(entry.criteria) ? entry.criteria : [];
@@ -1023,7 +1026,7 @@
 
       app.addEventListener("click", event => {
         if (event.target.closest(".display-button")) { settingsLayer.hidden = false; settingsLayer.querySelector("#settings-close")?.focus(); return; }
-        if (event.target.closest(".ceremony-start") && lastGoodData && !lastGoodData.judgingOpen) {
+        if (presenterSession && event.target.closest(".ceremony-start") && lastGoodData && !lastGoodData.judgingOpen) {
           ceremonyStep = 0;
           renderCeremony();
           ceremonyControls.querySelector('[data-ceremony="next"]')?.focus();
@@ -1037,7 +1040,7 @@
           return;
         }
         const row = event.target.closest(".leader-row[data-entry]");
-        if (!row || !lastGoodData || lastGoodData.judgingOpen) return;
+        if (!presenterSession || !row || !lastGoodData || lastGoodData.judgingOpen) return;
         selectedEntryNumber = row.dataset.entry;
         previousFocus = row;
         renderDetail();
