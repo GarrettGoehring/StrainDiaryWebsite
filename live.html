@@ -609,6 +609,7 @@
       try { ceremonyFinished = sessionStorage.getItem(`awards-finished:${code}`) === "yes"; } catch {}
       let lastCelebratedStep = -1;
       let revealReady = true;
+      let lastServerRevealSignature = null;
       let ceremonySignature = "";
       const settingsLayer = document.getElementById("settings-layer");
       const sessionKey = `presenter-session:${code}`;
@@ -909,7 +910,7 @@
         const entry = slide.entry;
         const name = entry && lastGoodData.namesPublic && entry.name ? `<p class="ceremony-name">${escapeHTML(entry.name)}</p>` : "";
         ceremonyPanel.innerHTML = `<div class="ceremony-slide ${medal}" key="${ceremonyStep}"><p class="ceremony-kicker">Strain Diary Awards · ${ceremonyStep + 1} of ${slides.length}</p><h2 class="ceremony-title">${title}</h2>${entry ? `<p class="ceremony-entry">${entryLabel(entry)}</p>${name}<p class="ceremony-score">${entry.total.toFixed(1)} / 10 · ${escapeHTML(entry.scoredBy)} judges</p>` : `<p class="ceremony-entry">${slide.type === "intro" ? "Ready to reveal the winners?" : "Thanks to everyone who judged."}</p>`}</div>`;
-        ceremonyControls.innerHTML = `<button type="button" data-ceremony="exit">Exit ceremony</button><button type="button" data-ceremony="previous" ${ceremonyStep === 0 ? "disabled" : ""}>Previous</button><button type="button" data-ceremony="next">${ceremonyStep === slides.length - 1 ? "Finish" : "Reveal next"}</button>`;
+        ceremonyControls.innerHTML = `<button type="button" data-ceremony="exit">Exit ceremony</button><button type="button" data-ceremony="previous" ${ceremonyStep === 0 ? "disabled" : ""}>Previous</button>${presenterSession && slide.type === "award" ? `<button type="button" data-ceremony="takeback">Take back reveal</button>` : ""}<button type="button" data-ceremony="next">${ceremonyStep === slides.length - 1 ? "Finish" : "Reveal next"}</button>`;
         ceremonyLayer.hidden = false;
         if (presenterSession && slide.type === "award" && lastCelebratedStep !== ceremonyStep) {
           const requestedStep = ceremonyStep;
@@ -952,10 +953,22 @@
         ceremonyLayer.hidden = true;
       }
 
-      ceremonyLayer.addEventListener("click", event => {
+      ceremonyLayer.addEventListener("click", async event => {
         const action = event.target.closest("[data-ceremony]")?.dataset.ceremony;
         if (!action) return;
         if (action === "exit") { closeCeremony(); return; }
+        if (action === "takeback") {
+          const slide = ceremonySlides(lastGoodData)[ceremonyStep];
+          if (!presenterSession || slide?.type !== "award") return;
+          try {
+            await presenterRequest("/presenter/unreveal", { code, category: slide.category, place: slide.place });
+            ceremonyStep = Math.max(0, ceremonyStep - 1);
+            ceremonySignature = "";
+            renderCeremony();
+            refresh();
+          } catch { alert("Could not take back this reveal. Try again."); }
+          return;
+        }
         if (action === "retry") {
           const slide = ceremonySlides(lastGoodData)[ceremonyStep];
           if (!slide || slide.type !== "award") return;
@@ -1107,6 +1120,17 @@
 
       function render(data) {
         ceremonyFinished = !!data.presenter?.ceremonyDone;
+        if (presenterSession && !ceremonyFinished && !data.judgingOpen) {
+          const revealed = data.presenter?.revealed || [];
+          const serverSignature = JSON.stringify(revealed);
+          if (lastServerRevealSignature !== null && serverSignature !== lastServerRevealSignature && revealed.length) {
+            const slides = ceremonySlides(data);
+            const matching = slides.map((slide, index) => ({ slide, index })).filter(({ slide }) =>
+              slide.type === "award" && revealed.some(item => item.category === slide.category && item.place === slide.place && String(item.number) === String(slide.entry.number)));
+            if (matching.length) { ceremonyStep = matching.at(-1).index; ceremonySignature = ""; }
+          }
+          lastServerRevealSignature = serverSignature;
+        }
         const signature = JSON.stringify(data) + `|category:${selectedCategory || ""}|finished:${ceremonyFinished}`;
         if (signature === renderedSignature) {
           updateStatus();
