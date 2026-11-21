@@ -1,0 +1,11 @@
+name = "straindiary-competition-live"
+main = "competition-worker.js"
+compatibility_date = "2026-11-20"
+
+[[durable_objects.bindings]]
+name = "COMPETITION_STATE"
+class_name = "CompetitionState"
+
+[[migrations]]
+tag = "presenter-v1"
+new_sqlite_classes = ["CompetitionState"]
