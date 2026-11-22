@@ -231,6 +231,11 @@
     .category-tab { flex: none; padding: .45em .8em; border: 1px solid var(--line); border-radius: 999px; background: rgba(128, 240, 166, .07); color: var(--muted); font: inherit; font-size: clamp(.85rem, 1vw, 1.1rem); font-weight: 800; cursor: pointer; }
     .category-tab[aria-pressed="true"] { color: var(--bg); background: var(--green); border-color: var(--green); }
     .category-tab:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+    .share-results { border: 1px solid var(--green); border-radius: 999px; padding: .45em .8em; background: var(--green); color: var(--bg); font: inherit; font-size: clamp(.85rem, 1vw, 1.1rem); font-weight: 800; cursor: pointer; }
+    .share-results:disabled { opacity: .6; cursor: wait; }
+    .share-results:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+    .share-status { color: var(--muted); font-size: .9rem; }
+
 
     .pill {
       padding: 0.45em 0.8em;
@@ -868,7 +873,7 @@
             : `<div class="leader-row${medal}">${content}</div>`;
         }).join("");
         const empty = ranked.length ? "" : `<div class="empty-screen"><div><h1>No scores yet</h1><p>Results will appear when scorecards are available.</p></div></div>`;
-        const position = `${categoryPicker(categories)}${presenterSession ? '<button type="button" class="ceremony-start">Start Awards Ceremony</button>' : ""}`;
+        const position = `${categoryPicker(categories)}<button type="button" class="share-results">Share results</button>${presenterSession ? '<button type="button" class="ceremony-start">Start Awards Ceremony</button>' : ""}<span class="share-status" role="status" aria-live="polite"></span>`;
         return `${commonHeader(data)}<section class="content"><div class="section-heading"><h2>${escapeHTML(category || "Leaderboard")} leaderboard</h2>${position}</div><div class="leaderboard" style="--leader-rows:${Math.max(ranked.length, 1)}">${rows || empty}</div></section>`;
       }
 
@@ -1040,8 +1045,134 @@
         previousFocus?.focus();
       }
 
+
+      // Create a shareable Story-sized image from the public, finished leaderboard only.
+      async function makeResultsImage(data, category) {
+        const ranked = data.entries
+          .filter(entry => entry.category === category && Number.isFinite(entry.total))
+          .sort((a, b) => b.total - a.total || Number(a.number) - Number(b.number));
+        if (!ranked.length) throw new Error("No scored entries are available.");
+        const canvas = document.createElement("canvas");
+        canvas.width = 1080;
+        canvas.height = 1920;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) throw new Error("Image export is unavailable.");
+
+        const background = ctx.createLinearGradient(0, 0, 1080, 1920);
+        background.addColorStop(0, "#123b2a");
+        background.addColorStop(1, "#06150e");
+        ctx.fillStyle = background;
+        ctx.fillRect(0, 0, 1080, 1920);
+        let photoBottom = 0;
+        if (data.hasPhoto) {
+          const photo = document.getElementById("cup-photo");
+          if (!photo) throw new Error("Cup picture is unavailable.");
+          await photo.decode();
+          if (!photo.naturalWidth || !photo.naturalHeight) throw new Error("Cup picture is unavailable.");
+          const box = { x: 0, y: 0, w: 1080, h: 550 };
+          const ratio = Math.max(box.w / photo.naturalWidth, box.h / photo.naturalHeight);
+          const w = photo.naturalWidth * ratio, h = photo.naturalHeight * ratio;
+          ctx.drawImage(photo, box.x + (box.w - w) / 2, box.y + (box.h - h) / 2, w, h);
+          const shade = ctx.createLinearGradient(0, 230, 0, 600);
+          shade.addColorStop(0, "rgba(6,21,14,0)");
+          shade.addColorStop(1, "#0a2117");
+          ctx.fillStyle = shade;
+          ctx.fillRect(0, 225, 1080, 375);
+          photoBottom = 550;
+        }
+
+        function fitText(value, maxWidth, font) {
+          ctx.font = font;
+          let text = String(value || "");
+          if (ctx.measureText(text).width <= maxWidth) return text;
+          while (text.length && ctx.measureText(text + "…").width > maxWidth) text = text.slice(0, -1);
+          return text + "…";
+        }
+        ctx.textBaseline = "top";
+        ctx.fillStyle = "#80efaa";
+        ctx.font = "bold 31px system-ui, -apple-system, sans-serif";
+        ctx.fillText("STRAIN DIARY · FINAL RESULTS", 70, photoBottom ? 495 : 85);
+        ctx.fillStyle = "#f3fff5";
+        ctx.font = "bold 68px system-ui, -apple-system, sans-serif";
+        ctx.fillText(fitText(data.title, 940, ctx.font), 70, photoBottom ? 567 : 160);
+        ctx.fillStyle = "#a8c4b3";
+        ctx.font = "36px system-ui, -apple-system, sans-serif";
+        ctx.fillText(fitText(category + " · " + (ranked.length > 10 ? "Top 10" : "Leaderboard"), 940, ctx.font), 70, photoBottom ? 653 : 250);
+
+        const listTop = photoBottom ? 755 : 380;
+        const rowHeight = Math.min(112, Math.floor((1800 - listTop) / Math.min(ranked.length, 10)));
+        ranked.slice(0, 10).forEach((entry, index) => {
+          const y = listTop + index * rowHeight;
+          ctx.fillStyle = index < 3 ? ["#56431f", "#303c3d", "#47372e"][index] : "#143124";
+          ctx.beginPath();
+          ctx.roundRect(55, y, 970, rowHeight - 12, 18);
+          ctx.fill();
+          ctx.fillStyle = index < 3 ? ["#f6d26e", "#dce5e6", "#e9aa82"][index] : "#80efaa";
+          ctx.font = "bold 48px system-ui, -apple-system, sans-serif";
+          ctx.fillText(String(competitionPlace(ranked, index)), 82, y + 21);
+          ctx.fillStyle = "#f3fff5";
+          const label = category + " #" + (entry.catNumber ?? entry.number);
+          const name = data.namesPublic && entry.name ? " · " + entry.name : "";
+          ctx.font = "bold 33px system-ui, -apple-system, sans-serif";
+          ctx.fillText(fitText(label + name, 690, ctx.font), 170, y + 23);
+          ctx.font = "bold 42px system-ui, -apple-system, sans-serif";
+          ctx.textAlign = "right";
+          ctx.fillText(entry.total.toFixed(1), 995, y + 19);
+          ctx.textAlign = "left";
+        });
+        ctx.fillStyle = "#a8c4b3";
+        ctx.font = "28px system-ui, -apple-system, sans-serif";
+        ctx.fillText("See the full results at", 70, 1830);
+        ctx.fillStyle = "#80efaa";
+        ctx.font = "bold 29px system-ui, -apple-system, sans-serif";
+        ctx.fillText("straindiary.com/live.html#" + code, 70, 1866);
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
+        if (!blob) throw new Error("Image export failed.");
+        return blob;
+      }
+
+      async function shareResults(button) {
+        const data = lastGoodData;
+        if (!data || data.judgingOpen || !data.presenter?.ceremonyDone) return;
+        const category = currentCategory(categoriesInOrder(data.entries));
+        const status = app.querySelector(".share-status");
+        button.disabled = true;
+        button.textContent = "Preparing image…";
+        try {
+          const blob = await makeResultsImage(data, category);
+          const filename = "strain-diary-" + code + "-" + category.toLowerCase().replace(/[^a-z0-9]+/g, "-") + "-results.png";
+          const file = new File([blob], filename, { type: "image/png" });
+          if (navigator.share && navigator.canShare?.({ files: [file] })) {
+            try {
+              await navigator.share({ files: [file], title: data.title + " · " + category + " results", text: "Strain Diary competition results" });
+              if (status?.isConnected) status.textContent = "Ready to post or save from the share sheet.";
+              return;
+            } catch (error) {
+              if (error?.name === "AbortError") return;
+            }
+          }
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = filename;
+          document.body.append(link);
+          link.click();
+          link.remove();
+          setTimeout(() => URL.revokeObjectURL(url), 60000);
+          if (status?.isConnected) status.textContent = "Image downloaded. You can post it on Instagram.";
+        } catch (error) {
+          if (status?.isConnected) status.textContent = data.hasPhoto
+            ? "Could not include the cup picture. Try again once it loads."
+            : "Could not create the image. Please try again.";
+        } finally {
+          if (button.isConnected) { button.disabled = false; button.textContent = "Share results"; }
+        }
+      }
+
       app.addEventListener("click", event => {
         if (event.target.closest(".display-button")) { settingsLayer.hidden = false; settingsLayer.querySelector("#settings-close")?.focus(); return; }
+        const shareButton = event.target.closest(".share-results");
+        if (shareButton) { shareResults(shareButton); return; }
         if (presenterSession && event.target.closest(".ceremony-start") && lastGoodData && !lastGoodData.judgingOpen) {
           ceremonyStep = 0;
           ceremonyDismissed = false;
