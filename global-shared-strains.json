@@ -1,5 +1,34 @@
 [
   {
+    "name": "Vaso de Fruta",
+    "brand": "Heritage Hash Co.",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 8.3,
+    "flavors": [
+      "Sharp Citrus",
+      "Spice",
+      "Sweet Melon",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-23T21:10:57.947Z"
+  },
+  {
     "name": "LMNO-Z · 710 Labs",
     "brand": "710 Labs",
     "form": "Concentrate",
@@ -27,7 +56,196 @@
       "Happy",
       "Uplifted"
     ],
-    "sharedAt": "2026-11-23T06:28:10.330Z"
+    "sharedAt": "2026-11-23T21:10:57.267Z"
+  },
+  {
+    "name": "Strawberry Pop",
+    "brand": "Bryantist",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "65%",
+    "rating": 7.8,
+    "flavors": [
+      "Creamy",
+      "Earthy",
+      "Strawberry",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-23T21:10:56.214Z"
+  },
+  {
+    "name": "Honey Banana Jam",
+    "brand": "Bryantist",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "75%",
+    "rating": 7.7,
+    "flavors": [
+      "Banana",
+      "Earthy",
+      "Honey",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "δ-Limonene",
+      "β-Caryophyllene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Body High",
+      "Euphoric",
+      "Heady"
+    ],
+    "sharedAt": "2026-11-23T21:10:54.542Z"
+  },
+  {
+    "name": "Neon Panther",
+    "brand": "Moon Valley Cannabis",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9,
+    "flavors": [
+      "Floral",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Beta-Pinene",
+      "Trans-Beta-Farnesene",
+      "α-Humulene",
+      "Fenchol",
+      "Terpineol",
+      "Alpha-Pinene",
+      "Nerolidol",
+      "Valencene",
+      "α-Bisabolol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "Terpinolene",
+      "Citronellol",
+      "Geraniol",
+      "Sabinene",
+      "β-Ocimene"
+    ],
+    "effects": [
+      "Calm",
+      "Creative",
+      "Focused",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-23T21:10:52.040Z"
+  },
+  {
+    "name": "Wakanda",
+    "brand": "Ay Papi",
+    "form": "Concentrate",
+    "extractType": "Hash",
+    "type": "Sativa",
+    "potency": "64%",
+    "rating": 8,
+    "flavors": [
+      "Floral",
+      "Fruit",
+      "Funk",
+      "Herbal",
+      "Sour"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Happy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-23T21:10:49.847Z"
+  },
+  {
+    "name": "Gorilla Dosha",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Gas",
+      "Guava"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Linalool",
+      "Caryophyllene",
+      "Myrcene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-23T20:32:03.419Z"
+  },
+  {
+    "name": "Sea Shock",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "71%",
+    "rating": 9.2,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Fruit",
+      "Salty Sea",
+      "Gas"
+    ],
+    "terpenes": [
+      "Sabinene",
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene",
+      "Beta-Pinene",
+      "Linalool",
+      "Alpha-Pinene",
+      "Guaiol",
+      "Trans-Beta-Farnesene",
+      "Terpineol",
+      "Camphene",
+      "Ocimene",
+      "Terpinolene",
+      "Borneol",
+      "Nerolidol",
+      "Fenchol",
+      "Valencene",
+      "Geraniol",
+      "Bisabolol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-23T20:32:03.229Z"
   },
   {
     "name": "Garlic juice #24",
@@ -103,29 +321,6 @@
     "sharedAt": "2026-11-19T21:07:22.066Z"
   },
   {
-    "name": "Gorilla Dosha",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Gas",
-      "Guava"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Linalool",
-      "Caryophyllene",
-      "Myrcene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:07:20.871Z"
-  },
-  {
     "name": "WhiteThorn Rose",
     "brand": "Heavy Hitters",
     "form": "Pen",
@@ -156,46 +351,6 @@
       "Heady"
     ],
     "sharedAt": "2026-11-19T21:07:19.385Z"
-  },
-  {
-    "name": "Sea Shock",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "71%",
-    "rating": 9.2,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Fruit",
-      "Salty Sea",
-      "Gas"
-    ],
-    "terpenes": [
-      "Sabinene",
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene",
-      "Humulene",
-      "Beta-Pinene",
-      "Linalool",
-      "Alpha-Pinene",
-      "Guaiol",
-      "Trans-Beta-Farnesene",
-      "Terpineol",
-      "Camphene",
-      "Ocimene",
-      "Terpinolene",
-      "Borneol",
-      "Nerolidol",
-      "Fenchol",
-      "Valencene",
-      "Geraniol",
-      "Bisabolol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:07:17.934Z"
   },
   {
     "name": "Zakura",
@@ -2014,161 +2169,6 @@
       "Giggly"
     ],
     "sharedAt": "2026-11-07T02:20:22.736Z"
-  },
-  {
-    "name": "Neon Panther",
-    "brand": "Moon Valley Cannabis",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 9,
-    "flavors": [
-      "Floral",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Linalool",
-      "β-Caryophyllene",
-      "Myrcene",
-      "Beta-Pinene",
-      "Trans-Beta-Farnesene",
-      "α-Humulene",
-      "Fenchol",
-      "Terpineol",
-      "Alpha-Pinene",
-      "Nerolidol",
-      "Valencene",
-      "α-Bisabolol",
-      "Camphene",
-      "Borneol",
-      "Fenchone",
-      "Terpinolene",
-      "Citronellol",
-      "Geraniol",
-      "Sabinene",
-      "β-Ocimene"
-    ],
-    "effects": [
-      "Calm",
-      "Creative",
-      "Focused",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-30T23:37:42.068Z"
-  },
-  {
-    "name": "Vaso de Fruta",
-    "brand": "Heritage Hash Co.",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 8.3,
-    "flavors": [
-      "Sharp Citrus",
-      "Spice",
-      "Sweet Melon",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Calm",
-      "Creative",
-      "Energetic",
-      "Happy",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-28T19:14:25.620Z"
-  },
-  {
-    "name": "Strawberry Pop",
-    "brand": "Bryantist",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "65%",
-    "rating": 7.8,
-    "flavors": [
-      "Creamy",
-      "Earthy",
-      "Strawberry",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Calm",
-      "Focused",
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-10-23T17:15:39.957Z"
-  },
-  {
-    "name": "Wakanda",
-    "brand": "Ay Papi",
-    "form": "Concentrate",
-    "extractType": "Hash",
-    "type": "Sativa",
-    "potency": "64%",
-    "rating": 8,
-    "flavors": [
-      "Floral",
-      "Fruit",
-      "Funk",
-      "Herbal",
-      "Sour"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Happy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-10-23T17:15:39.739Z"
-  },
-  {
-    "name": "Honey Banana Jam",
-    "brand": "Bryantist",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "75%",
-    "rating": 7.7,
-    "flavors": [
-      "Banana",
-      "Earthy",
-      "Honey",
-      "Sweet"
-    ],
-    "terpenes": [
-      "β-Myrcene",
-      "δ-Limonene",
-      "β-Caryophyllene"
-    ],
-    "effects": [
-      "Calm",
-      "Creative",
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Body High",
-      "Euphoric",
-      "Heady"
-    ],
-    "sharedAt": "2026-10-23T17:15:39.522Z"
   },
   {
     "name": "Super Boof",
