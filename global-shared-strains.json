@@ -1,5 +1,63 @@
 [
   {
+    "name": "LMNO-Z · 710 Labs",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Sativa",
+    "potency": "64%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Chemical",
+      "Citrus",
+      "Diesel",
+      "Earthy",
+      "Lemon",
+      "Pungent",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-23T06:28:10.330Z"
+  },
+  {
+    "name": "Garlic juice #24",
+    "brand": "Private stock",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "74%",
+    "rating": 8.8,
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Garlic"
+    ],
+    "terpenes": [
+      "Alpha-Bisabolol",
+      "D-Limonene",
+      "Beta-Myrcene",
+      "Ocimenes",
+      "Guaiol"
+    ],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Relaxed"
+    ],
+    "sharedAt": "2026-11-23T06:05:18.988Z"
+  },
+  {
     "name": "Scottis Cake",
     "brand": "CAM",
     "form": "Flower",

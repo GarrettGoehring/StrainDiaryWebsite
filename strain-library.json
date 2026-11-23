@@ -17882,6 +17882,29 @@
     ]
   },
   {
+    "name": "Garlic juice #24",
+    "type": "Hybrid",
+    "crosses": "GMO x Tropicana Cookies",
+    "terpenes": [
+      "Alpha-Bisabolol",
+      "D-Limonene",
+      "Beta-Myrcene",
+      "Ocimenes",
+      "Guaiol"
+    ],
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Garlic"
+    ],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Relaxed"
+    ]
+  },
+  {
     "name": "Garlic Juice #3",
     "type": "",
     "crosses": "",
@@ -31516,6 +31539,31 @@
     "terpenes": [],
     "flavors": [],
     "effects": []
+  },
+  {
+    "name": "LMNO-Z · 710 Labs",
+    "type": "Sativa",
+    "crosses": "Z x (91 Sour D x Sour D)",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Humulene"
+    ],
+    "flavors": [
+      "Chemical",
+      "Citrus",
+      "Diesel",
+      "Earthy",
+      "Lemon",
+      "Pungent",
+      "Skunk"
+    ],
+    "effects": [
+      "Calm",
+      "Focused",
+      "Happy",
+      "Uplifted"
+    ]
   },
   {
     "name": "Loaf Pina",
@@ -54580,14 +54628,6 @@
       "Happy",
       "Euphoric"
     ]
-  },
-  {
-    "name": "WiFi Mimosa",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
   },
   {
     "name": "wifi mints",
