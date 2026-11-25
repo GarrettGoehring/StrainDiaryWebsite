@@ -202,14 +202,6 @@
     "effects": []
   },
   {
-    "name": "50-Ton Truck Hole",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "710 chem",
     "type": "Hybrid",
     "crosses": "Chemdog x Skunk",
@@ -736,8 +728,7 @@
     "terpenes": [
       "Limonene",
       "Myrcene",
-      "Caryophyllene",
-      "Terpinolene"
+      "Caryophyllene"
     ],
     "flavors": [
       "Orange",
@@ -747,11 +738,7 @@
     "effects": [
       "Happy",
       "Uplifted",
-      "Energetic",
-      "Euphoric",
-      "Relaxed",
-      "Creative",
-      "Uplifting"
+      "Energetic"
     ]
   },
   {
@@ -2770,14 +2757,6 @@
   },
   {
     "name": "Banana Creme Pie",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Banana Creme Pie Hole",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -9658,6 +9637,22 @@
     "effects": [
       "Focused",
       "Happy",
+      "Uplifted"
+    ]
+  },
+  {
+    "name": "Chanel",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [
+      "Diesel",
+      "Sweet"
+    ],
+    "effects": [
+      "Euphoric",
+      "Happy",
+      "Relaxed",
       "Uplifted"
     ]
   },
@@ -16976,10 +16971,22 @@
   {
     "name": "Funk Mt",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Trop Cookies x Strawberry Guava",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene"
+    ],
+    "flavors": [
+      "Sour Berries"
+    ],
+    "effects": [
+      "Relaxed",
+      "Happy",
+      "Energetic",
+      "Creative",
+      "Focused"
+    ]
   },
   {
     "name": "Funked up cherries",
@@ -19466,14 +19473,6 @@
     "effects": []
   },
   {
-    "name": "Gg",
-    "type": "",
-    "crosses": "Ggg",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "GG #4",
     "type": "",
     "crosses": "Sour Dubb x Chem Sis",
@@ -20383,12 +20382,34 @@
     "effects": []
   },
   {
-    "name": "GMOtion",
+    "name": "Gmotion",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "GMO x Gush Mints",
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene",
+      "Linalool",
+      "Humulene",
+      "Pinene"
+    ],
+    "flavors": [
+      "Pungent Garlic",
+      "Savory Funk",
+      "Cool Herbal Mint",
+      "Earthy Undertones",
+      "Hints Of Sweet Cream",
+      "Earthy Fuel/Gas",
+      "Sweet Earth",
+      "Cool Herbal Or Minty"
+    ],
+    "effects": [
+      "Calm",
+      "Relaxed",
+      "Happy",
+      "Content",
+      "Strong Body Presence"
+    ]
   },
   {
     "name": "GMOxOZ",
@@ -20941,6 +20962,14 @@
   },
   {
     "name": "Gouda",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
+    "effects": []
+  },
+  {
+    "name": "Gouls Gas",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -25294,6 +25323,35 @@
     "terpenes": [],
     "flavors": [],
     "effects": []
+  },
+  {
+    "name": "Honey Bannana",
+    "type": "",
+    "crosses": "Strawberry Banana x Honey Boo Boo",
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene",
+      "Limonene",
+      "Pinene",
+      "Humulene",
+      "Linalool"
+    ],
+    "flavors": [
+      "Sweet Honey",
+      "Ripe Tropical Banana",
+      "Creamy Fruit",
+      "Earthy Undertones",
+      "Subtle Gas Or Herbal Edge",
+      "Drizzled Honey"
+    ],
+    "effects": [
+      "Giggly",
+      "Happy",
+      "Creative",
+      "Energizing Cerebral Euphoria",
+      "Weighty",
+      "Balanced Full-Body Relaxation And Calm"
+    ]
   },
   {
     "name": "Honey Bear",
@@ -34113,158 +34171,6 @@
     ]
   },
   {
-    "name": "MM Forbidden Melonz MRCC 2606",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM Fruit Smack FSCC 2607",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM Grapefruit Starburst MRCC 2608",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM Melted Strawberries SIGCC 2606",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM Strawberry Crisp SIGCC 2606",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM_GravityApple_SIGCC_2510 _1g",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-BanginOasis-MRCC-2602",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-Benzina-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-DarkRainbow-SIGCC-2603",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-GarlicJuice-SIGCC-2603",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-GrapeCake-SIGCC-2603",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-GravityApple-SIGCC-2603",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-GrilledPeaches-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-MBxBP-FSCC-2602",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-MeltedStrawberry-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-PinkCertz-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-SnowGirl-MRCC-2602",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-StrawberryCrisp-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "MM-WeddingCake-FSCC-2604",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
     "name": "MMM Super Boof",
     "type": "",
     "crosses": "",
@@ -40671,14 +40577,6 @@
   },
   {
     "name": "Pineapple Freeze Cup",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Pineapple Freeze Cup Hole",
     "type": "",
     "crosses": "",
     "terpenes": [],
@@ -51425,29 +51323,6 @@
     ]
   },
   {
-    "name": "The Original Zkittlez",
-    "type": "",
-    "crosses": "Grape Ape x Grapefruit",
-    "terpenes": [
-      "Caryophyllene",
-      "Linalool",
-      "Humulene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "flavors": [
-      "Sweet",
-      "Grape-Forward Candy",
-      "Tropical Berries",
-      "Bright Citrus",
-      "Subtle Earthy Or Diesel"
-    ],
-    "effects": [
-      "Happy",
-      "Focused"
-    ]
-  },
-  {
     "name": "The Potluck",
     "type": "",
     "crosses": "",
@@ -54630,7 +54505,7 @@
     ]
   },
   {
-    "name": "WiFi Mimosa",
+    "name": "Wifi Mimosa",
     "type": "",
     "crosses": "Mimosa (v6) × WiFi Mints / WiFi OG (White Fire OG)",
     "terpenes": [
