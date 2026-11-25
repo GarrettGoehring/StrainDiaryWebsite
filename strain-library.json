@@ -8754,7 +8754,7 @@
   },
   {
     "name": "Canal St Runtz",
-    "type": "Hybrid",
+    "type": "Indica",
     "crosses": "Runtz x Unknown",
     "terpenes": [
       "Caryophyllene",
@@ -52275,10 +52275,25 @@
   {
     "name": "Trop Cookies",
     "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
+    "crosses": "Girl Scout Cookies × Tangie (originally",
+    "terpenes": [
+      "Linalool",
+      "Myrcene",
+      "Humulene",
+      "Caryophyllene",
+      "Limonene",
+      "Nerolidol"
+    ],
+    "flavors": [
+      "Tangerine"
+    ],
+    "effects": [
+      "Energetic",
+      "Uplifted",
+      "Creative",
+      "Focused",
+      "And Sociable"
+    ]
   },
   {
     "name": "Trop Cookies #13",

@@ -1,5 +1,248 @@
 [
   {
+    "name": "Canal St Runtz",
+    "brand": "Mountain Man Melts",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "50%",
+    "rating": 9.4,
+    "flavors": [
+      "Apricot",
+      "Funk",
+      "Gas",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Talkative",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-25T16:02:32.910Z"
+  },
+  {
+    "name": "Gassy Taffy",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Sativa",
+    "potency": "88%",
+    "rating": 9.1,
+    "flavors": [
+      "Funk",
+      "Gas",
+      "Skunk"
+    ],
+    "terpenes": [
+      "Pinene",
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Energetic",
+      "Focused",
+      "Happy"
+    ],
+    "sharedAt": "2026-11-25T15:42:54.903Z"
+  },
+  {
+    "name": "Bacio Gelato",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.5,
+    "flavors": [
+      "Berry",
+      "Earthy",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Linalool"
+    ],
+    "effects": [
+      "Happy",
+      "Relaxed",
+      "Sleepy",
+      "Aroused",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-25T15:42:53.545Z"
+  },
+  {
+    "name": "Guava Bomb",
+    "brand": "Hash Rosin Company",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Gassy",
+      "Guava",
+      "Pepper",
+      "Tropical"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Myrcene",
+      "Limonene"
+    ],
+    "effects": [
+      "Relaxed",
+      "Euphoric",
+      "Happy",
+      "Uplifted",
+      "Energetic",
+      "Focused",
+      "Giggly",
+      "Calm",
+      "Body High"
+    ],
+    "sharedAt": "2026-11-25T15:42:49.893Z"
+  },
+  {
+    "name": "Nyc Diesel",
+    "brand": "WNC-CBD",
+    "form": "Concentrate",
+    "extractType": "Live Resin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 9,
+    "flavors": [
+      "Citrus",
+      "Diesel",
+      "Lime"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Limonene",
+      "Caryophyllene"
+    ],
+    "effects": [
+      "Happy",
+      "Uplifted",
+      "Creative"
+    ],
+    "sharedAt": "2026-11-25T15:42:47.130Z"
+  },
+  {
+    "name": "New Money",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Hybrid",
+    "potency": "90%",
+    "rating": 9,
+    "flavors": [
+      "Apple",
+      "Blue Cheese",
+      "Blueberry",
+      "Chemical",
+      "Diesel"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Energetic",
+      "Focused",
+      "Relaxed",
+      "Talkative",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-25T15:42:44.582Z"
+  },
+  {
+    "name": "Sea Shock",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "71%",
+    "rating": 9.2,
+    "flavors": [
+      "Chemical",
+      "Creamy",
+      "Fruit",
+      "Salty Sea",
+      "Gas"
+    ],
+    "terpenes": [
+      "Sabinene",
+      "Limonene",
+      "Caryophyllene",
+      "Myrcene",
+      "Humulene",
+      "Beta-Pinene",
+      "Linalool",
+      "Alpha-Pinene",
+      "Guaiol",
+      "Trans-Beta-Farnesene",
+      "Terpineol",
+      "Camphene",
+      "Ocimene",
+      "Terpinolene",
+      "Borneol",
+      "Nerolidol",
+      "Fenchol",
+      "Valencene",
+      "Geraniol",
+      "Bisabolol"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-25T15:42:43.715Z"
+  },
+  {
+    "name": "Slapz",
+    "brand": "Tesoro",
+    "form": "Concentrate",
+    "extractType": "Cured Live Resin",
+    "type": "Indica",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Ammonia",
+      "Apricot",
+      "Chemical",
+      "Diesel",
+      "Earthy",
+      "Pungent",
+      "Skunk",
+      "Sweet",
+      "Tree fruit"
+    ],
+    "terpenes": [
+      "Caryophyllene",
+      "Limonene",
+      "Myrcene"
+    ],
+    "effects": [
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Talkative",
+      "Aroused",
+      "Euphoric",
+      "Giggly"
+    ],
+    "sharedAt": "2026-11-25T15:42:40.442Z"
+  },
+  {
     "name": "Vaso de Fruta",
     "brand": "Heritage Hash Co.",
     "form": "Concentrate",
@@ -206,46 +449,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-23T20:32:03.419Z"
-  },
-  {
-    "name": "Sea Shock",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "71%",
-    "rating": 9.2,
-    "flavors": [
-      "Chemical",
-      "Creamy",
-      "Fruit",
-      "Salty Sea",
-      "Gas"
-    ],
-    "terpenes": [
-      "Sabinene",
-      "Limonene",
-      "Caryophyllene",
-      "Myrcene",
-      "Humulene",
-      "Beta-Pinene",
-      "Linalool",
-      "Alpha-Pinene",
-      "Guaiol",
-      "Trans-Beta-Farnesene",
-      "Terpineol",
-      "Camphene",
-      "Ocimene",
-      "Terpinolene",
-      "Borneol",
-      "Nerolidol",
-      "Fenchol",
-      "Valencene",
-      "Geraniol",
-      "Bisabolol"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-23T20:32:03.229Z"
   },
   {
     "name": "Garlic juice #24",
@@ -1693,33 +1896,6 @@
     "sharedAt": "2026-11-17T08:09:08.591Z"
   },
   {
-    "name": "Canal St Runtz",
-    "brand": "Mountain Man Melts",
-    "form": "Flower",
-    "extractType": "",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9.4,
-    "flavors": [
-      "Apricot",
-      "Funk",
-      "Gas",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Talkative",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-17T08:09:07.559Z"
-  },
-  {
     "name": "Terp Broth",
     "brand": "PinePark",
     "form": "Concentrate",
@@ -1993,182 +2169,6 @@
       "Talkative"
     ],
     "sharedAt": "2026-11-09T20:05:59.041Z"
-  },
-  {
-    "name": "Gassy Taffy",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Sativa",
-    "potency": "88%",
-    "rating": 9.1,
-    "flavors": [
-      "Funk",
-      "Gas",
-      "Skunk"
-    ],
-    "terpenes": [
-      "Pinene",
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Energetic",
-      "Focused",
-      "Happy"
-    ],
-    "sharedAt": "2026-11-07T02:20:34.581Z"
-  },
-  {
-    "name": "Bacio Gelato",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.5,
-    "flavors": [
-      "Berry",
-      "Earthy",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Linalool"
-    ],
-    "effects": [
-      "Happy",
-      "Relaxed",
-      "Sleepy",
-      "Aroused",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-07T02:20:33.352Z"
-  },
-  {
-    "name": "Guava Bomb",
-    "brand": "Hash Rosin Company",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Gassy",
-      "Guava",
-      "Pepper",
-      "Tropical"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Myrcene",
-      "Limonene"
-    ],
-    "effects": [
-      "Relaxed",
-      "Euphoric",
-      "Happy",
-      "Uplifted",
-      "Energetic",
-      "Focused",
-      "Giggly",
-      "Calm",
-      "Body High"
-    ],
-    "sharedAt": "2026-11-07T02:20:29.444Z"
-  },
-  {
-    "name": "Nyc Diesel",
-    "brand": "WNC-CBD",
-    "form": "Concentrate",
-    "extractType": "Live Resin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 9,
-    "flavors": [
-      "Citrus",
-      "Diesel",
-      "Lime"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Limonene",
-      "Caryophyllene"
-    ],
-    "effects": [
-      "Happy",
-      "Uplifted",
-      "Creative"
-    ],
-    "sharedAt": "2026-11-07T02:20:27.302Z"
-  },
-  {
-    "name": "New Money",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Hybrid",
-    "potency": "90%",
-    "rating": 9,
-    "flavors": [
-      "Apple",
-      "Blue Cheese",
-      "Blueberry",
-      "Chemical",
-      "Diesel"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Energetic",
-      "Focused",
-      "Relaxed",
-      "Talkative",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-07T02:20:25.080Z"
-  },
-  {
-    "name": "Slapz",
-    "brand": "Tesoro",
-    "form": "Concentrate",
-    "extractType": "Cured Live Resin",
-    "type": "Indica",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Ammonia",
-      "Apricot",
-      "Chemical",
-      "Diesel",
-      "Earthy",
-      "Pungent",
-      "Skunk",
-      "Sweet",
-      "Tree fruit"
-    ],
-    "terpenes": [
-      "Caryophyllene",
-      "Limonene",
-      "Myrcene"
-    ],
-    "effects": [
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Talkative",
-      "Aroused",
-      "Euphoric",
-      "Giggly"
-    ],
-    "sharedAt": "2026-11-07T02:20:22.736Z"
   },
   {
     "name": "Super Boof",
