@@ -23133,7 +23133,9 @@
       "Borneol",
       "Fenchone",
       "Terpinolene",
-      "δ-Carene"
+      "δ-Carene",
+      "β-Pinene",
+      "α-Pinene"
     ],
     "flavors": [],
     "effects": []
@@ -32996,14 +32998,6 @@
   },
   {
     "name": "Mashup",
-    "type": "",
-    "crosses": "",
-    "terpenes": [],
-    "flavors": [],
-    "effects": []
-  },
-  {
-    "name": "Mashup Mystery",
     "type": "Hybrid",
     "crosses": "Mystery",
     "terpenes": [],
@@ -33013,8 +33007,24 @@
       "Gassy",
       "Lemon",
       "Melon",
-      "Sweet"
+      "Sweet",
+      "Bread",
+      "Earthy",
+      "Gas",
+      "Spice"
     ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Relaxed"
+    ]
+  },
+  {
+    "name": "Mashup Mystery",
+    "type": "",
+    "crosses": "",
+    "terpenes": [],
+    "flavors": [],
     "effects": []
   },
   {
@@ -37406,18 +37416,18 @@
       "β-Myrcene",
       "α-Humulene",
       "Linalool",
-      "Beta-Pinene",
+      "β-Pinene",
       "Guaiol",
       "Fenchol",
-      "Alpha-Pinene",
+      "α-Pinene",
       "α-Terpineol",
       "Camphene",
       "Borneol",
       "Terpinolene",
       "Fenchone",
       "δ-Carene",
-      "β-Pinene",
-      "α-Pinene"
+      "Beta-Pinene",
+      "Alpha-Pinene"
     ],
     "flavors": [
       "Citrus",
@@ -37657,9 +37667,13 @@
   {
     "name": "Orange Starburst",
     "type": "",
-    "crosses": "",
+    "crosses": "Skittles x Mimosa",
     "terpenes": [],
-    "flavors": [],
+    "flavors": [
+      "Citrus",
+      "Orange",
+      "Zkittles"
+    ],
     "effects": []
   },
   {
@@ -44004,19 +44018,19 @@
       "β-Caryophyllene",
       "Limonene",
       "α-Humulene",
+      "β-Myrcene",
       "α-Bisabolol",
-      "Beta-Pinene",
-      "Alpha-Pinene",
+      "β-Pinene",
+      "α-Pinene",
       "Fenchol",
       "Linalool",
       "α-Terpineol",
       "Camphene",
+      "Terpinolene",
       "Borneol",
       "Fenchone",
-      "δ-Carene",
       "α-Terpinene",
-      "β-Myrcene",
-      "Terpinolene"
+      "δ-Carene"
     ],
     "flavors": [
       "Creamy",
@@ -44347,7 +44361,26 @@
     "name": "Ridgeline Rose",
     "type": "",
     "crosses": "",
-    "terpenes": [],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "Linalool",
+      "α-Humulene",
+      "Guaiol",
+      "α-Pinene",
+      "β-Myrcene",
+      "Fenchol",
+      "α-Terpineol",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "Terpinolene",
+      "Borneol",
+      "Eucalyptol",
+      "Fenchone",
+      "α-Terpinene",
+      "δ-Carene"
+    ],
     "flavors": [],
     "effects": []
   },
@@ -50880,6 +50913,7 @@
       "β-Caryophyllene",
       "Limonene",
       "α-Humulene",
+      "β-Myrcene",
       "Guaiol",
       "Linalool",
       "β-Pinene",
@@ -50888,12 +50922,9 @@
       "α-Terpineol",
       "Camphene",
       "Borneol",
-      "Fenchone",
-      "δ-Carene",
-      "β-Myrcene",
       "Terpinolene",
-      "Beta-Pinene",
-      "Alpha-Pinene"
+      "Fenchone",
+      "δ-Carene"
     ],
     "flavors": [
       "Cake",
@@ -54475,6 +54506,30 @@
       "Calm",
       "Happy",
       "Heady"
+    ]
+  },
+  {
+    "name": "Whitethorn Rose · The Bryantist",
+    "type": "Sativa",
+    "crosses": "Paradise Punch x Lemon Og",
+    "terpenes": [
+      "Limonene",
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Fruit Punch",
+      "Sweet",
+      "Tropical"
+    ],
+    "effects": [
+      "Creative",
+      "Focused",
+      "Happy",
+      "Relaxed",
+      "Uplifted"
     ]
   },
   {
