@@ -1,5 +1,94 @@
 [
   {
+    "name": "Zakura",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "72%",
+    "rating": 8.3,
+    "flavors": [
+      "Fruit"
+    ],
+    "terpenes": [
+      "Geraniol",
+      "α-Bisabolol",
+      "β-Caryophyllene",
+      "β-Pinene",
+      "Camphene",
+      "β-Myrcene",
+      "Linalool",
+      "Caryophyllene Oxide",
+      "α-Humulene",
+      "Ocimene",
+      "α-Pinene",
+      "δ-Limonene",
+      "Terpinolene",
+      "Eucalyptol",
+      "Terpinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-26T17:14:38.343Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Heavy Hitters",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Indica",
+    "potency": "76%",
+    "rating": 9.5,
+    "flavors": [
+      "Cherry",
+      "Citrus",
+      "Tropical"
+    ],
+    "terpenes": [
+      "β-Myrcene",
+      "α-Bisabolol",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "β-Pinene",
+      "Linalool",
+      "β-Caryophyllene",
+      "α-Humulene",
+      "α-Pinene",
+      "Camphene"
+    ],
+    "effects": [
+      "Calm",
+      "Happy",
+      "Heady"
+    ],
+    "sharedAt": "2026-11-26T17:13:47.150Z"
+  },
+  {
+    "name": "Freeze Truck",
+    "brand": "Team Elite Genetics",
+    "form": "Pen",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "85%",
+    "rating": 9.5,
+    "flavors": [
+      "Citrus",
+      "Fruit",
+      "Rotten"
+    ],
+    "terpenes": [
+      "Limonene",
+      "β-Caryophyllene",
+      "Myrcene",
+      "Fenchol"
+    ],
+    "effects": [
+      "Energetic",
+      "Relaxed",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-26T16:47:55.812Z"
+  },
+  {
     "name": "Peach Jolly + The Sweeties #7",
     "brand": "710 Labs",
     "form": "Flower",
@@ -897,53 +986,6 @@
     "sharedAt": "2026-11-19T21:07:22.066Z"
   },
   {
-    "name": "WhiteThorn Rose",
-    "brand": "Heavy Hitters",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "74%",
-    "rating": 9.5,
-    "flavors": [
-      "Cherry",
-      "Citrus",
-      "Tropical"
-    ],
-    "terpenes": [
-      "β-Myrcene",
-      "α-Bisabolol",
-      "Caryophyllene Oxide",
-      "δ-Limonene",
-      "β-Pinene",
-      "Linalool",
-      "β-Caryophyllene",
-      "α-Humulene",
-      "α-Pinene",
-      "Camphene"
-    ],
-    "effects": [
-      "Calm",
-      "Happy",
-      "Heady"
-    ],
-    "sharedAt": "2026-11-19T21:07:19.385Z"
-  },
-  {
-    "name": "Zakura",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "93%",
-    "rating": 8.3,
-    "flavors": [
-      "Fruit"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:07:14.594Z"
-  },
-  {
     "name": "Nimbus Snacks",
     "brand": "Holy Water",
     "form": "Pen",
@@ -1032,32 +1074,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-19T21:03:18.369Z"
-  },
-  {
-    "name": "Freeze Truck",
-    "brand": "Team Elite Genetics",
-    "form": "Pen",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "85%",
-    "rating": 9.5,
-    "flavors": [
-      "Citrus",
-      "Fruit",
-      "Rotten"
-    ],
-    "terpenes": [
-      "Limonene",
-      "β-Caryophyllene",
-      "Myrcene",
-      "Fenchol"
-    ],
-    "effects": [
-      "Energetic",
-      "Relaxed",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-19T21:03:13.019Z"
   },
   {
     "name": "GG4",

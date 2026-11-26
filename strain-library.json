@@ -16269,10 +16269,10 @@
     "type": "Hybrid",
     "crosses": "Freeze Cup x Dump Truck",
     "terpenes": [
+      "Fenchol",
       "Limonene",
       "β-Caryophyllene",
-      "Myrcene",
-      "Fenchol"
+      "Myrcene"
     ],
     "flavors": [
       "Citrus",
@@ -54469,7 +54469,7 @@
     ]
   },
   {
-    "name": "Whitethorn Rose",
+    "name": "WhiteThorn Rose",
     "type": "Hybrid",
     "crosses": "Paradise Punch x Lemon OG",
     "terpenes": [
@@ -55553,7 +55553,23 @@
     "name": "Zakura",
     "type": "Hybrid",
     "crosses": "",
-    "terpenes": [],
+    "terpenes": [
+      "δ-Limonene",
+      "β-Caryophyllene",
+      "α-Humulene",
+      "Linalool",
+      "α-Bisabolol",
+      "β-Pinene",
+      "β-Myrcene",
+      "α-Pinene",
+      "Ocimene",
+      "Camphene",
+      "Caryophyllene Oxide",
+      "Terpinolene",
+      "Geraniol",
+      "Eucalyptol",
+      "Terpinene"
+    ],
     "flavors": [
       "Fruit"
     ],
