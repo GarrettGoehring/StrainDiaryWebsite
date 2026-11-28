@@ -1,5 +1,234 @@
 [
   {
+    "name": "Mango Banana #9 + Mega Peaches",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "68%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Bread",
+      "Dough",
+      "Earthy",
+      "Juicy Peach",
+      "Ripe Mango",
+      "Sweet Banana"
+    ],
+    "terpenes": [
+      "Myrcene",
+      "Caryophyllene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:20.136Z"
+  },
+  {
+    "name": "Nimbus Snacks",
+    "brand": "Holy Water",
+    "form": "Pen",
+    "extractType": "Live Resin",
+    "type": "Sativa",
+    "potency": "80%",
+    "rating": 8.700000000000001,
+    "flavors": [
+      "Citrus",
+      "Earthy",
+      "Floral",
+      "Kushy"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:18.659Z"
+  },
+  {
+    "name": "Cranberry Spritzer",
+    "brand": "Have Hash",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "67%",
+    "rating": 8.6,
+    "flavors": [
+      "Berry",
+      "Creamy",
+      "Gas",
+      "Sour"
+    ],
+    "terpenes": [
+      "Limonene",
+      "Caryophyllene",
+      "Humulene",
+      "Beta-Pinene",
+      "Bisabolol",
+      "Alpha-Pinene",
+      "Trans-Beta-Farnesene",
+      "Guaiol",
+      "Nerolidol",
+      "Fenchol",
+      "Terpineol",
+      "Ocimene",
+      "Camphene",
+      "Geraniol",
+      "Borneol",
+      "Myrcene",
+      "Terpinolene",
+      "Linalool",
+      "Sabinene",
+      "Pinene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:17.109Z"
+  },
+  {
+    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.4,
+    "flavors": [
+      "Chemical",
+      "Funk",
+      "Gassy",
+      "Zkittles"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:15.367Z"
+  },
+  {
+    "name": "Red Diamond",
+    "brand": "Pistil Whip",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "70%",
+    "rating": 8.8,
+    "flavors": [
+      "Creamy",
+      "Earthy",
+      "Gas",
+      "Sweet"
+    ],
+    "terpenes": [
+      "β-Caryophyllene",
+      "Limonene",
+      "α-Humulene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "α-Pinene",
+      "Fenchol",
+      "Linalool",
+      "α-Terpineol",
+      "Camphene",
+      "Borneol",
+      "Fenchone",
+      "δ-Carene",
+      "α-Terpinene",
+      "β-Myrcene",
+      "Terpinolene"
+    ],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:13.813Z"
+  },
+  {
+    "name": "Paytons Pie #1",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9,
+    "flavors": [
+      "Dough",
+      "Earthy",
+      "Peaches",
+      "Pepper"
+    ],
+    "terpenes": [],
+    "effects": [
+      "Relaxed",
+      "Sleepy",
+      "Uplifted"
+    ],
+    "sharedAt": "2026-11-28T03:21:12.252Z"
+  },
+  {
+    "name": "Mashup",
+    "brand": "710 Labs",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "69%",
+    "rating": 9.200000000000001,
+    "flavors": [
+      "Creamy",
+      "Fruit",
+      "Gassy",
+      "Lemon",
+      "Melon",
+      "Sweet"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:09.292Z"
+  },
+  {
+    "name": "WhiteThorn Rose",
+    "brand": "Quale",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "82%",
+    "rating": 9.600000000000001,
+    "flavors": [
+      "Citrus",
+      "Fruit Punch",
+      "Tropical",
+      "Sweet"
+    ],
+    "terpenes": [
+      "Linalool",
+      "α-Pinene",
+      "β-Caryophyllene",
+      "Caryophyllene Oxide",
+      "δ-Limonene",
+      "α-Bisabolol",
+      "β-Pinene",
+      "Camphene",
+      "α-Humulene",
+      "β-Myrcene"
+    ],
+    "effects": [
+      "Creative",
+      "Hungry",
+      "Relaxed",
+      "Sleepy",
+      "Uplifted",
+      "Euphoric"
+    ],
+    "sharedAt": "2026-11-28T03:21:07.186Z"
+  },
+  {
+    "name": "Grease Bucket #9 + Gorilla Dosha #3",
+    "brand": "",
+    "form": "Concentrate",
+    "extractType": "Live Rosin",
+    "type": "Hybrid",
+    "potency": "50%",
+    "rating": 8.6,
+    "flavors": [
+      "Chemical",
+      "Gas",
+      "Glue",
+      "Pine"
+    ],
+    "terpenes": [],
+    "effects": [],
+    "sharedAt": "2026-11-28T03:21:01.606Z"
+  },
+  {
     "name": "OG Spritzer",
     "brand": "Have Hash",
     "form": "Concentrate",
@@ -317,49 +546,6 @@
     "sharedAt": "2026-11-26T05:17:16.747Z"
   },
   {
-    "name": "Mashup",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Creamy",
-      "Fruit",
-      "Gassy",
-      "Lemon",
-      "Melon",
-      "Sweet"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-26T03:34:37.538Z"
-  },
-  {
-    "name": "Mango Banana #9 + Mega Peaches",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "68%",
-    "rating": 9.200000000000001,
-    "flavors": [
-      "Bread",
-      "Dough",
-      "Earthy",
-      "Juicy Peach",
-      "Ripe Mango",
-      "Sweet Banana"
-    ],
-    "terpenes": [
-      "Myrcene",
-      "Caryophyllene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-26T02:11:38.713Z"
-  },
-  {
     "name": "Papaya Nectar",
     "brand": "Punch Extracts",
     "form": "Concentrate",
@@ -411,41 +597,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-26T02:11:21.428Z"
-  },
-  {
-    "name": "Red Diamond",
-    "brand": "Pistil Whip",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "70%",
-    "rating": 8.8,
-    "flavors": [
-      "Creamy",
-      "Earthy",
-      "Gas",
-      "Sweet"
-    ],
-    "terpenes": [
-      "β-Caryophyllene",
-      "Limonene",
-      "α-Humulene",
-      "α-Bisabolol",
-      "β-Pinene",
-      "α-Pinene",
-      "Fenchol",
-      "Linalool",
-      "α-Terpineol",
-      "Camphene",
-      "Borneol",
-      "Fenchone",
-      "δ-Carene",
-      "α-Terpinene",
-      "β-Myrcene",
-      "Terpinolene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-26T02:11:12.684Z"
   },
   {
     "name": "TangieBerto",
@@ -524,24 +675,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-26T02:10:59.453Z"
-  },
-  {
-    "name": "Madison Zquared Garden #2 + Rainbow Beltz",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9.4,
-    "flavors": [
-      "Chemical",
-      "Funk",
-      "Gassy",
-      "Zkittles"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-26T01:46:07.415Z"
   },
   {
     "name": "Crumpets",
@@ -986,24 +1119,6 @@
     "sharedAt": "2026-11-19T21:07:22.066Z"
   },
   {
-    "name": "Nimbus Snacks",
-    "brand": "Holy Water",
-    "form": "Pen",
-    "extractType": "Live Resin",
-    "type": "Sativa",
-    "potency": "80%",
-    "rating": 8.700000000000001,
-    "flavors": [
-      "Citrus",
-      "Earthy",
-      "Floral",
-      "Kushy"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:03:23.534Z"
-  },
-  {
     "name": "Papaya Push Pop",
     "brand": "Swol",
     "form": "Concentrate",
@@ -1035,45 +1150,6 @@
     "terpenes": [],
     "effects": [],
     "sharedAt": "2026-11-19T21:03:19.283Z"
-  },
-  {
-    "name": "Cranberry Spritzer",
-    "brand": "Have Hash",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "67%",
-    "rating": 8.6,
-    "flavors": [
-      "Berry",
-      "Creamy",
-      "Gas",
-      "Sour"
-    ],
-    "terpenes": [
-      "Limonene",
-      "Caryophyllene",
-      "Humulene",
-      "Beta-Pinene",
-      "Bisabolol",
-      "Alpha-Pinene",
-      "Trans-Beta-Farnesene",
-      "Guaiol",
-      "Nerolidol",
-      "Fenchol",
-      "Terpineol",
-      "Ocimene",
-      "Camphene",
-      "Geraniol",
-      "Borneol",
-      "Myrcene",
-      "Terpinolene",
-      "Linalool",
-      "Sabinene",
-      "Pinene"
-    ],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:03:18.369Z"
   },
   {
     "name": "GG4",
@@ -1321,60 +1397,6 @@
     "sharedAt": "2026-11-19T21:02:04.975Z"
   },
   {
-    "name": "WhiteThorn Rose",
-    "brand": "Quale",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "82%",
-    "rating": 9.600000000000001,
-    "flavors": [
-      "Citrus",
-      "Fruit Punch",
-      "Tropical",
-      "Sweet"
-    ],
-    "terpenes": [
-      "Linalool",
-      "α-Pinene",
-      "β-Caryophyllene",
-      "Caryophyllene Oxide",
-      "δ-Limonene",
-      "α-Bisabolol",
-      "β-Pinene",
-      "Camphene",
-      "α-Humulene",
-      "β-Myrcene"
-    ],
-    "effects": [
-      "Creative",
-      "Hungry",
-      "Relaxed",
-      "Sleepy",
-      "Uplifted",
-      "Euphoric"
-    ],
-    "sharedAt": "2026-11-19T21:02:04.031Z"
-  },
-  {
-    "name": "Grease Bucket #9 + Gorilla Dosha #3",
-    "brand": "",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "50%",
-    "rating": 8.6,
-    "flavors": [
-      "Chemical",
-      "Gas",
-      "Glue",
-      "Pine"
-    ],
-    "terpenes": [],
-    "effects": [],
-    "sharedAt": "2026-11-19T21:02:01.783Z"
-  },
-  {
     "name": "Zimosa #2 + LunarZ",
     "brand": "710 Labs",
     "form": "Pen",
@@ -1589,28 +1611,6 @@
     ],
     "effects": [],
     "sharedAt": "2026-11-17T08:09:30.696Z"
-  },
-  {
-    "name": "Paytons Pie #1",
-    "brand": "710 Labs",
-    "form": "Concentrate",
-    "extractType": "Live Rosin",
-    "type": "Hybrid",
-    "potency": "69%",
-    "rating": 9,
-    "flavors": [
-      "Dough",
-      "Earthy",
-      "Peaches",
-      "Pepper"
-    ],
-    "terpenes": [],
-    "effects": [
-      "Relaxed",
-      "Sleepy",
-      "Uplifted"
-    ],
-    "sharedAt": "2026-11-17T08:09:23.472Z"
   },
   {
     "name": "GMO",
